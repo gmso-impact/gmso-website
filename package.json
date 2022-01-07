@@ -5,8 +5,9 @@
   "scripts": {
     "fetch": "node src/fetch/start.js",
     "serve": "vue-cli-service serve",
-    "prebuild": "node src/fetch/start.js",
     "build": "vue-cli-service build",
+    "predeploy": "node src/fetch/start.js",
+    "deploy": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
