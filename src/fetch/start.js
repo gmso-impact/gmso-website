@@ -9,3 +9,8 @@ readAirtable(
 ).then((content) => {
   writeFile({ content, path: "./src/assets/allStories.json" });
 });
+content = {
+  response: [],
+  string: "test file"
+}
+writeFile({ content, path: "./dist/test.json" });
