@@ -13,4 +13,4 @@ content = {
   response: [],
   string: "test file"
 }
-writeFile({ content, path: "./dist/test.json" });
+writeFile({ content, path: "./public/test.json" });
