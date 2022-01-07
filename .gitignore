@@ -2,8 +2,11 @@
 node_modules
 /dist
 
+# story files
+allStories.json
 
 # local env files
+.env
 .env.local
 .env.*.local
 
