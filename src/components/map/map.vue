@@ -10,7 +10,7 @@
     @update:zoom="zoomUpdate"
   >
     <l-tile-layer :url="url" :attribution="attribution" />
-    <l-marker :lat-lng="withPopup">
+    <l-marker :lat-lng="latLng(story)" v-for="story in stories" :key="story.id">
       <l-popup>
         <div @click="innerClick">
           I am a popup
@@ -22,33 +22,21 @@
         </div>
       </l-popup>
     </l-marker>
-    <l-marker :lat-lng="withTooltip">
-      <l-tooltip :options="{ permanent: true, interactive: true }">
-        <div @click="innerClick">
-          I am a tooltip
-          <p v-show="showParagraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed
-            pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi. Donec
-            finibus semper metus id malesuada.
-          </p>
-        </div>
-      </l-tooltip>
-    </l-marker>
   </LMap>
 </template>
 <script>
 //import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LPopup, LTooltip } from "vue2-leaflet";
-import { latLng } from "leaflet";
+import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
+import { latLng, Icon } from "leaflet";
+import { mapGetters } from "vuex";
 
 export default {
-  name: "MyAwesomeMap",
+  name: "Map",
   components: {
     LMap,
     LTileLayer,
     LMarker,
     LPopup,
-    LTooltip
   },
   data() {
     return {
@@ -68,7 +56,17 @@ export default {
       showMap: true,
     };
   },
+  computed: {
+    ...mapGetters({
+      stories: "storyCurrent",
+    }),
+  },
   methods: {
+    latLng(story) {
+      const LAT = story.fields["LAT"] ? story.fields["LAT"] : 0;
+      const LONG = story.fields["LONG"] ? story.fields["LONG"] : 0;
+      return latLng(LAT, LONG);
+    },
     zoomUpdate(zoom) {
       this.currentZoom = zoom;
     },

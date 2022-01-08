@@ -1,9 +1,9 @@
 <template lang="">
-  <div class="col-md-6">
+  <div class="col-md-12">
     <div class="card mb-3">
       <img class="card-img-top" alt="Card image cap" />
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">{{story.fields['Story Title']}}</h5>
         <p class="card-text">
           Some quick example text 
         </p>
