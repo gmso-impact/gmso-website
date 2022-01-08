@@ -16,6 +16,7 @@ import { Component, Vue } from "vue-property-decorator";
 import StoryList from "./components/storyList/storyList.vue";
 import Map from "./components/map/map.vue";
 
+
 @Component({
   components: {
     StoryList,

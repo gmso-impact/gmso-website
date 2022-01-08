@@ -13,7 +13,7 @@
     <l-marker :lat-lng="latLng(story)" v-for="story in stories" :key="story.id">
       <l-popup>
         <div @click="innerClick">
-          I am a popup
+          {{story.fields['Story Title']}}
           <p v-show="showParagraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed
             pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi. Donec
