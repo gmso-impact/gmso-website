@@ -1,6 +1,6 @@
 <template lang="">
-  <div class="col-md-6" v-if="story.fields['Story Title'] && story.fields['Story Card Image']">
-    <div class="card mb-3 mx-2">
+  <div class="col-md-6" v-if="story.fields['Story Title']">
+    <div class="card mt-3">
       <img v-if="story.fields['Story Card Image']"
        :src="story.fields['Story Card Image'][0].thumbnails.large.url"
        class="card-img-top" alt="Card image cap" />
