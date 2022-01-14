@@ -5,6 +5,8 @@ on:
     branches:
       - main  # Set a branch name to trigger deployment
   workflow_dispatch:
+  schedule:
+    - cron: '57 10 * * *'
 jobs:
   build:
 
