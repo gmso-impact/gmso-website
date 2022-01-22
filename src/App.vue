@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="d-flex flex-column h-100">
     <div id="header" class="bg-light text-center"><h1 class='mb-0'>Header</h1></div>
-    <div class="flex-grow-1 d-flex flex-row overflow-y-hidden">
+    <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters">
       <div class="left col-md-6 col-lg-4 bg-secondary">
         <StoryList></StoryList>
       </div>
