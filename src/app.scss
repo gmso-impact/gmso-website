@@ -1,6 +1,6 @@
 
 
-$colorsspur: (
+$theme-colors: (
     "orange": #ff5a01,
     "Health": #ff5a01,
     "Vida": #ff5a01,
@@ -23,15 +23,7 @@ $colorsspur: (
     "white": #ffffff
   );
   
-  @each $name, $colorsspur in $colorsspur {
-    .bg-spur-#{$name} {
-      background: $colorsspur !important;
-    }
-    .c-spur-#{$name} {
-      color: $colorsspur !important;
-    }
-    
-  }
+ 
   .carbon{
     background:
     linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
@@ -59,7 +51,18 @@ $colorsspur: (
       padding-left: 0;
     }
   }
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 2000px
+);
 
+.btn {
+  box-shadow: white 1px 1px;
+}
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';

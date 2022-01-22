@@ -26,7 +26,7 @@ export default {
     buttonClasses: function () {
       // `this` points to the vm instance
       return this.control.isActive
-        ? `bg-spur-${this.control.name}`
+        ? `btn-${this.control.name}`
         : "btn-dark";
     },
   },

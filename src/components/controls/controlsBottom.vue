@@ -3,7 +3,7 @@
     <div
       v-for="storyTheme in storyThemes"
       class="col-md-2"
-      :class="`c-spur-${storyTheme.name}`"
+      :class="`text-${storyTheme.name}`"
       :key="storyTheme.name"
     >
       {{ storyTheme.name }}
