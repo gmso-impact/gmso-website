@@ -7,8 +7,8 @@
         class="card-img-top"
         alt="Card image cap"
       />
-      <div class="card-body text-center text-white">
-        <h3 class="card-title">{{ story.fields["Story Title"] }}</h3>
+      <div class="card-body d-flex align-items-center ">
+        <div class="card-title w-100 text-center text-white">{{ story.fields["Story Title"] }}</div>
       </div>
     </div>
   </div>
@@ -28,7 +28,9 @@ export default {
 
 
 
-
+.card {
+  min-height: 200px;
+}
 .card-title {
   font-size: 1rem;
   font-weight: bold;

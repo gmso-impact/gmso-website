@@ -5,15 +5,19 @@
     :zoom="zoom"
     :center="center"
     :options="mapOptions"
-    style="height: 80%"
     @update:center="centerUpdate"
     @update:zoom="zoomUpdate"
   >
     <l-tile-layer :url="url" :attribution="attribution" />
-    <l-marker :lat-lng="latLng(story)" v-for="story in stories" :key="story.id">
+    <l-marker
+      :lat-lng="latLng(story)"
+      v-for="story in stories"
+      :key="story.id"
+      :icon="icon(story)"
+    >
       <l-popup>
         <div @click="innerClick">
-          {{story.fields['Story Title']}}
+          {{ story.fields["Story Title"] }}
           <p v-show="showParagraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed
             pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi. Donec
@@ -26,8 +30,8 @@
 </template>
 <script>
 //import L from 'leaflet';
-import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
-import { latLng, Icon } from "leaflet";
+import { LMap, LTileLayer, LMarker, LPopup, LIcon } from "vue2-leaflet";
+import { latLng, divIcon } from "leaflet";
 import { mapGetters } from "vuex";
 
 export default {
@@ -52,6 +56,7 @@ export default {
       showParagraph: false,
       mapOptions: {
         zoomSnap: 0.5,
+        worldCopyJump: true,
       },
       showMap: true,
     };
@@ -66,6 +71,16 @@ export default {
       const LAT = story.fields["LAT"] ? story.fields["LAT"] : 0;
       const LONG = story.fields["LONG"] ? story.fields["LONG"] : 0;
       return latLng(LAT, LONG);
+    },
+    icon(story) {
+      const icon = divIcon({
+        className: "",
+        iconAnchor: [0, 24],
+        labelAnchor: [-6, 0],
+        popupAnchor: [0, -36],
+        html: `<span class="marker-pin bg-spur-${story.fields["Story Theme"] ?? 'white'}"/>`,
+      });
+      return icon;
     },
     zoomUpdate(zoom) {
       this.currentZoom = zoom;
@@ -82,4 +97,21 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style lang="scss">
+.marker-pin {
+  background: white;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  left: -1rem;
+  top: -1rem;
+  position: relative;
+  border-radius: 3rem 3rem 0;
+  transform: rotate(45deg);
+  border: 1px solid #ffffff;
+}
+
+// to align icon
+.custom-div-icon i {
+}
+</style>
