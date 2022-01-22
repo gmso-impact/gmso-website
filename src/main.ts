@@ -19,8 +19,7 @@ Icon.Default.mergeOptions({
 
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import './app.scss'
 import 'leaflet/dist/leaflet.css';
 
 // Make BootstrapVue available throughout your project

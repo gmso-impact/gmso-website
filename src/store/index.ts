@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import map from './map';
-import storyList from './storyList';
+import storys from './storys';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -10,6 +10,6 @@ export default new Vuex.Store({
   actions: {},
   modules: {
     map: map,
-    storyList: storyList,
+    storys: storys,
   },
 });

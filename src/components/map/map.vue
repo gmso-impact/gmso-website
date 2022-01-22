@@ -1,4 +1,5 @@
 <template lang="">
+<div class="h-100 w-100 position-relative">
   <LMap
     class="h-100 w-100"
     v-if="showMap"
@@ -27,12 +28,18 @@
       </l-popup>
     </l-marker>
   </LMap>
+    <div class="boxy">
+      <Controls></Controls>
+    </div>
+  </div>
 </template>
 <script>
 //import L from 'leaflet';
 import { LMap, LTileLayer, LMarker, LPopup, LIcon } from "vue2-leaflet";
 import { latLng, divIcon } from "leaflet";
 import { mapGetters } from "vuex";
+import Controls from "../controls/controlsLeft.vue";
+
 
 export default {
   name: "Map",
@@ -41,6 +48,7 @@ export default {
     LTileLayer,
     LMarker,
     LPopup,
+    Controls
   },
   data() {
     return {
@@ -98,6 +106,13 @@ export default {
 };
 </script>
 <style lang="scss">
+.boxy{
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  left: 1rem;
+  z-index: 999;
+}
 .marker-pin {
   background: white;
   width: 2rem;

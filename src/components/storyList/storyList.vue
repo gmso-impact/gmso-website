@@ -1,8 +1,8 @@
 <template lang="">
   <div class="d-flex flex-column h-100">
     <h2 class="text-center my-0 bg-white">Find your story @ CSU</h2>
-    <div class="flex-grow-1 border-top overflow-y-auto overflow-x-hidden ">
-      <div class="px-3 carbon">
+    <div class="flex-grow-1 border-top overflow-y-auto overflow-x-hidden">
+      <div class="px-3 carbon min-100">
         <div class="row pb-3">
           <StoryItem
             v-for="story in stories"
@@ -12,7 +12,7 @@
           </StoryItem>
           </div>
           <div class='row justify-content-md-center'>
-          <div v-if='stories.length < 100' class="col-6 pb-5 mb-5 pt-3 text-white">
+          <div v-if='stories.length < 3' class="col-xxl-6 pb-5 mb-5 pt-3 text-white">
             <h3>No more stories apear within this area of the map. Please zoom out or <button class="btn btn-primary btn-lg">Reset</button></h3>
           </div>
         </div>
@@ -53,6 +53,9 @@ export default {
 }
 .overflow-y-auto {
   overflow-y: auto;
+}
+.min-100 {
+    min-height: 100%;
 }
 /* width */
 ::-webkit-scrollbar {
