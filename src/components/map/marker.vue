@@ -10,10 +10,12 @@
         </div>
         <div class="card-footer d-flex justify-content-between">
           <button class="btn btn-dark" v-on:click="clickClose">
-            <i class="fas fas-close mr-2"></i>Close
+            <font-awesome-icon :icon="['fas', 'times']" />
+Close
           </button>
           <button class="btn" :class="`btn-${story.fields['Story Theme']}`" v-on:click="clickReadMore">
-            Read More
+                        <font-awesome-icon :icon="['fas', 'book']" />
+ Read More
           </button>
         </div>
       </div>

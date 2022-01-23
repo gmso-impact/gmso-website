@@ -29,6 +29,15 @@ Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false;
 
+
+import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+import { library as Iconlibrary} from '@fortawesome/fontawesome-svg-core'
+import { faTimes, faBook } from '@fortawesome/free-solid-svg-icons'
+Iconlibrary.add(faTimes, faBook)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-layers', FontAwesomeLayers)
+Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
+
 new Vue({
   store,
   render: (h) => h(App),
