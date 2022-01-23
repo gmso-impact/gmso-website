@@ -35,7 +35,23 @@ const storys =
 
   },
   getters: {
-    storyAll: (state) => { return state.all },
+    storyAll: (state) => { return state.all.map((story)=>{
+      if (story.fields["LAT"] && story.fields["LONG"]){
+        return story
+      }
+      // If location does not have lat long
+      // randomly locate around Fort Collins
+      return {
+        ...story,
+        fields: {
+          ...story.fields,
+          LAT: (Math.random() - 0.5) * 5 + 40.5730232,
+          LONG: (Math.random() - 0.5) * 5 - 105.086407087,
+        }
+      }
+    })
+    
+    },
     storyCurrent: (state, getters) => {
       return getters.storyAll.filter((story) => {
         const hasActiveTheme = !!state.storyThemes.filter((storyTheme) => {
