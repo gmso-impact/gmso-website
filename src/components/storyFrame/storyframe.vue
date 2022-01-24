@@ -80,13 +80,6 @@ export default {
   width: 100%;
   height: 100%;
   border: none;
-
-  //   width: 50% !important;
-  // height: 50% !important;
-  // -webkit-transform: scale(2);
-  // transform: scale(2);
-  // -webkit-transform-origin: 0 0;
-  // transform-origin: 0 0;
 }
 .topClose {
   position: absolute;
