@@ -1,11 +1,11 @@
-import { latLng, bounds } from "leaflet";
+import { latLng, latLngBounds } from "leaflet";
 
 const map =
 {
   state: {
-    zoom: 3,
-    center: 0,
-    bounds: null,
+    zoom: 5,
+    center: latLng(0, 0),
+    bounds: latLngBounds(latLng(60, -120), latLng(-45, 140)),
   },
   getters: {
     mapGetZoom: (state) => { return state.zoom },

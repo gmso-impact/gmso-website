@@ -1,12 +1,12 @@
 <template lang="">
   <div class="d-flex flex-column">
     <h3 class="text-center">Theme</h3>
-    <ControlsButton
+    <ThemeButton
       v-for="storyTheme in storyThemes"
       :key="storyTheme.name"
       v-bind:control="storyTheme"
     >
-    </ControlsButton>
+    </ThemeButton>
     <button class="btn btn-light mt-2" v-on:click="resetTagsClicked">
       All
     </button>
@@ -14,11 +14,11 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import ControlsButton from "./controlsButton.vue";
+import ThemeButton from "./themeButton.vue";
 
 export default {
   components: {
-    ControlsButton,
+    ThemeButton,
   },
   data() {
     return {};

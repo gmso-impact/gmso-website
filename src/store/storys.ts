@@ -28,6 +28,7 @@ const storys =
 {
   state: {
     all: stories,
+    current: null,
     storyThemes: toFilterTags('Story Theme'),
     storyTags: toFilterTags('Story Tags'),
     idTags: toFilterTags('ID Tags'),
@@ -52,7 +53,7 @@ const storys =
     })
     
     },
-    storyCurrent: (state, getters) => {
+    storyFiltered: (state, getters) => {
       return getters.storyAll.filter((story) => {
         const hasActiveTheme = !!state.storyThemes.filter((storyTheme) => {
           return story.fields['Story Theme'] === storyTheme.name ? storyTheme.isActive : false
@@ -61,8 +62,8 @@ const storys =
       });
     },
     storyInMap: (state, getters) => {
-      if (getters.mapGetBounds === null || getters.mapGetBounds === undefined) { return getters.storyCurrent }
-      return getters.storyCurrent.filter((story) => {
+      if (getters.mapGetBounds === null || getters.mapGetBounds === undefined) { return getters.storyFiltered }
+      return getters.storyFiltered.filter((story) => {
         const LAT = story.fields["LAT"] ? story.fields["LAT"] : 0;
         const LONG = story.fields["LONG"] ? story.fields["LONG"] : 0;
         const storyLatLng = latLng(LAT, LONG);
@@ -70,13 +71,21 @@ const storys =
         return isInBounds;
       });
     },
-
+    storyCurrent: (state) => { return state.current },
     storyThemes: (state) => { return state.storyThemes },
     idTags: (state) => { return state.idTags },
     collegeTags: (state) => { return state.collegeTags },
 
   },
   mutations: {
+    setStoryCurrent: (state, payload) =>{
+      // payload can be is string or story object
+      if(payload.id){
+        state.current = payload.id
+      } else {
+        state.current = payload
+      }
+    },
     setTag: (state, payload) => {
       // payload.tagName
       // payload.name

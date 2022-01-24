@@ -62,7 +62,7 @@ $grid-breakpoints: (
 
 // LG & SM in this context refer to the tags such as btn-lg not the responsive display size like col-lg
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 5;
+$font-size-lg:                $font-size-base * 1.25;
 $font-size-sm:                $font-size-base * .875;
 // https://getbootstrap.com/docs/5.0/content/typography/#variables
 // https://getbootstrap.com/docs/5.0/getting-started/rfs/
@@ -70,6 +70,20 @@ $font-size-sm:                $font-size-base * .875;
 .btn {
   box-shadow: white 1px 1px;
 }
+
+.marker-pin {
+  background: white;
+  width: 2*$font-size-base;
+  height: 2*$font-size-base;
+  display: block;
+  left: -1*$font-size-base;
+  top: -1*$font-size-base;
+  position: relative;
+  border-radius: 3*$font-size-base 3*$font-size-base 0;
+  transform: rotate(45deg);
+  border: 1.5px solid #ffffff;
+}
+
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
