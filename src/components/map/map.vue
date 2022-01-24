@@ -23,6 +23,7 @@
     <div class="boxy">
       <ThemeColumn></ThemeColumn>
     </div>
+    <storyFrame></storyFrame>
   </div>
 </template>
 <script>
@@ -32,6 +33,7 @@ import { latLng, latLngBounds, divIcon } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
 import ThemeColumn from "../controls/themeColumn.vue";
 import MapMarker from "./marker.vue";
+import StoryFrame from "../storyFrame/storyFrame.vue";
 
 export default {
   name: "Map",
@@ -39,6 +41,7 @@ export default {
     LMap,
     LTileLayer,
     ThemeColumn,
+    StoryFrame,
     MapMarker,
     LControlZoom,
     LControlScale,

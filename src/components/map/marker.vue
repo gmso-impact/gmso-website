@@ -17,6 +17,7 @@
             class="btn"
             :class="`btn-${story.fields['Story Theme']}`"
             v-on:click="clickReadMore"
+            v-if="story.fields['StoryMap VIEW Link']"
           >
             <font-awesome-icon :icon="['fas', 'book']" />
             Read More
@@ -39,10 +40,10 @@ export default {
   data() {
     return {
       options: {
-        maxWidth: 1000,
+        maxWidth: 300,
         keepInView: false,
         autoClose: true,
-        closeOnClick: true,
+        closeOnClick: false,
         className: "map-popup-container",
         autoPanPaddingTopLeft: [160, 20],
         autoPanPaddingBottomRight: [20, 20],
@@ -76,7 +77,10 @@ export default {
     },
   },
   methods: {
-    ...mapMutations({ setStoryCurrent: "setStoryCurrent" }),
+    ...mapMutations({
+      setStoryCurrent: "setStoryCurrent",
+      setStoryFrame: "setStoryFrame",
+    }),
     clickClose: function () {
       this.setStoryCurrent(null);
       this.$nextTick(() => {
@@ -84,23 +88,19 @@ export default {
       });
     },
     clickReadMore: function () {
-      this.setStoryCurrent(null);
-
       this.$nextTick(() => {
         this.$refs.marker.mapObject.closePopup();
       });
+      this.setStoryFrame(this.story);
     },
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {
-      console.log("im here");
-
-      if (newStory === this.story.id) {
-        console.log("im here");
+      if (newStory?.id === this.story.id) {
         this.$nextTick(() => {
           this.$refs.marker.mapObject.openPopup();
         });
-      } /* else if (oldStory === this.story.id) {
+      } /* else if (oldStory.id === this.story.id) {
         this.$nextTick(() => {
           this.$refs.marker.mapObject.openPopup();
         });

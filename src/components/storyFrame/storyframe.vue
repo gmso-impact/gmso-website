@@ -1,24 +1,105 @@
 <template lang="">
-    <div>
-        
+  <fade-transition>
+    <div
+      class="outerFrame"
+      v-if="
+        story !== null &&
+        story.fields !== undefined &&
+        story.fields['StoryMap VIEW Link']
+      "
+    >
+      <div
+        class="middleFrame d-flex flex-column px-1 py-1 rounded"
+        :class="`bg-${story.fields['Story Theme']}`"
+      >
+        <div class="topClose">
+          <button
+            class="btn"
+            :class="`btn-${story.fields['Story Theme']}`"
+            v-on:click="setStoryFrame(null)"
+          >
+            <font-awesome-icon :icon="['fas', 'times']" />
+            Close
+          </button>
+        </div>
+        <iframe
+          class="innerFrame flex-grow-1"
+          :src="story.fields['StoryMap VIEW Link']"
+          title="W3Schools Free Online Web Tutorials"
+        ></iframe>
+        <div class="d-none d-xxl-block bottomClose">
+          <button
+            class="btn"
+            :class="`btn-${story.fields['Story Theme']}`"
+            v-on:click="setStoryFrame(null)"
+          >
+            <font-awesome-icon :icon="['fas', 'times']" />
+            Close
+          </button>
+        </div>
+      </div>
     </div>
+  </fade-transition>
 </template>
 <script>
-import StoryItem from "./storyItem.vue";
-import { mapGetters } from "vuex";
-
+import { mapGetters, mapMutations } from "vuex";
+import { FadeTransition } from "vue2-transitions";
 
 export default {
   components: {
+    FadeTransition,
   },
   data() {
     return {};
   },
+  props: {},
   computed: {
+    ...mapGetters({
+      story: "storyFrame",
+    }),
   },
-  methods: {},
+  methods: {
+    ...mapMutations({ setStoryFrame: "setStoryFrame" }),
+  },
 };
 </script>
 <style lang="scss" scoped>
+.outerFrame {
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  max-width: 1920px;
+  max-height: 1080px;
+  z-index: 999;
+}
+.middleFrame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.innerFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
 
+  //   width: 50% !important;
+  // height: 50% !important;
+  // -webkit-transform: scale(2);
+  // transform: scale(2);
+  // -webkit-transform-origin: 0 0;
+  // transform-origin: 0 0;
+}
+.topClose {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.bottomClose {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
 </style>

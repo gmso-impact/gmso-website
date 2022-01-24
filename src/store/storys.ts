@@ -28,7 +28,8 @@ const storys =
 {
   state: {
     all: stories,
-    current: null,
+    storyCurrent: null,
+    storyFrame: null,
     storyThemes: toFilterTags('Story Theme'),
     storyTags: toFilterTags('Story Tags'),
     idTags: toFilterTags('ID Tags'),
@@ -71,21 +72,20 @@ const storys =
         return isInBounds;
       });
     },
-    storyCurrent: (state) => { return state.current },
+    storyCurrent: (state) => { return state.storyCurrent },
+    storyFrame: (state) => { return state.storyFrame },
     storyThemes: (state) => { return state.storyThemes },
     idTags: (state) => { return state.idTags },
     collegeTags: (state) => { return state.collegeTags },
 
   },
   mutations: {
-    setStoryCurrent: (state, payload) =>{
-      // payload can be is string or story object
-      if(payload?.id){
-        state.current = payload.id
-      } else {
-        state.current = payload
-      }
+    setStoryCurrent: (state, story) =>{
+        state.storyCurrent = story;
     },
+    setStoryFrame: (state, story) =>{
+      state.storyFrame = story;
+  },
     setTag: (state, payload) => {
       // payload.tagName
       // payload.name
