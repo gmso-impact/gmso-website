@@ -72,7 +72,7 @@ export default {
         worldCopyJump: true,
         zoomDelta: 0.5,
         maxZoom: 10,
-        minZoom: 3,
+        minZoom: 2,
         maxBounds: latLngBounds(latLng(90, -180), latLng(-75, 180)),
         zoomControl: false,
       },

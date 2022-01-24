@@ -4,7 +4,7 @@ import { latLng, bounds } from "leaflet";
 const stories = storiesFile.response;
 
 function toFilterTags(tagName) {
-  console.log(`Tag: ${tagName}`)
+  //console.log(`Tag: ${tagName}`)
   const tagListDuplicated = stories.reduce(function (tags, story) {
     if (story.fields && story.fields[tagName] && Array.isArray(story.fields[tagName]) && story.fields[tagName].length >= 1) {
       return [...tags, ...story.fields[tagName]]
@@ -13,7 +13,7 @@ function toFilterTags(tagName) {
     } else { return tags }
   }, [])
   const tagList = [...new Set(tagListDuplicated)]
-  console.log({ tagList: tagList })
+  //console.log({ tagList: tagList })
   return tagList.map((tag) => {
     return {
       name: tag,

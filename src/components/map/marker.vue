@@ -6,7 +6,7 @@
     ref="marker"
     v-on:click="clickMarker"
   >
-    <l-popup :options="options" ref="popup">
+    <l-popup :options="options" class="popup" ref="popup">
       <div class="card shadow">
         <div class="card-header font-weight-bold">
           {{ story.fields["Story Title"] }}
@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       options: {
-        maxWidth: 300,
+        maxWidth: 1920,
         keepInView: false,
         autoClose: true,
         closeOnClick: false,
