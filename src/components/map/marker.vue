@@ -29,7 +29,7 @@
 <script>
 import { LMarker, LPopup, LIcon } from "vue2-leaflet";
 import { latLng, divIcon, point } from "leaflet";
-import { mapGetters } from "vuex"
+import { mapGetters, mapMutations } from "vuex";
 
 export default {
   components: {
@@ -39,7 +39,8 @@ export default {
   data() {
     return {
       options: {
-        keepInView: true,
+        maxWidth: 1000,
+        keepInView: false,
         autoClose: true,
         closeOnClick: true,
         className: "map-popup-container",
@@ -75,12 +76,16 @@ export default {
     },
   },
   methods: {
+    ...mapMutations({ setStoryCurrent: "setStoryCurrent" }),
     clickClose: function () {
+      this.setStoryCurrent(null);
       this.$nextTick(() => {
         this.$refs.marker.mapObject.closePopup();
       });
     },
     clickReadMore: function () {
+      this.setStoryCurrent(null);
+
       this.$nextTick(() => {
         this.$refs.marker.mapObject.closePopup();
       });
@@ -88,10 +93,10 @@ export default {
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {
-              console.log('im here')
+      console.log("im here");
 
       if (newStory === this.story.id) {
-        console.log('im here')
+        console.log("im here");
         this.$nextTick(() => {
           this.$refs.marker.mapObject.openPopup();
         });

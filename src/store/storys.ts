@@ -80,7 +80,7 @@ const storys =
   mutations: {
     setStoryCurrent: (state, payload) =>{
       // payload can be is string or story object
-      if(payload.id){
+      if(payload?.id){
         state.current = payload.id
       } else {
         state.current = payload

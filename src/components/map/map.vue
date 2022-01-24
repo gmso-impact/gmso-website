@@ -8,6 +8,7 @@
       @update:zoomZ="mapSetZoom"
       @update:centerZ="mapSetCenter"
       @update:bounds="mapSetBounds"
+      ref="map"
       
     >
       <l-tile-layer :url="url" :attribution="attribution" />
@@ -66,12 +67,25 @@ export default {
       zoom: "mapGetZoom",
       center: "mapGetCenter",
       bounds: "mapGetBounds",
+      storyCurrent: 'storyCurrent',
     }),
   },
   methods: {
     ...mapMutations(["mapSetZoom", "mapSetCenter", "mapSetBounds"]),
   },
-
+ watch: {
+    storyCurrent: function (newStory, oldStory) {
+      if (newStory !== null) {
+        this.$nextTick(() => {
+         // this.$refs.map.mapObject.setZoom(5);
+        });
+      } else  {
+        this.$nextTick(() => {
+         // this.$refs.map.mapObject.setZoom(3);
+        });
+      }
+    },
+  },
 };
 </script>
 <style lang="scss">
