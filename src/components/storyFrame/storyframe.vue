@@ -1,5 +1,4 @@
 <template lang="">
-  <fade-transition>
     <div
       class="outerFrame"
       v-if="
@@ -39,15 +38,13 @@
         </div>
       </div>
     </div>
-  </fade-transition>
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import { FadeTransition } from "vue2-transitions";
+//import { FadeTransition } from "vue2-transitions";
 
 export default {
   components: {
-    FadeTransition,
   },
   data() {
     return {};
