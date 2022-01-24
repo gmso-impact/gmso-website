@@ -9,16 +9,26 @@
       @update:centerZ="mapSetCenter"
       @update:bounds="mapSetBounds"
       ref="map"
-      
     >
       <l-tile-layer :url="url" :attribution="attribution" />
-      <MapMarker :story="story" :key="story.id" v-for="story in stories"></MapMarker>
-      <l-control-scale position="topright" :imperial="true" :metric="true"></l-control-scale>
-      <l-control-zoom position="topright"  ></l-control-zoom>
+      <MapMarker
+        :story="story"
+        :key="story.id"
+        v-for="story in stories"
+      ></MapMarker>
+      <l-control-scale
+        position="topright"
+        :imperial="true"
+        :metric="true"
+      ></l-control-scale>
+      <l-control-zoom position="topright"></l-control-zoom>
 
-      <l-control-scale position="bottomleft" :imperial="true" :metric="true"></l-control-scale>
-      <l-control-zoom position="bottomleft"  ></l-control-zoom>
-
+      <l-control-scale
+        position="bottomleft"
+        :imperial="true"
+        :metric="true"
+      ></l-control-scale>
+      <l-control-zoom position="bottomleft"></l-control-zoom>
     </LMap>
     <div class="boxy">
       <ThemeColumn></ThemeColumn>
@@ -28,7 +38,13 @@
 </template>
 <script>
 //import L from 'leaflet';
-import { LMap, LTileLayer, LIcon, LControlZoom, LControlScale } from "vue2-leaflet";
+import {
+  LMap,
+  LTileLayer,
+  LIcon,
+  LControlZoom,
+  LControlScale,
+} from "vue2-leaflet";
 import { latLng, latLngBounds, divIcon } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
 import ThemeColumn from "../controls/themeColumn.vue";
@@ -59,7 +75,6 @@ export default {
         minZoom: 3,
         maxBounds: latLngBounds(latLng(90, -180), latLng(-75, 180)),
         zoomControl: false,
-
       },
       showMap: true,
     };
@@ -70,21 +85,21 @@ export default {
       zoom: "mapGetZoom",
       center: "mapGetCenter",
       bounds: "mapGetBounds",
-      storyCurrent: 'storyCurrent',
+      storyCurrent: "storyCurrent",
     }),
   },
   methods: {
     ...mapMutations(["mapSetZoom", "mapSetCenter", "mapSetBounds"]),
   },
- watch: {
+  watch: {
     storyCurrent: function (newStory, oldStory) {
       if (newStory !== null) {
         this.$nextTick(() => {
-         // this.$refs.map.mapObject.setZoom(5);
+          // this.$refs.map.mapObject.setZoom(5);
         });
-      } else  {
+      } else {
         this.$nextTick(() => {
-         // this.$refs.map.mapObject.setZoom(3);
+          // this.$refs.map.mapObject.setZoom(3);
         });
       }
     },
