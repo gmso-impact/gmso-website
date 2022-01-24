@@ -81,7 +81,11 @@ const storys =
   },
   mutations: {
     setStoryCurrent: (state, story) =>{
-        state.storyCurrent = story;
+      if(story !== null){
+        state.storyFrame = null;
+      }
+      state.storyCurrent = story;
+
     },
     setStoryFrame: (state, story) =>{
       state.storyFrame = story;

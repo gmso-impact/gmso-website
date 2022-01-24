@@ -1,6 +1,16 @@
 <template lang="">
-  <div class="col-md-6 col-lg-6 col-xxl-3 pt-4" v-if="story.fields['Story Title']">
-    <div class="w-100 h-100 p-0 btn d-flex flex-column" :class="`btn-${story.fields['Story Theme']}`"  v-on:click="setStoryCurrent(story)">
+  <div
+    class="col-md-6 col-lg-6 col-xxl-3 pt-4"
+    v-if="story.fields['Story Title']"
+  >
+    <div
+      class="w-100 h-100 p-0 btn d-flex flex-column"
+      :class="[
+        `btn-${story.fields['Story Theme']}`,
+        (storyCurrent && story.id === storyCurrent.id) ? 'active' : '',
+      ]"
+      v-on:click="setStoryCurrent(story)"
+    >
       <img
         v-if="story.fields['Story Card Image']"
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
@@ -18,7 +28,7 @@
   </div>
 </template>
 <script>
-import {mapMutations} from "vuex"
+import { mapGetters, mapMutations } from "vuex";
 
 export default {
   props: {
@@ -29,6 +39,11 @@ export default {
   },
   methods: {
     ...mapMutations({ setStoryCurrent: "setStoryCurrent" }),
+  },
+  computed: {
+    ...mapGetters({
+      storyCurrent: "storyCurrent",
+    }),
   },
 };
 </script>

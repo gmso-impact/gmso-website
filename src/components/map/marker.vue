@@ -1,5 +1,10 @@
 <template lang="">
-  <l-marker :lat-lng="latLngObj" :key="story.id" :icon="icon" ref="marker">
+  <l-marker :lat-lng="latLngObj" 
+  :key="story.id" 
+  :icon="icon" 
+  ref="marker"
+  v-on:click="clickMarker"
+  >
     <l-popup :options="options" ref="popup">
       <div class="card shadow-lg">
         <div class="card-header font-weight-bold">
@@ -81,6 +86,12 @@ export default {
       setStoryCurrent: "setStoryCurrent",
       setStoryFrame: "setStoryFrame",
     }),
+    clickMarker: function () {
+      this.$refs.marker.mapObject.on('click', ()=>{
+              this.setStoryCurrent(this.story);
+      });
+
+    },
     clickClose: function () {
       this.setStoryCurrent(null);
       this.$nextTick(() => {
