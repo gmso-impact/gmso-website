@@ -71,6 +71,10 @@ $font-size-sm:                $font-size-base * .875;
   box-shadow: white 1px 1px;
 }
 
+.custom-element {
+  color: theme-color-level(primary, -10);
+}
+
 .marker-pin {
   background: white;
   width: 2*$font-size-base;
@@ -79,9 +83,30 @@ $font-size-sm:                $font-size-base * .875;
   left: -1*$font-size-base;
   top: -1*$font-size-base;
   position: relative;
-  border-radius: 3*$font-size-base 3*$font-size-base 0;
+  border-radius: 2*$font-size-base 2*$font-size-base 0;
   transform: rotate(45deg);
-  border: 1.5px solid #ffffff;
+  border: 3*$font-size-base/16 solid #ffffff;
+}
+.marker-pin.active {
+  width: 2.1*$font-size-base;
+  height: 2.1*$font-size-base;
+  left: -1.05*$font-size-base;
+  top: -1.055*$font-size-base;
+  border-radius: 2.1*$font-size-base 2.1*$font-size-base 0;
+  border: 5*$font-size-base/16 solid #ffffff;
+  z-index: 10;
+}
+
+
+@each $name , $theme-color in $theme-colors {
+  .active.bg-#{$name}{
+    background-color: mix(white, $theme-color, 10%) !important;
+  }
+}
+
+
+.leaflet-popup-tip-container{
+  display: none;
 }
 
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)

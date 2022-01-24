@@ -1,12 +1,13 @@
 <template lang="">
-  <l-marker :lat-lng="latLngObj" 
-  :key="story.id" 
-  :icon="icon" 
-  ref="marker"
-  v-on:click="clickMarker"
+  <l-marker
+    :lat-lng="latLngObj"
+    :key="story.id"
+    :icon="icon"
+    ref="marker"
+    v-on:click="clickMarker"
   >
     <l-popup :options="options" ref="popup">
-      <div class="card shadow-lg">
+      <div class="card shadow">
         <div class="card-header font-weight-bold">
           {{ story.fields["Story Title"] }}
         </div>
@@ -76,6 +77,10 @@ export default {
         popupAnchor: [0, -36],
         html: `<span class="marker-pin bg-${
           this.story.fields["Story Theme"] ?? "white"
+        } ${
+          this.storyCurrent && this.story.id === this.storyCurrent.id
+            ? "active"
+            : ""
         }"/>`,
       });
       return icon;
@@ -87,10 +92,11 @@ export default {
       setStoryFrame: "setStoryFrame",
     }),
     clickMarker: function () {
-      this.$refs.marker.mapObject.on('click', ()=>{
-              this.setStoryCurrent(this.story);
-      });
-
+      if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
+        this.setStoryCurrent(null);
+      } else {
+        this.setStoryCurrent(this.story);
+      }
     },
     clickClose: function () {
       this.setStoryCurrent(null);
@@ -117,6 +123,12 @@ export default {
         });
       } */
     },
+  },
+  beforeDestroy() {
+    console.log("beforeDestroy");
+    if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
+      this.setStoryCurrent(null);
+    }
   },
 };
 </script>
