@@ -47,9 +47,9 @@ import {
 } from "vue2-leaflet";
 import { latLng, latLngBounds, divIcon } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
+import StoryFrame from "/src/components/storyFrame/storyFrame.vue";
 import ThemeColumn from "/src/components/controls/themeColumn.vue";
 import MapMarker from "./marker.vue";
-import StoryFrame from "/src/components/storyFrame/storyFrame.vue";
 
 export default {
   name: "Map",
