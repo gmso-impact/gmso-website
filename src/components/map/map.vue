@@ -23,7 +23,7 @@
     <div class="boxy">
       <ThemeColumn></ThemeColumn>
     </div>
-    <storyFrame></storyFrame>
+    <StoryFrame></StoryFrame>
   </div>
 </template>
 <script>
