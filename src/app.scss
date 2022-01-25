@@ -1,4 +1,4 @@
-$enable-responsive-font-sizes: true;
+//$enable-responsive-font-sizes: true;
 $enable-shadows: true;
 
 // modify variables before importing them
@@ -30,7 +30,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 2000px,
+  xxl: 2400px,
 );
 
 // https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api

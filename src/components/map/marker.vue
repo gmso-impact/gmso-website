@@ -8,11 +8,23 @@
   >
     <l-popup :options="options" class="popup" ref="popup">
       <div class="card shadow">
+        <img
+          :src="story.fields['Pop-Up Card Image'][0].thumbnails.large.url"
+          v-if="story.fields['Pop-Up Card Image']"
+          class="card-img-top"
+          :alt="story.fields['Story Title']"
+        />
         <div class="card-header font-weight-bold">
-          {{ story.fields["Story Title"] }}
+          <h3 class="mb-0">{{ story.fields["Story Title"] }}</h3>
+          <div>
+            {{ this.story.fields["Tagline"] }}
+          </div>
         </div>
-        <div class="card-body">
-          {{ this.story.fields["Research Blurb"] }}
+        <div
+          class="card-body story-blurb"
+          v-if="this.story.fields['Pop-Up Card Content']"
+        >
+          {{ this.story.fields["Pop-Up Card Content"] }}
         </div>
         <div class="card-footer d-flex justify-content-between">
           <button class="btn btn-dark" v-on:click="clickClose">
@@ -20,7 +32,7 @@
             Close
           </button>
           <button
-            class="btn"
+            class="btn flex-fill ml-3"
             :class="`btn-${story.fields['Story Theme']}`"
             v-on:click="clickReadMore"
             v-if="story.fields['StoryMap VIEW Link']"
@@ -141,5 +153,9 @@ export default {
   color: inherit !important;
   box-shadow: none !important;
   background-color: none !important;
+}
+.story-blurb {
+  max-height: 400px;
+  overflow-y: auto;
 }
 </style>
