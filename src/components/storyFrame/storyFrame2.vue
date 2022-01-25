@@ -1,9 +1,41 @@
 <template lang="">
   <div
     class="outerFrame"
+    v-if="
+      story !== null &&
+      story.fields !== undefined &&
+      story.fields['StoryMap VIEW Link']
+    "
   >
-    <div class="middleFrame bg-primary">
-    words
+    <div
+      class="middleFrame d-flex flex-column px-1 py-1 rounded"
+      :class="`bg-${story.fields['Story Theme']}`"
+    >
+      <div class="topClose">
+        <button
+          class="btn"
+          :class="`btn-${story.fields['Story Theme']}`"
+          v-on:click="setStoryFrame(null)"
+        >
+          <font-awesome-icon :icon="['fas', 'times']" />
+          Close
+        </button>
+      </div>
+      <iframe
+        class="innerFrame flex-grow-1"
+        :src="story.fields['StoryMap VIEW Link']"
+        title="W3Schools Free Online Web Tutorials"
+      ></iframe>
+      <div class="d-none d-xxl-block bottomClose">
+        <button
+          class="btn"
+          :class="`btn-${story.fields['Story Theme']}`"
+          v-on:click="setStoryFrame(null)"
+        >
+          <font-awesome-icon :icon="['fas', 'times']" />
+          Close
+        </button>
+      </div>
     </div>
   </div>
 </template>
