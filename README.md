@@ -20,24 +20,22 @@ The following URLs represent the domains & paths of files used by this appllicat
 ```
 https://impact.csusystem.edu/
 https://bbudnicki.github.io/gmso-website/
+```
 
 #### Story list images
 ```
 https://dl.airtable.com/
-
+```
 #### Map Tile layers
 ```
 https://server.arcgisonline.com/ArcGIS/rest/services
 https://tile.openstreetmap.org/
-
 ```
-
 #### ESRI StoryMap
 ```
 https://storymaps.arcgis.com/
 https://www.arcgis.com/sharing/
 ```
-
 #### Youtube
 ```
 https://fonts.gstatic.com/s
