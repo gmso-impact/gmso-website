@@ -33,12 +33,27 @@ $grid-breakpoints: (
   xxl: 2000px,
 );
 
+// https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api
+
+/*
+
+// maybe we can use the above utilities to set
+    "font-size": (
+      ****responsive: true,***
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
+
+    ),
 
 
-// LG & SM in this context refer to the tags such as btn-lg not the responsive display size like col-lg
+
+*/
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-size-lg: $font-size-base * 1.25;
 $font-size-sm: $font-size-base * 0.875;
+// LG & SM in this context refer to the tags such as btn-lg not the responsive display size like col-lg
 // https://getbootstrap.com/docs/5.0/content/typography/#variables
 // https://getbootstrap.com/docs/5.0/getting-started/rfs/
 
@@ -83,7 +98,6 @@ $font-size-sm: $font-size-base * 0.875;
   box-shadow: white 1px 1px;
 }
 
-
 // Only doe things with break points below here.
 @import "bootstrap/scss/_mixins.scss";
 @import "bootstrap/scss/_functions.scss";
@@ -105,10 +119,17 @@ $font-size-sm: $font-size-base * 0.875;
   .leaflet-popup-content {
     width: 800px;
   }
+  .leaflet-left.leaflet-bottom {
+    transform: scale(2) translateX(50%) translateY(-50%);
+  }
+  .leaflet-right.leaflet-top {
+    transform: scale(2) translateX(-50%) translateY(50%);
+  }
 }
 .leaflet-container {
   font-size: $font-size-base !important;
 }
+
 .marker-pin {
   background: white;
   width: 2 * $font-size-base;
@@ -129,6 +150,30 @@ $font-size-sm: $font-size-base * 0.875;
   border-radius: 2.1 * $font-size-base 2.1 * $font-size-base 0;
   border: 5 * $font-size-base/16 solid #ffffff;
   z-index: 10;
+}
+
+@include media-breakpoint-only(xxl) {
+  .marker-pin {
+    background: white;
+    width: 4 * $font-size-base;
+    height: 4 * $font-size-base;
+    display: block;
+    left: -2 * $font-size-base;
+    top: -2 * $font-size-base;
+    position: relative;
+    border-radius: 4 * $font-size-base 4 * $font-size-base 0;
+    transform: rotate(45deg);
+    border: 3 * $font-size-base/16 solid #ffffff;
+  }
+  .marker-pin.active {
+    width: 4.1 * $font-size-base;
+    height: 4.1 * $font-size-base;
+    left: -2.05 * $font-size-base;
+    top: -2.055 * $font-size-base;
+    border-radius: 4.1 * $font-size-base 4.1 * $font-size-base 0;
+    border: 5 * $font-size-base/16 solid #ffffff;
+    z-index: 10;
+  }
 }
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import "node_modules/bootstrap/scss/bootstrap.scss";

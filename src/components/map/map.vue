@@ -10,7 +10,6 @@
       @update:bounds="mapSetBounds"
       ref="map"
     >
-      <l-tile-layer :url="url" :attribution="attribution" />
       <MapMarker
         :story="story"
         :key="story.id"
@@ -28,9 +27,12 @@
         :imperial="true"
         :metric="true"
       ></l-control-scale>
-      <l-control-zoom position="bottomleft"></l-control-zoom>
+      <l-control-zoom position="bottomleft" class="d-none d-xxl-block"></l-control-zoom>
     </LMap>
-    <div class="boxy">
+    <div class="boxy-left">
+      <ThemeColumn></ThemeColumn>
+    </div>
+    <div class="boxy-right d-none d-xxl-block">
       <ThemeColumn></ThemeColumn>
     </div>
     <StoryFrame></StoryFrame>
@@ -40,12 +42,14 @@
 //import L from 'leaflet';
 import {
   LMap,
-  LTileLayer,
+ // LTileLayer,
   LIcon,
   LControlZoom,
   LControlScale,
 } from "vue2-leaflet";
 import { latLng, latLngBounds, divIcon } from "leaflet";
+import { basemapLayer } from 'esri-leaflet'
+
 import { mapGetters, mapMutations } from "vuex";
 import StoryFrame from "/src/components/storyFrame/storyFrame.vue";
 import ThemeColumn from "/src/components/controls/themeColumn.vue";
@@ -55,7 +59,7 @@ export default {
   name: "Map",
   components: {
     LMap,
-    LTileLayer,
+  //  LTileLayer,
     ThemeColumn,
     MapMarker,
     StoryFrame,
@@ -64,7 +68,8 @@ export default {
   },
   data() {
     return {
-      url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      basemap: basemapLayer('DarkGray'),
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       mapOptions: {
@@ -91,7 +96,15 @@ export default {
   methods: {
     ...mapMutations(["mapSetZoom", "mapSetCenter", "mapSetBounds"]),
   },
+  mounted(){
+    this.$refs.map.mapObject.addLayer(this.basemap);
+
+  },
   watch: {
+    basemap: function(newBaseMap, oldBaseMap){
+    this.$refs.map.mapObject.removeLayer(oldBaseMap);
+    this.$refs.map.mapObject.addLayer(newBaseMap);
+    },
     storyCurrent: function (newStory, oldStory) {
       if (newStory !== null) {
         this.$nextTick(() => {
@@ -107,11 +120,18 @@ export default {
 };
 </script>
 <style lang="scss">
-.boxy {
+.boxy-left {
   position: absolute;
   top: 50%;
   transform: translate(0px, -50%);
   left: 1rem;
+  z-index: 999;
+}
+.boxy-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  right: 1rem;
   z-index: 999;
 }
 </style>

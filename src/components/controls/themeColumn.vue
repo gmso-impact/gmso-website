@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column bg-white rounded p-2">
     <h3 class="text-center">Theme</h3>
     <ThemeButton
       v-for="storyTheme in storyThemes"
@@ -7,7 +7,7 @@
       v-bind:control="storyTheme"
     >
     </ThemeButton>
-    <button class="btn btn-light mt-2" v-on:click="resetTagsClicked">
+    <button class="btn btn-outline-dark mt-2" v-on:click="resetTagsClicked">
       All
     </button>
   </div>
