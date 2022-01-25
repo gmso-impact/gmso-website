@@ -1,6 +1,7 @@
 <template lang="">
   <div class="h-100 w-100 position-relative">
     <LMap
+      id="main-map"
       class="h-100 w-100"
       v-if="showMap"
       :options="mapOptions"
@@ -38,7 +39,8 @@
     <div class="boxy-right d-none d-xxl-block">
       <ThemeColumn></ThemeColumn>
     </div>
-    <StoryFrame></StoryFrame>
+        <StoryFrame></StoryFrame>
+
   </div>
 </template>
 <script>
@@ -122,18 +124,21 @@ export default {
 };
 </script>
 <style lang="scss">
+#main-map{
+  z-index: 0
+}
 .boxy-left {
   position: absolute;
   top: 50%;
   transform: translate(0px, -50%);
-  left: 1rem;
+  left: 3rem;
   z-index: 999;
 }
 .boxy-right {
   position: absolute;
   top: 50%;
   transform: translate(0px, -50%);
-  right: 1rem;
+  right: 3rem;
   z-index: 999;
 }
 </style>

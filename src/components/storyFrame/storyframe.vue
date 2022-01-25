@@ -60,20 +60,29 @@ export default {
 </script>
 <style lang="scss" scoped>
 .outerFrame {
-  position: absolute;
+  position: absolute;;
   top: 50%;
+  left: 0;
   transform: translate(0px, -50%);
   width: 100%;
   height: 100%;
   padding: 3rem;
-  max-width: 1920px;
-  max-height: 1080px;
+  max-width: 3840px;
+  max-height: 2160px;
   z-index: 999;
 }
 .middleFrame {
   position: relative;
-  height: 100%;
-  width: 100%;
+  // height: 100%;
+  // width: 100%;
+  width: 50%;
+  height: 50%;
+  
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(2);
 }
 .innerFrame {
   width: 100%;
