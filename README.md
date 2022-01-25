@@ -6,6 +6,8 @@ MicrosoftEdge.exe --kiosk https://bbudnicki.github.io/gmso-website/ --edge-kiosk
 
 ```
 
+This [youtube video](https://www.youtube.com/watch?v=blNSJxk9PtE) may be helpful if CSU does not already have a group policy for Windows 10 Kiosks
+
 ### Domains
 The following URLs represent the domains & paths of files used by this appllication. For restricting the Kiosk, the root domains are likely to work. It is unknown if the domains of other assets must be white listed.
 
