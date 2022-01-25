@@ -41,7 +41,6 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-//import { FadeTransition } from "vue2-transitions";
 
 export default {
   components: {},
