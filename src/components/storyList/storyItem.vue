@@ -7,7 +7,7 @@
       class="w-100 h-100 p-0 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
-        (storyCurrent && story.id === storyCurrent.id) ? 'active' : '',
+        storyCurrent && story.id === storyCurrent.id ? 'active' : '',
       ]"
       v-on:click="setStoryCurrent(story)"
     >

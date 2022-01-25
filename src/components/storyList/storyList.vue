@@ -10,17 +10,23 @@
             v-bind:story="story"
           >
           </StoryItem>
-
-          </div>
-          <div class='row justify-content-md-center'>
-          <div v-if='stories.length < 3' class="col-xxl-6 pb-5 mb-5 pt-3 text-white">
-            <h3>No more stories apear within this area of the map. Please zoom out or <button class="btn btn-primary btn-lg">Reset</button></h3>
+        </div>
+        <div class="row justify-content-md-center">
+          <div
+            v-if="stories.length < 3"
+            class="col-xxl-6 pb-5 mb-5 pt-3 text-white"
+          >
+            <h3>
+              No more stories apear within this area of the map. Please zoom out
+              or <button class="btn btn-primary btn-lg">Reset</button>
+            </h3>
           </div>
         </div>
       </div>
     </div>
-        <div class="text-center small my-0 bg-white">Tap a story or pin on the map to learn more</div>
-
+    <div class="text-center small my-0 bg-white">
+      Tap a story or pin on the map to learn more
+    </div>
   </div>
 </template>
 <script>
@@ -43,7 +49,6 @@ export default {
 };
 </script>
 <style lang="scss">
-
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -57,7 +62,7 @@ export default {
   overflow-y: auto;
 }
 .min-100 {
-    min-height: 100%;
+  min-height: 100%;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -82,5 +87,4 @@ export default {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 </style>

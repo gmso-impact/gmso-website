@@ -25,9 +25,7 @@ export default {
   computed: {
     buttonClasses: function () {
       // `this` points to the vm instance
-      return this.control.isActive
-        ? `btn-${this.control.name}`
-        : "btn-dark";
+      return this.control.isActive ? `btn-${this.control.name}` : "btn-dark";
     },
   },
   methods: {

@@ -1,21 +1,16 @@
 <template lang="">
-    <div class="card">
-      <div class="card-header">
-        {{ story.fields["Story Title"] }}
-      </div>
-      <div class="card-body">
-      </div>
+  <div class="card">
+    <div class="card-header">
+      {{ story.fields["Story Title"] }}
     </div>
+    <div class="card-body"></div>
+  </div>
 </template>
 <script>
-
 export default {
-  components: {
-  },
+  components: {},
   data() {
-    return {
-
-    };
+    return {};
   },
   props: {
     story: {
@@ -31,5 +26,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.leaflet-popup-content {margin: 0}
+.leaflet-popup-content {
+  margin: 0;
+}
 </style>

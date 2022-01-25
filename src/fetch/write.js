@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // write to JSON file
-const writeFile = function ({content, path}) {
+const writeFile = function ({ content, path }) {
   console.log("gmsoStoreies begin write");
 
   const file = {

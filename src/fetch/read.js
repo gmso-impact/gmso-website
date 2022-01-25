@@ -9,8 +9,8 @@ async function readAirtable(url) {
     Authorization: `Bearer ${process.env.AIRTABLE_AUTHORIZATION}`,
   };
 
-  async function readAirtablePage (offset = ''){
-    const newUrl = `${url}&pageSize=${pageSize}&offset=${offset}`
+  async function readAirtablePage(offset = "") {
+    const newUrl = `${url}&pageSize=${pageSize}&offset=${offset}`;
     console.log(`New URL ${newUrl}`);
     const response = await fetch(newUrl, {
       method: "get",
@@ -22,17 +22,16 @@ async function readAirtable(url) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const responseJson = await response.json();
-    console.log(`Records in batch ${responseJson.records.length}`)
+    console.log(`Records in batch ${responseJson.records.length}`);
     console.log(`Read response offset ${responseJson.offset}`);
-    let records = responseJson.records
-    if (responseJson.offset ){
+    let records = responseJson.records;
+    if (responseJson.offset) {
       const newPage = await readAirtablePage(responseJson.offset);
-      records = [...records, ...newPage]
-    } 
-    console.log(`Total Records ${records.length}`)
-    return records
+      records = [...records, ...newPage];
+    }
+    console.log(`Total Records ${records.length}`);
+    return records;
   }
-
 
   const responses = await readAirtablePage();
   console.log(`End read ${url}`);

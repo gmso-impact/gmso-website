@@ -27,7 +27,10 @@
         :imperial="true"
         :metric="true"
       ></l-control-scale>
-      <l-control-zoom position="bottomleft" class="d-none d-xxl-block"></l-control-zoom>
+      <l-control-zoom
+        position="bottomleft"
+        class="d-none d-xxl-block"
+      ></l-control-zoom>
     </LMap>
     <div class="boxy-left">
       <ThemeColumn></ThemeColumn>
@@ -42,13 +45,13 @@
 //import L from 'leaflet';
 import {
   LMap,
- // LTileLayer,
+  // LTileLayer,
   LIcon,
   LControlZoom,
   LControlScale,
 } from "vue2-leaflet";
 import { latLng, latLngBounds, divIcon } from "leaflet";
-import { basemapLayer } from 'esri-leaflet'
+import { basemapLayer } from "esri-leaflet";
 
 import { mapGetters, mapMutations } from "vuex";
 import StoryFrame from "../storyFrame/storyFrame.vue";
@@ -59,7 +62,7 @@ export default {
   name: "Map",
   components: {
     LMap,
-  //  LTileLayer,
+    //  LTileLayer,
     ThemeColumn,
     MapMarker,
     StoryFrame,
@@ -69,7 +72,7 @@ export default {
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: basemapLayer('DarkGray'),
+      basemap: basemapLayer("DarkGray"),
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       mapOptions: {
@@ -96,14 +99,13 @@ export default {
   methods: {
     ...mapMutations(["mapSetZoom", "mapSetCenter", "mapSetBounds"]),
   },
-  mounted(){
+  mounted() {
     this.$refs.map.mapObject.addLayer(this.basemap);
-
   },
   watch: {
-    basemap: function(newBaseMap, oldBaseMap){
-    this.$refs.map.mapObject.removeLayer(oldBaseMap);
-    this.$refs.map.mapObject.addLayer(newBaseMap);
+    basemap: function (newBaseMap, oldBaseMap) {
+      this.$refs.map.mapObject.removeLayer(oldBaseMap);
+      this.$refs.map.mapObject.addLayer(newBaseMap);
     },
     storyCurrent: function (newStory, oldStory) {
       if (newStory !== null) {

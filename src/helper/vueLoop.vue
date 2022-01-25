@@ -4,14 +4,14 @@ Liscense: MIT
 Source: https://github.com/JosephSmith127/vue-loop
 -->
 <template>
-	<div class="loop-container" :class="{'full': full, 'horizontal': horizontal}">
-		<slot></slot>
-	</div>
+  <div class="loop-container" :class="{ full: full, horizontal: horizontal }">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-    /* eslint-disable */
+  /* eslint-disable */
 
 	/**
 	 * Define props
