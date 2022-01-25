@@ -1,0 +1,61 @@
+<template lang="">
+  <div
+    class="outerFrame"
+  >
+    <div class="middleFrame bg-primary">
+    words
+    </div>
+  </div>
+</template>
+<script>
+import { mapGetters, mapMutations } from "vuex";
+
+export default {
+  components: {},
+  data() {
+    return {};
+  },
+  props: {},
+  computed: {
+    ...mapGetters({
+      story: "storyFrame",
+    }),
+  },
+  methods: {
+    ...mapMutations({ setStoryFrame: "setStoryFrame" }),
+  },
+};
+</script>
+<style lang="scss" scoped>
+.outerFrame {
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  max-width: 1920px;
+  max-height: 1080px;
+  z-index: 999;
+}
+.middleFrame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.innerFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.topClose {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.bottomClose {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+</style>

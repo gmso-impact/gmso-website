@@ -54,7 +54,7 @@ import { latLng, latLngBounds, divIcon } from "leaflet";
 import { basemapLayer } from "esri-leaflet";
 
 import { mapGetters, mapMutations } from "vuex";
-import StoryFrame from "../storyFrame/storyFrame.vue";
+import StoryFrame from "../storyFrame/storyFrame2.vue";
 import ThemeColumn from "../controls/themeColumn.vue";
 import MapMarker from "./marker.vue";
 
