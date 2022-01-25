@@ -21,11 +21,11 @@
           Close
         </button>
       </div>
-      <iframe
+      <!--iframe
         class="innerFrame flex-grow-1"
         :src="story.fields['StoryMap VIEW Link']"
         title="W3Schools Free Online Web Tutorials"
-      ></iframe>
+      ></iframe-->
       <div class="d-none d-xxl-block bottomClose">
         <button
           class="btn"
