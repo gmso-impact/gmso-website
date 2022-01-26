@@ -86,6 +86,15 @@ const storys = {
     storyFrame: (state) => {
       return state.storyFrame;
     },
+    storyLayer: (state) => {
+      if (state.storyCurrent && state.storyCurrent.fields && state.storyCurrent.fields['Impact Map Layer URL']) {
+        return state.storyCurrent.fields['Impact Map Layer URL'];
+      }
+      else if (state.storyFrame && state.storyFrame.fields && state.storyFrame.fields['Impact Map Layer URL']) {
+        return state.storyFrame.fields['Impact Map Layer URL'];
+      }
+      else { return; }
+    },
     storyThemes: (state) => {
       return state.storyThemes;
     },

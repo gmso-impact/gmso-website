@@ -39,8 +39,8 @@
     <div class="boxy-right d-none d-xxl-block">
       <ThemeColumn></ThemeColumn>
     </div>
-        <StoryFrame></StoryFrame>
-
+    <StoryFrame></StoryFrame>
+    <VideoFrame></VideoFrame>
   </div>
 </template>
 <script>
@@ -52,11 +52,13 @@ import {
   LControlZoom,
   LControlScale,
 } from "vue2-leaflet";
-import { latLng, latLngBounds, divIcon } from "leaflet";
-import { basemapLayer } from "esri-leaflet";
+import { latLng, latLngBounds, divIcon, circleMarker } from "leaflet";
+import { basemapLayer, featureLayer } from "esri-leaflet";
 
 import { mapGetters, mapMutations } from "vuex";
 import StoryFrame from "../storyFrame/storyFrame.vue";
+import VideoFrame from "../videoFrame/videoFrame.vue";
+
 import ThemeColumn from "../controls/themeColumn.vue";
 import MapMarker from "./marker.vue";
 
@@ -68,6 +70,7 @@ export default {
     ThemeColumn,
     MapMarker,
     StoryFrame,
+    VideoFrame,
     LControlZoom,
     LControlScale,
   },
@@ -75,13 +78,16 @@ export default {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       basemap: basemapLayer("DarkGray"),
+      storyLayerEsriObject: null,
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       mapOptions: {
+        //preferCanvas: true,
+
         zoomSnap: 0.5,
         worldCopyJump: true,
         zoomDelta: 0.5,
-        maxZoom: 10,
+        maxZoom: 12,
         minZoom: 2,
         maxBounds: latLngBounds(latLng(90, -180), latLng(-75, 180)),
         zoomControl: false,
@@ -95,7 +101,7 @@ export default {
       zoom: "mapGetZoom",
       center: "mapGetCenter",
       bounds: "mapGetBounds",
-      storyCurrent: "storyCurrent",
+      storyLayer: "storyLayer",
     }),
   },
   methods: {
@@ -109,14 +115,29 @@ export default {
       this.$refs.map.mapObject.removeLayer(oldBaseMap);
       this.$refs.map.mapObject.addLayer(newBaseMap);
     },
-    storyCurrent: function (newStory, oldStory) {
-      if (newStory !== null) {
+    storyLayer: function (newLayer, oldLayer) {
+      // remove old layer whenever a new story is selected
+      if (this.storyLayerEsriObject && newLayer) {
         this.$nextTick(() => {
-          // this.$refs.map.mapObject.setZoom(5);
+          this.$refs.map.mapObject.removeLayer(this.storyLayerEsriObject);
         });
-      } else {
+      }
+      console.log("im here");
+      if (newLayer) {
+        this.storyLayerEsriObject = featureLayer({
+          url: newLayer,
+          simplifyFactor: 0.1,
+          fetchAllFeatures: false,
+          cacheLayers: false,
+          minZoom: 6,
+          pointToLayer: function (geojson, latlng) {
+                  console.log("im here");
+
+            return circleMarker(latlng);
+          },
+        });
         this.$nextTick(() => {
-          // this.$refs.map.mapObject.setZoom(3);
+          this.$refs.map.mapObject.addLayer(this.storyLayerEsriObject);
         });
       }
     },
@@ -124,8 +145,8 @@ export default {
 };
 </script>
 <style lang="scss">
-#main-map{
-  z-index: 0
+#main-map {
+  z-index: 0;
 }
 .boxy-left {
   position: absolute;
