@@ -1,7 +1,7 @@
 <template lang="">
   <div
     class="outerFrame"
-    v-if="false"
+    v-if="isVideoFrameOpen"
   >
     <div
       class="middleFrame d-flex flex-column px-1 py-1 rounded bg-white"

@@ -39,8 +39,12 @@ const storys = {
     storyTags: toFilterTags("Story Tags"),
     idTags: toFilterTags("ID Tags"),
     collegeTags: toFilterTags("College/Division"),
+    isVideoFrameOpen: true,
   },
   getters: {
+    isVideoFrameOpen: (state) => {
+      return state.isVideoFrameOpen;
+    },
     storyAll: (state) => {
       return state.all.map((story) => {
         if (story.fields["LAT"] && story.fields["LONG"]) {
