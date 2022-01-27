@@ -91,13 +91,21 @@ const storys = {
       return state.storyFrame;
     },
     storyLayer: (state) => {
-      if (state.storyCurrent && state.storyCurrent.fields && state.storyCurrent.fields['Impact Map Layer URL']) {
-        return state.storyCurrent.fields['Impact Map Layer URL'];
+      if (
+        state.storyCurrent &&
+        state.storyCurrent.fields &&
+        state.storyCurrent.fields["Impact Map Layer URL"]
+      ) {
+        return state.storyCurrent.fields["Impact Map Layer URL"];
+      } else if (
+        state.storyFrame &&
+        state.storyFrame.fields &&
+        state.storyFrame.fields["Impact Map Layer URL"]
+      ) {
+        return state.storyFrame.fields["Impact Map Layer URL"];
+      } else {
+        return;
       }
-      else if (state.storyFrame && state.storyFrame.fields && state.storyFrame.fields['Impact Map Layer URL']) {
-        return state.storyFrame.fields['Impact Map Layer URL'];
-      }
-      else { return; }
     },
     storyThemes: (state) => {
       return state.storyThemes;
@@ -110,6 +118,15 @@ const storys = {
     },
   },
   mutations: {
+    closeVideoFrame: (state) => {
+      state.isVideoFrameOpen = false;
+    },
+    toggleVideoFrame: (state) => {
+      if (!state.isVideoFrameOpen) {
+        state.storyFrame = null;
+      }
+      state.isVideoFrameOpen = !state.isVideoFrameOpen;
+    },
     setStoryCurrent: (state, story) => {
       if (story !== null) {
         state.storyFrame = null;
@@ -117,6 +134,9 @@ const storys = {
       state.storyCurrent = story;
     },
     setStoryFrame: (state, story) => {
+      if (story) {
+        state.isVideoFrameOpen = false;
+      }
       state.storyFrame = story;
     },
     setTag: (state, payload) => {

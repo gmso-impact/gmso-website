@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    class="outerFrame"
+    class="outerFrame childPoint"
     v-if="
       story !== null &&
       story.fields !== undefined &&
@@ -60,7 +60,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .outerFrame {
-  position: absolute;;
+  position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0px, -50%);
@@ -77,7 +77,7 @@ export default {
   // width: 100%;
   width: 50%;
   height: 50%;
-  
+
   -webkit-transform: scale(2);
   transform: scale(2);
   -webkit-transform-origin: 0 0;

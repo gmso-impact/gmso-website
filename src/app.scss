@@ -62,7 +62,12 @@ $font-size-sm: $font-size-base * 0.875;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.childPoint {
+  pointer-events:none;        
+}
+.childPoint > * {
+  pointer-events:auto;
+}
 .carbon {
   background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
     linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,

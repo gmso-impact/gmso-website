@@ -33,11 +33,27 @@
         class="d-none d-xxl-block"
       ></l-control-zoom>
     </LMap>
-    <div class="boxy-left">
+    <div class="boxy-top childPoint">
+      <img
+        src="GMSOtitle1.png"
+        alt="CSU Impact"
+        class="title-img"
+        v-on:click="toggleVideoFrame"
+      />
+    </div>
+    <div class="boxy-left childPoint">
       <ThemeColumn></ThemeColumn>
     </div>
-    <div class="boxy-right d-none d-xxl-block">
+    <div class="boxy-right d-none d-xxl-block childPoint">
       <ThemeColumn></ThemeColumn>
+    </div>
+    <div class="boxy-bottom-right childPoint">
+      <img
+        src="Geo.png"
+        class="geo-img"
+        v-on:click="toggleVideoFrame"
+        alt="Click to watch the intro video"
+      />
     </div>
     <StoryIFrame></StoryIFrame>
     <VideoFrame></VideoFrame>
@@ -105,7 +121,12 @@ export default {
     }),
   },
   methods: {
-    ...mapMutations(["mapSetZoom", "mapSetCenter", "mapSetBounds"]),
+    ...mapMutations([
+      "mapSetZoom",
+      "mapSetCenter",
+      "mapSetBounds",
+      "toggleVideoFrame",
+    ]),
   },
   mounted() {
     this.$refs.map.mapObject.addLayer(this.basemap);
@@ -131,7 +152,7 @@ export default {
           cacheLayers: false,
           minZoom: 6,
           pointToLayer: function (geojson, latlng) {
-                  console.log("im here");
+            console.log("im here");
 
             return circleMarker(latlng);
           },
@@ -161,5 +182,32 @@ export default {
   transform: translate(0px, -50%);
   right: 3rem;
   z-index: 999;
+}
+.boxy-bottom-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 999;
+}
+.boxy-top {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+}
+.geo-img {
+  width: 200px;
+  cursor: help;
+}
+.geo-img:hover {
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+.title-img {
+  max-width: 200px;
+  cursor: help;
+}
+.title-img:hover {
+  filter: drop-shadow(0px 0px 2px #ffffff);
 }
 </style>
