@@ -1,7 +1,7 @@
 <template lang="">
   <div class="outerFrame childPoint" v-if="isVideoFrameOpen">
     <div class="middleFrame d-flex flex-column px-1 py-1 rounded bg-white">
-      <video class="innerFrame flex-grow-1" title="Stories at CSU" controls>
+      <video class="innerFrame flex-grow-1" title="Stories at CSU" controls ref='video'>
         <source
           src="https://ibis-test1.nrel.colostate.edu/GMSO/videos/CSUS.mp4"
           type="video/mp4"
@@ -39,6 +39,15 @@ export default {
   },
   methods: {
     ...mapMutations({ closeVideoFrame: "closeVideoFrame" }),
+  },
+  watch: {
+    isVideoFrameOpen: function (isOpen) {
+      if (isOpen) {
+        this.$nextTick(() => {
+          this.$refs.video.play()
+        });
+      }
+    },
   },
 };
 </script>
