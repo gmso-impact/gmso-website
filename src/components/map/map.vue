@@ -39,7 +39,7 @@
     <div class="boxy-right d-none d-xxl-block">
       <ThemeColumn></ThemeColumn>
     </div>
-    <StoryFrame></StoryFrame>
+    <storyIFrame></storyIFrame>
     <VideoFrame></VideoFrame>
   </div>
 </template>
@@ -56,7 +56,7 @@ import { latLng, latLngBounds, divIcon, circleMarker } from "leaflet";
 import { basemapLayer, featureLayer } from "esri-leaflet";
 
 import { mapGetters, mapMutations } from "vuex";
-import StoryFrame from "../storyFrame/storyFrame.vue";
+import storyIFrame.vue from "../storyIFrame.vue/storyIFrame.vue.vue";
 import VideoFrame from "../videoFrame/videoFrame.vue";
 
 import ThemeColumn from "../controls/themeColumn.vue";
@@ -69,7 +69,7 @@ export default {
     //  LTileLayer,
     ThemeColumn,
     MapMarker,
-    StoryFrame,
+    storyIFrame.vue,
     VideoFrame,
     LControlZoom,
     LControlScale,
