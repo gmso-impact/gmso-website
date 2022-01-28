@@ -23,11 +23,13 @@ async function readAirtable(url) {
     }
     const responseJson = await response.json();
     console.log(`Records in batch ${responseJson.records.length}`);
-    console.log(`Read response offset ${responseJson.offset}`);
     let records = responseJson.records;
     if (responseJson.offset) {
+      console.log(`Read response offset ${responseJson.offset}`);
       const newPage = await readAirtablePage(responseJson.offset);
       records = [...records, ...newPage];
+    } else {
+      console.log(`Read response ended`);
     }
     console.log(`Total Records ${records.length}`);
     return records;
