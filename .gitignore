@@ -3,8 +3,7 @@ node_modules
 /dist
 
 # story files
-/public/*.json
-/src/assets/*.json
+#/src/assets/*.json
 
 
 # local env files
