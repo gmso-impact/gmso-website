@@ -1,0 +1,27 @@
+.boxy-left {
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  left: 3rem;
+  z-index: 999;
+}
+.boxy-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  right: 3rem;
+  z-index: 999;
+}
+.boxy-bottom-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 999;
+}
+.boxy-top {
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+}

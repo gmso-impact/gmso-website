@@ -49,42 +49,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-.overflow-x-auto {
-  overflow-x: auto;
-}
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-.overflow-y-auto {
-  overflow-y: auto;
-}
-.min-100 {
-  min-height: 100%;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #cccccc;
-  -webkit-box-shadow: inset 0 0 5px rgba(108, 117, 125, 1);
-  border: 2px solid rgba(108, 117, 125, 1);
-  margin-right: 5px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 </style>

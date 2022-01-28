@@ -1,0 +1,13 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+@import "background.scss";
+@import "map.scss";
+@import "marker.scss";
+@import "helper.scss";
+@import "btn.scss";
+@import "boxy.scss";
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap-vue/src/index.scss";

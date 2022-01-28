@@ -98,8 +98,7 @@ export default {
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       mapOptions: {
-        //preferCanvas: true,
-
+        preferCanvas: true,
         zoomSnap: 0.5,
         worldCopyJump: true,
         zoomDelta: 0.5,
@@ -166,48 +165,5 @@ export default {
 };
 </script>
 <style lang="scss">
-#main-map {
-  z-index: 0;
-}
-.boxy-left {
-  position: absolute;
-  top: 50%;
-  transform: translate(0px, -50%);
-  left: 3rem;
-  z-index: 999;
-}
-.boxy-right {
-  position: absolute;
-  top: 50%;
-  transform: translate(0px, -50%);
-  right: 3rem;
-  z-index: 999;
-}
-.boxy-bottom-right {
-  position: absolute;
-  bottom: 3rem;
-  right: 3rem;
-  z-index: 999;
-}
-.boxy-top {
-  position: absolute;
-  top: 3rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 999;
-}
-.geo-img {
-  width: 200px;
-  cursor: help;
-}
-.geo-img:hover {
-  filter: drop-shadow(0px 0px 2px #ffffff);
-}
-.title-img {
-  max-width: 200px;
-  cursor: help;
-}
-.title-img:hover {
-  filter: drop-shadow(0px 0px 2px #ffffff);
-}
+
 </style>

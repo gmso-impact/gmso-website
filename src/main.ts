@@ -16,7 +16,7 @@ Icon.Default.mergeOptions({
 });
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
-import "./app.scss";
+import "./scss/app.scss";
 import "leaflet/dist/leaflet.css";
 
 // Make BootstrapVue available throughout your project

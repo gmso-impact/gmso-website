@@ -1,0 +1,77 @@
+/////////////////////////////////////////////////
+///
+///    used to overide the boostrap variables
+///
+/////////////////////////////////////////////////
+
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * 0.875;
+
+
+// LG & SM in this context refer to the tags such as btn-lg not the responsive display size like col-lg
+// https://getbootstrap.com/docs/5.0/content/typography/#variables
+// https://getbootstrap.com/docs/5.0/getting-started/rfs/
+
+//$enable-responsive-font-sizes: true;
+$enable-shadows: true;
+
+// modify variables before importing them
+$theme-colors: (
+  "orange": #ff5a01,
+  "Health": #ff5a01,
+  "Vida": #ff5a01,
+  "lime": #b0f954,
+  "Food": #b0f954,
+  "Ag": #b0f954,
+  "Terra": #b0f954,
+  "skyBlue": #00e9ff,
+  "Water": #00e9ff,
+  "Hydro": #00e9ff,
+  "charcoal": #323e48,
+  "Institutional": #323e48,
+  "Stories": #323e48,
+  "yellow": #ffd62d,
+  "Community": #ffd62d,
+  "green": #00d48a,
+  "Environment": #00d48a,
+  "blue": #0596f5,
+  "Energy": #0596f5,
+  "white": #ffffff,
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 2400px,
+);
+
+// https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api
+
+/*
+
+// maybe we can use the above utilities to set
+    "font-size": (
+      ****responsive: true,***
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
+
+    ),
+
+
+
+*/
+
+
+@import "bootstrap/scss/_variables.scss";

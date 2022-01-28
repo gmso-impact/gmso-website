@@ -145,17 +145,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.map-popup-container .leaflet-popup-content {
-  margin: 0 !important;
-}
-.map-popup-container .leaflet-popup-content-wrapper {
-  background: transparent !important;
-  color: inherit !important;
-  box-shadow: none !important;
-  background-color: none !important;
-}
-.story-blurb {
-  max-height: 400px;
-  overflow-y: auto;
-}
+
 </style>

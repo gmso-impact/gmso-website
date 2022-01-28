@@ -1,0 +1,84 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+.leaflet-popup-content {
+  width: 300px;
+}
+@include media-breakpoint-only(xxl) {
+  .leaflet-popup-content {
+    width: 800px;
+  }
+  .leaflet-left.leaflet-bottom {
+    transform: scale(2) translateX(50%) translateY(-50%);
+  }
+  .leaflet-right.leaflet-top {
+    transform: scale(2) translateX(-50%) translateY(50%);
+  }
+}
+.leaflet-container {
+  font-size: $font-size-base !important;
+}
+
+.marker-pin {
+  background: white;
+  width: 2 * $font-size-base;
+  height: 2 * $font-size-base;
+  display: block;
+  left: -1 * $font-size-base;
+  top: -1 * $font-size-base;
+  position: relative;
+  border-radius: 2 * $font-size-base 2 * $font-size-base 0;
+  transform: rotate(45deg);
+  border: 3 * $font-size-base/16 solid #ffffff;
+}
+.marker-pin.active {
+  width: 2.1 * $font-size-base;
+  height: 2.1 * $font-size-base;
+  left: -1.05 * $font-size-base;
+  top: -1.055 * $font-size-base;
+  border-radius: 2.1 * $font-size-base 2.1 * $font-size-base 0;
+  border: 5 * $font-size-base/16 solid #ffffff;
+  z-index: 10;
+}
+
+@include media-breakpoint-only(xxl) {
+  .marker-pin {
+    background: white;
+    width: 4 * $font-size-base;
+    height: 4 * $font-size-base;
+    display: block;
+    left: -2 * $font-size-base;
+    top: -2 * $font-size-base;
+    position: relative;
+    border-radius: 4 * $font-size-base 4 * $font-size-base 0;
+    transform: rotate(45deg);
+    border: 3 * $font-size-base/16 solid #ffffff;
+  }
+  .marker-pin.active {
+    width: 4.1 * $font-size-base;
+    height: 4.1 * $font-size-base;
+    left: -2.05 * $font-size-base;
+    top: -2.055 * $font-size-base;
+    border-radius: 4.1 * $font-size-base 4.1 * $font-size-base 0;
+    border: 5 * $font-size-base/16 solid #ffffff;
+    z-index: 10;
+  }
+}
+
+.map-popup-container .leaflet-popup-content {
+  margin: 0 !important;
+}
+.map-popup-container .leaflet-popup-content-wrapper {
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  background-color: none !important;
+}
+.story-blurb {
+  max-height: 400px;
+  overflow-y: auto;
+}
