@@ -1,13 +1,13 @@
 <template lang="">
-  <div class="d-flex flex-column bg-white rounded p-2 p-xxl-3">
-    <h3 class="text-center">Theme</h3>
+  <div class="d-flex flex-column  rounded p-2 p-xxl-3">
+    <h3 class="text-center text-white">Theme</h3>
     <ThemeButton
       v-for="storyTheme in storyThemes"
       :key="storyTheme.name"
       v-bind:control="storyTheme"
     >
     </ThemeButton>
-    <button class="btn btn-outline-dark mt-2" v-on:click="resetTagsClicked">
+    <button class="btn btn-white mt-2 mt-xxl-4" v-on:click="resetTagsClicked">
       All
     </button>
   </div>

@@ -1,0 +1,54 @@
+.outerFrame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: $font-size-base;
+    z-index: 2000;
+  
+  }
+  .outerFrame.storyFrame {
+    max-width: 3840px;
+    max-height: 2160px;
+  }
+  .outerFrame.videoFrame {
+    max-width: 3600px;
+    max-height: 1500px;
+  }
+
+  .controlFrame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .innerFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .topClose {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .bottomClose {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  @include media-breakpoint-only(xxl) {
+    .outerFrame{
+        padding: $font-size-xxl;
+    }
+    .innerFrame.storyFrame {
+      width: 50%;
+      height: 50%;
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+  }

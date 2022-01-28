@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    class="outerFrame childPoint"
+    class="storyFrame outerFrame childPoint"
     v-if="
       story !== null &&
       story.fields !== undefined &&
@@ -8,9 +8,14 @@
     "
   >
     <div
-      class="middleFrame d-flex flex-column p-1 p-xxl-3 rounded"
+      class="controlFrame p-1 p-xxl-3 rounded"
       :class="`bg-${story.fields['Story Theme']}`"
     >
+        <iframe
+          class="storyFrame innerFrame"
+          :src="story.fields['StoryMap VIEW Link']"
+          title="W3Schools Free Online Web Tutorials"
+        ></iframe>
       <div class="topClose">
         <button
           class="btn"
@@ -21,11 +26,6 @@
           Close
         </button>
       </div>
-      <iframe
-        class="innerFrame flex-grow-1"
-        :src="story.fields['StoryMap VIEW Link']"
-        title="W3Schools Free Online Web Tutorials"
-      ></iframe>
       <div class="d-none d-xxl-block bottomClose">
         <button
           class="btn"
@@ -59,44 +59,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.outerFrame {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0px, -50%);
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  max-width: 3840px;
-  max-height: 2160px;
-  z-index: 999;
-}
-.middleFrame {
-  position: relative;
-  // height: 100%;
-  // width: 100%;
-  width: 50%;
-  height: 50%;
 
-  -webkit-transform: scale(2);
-  transform: scale(2);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: scale(2);
-}
-.innerFrame {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-.topClose {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.bottomClose {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
 </style>

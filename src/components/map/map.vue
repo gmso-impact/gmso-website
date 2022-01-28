@@ -27,6 +27,7 @@
         position="bottomleft"
         :imperial="true"
         :metric="true"
+        class="d-none d-xxl-block"
       ></l-control-scale>
       <l-control-zoom
         position="bottomleft"
