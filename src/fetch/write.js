@@ -2,8 +2,11 @@ const fs = require("fs");
 
 // write to JSON file
 const writeFile = function ({ content, path }) {
+  if(content && content.response.length){
+    console.log(`gmsoStoreies error: no content.response in ${path}`);
+    return;
+  }
   console.log("gmsoStoreies begin write");
-
   const file = {
     dateString: new Date().toString(),
     date: new Date(),
