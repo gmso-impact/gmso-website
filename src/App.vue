@@ -1,13 +1,17 @@
 <template>
   <div id="app" class="d-flex flex-column h-100">
-    <div id="header" v-if="false" class="bg-light text-center">
+    <div
+      id="header"
+      v-if="false"
+      class="d-none d-md-block bg-light text-center"
+    >
       <h1 class="mb-0">Header</h1>
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters">
-      <div class="left col-md-6 col-lg-4 col-xxl-2">
+      <div class="left d-none d-lg-block col-lg-4 col-xxl-2">
         <StoryList></StoryList>
       </div>
-      <div class="right col-md-6 col-lg-8 col-xxl-10"><Map></Map></div>
+      <div class="right col-12 col-lg-8 col-xxl-10"><Map></Map></div>
     </div>
     <div
       id="footer"

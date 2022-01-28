@@ -4,7 +4,7 @@
     v-if="story.fields['Story Title']"
   >
     <div
-      class="w-100 h-100 p-0 btn d-flex flex-column"
+      class="w-100 h-100 p-0 p-xxl-1 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
         storyCurrent && story.id === storyCurrent.id ? 'active' : '',
@@ -14,7 +14,7 @@
       <img
         v-if="story.fields['Story Card Image']"
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
-        class="w-100"
+        class="w-100 rounded-top"
         alt="Card image cap"
       />
       <div
@@ -48,6 +48,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

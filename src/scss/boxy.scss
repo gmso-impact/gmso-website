@@ -1,27 +1,43 @@
-.boxy-left {
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+.boxy {
   position: absolute;
+  z-index: 999;
+}
+.boxy-left {
   top: 50%;
   transform: translate(0px, -50%);
-  left: 3rem;
-  z-index: 999;
+  left: $font-size-base;
 }
 .boxy-right {
-  position: absolute;
   top: 50%;
   transform: translate(0px, -50%);
-  right: 3rem;
-  z-index: 999;
+  right: $font-size-base;
 }
 .boxy-bottom-right {
-  position: absolute;
-  bottom: 3rem;
-  right: 3rem;
-  z-index: 999;
+  bottom: $font-size-base;
+  right: $font-size-base;
 }
 .boxy-top {
-  position: absolute;
-  top: 3rem;
+  top: $font-size-base;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 999;
+}
+
+@include media-breakpoint-only(xxl) {
+    .boxy-left {
+        left: $font-size-xxl;
+      }
+      .boxy-right {
+        right: $font-size-xxl;
+      }
+      .boxy-bottom-right {
+        bottom: $font-size-xxl;
+        right: $font-size-xxl;
+      }
+      .boxy-top {
+        top: $font-size-xxl;
+      }
 }

@@ -1,0 +1,35 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+@include media-breakpoint-only(xxl) {
+    body {
+        @include font-size($font-size-xxl);
+
+    }
+  h1,
+  .h1 {
+    @include font-size($size-xxl * $h1-font-size);
+  }
+  h2,
+  .h2 {
+    @include font-size($size-xxl * $h2-font-size);
+  }
+  h3,
+  .h3 {
+    @include font-size($size-xxl * $h3-font-size);
+  }
+  h4,
+  .h4 {
+    @include font-size($size-xxl * $h4-font-size);
+  }
+  h5,
+  .h5 {
+    @include font-size($size-xxl * $h5-font-size);
+  }
+  h6,
+  .h6 {
+    @include font-size($size-xxl * $h6-font-size);
+  }
+
+}

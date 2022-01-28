@@ -1,8 +1,10 @@
 <template lang="">
   <div class="d-flex flex-column h-100">
-    <h2 class="text-center my-0 bg-white">Find your story @ CSU</h2>
+    <h2 class="text-center my-1 my-xxl-5 bg-white">Find your story @ CSU</h2>
     <div class="flex-grow-1 border-top overflow-y-auto overflow-x-hidden">
-      <div class="px-3 carbon min-100 d-flex flex-column  justify-content-center">
+      <div
+        class="px-3 carbon min-100 d-flex flex-column justify-content-center"
+      >
         <div class="row pb-3">
           <StoryItem
             v-for="story in stories"
@@ -48,6 +50,4 @@ export default {
   methods: {},
 };
 </script>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

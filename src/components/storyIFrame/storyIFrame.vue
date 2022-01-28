@@ -8,7 +8,7 @@
     "
   >
     <div
-      class="middleFrame d-flex flex-column px-1 py-1 rounded"
+      class="middleFrame d-flex flex-column p-1 p-xxl-3 rounded"
       :class="`bg-${story.fields['Story Theme']}`"
     >
       <div class="topClose">

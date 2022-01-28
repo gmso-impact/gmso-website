@@ -33,7 +33,7 @@
         class="d-none d-xxl-block"
       ></l-control-zoom>
     </LMap>
-    <div class="boxy-top childPoint">
+    <div class="boxy boxy-top childPoint">
       <img
         src="GMSOtitle1.png"
         alt="CSU Impact"
@@ -41,13 +41,13 @@
         v-on:click="toggleVideoFrame"
       />
     </div>
-    <div class="boxy-left childPoint">
+    <div class="boxy boxy-left childPoint">
       <ThemeColumn></ThemeColumn>
     </div>
-    <div class="boxy-right d-none d-xxl-block childPoint">
+    <div class="boxy boxy-right d-none d-xxl-block childPoint">
       <ThemeColumn></ThemeColumn>
     </div>
-    <div class="boxy-bottom-right childPoint">
+    <div class="boxy boxy-bottom-right childPoint">
       <img
         src="Geo.png"
         class="geo-img"
@@ -164,6 +164,4 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

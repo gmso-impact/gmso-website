@@ -1,0 +1,41 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+.leaflet-popup-content {
+  width: 300px;
+}
+.leaflet-container {
+  font-size: $font-size-base !important;
+}
+.map-popup-container .leaflet-popup-content {
+  margin: 0 !important;
+}
+.map-popup-container .leaflet-popup-content-wrapper {
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  background-color: none !important;
+}
+.story-blurb {
+  max-height: 400px;
+  overflow-y: auto;
+}
+@include media-breakpoint-only(xxl) {
+    .leaflet-popup-content {
+      width: 1920px;
+    }
+    .leaflet-container {
+        font-size: $font-size-xxl !important;
+      }
+
+
+
+      .story-blurb {
+        max-height: 400px;
+        overflow-y: auto;
+      }
+  }

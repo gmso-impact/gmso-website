@@ -2,24 +2,12 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
-.leaflet-popup-tip-container {
-  display: none;
-}
-.leaflet-popup-content {
-  width: 300px;
-}
 @include media-breakpoint-only(xxl) {
-  .leaflet-popup-content {
-    width: 800px;
-  }
   .leaflet-left.leaflet-bottom {
     transform: scale(2) translateX(50%) translateY(-50%);
   }
   .leaflet-right.leaflet-top {
     transform: scale(2) translateX(-50%) translateY(50%);
   }
-}
-.leaflet-container {
-  font-size: $font-size-base !important;
 }
 
