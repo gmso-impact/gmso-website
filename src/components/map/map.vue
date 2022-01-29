@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="h-100 w-100 position-relative">
+  <div class="h-100 w-100 position-relative bg-map-dark">
     <LMap
       id="main-map"
       class="h-100 w-100"
@@ -105,7 +105,7 @@ export default {
         zoomDelta: 0.5,
         maxZoom: 12,
         minZoom: 2,
-        maxBounds: latLngBounds(latLng(90, -180), latLng(-75, 180)),
+        maxBounds: latLngBounds(latLng(110, -200), latLng(-75, 200)),
         zoomControl: false,
       },
       showMap: true,

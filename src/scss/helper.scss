@@ -53,3 +53,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.text-shadow {
+  filter: drop-shadow(.125rem .125rem .3rem #000000);
+}
+.shadow {
+  box-shadow: .125rem .125rem .3rem rgba(0,0,0,.8);
+}
+.shadow-white {
+  box-shadow: .125rem .125rem .3rem rgba(255, 255, 255, .8);
+}
