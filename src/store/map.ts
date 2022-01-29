@@ -1,32 +1,67 @@
 import { latLng, latLngBounds } from "leaflet";
+const initialState = {
+  zoom: 5,
+  center: latLng(0, 0),
+  bounds: latLngBounds(latLng(60, -120), latLng(-45, 140)),
+  date: new Date()
+}
+
 
 const map = {
   state: {
-    zoom: 5,
-    center: latLng(0, 0),
-    bounds: latLngBounds(latLng(60, -120), latLng(-45, 140)),
+    current: {...initialState},
+    new: {...initialState,
+      duration: 5
+    }
   },
   getters: {
     mapGetZoom: (state) => {
-      return state.zoom;
+      return state.current.zoom;
     },
     mapGetCenter: (state) => {
-      return state.center;
+      return state.current.center;
     },
     mapGetBounds: (state) => {
-      return state.bounds;
+      return state.current.bounds;
+    },
+    mapGetBoundsNew: (state) => {
+      return state.new;
     },
   },
   mutations: {
+    resetMap: (state) => {
+      state.new = {
+        ...initialState,
+        duration: 5,
+        date: new Date()
+      };
+    },
     mapSetZoom: (state, zoom) => {
-      state.zoom = zoom;
+      state.new.zoom = zoom;
     },
     mapSetCenter: (state, center) => {
-      state.center = center;
+      state.new.center = center;
     },
     mapSetBounds: (state, bounds) => {
-      state.bounds = bounds;
+      state.new = {
+        ...state.current,
+        bounds: bounds,
+        duration: 1,
+        date: new Date()
+      };
     },
+    /// the curent functions are for internal to the map
+    // this allows the map to be responsive
+    mapSetZoomCurrent: (state, zoom) => {
+      state.current.zoom = zoom;
+    },
+    mapSetCenterCurrent: (state, center) => {
+      state.current.center = center;
+    },
+    mapSetBoundsCurrent: (state, bounds) => {
+      state.current.bounds = bounds;
+    },
+
   },
   actions: {},
 };

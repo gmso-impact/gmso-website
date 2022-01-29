@@ -121,6 +121,10 @@ const storys = {
     closeVideoFrame: (state) => {
       state.isVideoFrameOpen = false;
     },
+    openVideoFrame: (state) => {
+      state.isVideoFrameOpen = true;
+      state.storyFrame = null;
+    },
     toggleVideoFrame: (state) => {
       if (!state.isVideoFrameOpen) {
         state.storyFrame = null;
@@ -128,13 +132,15 @@ const storys = {
       state.isVideoFrameOpen = !state.isVideoFrameOpen;
     },
     setStoryCurrent: (state, story) => {
-      if (story !== null) {
+      if (story) {
         state.storyFrame = null;
+        state.isVideoFrameOpen = false;
       }
       state.storyCurrent = story;
     },
     setStoryFrame: (state, story) => {
       if (story) {
+        state.storyCurrent = null;
         state.isVideoFrameOpen = false;
       }
       state.storyFrame = story;

@@ -5,6 +5,7 @@
           class="videoFrame innerFrame"
           title="Stories at CSU"
           controls
+          loop
           ref="video"
         >
           <source

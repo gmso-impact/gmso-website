@@ -129,11 +129,11 @@ export default {
         this.$nextTick(() => {
           this.$refs.marker.mapObject.openPopup();
         });
-      } /* else if (oldStory.id === this.story.id) {
+      } else if (oldStory?.id === this.story.id) {
         this.$nextTick(() => {
-          this.$refs.marker.mapObject.openPopup();
+          this.$refs.marker.mapObject.closePopup();
         });
-      } */
+      } 
     },
   },
   beforeDestroy() {

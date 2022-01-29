@@ -6,9 +6,9 @@
       v-if="showMap"
       :options="mapOptions"
       :bounds="bounds"
-      @update:zoomZ="mapSetZoom"
-      @update:centerZ="mapSetCenter"
-      @update:bounds="mapSetBounds"
+      @update:zoom="mapSetZoomCurrent"
+      @update:center="mapSetCenterCurrent"
+      @update:bounds="mapSetBoundsCurrent"
       ref="map"
     >
       <MapMarker
@@ -78,6 +78,8 @@ import VideoFrame from "../videoFrame/videoFrame.vue";
 
 import ThemeColumn from "../controls/themeColumn.vue";
 import MapMarker from "./marker.vue";
+const apikey =
+  "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
 
 export default {
   name: "Map",
@@ -94,7 +96,8 @@ export default {
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: basemapLayer("DarkGray"),
+      basemap: basemapLayer("DarkGray", { apikey }),
+      apikey: apikey,
       storyLayerEsriObject: null,
       attribution:
         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -109,29 +112,41 @@ export default {
         zoomControl: false,
       },
       showMap: true,
+      bounds: null,
     };
   },
   computed: {
     ...mapGetters({
       stories: "storyFiltered",
-      zoom: "mapGetZoom",
-      center: "mapGetCenter",
-      bounds: "mapGetBounds",
+      zoom: "mapGetZoomNew",
+      center: "mapGetCenterNew",
+      mapGetBoundsNew: "mapGetBoundsNew",
       storyLayer: "storyLayer",
     }),
   },
   methods: {
     ...mapMutations([
-      "mapSetZoom",
-      "mapSetCenter",
-      "mapSetBounds",
+      "mapSetZoomCurrent",
+      "mapSetCenterCurrent",
+      "mapSetBoundsCurrent",
       "toggleVideoFrame",
     ]),
   },
   mounted() {
     this.$refs.map.mapObject.addLayer(this.basemap);
+    this.$refs.map.mapObject.flyToBounds(this.mapGetBoundsNew.bounds, {
+      duration: 6,
+    });
   },
   watch: {
+    mapGetBoundsNew: function (newObject) {
+      this.$nextTick(() => {
+        console.log("mapGetBoundsNew watcher");
+        this.$refs.map.mapObject.flyToBounds(newObject.bounds, {
+          duration: newObject.duration,
+        });
+      });
+    },
     basemap: function (newBaseMap, oldBaseMap) {
       this.$refs.map.mapObject.removeLayer(oldBaseMap);
       this.$refs.map.mapObject.addLayer(newBaseMap);
@@ -147,6 +162,7 @@ export default {
       if (newLayer) {
         this.storyLayerEsriObject = featureLayer({
           url: newLayer,
+          apikey: this.apikey,
           simplifyFactor: 0.1,
           fetchAllFeatures: false,
           cacheLayers: false,
