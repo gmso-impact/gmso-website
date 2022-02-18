@@ -56,8 +56,8 @@
         alt="Click to watch the intro video"
       />
     </div>
-    <StoryIFrame></StoryIFrame>
-    <VideoFrame></VideoFrame>
+    <OverlayStory></OverlayStory>
+    <OverlayVideo></OverlayVideo>
   </div>
 </template>
 <script>
@@ -73,8 +73,8 @@ import { latLng, latLngBounds, divIcon, circleMarker } from "leaflet";
 import { basemapLayer, featureLayer } from "esri-leaflet";
 
 import { mapGetters, mapMutations } from "vuex";
-import StoryIFrame from "../storyIFrame/storyIFrame.vue";
-import VideoFrame from "../videoFrame/videoFrame.vue";
+import OverlayStory from "../overlay/story.vue";
+import OverlayVideo from "../overlay/video.vue";
 
 import ThemeColumn from "../controls/themeColumn.vue";
 import MapMarker from "./marker.vue";
@@ -88,8 +88,8 @@ export default {
     //  LTileLayer,
     ThemeColumn,
     MapMarker,
-    StoryIFrame,
-    VideoFrame,
+    OverlayStory,
+    OverlayVideo,
     LControlZoom,
     LControlScale,
   },

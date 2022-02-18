@@ -39,7 +39,7 @@ const storys = {
     storyTags: toFilterTags("Story Tags"),
     idTags: toFilterTags("ID Tags"),
     collegeTags: toFilterTags("College/Division"),
-    isVideoFrameOpen: true,
+    isVideoFrameOpen: false,
   },
   getters: {
     isVideoFrameOpen: (state) => {

@@ -1,8 +1,8 @@
 <template lang="">
-  <div class="videoFrame outerFrame childPoint" v-if="isVideoFrameOpen">
-    <div class="videoFrame controlFrame px-1 py-1 rounded bg-white">
+  <div class="videoFrame overlay childPoint" v-if="isVideoFrameOpen">
+    <div class="controlFrame px-1 py-1 rounded bg-white">
       <video
-        class="videoFrame innerFrame"
+        class="innerFrame"
         title="Stories at CSU"
         controls
         loop

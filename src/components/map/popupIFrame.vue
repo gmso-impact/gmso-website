@@ -1,15 +1,16 @@
 <template lang="">
-      <iframe
-        class="iframe-scale iframe-border-none"
-        :src="story.fields['StoryMap VIEW Link']"
-        title="W3Schools Free Online Web Tutorials"
-      ></iframe>
+    <div class="popup-iframe">
+        <StoryIFrame :story="story"></StoryIFrame>
+    </div>
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
+import StoryIFrame from "../storyIFrame/storyIFrame.vue";
 
 export default {
-  components: {},
+  components: {
+      StoryIFrame
+  },
   data() {
     return {};
   },

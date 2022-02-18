@@ -6,70 +6,27 @@
     ref="marker"
     v-on:click="clickMarker"
   >
-    <l-popup :options="options" class="popup" ref="popup">
-      <div class="card shadow">
-        <img
-          :src="story.fields['Pop-Up Card Image'][0].thumbnails.large.url"
-          v-if="
-            story.fields['Pop-Up Card Image'] &&
-            story.fields['Pop-Up Card Image'][0] &&
-            story.fields['Pop-Up Card Image'][0].thumbnails
-          "
-          class="card-img-top"
-          :alt="story.fields['Story Title']"
-        />
-        <div class="card-header font-weight-bold">
-          <h3 class="mb-0">{{ story.fields["Story Title"] }}</h3>
-          <div>
-            {{ this.story.fields["Tagline"] }}
-          </div>
-        </div>
-        <div
-          class="card-body story-blurb"
-          v-if="this.story.fields['Pop-Up Card Content']"
-        >
-          {{ this.story.fields["Pop-Up Card Content"] }}
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-dark" v-on:click="clickClose">
-            <font-awesome-icon :icon="['fas', 'times']" />
-            Close
-          </button>
-          <button
-            class="btn flex-fill ml-3"
-            :class="`btn-${story.fields['Story Theme']}`"
-            v-on:click="clickReadMore"
-            v-if="story.fields['StoryMap VIEW Link']"
-          >
-            <font-awesome-icon :icon="['fas', 'book']" />
-            Read More
-          </button>
-        </div>
-      </div>
-    </l-popup>
+    <Popup
+            :story="story"
+        :key="story.id"
+    >
+    </Popup>
   </l-marker>
 </template>
 <script>
-import { LMarker, LPopup, LIcon } from "vue2-leaflet";
+import { LMarker, LIcon } from "vue2-leaflet";
 import { latLng, divIcon, point } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
+import Popup from "./popup.vue"
 
 export default {
   components: {
     LMarker,
-    LPopup,
+    Popup,
   },
   data() {
     return {
-      options: {
-        maxWidth: 1920,
-        keepInView: false,
-        autoClose: true,
-        closeOnClick: false,
-        className: "map-popup-container",
-        autoPanPaddingTopLeft: [160, 20],
-        autoPanPaddingBottomRight: [20, 20],
-      },
+      test: null,
     };
   },
   props: {
@@ -114,18 +71,7 @@ export default {
         this.setStoryCurrent(this.story);
       }
     },
-    clickClose: function () {
-      this.setStoryCurrent(null);
-      this.$nextTick(() => {
-        this.$refs.marker.mapObject.closePopup();
-      });
-    },
-    clickReadMore: function () {
-      this.$nextTick(() => {
-        this.$refs.marker.mapObject.closePopup();
-      });
-      this.setStoryFrame(this.story);
-    },
+
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {

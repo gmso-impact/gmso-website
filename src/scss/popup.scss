@@ -2,11 +2,9 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
+// Start clear leaflet popup styles
 .leaflet-popup-tip-container {
   display: none;
-}
-.leaflet-popup-content {
-  width: 300px;
 }
 .leaflet-container {
   background-color: #232227 !important;
@@ -15,28 +13,26 @@
 .map-popup-container .leaflet-popup-content {
   margin: 0 !important;
 }
+
+
 .map-popup-container .leaflet-popup-content-wrapper {
   background: transparent !important;
   color: inherit !important;
   box-shadow: none !important;
   background-color: none !important;
 }
-.story-blurb {
-  max-height: 400px;
-  overflow-y: auto;
+// End clear leaflet popup styles
+
+.leaflet-popup-content{
+  width: 100%;
 }
+
 @include media-breakpoint-only(xxl) {
     .leaflet-popup-content {
-      width: 1920px;
+      width: 100%;
     }
     .leaflet-container {
         font-size: $font-size-xxl !important;
       }
 
-
-
-      .story-blurb {
-        max-height: 400px;
-        overflow-y: auto;
-      }
   }

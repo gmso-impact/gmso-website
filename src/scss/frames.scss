@@ -1,54 +1,107 @@
-.outerFrame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  padding: $font-size-base / 4;
+}
+@include media-breakpoint-only(md) {
+  .overlay {
     padding: $font-size-base;
-    z-index: 2000;
-  
-  }
-  .outerFrame.storyFrame {
-    max-width: 3840px;
-    max-height: 2160px;
-  }
-  .outerFrame.videoFrame {
-    max-width: 3600px;
-    max-height: 1500px;
   }
 
-  .controlFrame {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .innerFrame {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  .topClose {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .bottomClose {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+}
+@include media-breakpoint-only(xxl) {
+  .overlay {
+    padding: $font-size-xxl;
   }
 
-  @include media-breakpoint-only(xxl) {
-    .outerFrame{
-        padding: $font-size-xxl;
-    }
-    .innerFrame.storyFrame {
-      width: 50%;
-      height: 50%;
-      -webkit-transform: scale(2);
-      transform: scale(2);
-      -webkit-transform-origin: 0 0;
-      transform-origin: 0 0;
-    }
+}
+
+
+.overlay.storyFrame {
+  max-height: 1920*2px;
+  max-width: 1080*2px;
+}
+@include media-breakpoint-only(xxl) {
+
+.overlay.storyFrame {
+  max-height: 100vh / 4 * 2;
+  max-width: 100vw / 7 * 2;
+}
+}
+.overlay.videoFrame {
+  max-width: 3600px;
+  max-height: 1500px;
+}
+
+.controlFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.innerFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.topClose {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.bottomClose {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+
+
+
+.iframe-scale {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-iframe {
+  padding: $font-size-base / 8;
+  height: 60vh ;
+  width: 60vw;
+}
+
+@include media-breakpoint-up(xl){
+  .popup-iframe {
+    padding: $font-size-base / 4;
+    height: 40vh ;
+    width: 40vw;
   }
+}
+
+
+@include media-breakpoint-only(xxl) {
+  $storyScale: 1.5;
+  $panels: 1.25;
+  .popup-iframe {
+    padding: $font-size-xxl / 4;
+    height: 100vh / 4 * $panels;
+    width: 100vw / 7 * $panels;
+  }
+  .iframe-scale {
+    width: 100% / $storyScale;
+    height: 100% / $storyScale;
+    -webkit-transform: scale($storyScale);
+    transform: scale($storyScale);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
+
+.iframe-border-none {
+  border-width: 0;
+  border-style: none;
+  border-color: transparent;
+}
