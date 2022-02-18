@@ -12,7 +12,11 @@
       v-on:click="setStoryCurrent(story)"
     >
       <img
-        v-if="story.fields['Story Card Image']"
+        v-if="
+          story.fields['Pop-Up Card Image'] &&
+          story.fields['Pop-Up Card Image'][0] &&
+          story.fields['Pop-Up Card Image'][0].thumbnails
+        "
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
         class="w-100 rounded-top"
         alt="Card image cap"
@@ -49,7 +53,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.story-card{
+.story-card {
   min-height: 10vh;
 }
 </style>

@@ -3,16 +3,13 @@ const initialState = {
   zoom: 5,
   center: latLng(0, 0),
   bounds: latLngBounds(latLng(60, -120), latLng(-45, 140)),
-  date: new Date()
-}
-
+  date: new Date(),
+};
 
 const map = {
   state: {
-    current: {...initialState},
-    new: {...initialState,
-      duration: 5
-    }
+    current: { ...initialState },
+    new: { ...initialState, duration: 5 },
   },
   getters: {
     mapGetZoom: (state) => {
@@ -33,7 +30,7 @@ const map = {
       state.new = {
         ...initialState,
         duration: 5,
-        date: new Date()
+        date: new Date(),
       };
     },
     mapSetZoom: (state, zoom) => {
@@ -47,7 +44,7 @@ const map = {
         ...state.current,
         bounds: bounds,
         duration: 1,
-        date: new Date()
+        date: new Date(),
       };
     },
     /// the curent functions are for internal to the map
@@ -61,7 +58,6 @@ const map = {
     mapSetBoundsCurrent: (state, bounds) => {
       state.current.bounds = bounds;
     },
-
   },
   actions: {},
 };

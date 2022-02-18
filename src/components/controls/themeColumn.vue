@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex flex-column  rounded p-2 p-xxl-3">
+  <div class="d-flex flex-column rounded p-2 p-xxl-3">
     <h3 class="text-center text-white text-shadow">Theme</h3>
     <ThemeButton
       v-for="storyTheme in storyThemes"

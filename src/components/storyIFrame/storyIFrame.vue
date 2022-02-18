@@ -11,11 +11,11 @@
       class="controlFrame p-1 p-xxl-3 rounded"
       :class="`bg-${story.fields['Story Theme']}`"
     >
-        <iframe
-          class="storyFrame innerFrame"
-          :src="story.fields['StoryMap VIEW Link']"
-          title="W3Schools Free Online Web Tutorials"
-        ></iframe>
+      <iframe
+        class="storyFrame innerFrame"
+        :src="story.fields['StoryMap VIEW Link']"
+        title="W3Schools Free Online Web Tutorials"
+      ></iframe>
       <div class="topClose">
         <button
           class="btn"
@@ -58,6 +58,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -10,7 +10,11 @@
       <div class="card shadow">
         <img
           :src="story.fields['Pop-Up Card Image'][0].thumbnails.large.url"
-          v-if="story.fields['Pop-Up Card Image']"
+          v-if="
+            story.fields['Pop-Up Card Image'] &&
+            story.fields['Pop-Up Card Image'][0] &&
+            story.fields['Pop-Up Card Image'][0].thumbnails
+          "
           class="card-img-top"
           :alt="story.fields['Story Title']"
         />
@@ -133,7 +137,7 @@ export default {
         this.$nextTick(() => {
           this.$refs.marker.mapObject.closePopup();
         });
-      } 
+      }
     },
   },
   beforeDestroy() {

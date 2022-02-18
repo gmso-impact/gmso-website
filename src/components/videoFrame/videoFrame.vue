@@ -1,19 +1,19 @@
 <template lang="">
   <div class="videoFrame outerFrame childPoint" v-if="isVideoFrameOpen">
     <div class="videoFrame controlFrame px-1 py-1 rounded bg-white">
-        <video
-          class="videoFrame innerFrame"
-          title="Stories at CSU"
-          controls
-          loop
-          ref="video"
-        >
-          <source
-            src="https://ibis-test1.nrel.colostate.edu/GMSO/videos/CSUS.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+      <video
+        class="videoFrame innerFrame"
+        title="Stories at CSU"
+        controls
+        loop
+        ref="video"
+      >
+        <source
+          src="https://ibis-test1.nrel.colostate.edu/GMSO/videos/CSUS.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
       <div class="topClose">
         <button class="btn btn-white" v-on:click="closeVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
@@ -57,6 +57,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
