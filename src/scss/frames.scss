@@ -34,8 +34,8 @@
 }
 }
 .overlay.videoFrame {
-  max-width: 3600px;
-  max-height: 1500px;
+  max-width: 3600px * 1.5;
+  max-height: 1500px * 1.5;
 }
 
 .controlFrame {
@@ -83,12 +83,12 @@
 
 
 @include media-breakpoint-only(xxl) {
-  $storyScale: 1.5;
-  $panels: 1.25;
+  $storyScale: 3.5;
+  $panels: 1;
   .popup-iframe {
     padding: $font-size-xxl / 4;
-    height: 100vh / 4 * $panels;
-    width: 100vw / 7 * $panels;
+    height: 100vh / 5 * $panels * 1.8;
+    width: 100vw / 5 * $panels * 2;
   }
   .iframe-scale {
     width: 100% / $storyScale;

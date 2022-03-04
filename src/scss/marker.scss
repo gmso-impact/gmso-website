@@ -27,22 +27,22 @@
 @include media-breakpoint-only(xxl) {
   .marker-pin {
     background: white;
-    width: 4 * $font-size-base;
-    height: 4 * $font-size-base;
+    width: 6 * $font-size-base;
+    height: 6 * $font-size-base;
     display: block;
     left: -2 * $font-size-base;
     top: -2 * $font-size-base;
     position: relative;
-    border-radius: 4 * $font-size-base 4 * $font-size-base 0;
+    border-radius: 6 * $font-size-base 6 * $font-size-base 0;
     transform: rotate(45deg);
     border: 3 * $font-size-base/16 solid #ffffff;
   }
   .marker-pin.active {
-    width: 4.1 * $font-size-base;
-    height: 4.1 * $font-size-base;
+    width: 6.6 * $font-size-base;
+    height: 6.6 * $font-size-base;
     left: -2.05 * $font-size-base;
     top: -2.055 * $font-size-base;
-    border-radius: 4.1 * $font-size-base 4.1 * $font-size-base 0;
+    border-radius: 6.6 * $font-size-base 6.6 * $font-size-base 0;
     border: 5 * $font-size-base/16 solid #ffffff;
     z-index: 10;
   }

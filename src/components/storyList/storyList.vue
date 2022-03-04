@@ -16,7 +16,7 @@
         <div class="row justify-content-md-center">
           <div
             v-if="stories.length < 3"
-            class="col-xxl-6 pb-5 mb-5 pt-3 text-white"
+            class="col-xxl-4 pb-5 mb-5 pt-3 text-white"
           >
             <h3>
               No more stories apear within this area of the map. Please zoom out
