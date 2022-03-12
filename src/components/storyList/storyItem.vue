@@ -1,10 +1,10 @@
 <template lang="">
   <div
-    class="col-md-6 col-lg-6 col-xxl-4 pt-4"
+    class="col-md-6 col-lg-6 col-xxl-4 pt-4 my-1"
     v-if="story.fields['Story Title']"
   >
     <div
-      class="story-card w-100 h-100 p-0 p-xxl-1 btn d-flex flex-column shadow-white"
+      class="story-card w-100 h-100 p-0 p-xxl-3 btn d-flex flex-column shadow-white"
       :class="[
         `btn-${story.fields['Story Theme']}`,
         storyCurrent && story.id === storyCurrent.id ? 'active' : '',

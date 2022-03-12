@@ -2,7 +2,7 @@
       <iframe
         class="iframe-scale iframe-border-none"
         :src="story.fields['StoryMap VIEW Link']"
-        title="W3Schools Free Online Web Tutorials"
+        title="Story Map"
       ></iframe>
 </template>
 <script>

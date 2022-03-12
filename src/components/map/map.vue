@@ -16,23 +16,18 @@
         :key="story.id"
         v-for="story in stories"
       ></MapMarker>
-      <l-control-scale
-        position="topright"
-        :imperial="true"
-        :metric="true"
-      ></l-control-scale>
+
       <l-control-zoom position="topright"></l-control-zoom>
 
       <l-control-scale
         position="bottomleft"
         :imperial="true"
         :metric="true"
-        class="d-none d-xxl-block"
+        class="d-xxl-none"
       ></l-control-scale>
-      <l-control-zoom
-        position="bottomleft"
-        class="d-none d-xxl-block"
-      ></l-control-zoom>
+
+      <l-control-zoom position="bottomleft" class="d-none d-xxl-block"></l-control-zoom>
+
     </LMap>
     <div class="boxy boxy-top childPoint">
       <img
@@ -45,9 +40,9 @@
     <div class="boxy boxy-left childPoint">
       <ThemeColumn></ThemeColumn>
     </div>
-    <div class="boxy boxy-right d-none d-xxl-block childPoint">
+    <!--<div class="boxy boxy-right d-none d-xxl-block childPoint">
       <ThemeColumn></ThemeColumn>
-    </div>
+    </div>-->
     <div class="boxy boxy-bottom-right childPoint">
       <img
         src="Geo.png"
@@ -99,8 +94,6 @@ export default {
       basemap: basemapLayer("DarkGray", { apikey }),
       apikey: apikey,
       storyLayerEsriObject: null,
-      attribution:
-        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       mapOptions: {
         preferCanvas: true,
         zoomSnap: 0.5,
@@ -108,7 +101,6 @@ export default {
         zoomDelta: 0.5,
         maxZoom: 12,
         minZoom: 2,
-        maxBounds: latLngBounds(latLng(110, -200), latLng(-75, 200)),
         zoomControl: false,
       },
       showMap: true,
