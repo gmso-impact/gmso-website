@@ -8,12 +8,12 @@
             story.fields['Pop-Up Card Image'][0].thumbnails
           "
           class="card-img-top"
-          :alt="story.fields['Story Title']"
+          :alt="story.fields['en-StoryTitle']"
         />
         <div class="card-header font-weight-bold">
-          <h3 class="mb-0">{{ story.fields["Story Title"] }}</h3>
+          <h3 class="mb-0">{{ story.fields["en-StoryTitle"] }}</h3>
           <div>
-            {{ this.story.fields["Tagline"] }}
+            {{ this.story.fields["en-Tagline"] }}
           </div>
         </div>
         <div
@@ -31,7 +31,7 @@
             class="btn flex-fill ml-3"
             :class="`btn-${story.fields['Story Theme']}`"
             v-on:click="clickReadMore"
-            v-if="story.fields['StoryMap VIEW Link']"
+            v-if="story.fields['en-StoryMapLink']"
           >
             <font-awesome-icon :icon="['fas', 'book']" />
             Read More

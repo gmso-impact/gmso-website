@@ -1,7 +1,7 @@
 <template lang="">
   <div
     class="col-md-6 col-lg-6 col-xxl-4 pt-4 my-1"
-    v-if="story.fields['Story Title']"
+    v-if="story.fields['en-StoryTitle']"
   >
     <div
       class="story-card w-100 h-100 p-0 p-xxl-3 btn d-flex flex-column"
@@ -25,7 +25,7 @@
         class="card-body d-flex justify-content-center align-items-center p-1 text-center font-weight-bold"
       >
         <div>
-          {{ story.fields["Story Title"] }}
+          {{ story.fields["en-StoryTitle"] }}
         </div>
       </div>
     </div>

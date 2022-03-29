@@ -1,7 +1,7 @@
 <template lang="">
       <iframe
         class="iframe-scale iframe-border-none"
-        :src="story.fields['StoryMap VIEW Link']"
+        :src="story.fields['en-StoryMapLink']"
         title="Story Map"
       ></iframe>
 </template>

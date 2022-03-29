@@ -4,7 +4,7 @@
     v-if="
       story !== null &&
       story.fields !== undefined &&
-      story.fields['StoryMap VIEW Link']
+      story.fields['en-StoryMapLink']
     "
   >
     <div
