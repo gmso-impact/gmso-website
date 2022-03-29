@@ -2,7 +2,7 @@
   <l-popup :options="options" class="popup" ref="popup">
     <div class="card shadow"       :class="`bg-${story.fields['Story Theme']}`">
       <div class="p-1">
-      <PopupIFrame :story="story" v-if="story.fields['StoryMap VIEW Link']"></PopupIFrame>
+      <PopupIFrame :story="story" v-if="story.fields['en-StoryMapLink']"></PopupIFrame>
       <PopupSummary :story="story" v-else></PopupSummary>
       </div>
       <PopupInfo :story="story"></PopupInfo>

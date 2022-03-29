@@ -4,7 +4,7 @@
     <button
       class="btn btn-outline-dark"
       v-on:click="clickReadMore"
-      v-if="story.fields['StoryMap VIEW Link']"
+      v-if="story.fields['en-StoryMapLink']"
     >
       <font-awesome-icon :icon="['fas', 'book']" />
       Read More
