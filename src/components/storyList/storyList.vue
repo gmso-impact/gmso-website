@@ -4,7 +4,7 @@
     <h2>&nbsp;</h2>
     <div class="flex-grow-1 border-top overflow-y-auto overflow-x-hidden">
       <div
-        class="px-3 carbon min-100 d-flex flex-column justify-content-center"
+        class="px-4 carbon min-100 d-flex flex-column justify-content-center"
       >
         <div class="row pb-3">
           <StoryItem

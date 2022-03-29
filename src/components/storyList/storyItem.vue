@@ -4,7 +4,7 @@
     v-if="story.fields['Story Title']"
   >
     <div
-      class="story-card w-100 h-100 p-0 p-xxl-3 btn d-flex flex-column shadow-white"
+      class="story-card w-100 h-100 p-0 p-xxl-3 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
         storyCurrent && story.id === storyCurrent.id ? 'active' : '',
@@ -55,5 +55,6 @@ export default {
 <style scoped lang="scss">
 .story-card {
   min-height: 10vh;
+  border-radius: 0px;
 }
 </style>
