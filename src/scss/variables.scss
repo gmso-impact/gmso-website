@@ -50,6 +50,21 @@ $theme-colors: (
   "map-dark": #232227,
   "map-light": #3f3f41,
 );
+
+.themeIcon{
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center;
+  height: 100%;
+  border: none;
+  border-radius: 0px !important;
+}
+
+.theme-Food {
+  background-image:url('https://ibis-test1.nrel.colostate.edu/GMSO/images/icons/Food.png');
+}
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
