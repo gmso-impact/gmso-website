@@ -29,7 +29,7 @@ const map = {
     resetMap: (state) => {
       state.new = {
         ...initialState,
-        duration: 5,
+        duration: 1,
         date: new Date(),
       };
     },

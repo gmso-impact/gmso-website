@@ -5,7 +5,7 @@
     :key="control.name"
     v-on:click="setTagClicked"
   >
-    {{ control.name }}
+    {{ $t(`storyThemes.${control.name}`) }}
   </button>
 </template>
 <script>

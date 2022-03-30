@@ -1,6 +1,6 @@
 <template lang="">
   <div class="d-flex flex-column h-100 carbon">
-    <h2 class="text-center my-1 my-xxl-5 bg-white  d-xl-none">Find your story @ CSU</h2>
+    <h2 class="text-center my-1 my-xxl-5 bg-white  d-xl-none">{{ $t(`tagline`) }}</h2>
     <div class="flex-grow-1 border-top overflow-y-auto overflow-x-hidden">
       <div
         class="px-4 carbon min-100 d-flex flex-column justify-content-center"

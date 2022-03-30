@@ -24,6 +24,12 @@ import "leaflet/dist/leaflet.css";
 // // Optionally install the BootstrapVue icon components plugin
 // Vue.use(IconsPlugin)
 
+
+import VueI18n from 'vue-i18n'
+Vue.use(VueI18n)
+import {I18nSetup} from "./translations"
+const i18n = new VueI18n(I18nSetup)
+
 Vue.config.productionTip = false;
 
 import {
@@ -40,5 +46,6 @@ Vue.component("font-awesome-layers-text", FontAwesomeLayersText);
 
 new Vue({
   store,
+  i18n,
   render: (h) => h(App),
 }).$mount("#app");
