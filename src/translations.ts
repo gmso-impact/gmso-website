@@ -14,9 +14,11 @@ export const languages = [
 
 const translations = {
     en: {
-        hello: 'hello world',
-        All: 'All',
+        "hello": 'hello',
         tagline: 'Find your story @ CSU',
+        "Read More": "Read More",
+        "Close":"Close",
+        "All": 'All',
         storyThemes: {
             "Health": 'Health',
             "Environment": 'Environment',
@@ -55,11 +57,13 @@ const translations = {
 
     },
     sp: {
+        "hello": 'Hola',
         tagline: 'Encuentra tu historia @ CSU',
-        hello: 'Hola',
-        All: "Todos",
+        "Read More": "Leer Más",
+        "Close":"Salida",
+        "All": 'Todos',
         storyThemes: {
-            Health: 'Vida',
+            "Health": 'Vida',
         },
     },
     fr: {

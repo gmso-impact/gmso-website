@@ -8,11 +8,11 @@
       v-if="story.fields['en-StoryMapLink']"
     >
       <font-awesome-icon :icon="['fas', 'book']" />
-      Read More
+        {{ $t(`Read More`) }}
     </button>
     <button class="btn btn-outline-dark" v-on:click="clickClose">
       <font-awesome-icon :icon="['fas', 'times']" />
-      Close
+      {{ $t(`Close`) }}
     </button>
   </div>
 </template>

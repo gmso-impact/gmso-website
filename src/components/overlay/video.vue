@@ -17,13 +17,13 @@
       <div class="topClose">
         <button class="btn btn-white" v-on:click="closeVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
-          Close
+          {{ $t(`Close`) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">
         <button class="btn btn-white" v-on:click="closeVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
-          Close
+          {{ $t(`Close`) }}
         </button>
       </div>
     </div>
