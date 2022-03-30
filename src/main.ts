@@ -38,8 +38,8 @@ import {
   FontAwesomeLayersText,
 } from "@fortawesome/vue-fontawesome";
 import { library as Iconlibrary } from "@fortawesome/fontawesome-svg-core";
-import { faTimes, faBook } from "@fortawesome/free-solid-svg-icons";
-Iconlibrary.add(faTimes, faBook);
+import { faTimes, faBook, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+Iconlibrary.add(faTimes, faBook, faGraduationCap);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);

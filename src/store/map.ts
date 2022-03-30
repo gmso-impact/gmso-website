@@ -1,6 +1,6 @@
 import { latLng, latLngBounds } from "leaflet";
 const initialState = {
-  zoom: 7,
+  zoom: 12,
   center: latLng(0, 0),
   bounds: latLngBounds(latLng(90, -180), latLng(-90, 180)),
   date: new Date(),

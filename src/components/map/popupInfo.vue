@@ -1,6 +1,7 @@
 <template lang="">
   <div class="d-flex flex-wrap pb-1 px-1 justify-content-between">
     <div>Header info</div>
+    <font-awesome-icon v-if="story.fields['ID Tags'] && story.fields['ID Tags'].includes('Alumnus')" :icon="['fas', 'graduation-cap']" />
     <button
       class="btn btn-outline-dark"
       v-on:click="clickReadMore"

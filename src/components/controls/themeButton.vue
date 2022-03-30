@@ -1,7 +1,7 @@
 <template lang="">
   <button
     :class="buttonClasses"
-    class="btn mt-2 mt-xxl-4 shadow"
+    class="btn mt-2 mt-xxl-4 shadow themeIcon"
     :key="control.name"
     v-on:click="setTagClicked"
   >
@@ -25,7 +25,12 @@ export default {
   computed: {
     buttonClasses: function () {
       // `this` points to the vm instance
-      return this.control.isActive ? `btn-${this.control.name}` : "btn-dark";
+      const buttonStyle = this.control.isActive ? `btn-${this.control.name}` : "btn-dark";
+
+      // add theme icons
+      const icon = `theme-${this.control.name}`
+
+      return [buttonStyle,icon];
     },
   },
   methods: {
