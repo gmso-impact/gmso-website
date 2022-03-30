@@ -1,6 +1,6 @@
 {
-  "dateString": "Tue Mar 29 2022 10:59:13 GMT-0600 (Mountain Daylight Time)",
-  "date": "2022-03-29T16:59:13.504Z",
+  "dateString": "Tue Mar 29 2022 21:11:09 GMT-0600 (Mountain Daylight Time)",
+  "date": "2022-03-30T03:11:09.641Z",
   "recordsCount": 34,
   "url": "https://api.airtable.com/v0/appyTc8xRR9nR9sSB/All%20Stories?view=publicWebsite",
   "response": [
@@ -227,7 +227,8 @@
         ],
         "sp-Tagline": "Mapping household air quality",
         "sp-PopUpCardContent": "Most U.S. residents spend 90% of their time indoors, and the combination of chemicals and products used for everyday household activities like cooking and cleaning can lead to unexpected and potentially harmful airborne chemical compounds.",
-        "sp-StoryMapLink": "https://storymaps.arcgis.com/stories/e557e014e37b4a339da2d53c4aaea5dc"
+        "sp-StoryMapLink": "https://storymaps.arcgis.com/stories/e557e014e37b4a339da2d53c4aaea5dc",
+        "sp-StoryTitle": "El aire que respiramos"
       }
     },
     {

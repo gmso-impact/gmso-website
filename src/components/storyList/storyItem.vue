@@ -25,7 +25,12 @@
         class="card-body d-flex justify-content-center align-items-center p-1 text-center font-weight-bold"
       >
         <div>
-          {{ story.fields["en-StoryTitle"] }}
+          <div>
+            {{ story.fields["en-StoryTitle"] }}
+          </div>
+          <div v-if='story.fields["sp-StoryTitle"]' class="small d-none d-lg-block">
+            {{ story.fields["sp-StoryTitle"] }}
+          </div>
         </div>
       </div>
     </div>
