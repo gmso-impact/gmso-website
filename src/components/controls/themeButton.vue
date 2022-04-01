@@ -25,12 +25,14 @@ export default {
   computed: {
     buttonClasses: function () {
       // `this` points to the vm instance
-      const buttonStyle = this.control.isActive ? `btn-${this.control.name}` : "btn-dark";
+      const buttonStyle = this.control.isActive
+        ? `btn-${this.control.name}`
+        : "btn-dark";
 
       // add theme icons
-      const icon = `theme-${this.control.name}`
+      const icon = `theme-${this.control.name}`;
 
-      return [buttonStyle,icon];
+      return [buttonStyle, icon];
     },
   },
   methods: {

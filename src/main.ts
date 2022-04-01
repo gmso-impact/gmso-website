@@ -24,11 +24,10 @@ import "leaflet/dist/leaflet.css";
 // // Optionally install the BootstrapVue icon components plugin
 // Vue.use(IconsPlugin)
 
-
-import VueI18n from 'vue-i18n'
-Vue.use(VueI18n)
-import {I18nSetup} from "./translations"
-const i18n = new VueI18n(I18nSetup)
+import VueI18n from "vue-i18n";
+Vue.use(VueI18n);
+import { I18nSetup } from "./translations";
+const i18n = new VueI18n(I18nSetup);
 
 Vue.config.productionTip = false;
 
@@ -38,14 +37,23 @@ import {
   FontAwesomeLayersText,
 } from "@fortawesome/vue-fontawesome";
 import { library as Iconlibrary } from "@fortawesome/fontawesome-svg-core";
-import { faTimes, faBook, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTimes,
+  faBook,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
 Iconlibrary.add(faTimes, faBook, faGraduationCap);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);
 
+import VueRouter from "vue-router";
+import router from "./router";
+Vue.use(VueRouter);
+
 new Vue({
   store,
   i18n,
+  router,
   render: (h) => h(App),
 }).$mount("#app");

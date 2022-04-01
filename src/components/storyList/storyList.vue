@@ -1,6 +1,8 @@
 <template lang="">
   <div class="d-flex flex-column h-100 carbon">
-    <h2 class="text-center my-1 my-xxl-5 bg-white  d-xl-none">{{ $t(`tagline`) }}</h2>
+    <h2 class="text-center my-1 my-xxl-5 bg-white d-xl-none">
+      {{ $t(`tagline`) }}
+    </h2>
     <div class="flex-grow-1 border-top overflow-y-auto overflow-x-hidden">
       <div
         class="px-4 carbon min-100 d-flex flex-column justify-content-center"
@@ -26,15 +28,19 @@
         </div>
       </div>
     </div>
+    <QrStory></QrStory>
   </div>
 </template>
 <script>
 import StoryItem from "./storyItem.vue";
+import QrStory from "@/components/qr/qrStory.vue";
+
 import { mapGetters } from "vuex";
 
 export default {
   components: {
     StoryItem,
+    QrStory,
   },
   data() {
     return {};
@@ -44,7 +50,6 @@ export default {
       stories: "storyInMap",
     }),
   },
-  methods: {},
 };
 </script>
 <style lang="scss"></style>

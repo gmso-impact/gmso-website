@@ -1,9 +1,9 @@
 <template lang="">
-      <iframe
-        class="iframe-scale iframe-border-none"
-        :src="story.fields['en-StoryMapLink']"
-        title="Story Map"
-      ></iframe>
+  <iframe
+    class="iframe-scale iframe-border-none"
+    :src="story.fields['en-StoryMapLink']"
+    title="Story Map"
+  ></iframe>
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
@@ -19,10 +19,7 @@ export default {
       required: true,
     },
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

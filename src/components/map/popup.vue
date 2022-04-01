@@ -1,9 +1,12 @@
 <template lang="">
   <l-popup :options="options" class="popup" ref="popup">
-    <div class="card shadow"       :class="`bg-${story.fields['Story Theme']}`">
+    <div class="card shadow" :class="`bg-${story.fields['Story Theme']}`">
       <div class="p-1">
-      <PopupIFrame :story="story" v-if="story.fields['en-StoryMapLink']"></PopupIFrame>
-      <PopupSummary :story="story" v-else></PopupSummary>
+        <PopupIFrame
+          :story="story"
+          v-if="story.fields['en-StoryMapLink']"
+        ></PopupIFrame>
+        <PopupSummary :story="story" v-else></PopupSummary>
       </div>
       <PopupInfo :story="story"></PopupInfo>
     </div>
@@ -17,7 +20,6 @@ import PopupSummary from "./popupSummary.vue";
 import PopupIFrame from "./popupIFrame.vue";
 import PopupInfo from "./popupInfo.vue";
 
-
 export default {
   components: {
     LPopup,
@@ -29,7 +31,7 @@ export default {
     return {
       options: {
         maxWidth: "auto",
-                minWidth: "auto",
+        minWidth: "auto",
 
         keepInView: false,
         autoPan: true,
@@ -54,7 +56,7 @@ export default {
     }),
 
     isCurrentStory: function () {
-      return (this.storyCurrent && this.story.id === this.storyCurrent.id)
+      return this.storyCurrent && this.story.id === this.storyCurrent.id;
     },
   },
   methods: {
@@ -73,6 +75,4 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

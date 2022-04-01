@@ -26,8 +26,10 @@
         class="d-xxl-none"
       ></l-control-scale>
 
-      <l-control-zoom position="bottomleft" class="d-none d-xxl-block"></l-control-zoom>
-
+      <l-control-zoom
+        position="bottomleft"
+        class="d-none d-xxl-block"
+      ></l-control-zoom>
     </LMap>
     <div class="boxy boxy-top childPoint">
       <img
@@ -38,11 +40,8 @@
       />
     </div>
     <div class="boxy boxy-left childPoint">
-      <ThemeColumn></ThemeColumn>
+      <ControlGroup></ControlGroup>
     </div>
-    <!--<div class="boxy boxy-right d-none d-xxl-block childPoint">
-      <ThemeColumn></ThemeColumn>
-    </div>-->
     <div class="boxy boxy-bottom-right childPoint">
       <img
         src="Geo.png"
@@ -71,7 +70,7 @@ import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
 
-import ThemeColumn from "../controls/themeColumn.vue";
+import ControlGroup from "../controls/controlGroup.vue";
 import MapMarker from "./marker.vue";
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
@@ -81,7 +80,7 @@ export default {
   components: {
     LMap,
     //  LTileLayer,
-    ThemeColumn,
+    ControlGroup,
     MapMarker,
     OverlayStory,
     OverlayVideo,

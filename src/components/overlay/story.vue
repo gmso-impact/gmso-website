@@ -37,10 +37,10 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import StoryIFrame from "../storyIFrame/storyIFrame.vue"
+import StoryIFrame from "../storyIFrame/storyIFrame.vue";
 export default {
   components: {
-    StoryIFrame
+    StoryIFrame,
   },
   data() {
     return {};
