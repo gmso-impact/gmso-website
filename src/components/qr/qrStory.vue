@@ -1,15 +1,10 @@
 <template lang="">
-  <div class="qrStory">
+  <div class="qrStory bg-white" v-if="this.$route.name === 'Kiosk'">
     <button class="btn btn-block btn-secondary" v-on:click="printURL()">
       printURL
     </button>
-
-    <vue-qr
-      class="w-100"
-      text="https://google.com"
-      :size="1200"
-      qid="testid"
-    ></vue-qr>
+    <vue-qr class="w-100" :text="url" :size="1200" qid="testid"></vue-qr>
+    <div class="text-center">open on your phone</div>
   </div>
 </template>
 <script>
@@ -20,18 +15,20 @@ export default {
     VueQr,
   },
   data() {
-    return {};
+    return {
+      url: window.location.origin,
+    };
   },
   methods: {
     printURL: function () {
       console.log("im here");
-      this.$route.query.page;
+      this.$route.name === 'Home'
     },
   },
 };
 </script>
 <style lang="scss">
 .qrStory {
-  width: 200px;
+  width: 600px;
 }
 </style>

@@ -7,7 +7,7 @@
 import Main from "@/components/main/Main.vue";
 
 export default {
-  name: "Home",
+  name: "Web",
   components: {
     Main,
   },
