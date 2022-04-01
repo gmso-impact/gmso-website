@@ -4,12 +4,8 @@ export const languages = [
     language: "English",
   },
   {
-    locale: "sp",
+    locale: "es",
     language: "Español",
-  },
-  {
-    locale: "fr",
-    language: "Francés",
   },
 ];
 
@@ -59,7 +55,7 @@ const translations = {
       "Health and Human Sciences": "Health and Human Sciences",
     },
   },
-  sp: {
+  es: {
     hello: "Hola",
     tagline: "Encuentra tu historia @ CSU",
     "Read More": "Leer Más",
