@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{"18e0":function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("Main")},o=[],u=t("fef7"),c={name:"Home",components:{Main:u["a"]}},l=c,s=t("2877"),i=Object(s["a"])(l,a,o,!1,null,null,null);e["default"]=i.exports}}]);
-//# sourceMappingURL=about.b7926dfd.js.map
