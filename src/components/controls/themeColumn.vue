@@ -1,9 +1,6 @@
 <template lang="">
   <div class="d-flex flex-column">
-    <button
-      class="btn btn-white Greg"
-      v-on:click="resetTagsClicked"
-    >
+    <button class="btn btn-white Greg" v-on:click="resetTagsClicked">
       {{ $t(`All`) }}
     </button>
     <ThemeButton

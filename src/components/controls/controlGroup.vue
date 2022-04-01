@@ -1,7 +1,7 @@
 <template lang="">
   <div class="">
-    <Language class='mb-3'></Language>
-    <ThemeColumn class='mb-3'></ThemeColumn>
+    <Language class="mb-3"></Language>
+    <ThemeColumn class="mb-3"></ThemeColumn>
     <QrStory></QrStory>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   components: {
     Language,
     ThemeColumn,
-    QrStory
+    QrStory,
   },
   data() {
     return {};

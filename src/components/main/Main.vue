@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="d-flex flex-column h-100"
-    v-on:click="setLastInteraction"
-  >
+  <div class="d-flex flex-column h-100" v-on:click="setLastInteraction">
     <div
       id="header"
       v-if="false"

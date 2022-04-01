@@ -1,16 +1,16 @@
 <template lang="">
-    <div class='qrStory'>
-      <button class="btn btn-block btn-secondary" v-on:click="printURL()">
-        printURL
-      </button>
+  <div class="qrStory">
+    <button class="btn btn-block btn-secondary" v-on:click="printURL()">
+      printURL
+    </button>
 
-      <vue-qr
-        class="w-100"
-        text="https://google.com"
-        :size="1200"
-        qid="testid"
-      ></vue-qr>
-    </div>
+    <vue-qr
+      class="w-100"
+      text="https://google.com"
+      :size="1200"
+      qid="testid"
+    ></vue-qr>
+  </div>
 </template>
 <script>
 import VueQr from "vue-qr";
@@ -31,7 +31,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.qrStory{
+.qrStory {
   width: 200px;
 }
 </style>

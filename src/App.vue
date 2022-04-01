@@ -1,10 +1,11 @@
 <template>
-  <div id="app"
-      class="d-flex flex-column h-100"
-    v-on:click="setLastInteraction">
-
+  <div
+    id="app"
+    class="d-flex flex-column h-100"
+    v-on:click="setLastInteraction"
+  >
     <router-view />
-    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -33,5 +34,4 @@ export default class App extends Vue {}
 
 <style lang="scss">
 @use "sass:map";
-
 </style>
