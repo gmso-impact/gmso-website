@@ -1,6 +1,6 @@
 {
-  "dateString": "Tue Mar 29 2022 21:11:09 GMT-0600 (Mountain Daylight Time)",
-  "date": "2022-03-30T03:11:09.641Z",
+  "dateString": "Fri Apr 01 2022 12:44:35 GMT-0600 (Mountain Daylight Time)",
+  "date": "2022-04-01T18:44:35.996Z",
   "recordsCount": 34,
   "url": "https://api.airtable.com/v0/appyTc8xRR9nR9sSB/All%20Stories?view=publicWebsite",
   "response": [
@@ -88,53 +88,6 @@
       }
     },
     {
-      "id": "recvyevG82galuqu4",
-      "createdTime": "2021-08-29T20:38:35.000Z",
-      "fields": {
-        "Last Name": "Venkatachalam",
-        "First Name": "Chandra",
-        "Production Phase": "Ready to Launch",
-        "Institution": "Fort Collins",
-        "College/Division": [
-          "Walter Scott, Jr. College of Engineering"
-        ],
-        "Unit/Program": [
-          "Electrical and Computer Engineering"
-        ],
-        "Research Focus": "Radar observation - Space",
-        "en-StoryTitle": "Sensing Storms With Radar",
-        "en-Tagline": "Saving lives from the world's most extreme weather",
-        "Research Blurb": "V. \"Chandra\" Chandrasekaran, professor of Electrical and Computer Engineering at CSU, is one of the world's leading experts in geoscience and remote sensing — a field that uses data from satellites to advance understanding of the land, oceans, atmosphere, and space. His work with meteorological radar systems has led to technologies that protect lives and improve weather forecasting all over the world — including Finland, where he was knighted by the government for his international work.",
-        "Blurb Author": "CN",
-        "Spatial Angle": "Locations with severe hurricanes and tornados: If this exists, let's not recreate it.",
-        "LAT": "40",
-        "LONG": "-105",
-        "Story Theme": "Environment",
-        "ID Tags": [
-          "Alumnus"
-        ],
-        "Institutional/Program Stories": [
-          "rec4ydfnP0CQNy7EY",
-          "rec0scLExpYcBzVhl"
-        ],
-        "Production Round": "Round 1",
-        "Year": "1983, 1996",
-        "Degree": [
-          "MS",
-          "PHD"
-        ],
-        "Story Assets": [
-          "Find Existing Map"
-        ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
-        "SharePoint Folder": "https://colostate.sharepoint.com/:f:/s/CAS_Global_Mapping_and_Strategic_Outreach/EoI94Ka59KdAjQYOW-WcHUEBm5PyXUOwUhxwfdqLebhZrg?e=CDEXu4",
-        "en-StoryMapLink": "https://storymaps.arcgis.com/stories/fa5089ffab354d8d9c21f6dc1ec63623/edit",
-        "sp-Tagline": "Saving lives from the world's most extreme weather",
-        "sp-StoryMapLink": "https://storymaps.arcgis.com/stories/fa5089ffab354d8d9c21f6dc1ec63623/edit"
-      }
-    },
-    {
       "id": "rectwh7SlgKgiEl4e",
       "createdTime": "2021-08-29T20:38:35.000Z",
       "fields": {
@@ -167,7 +120,7 @@
           "Atmospheric Chemist"
         ],
         "SharePoint Folder": "https://colostate.sharepoint.com/:f:/s/CAS_Global_Mapping_and_Strategic_Outreach/EjHsy9oY-UxJnujvvirw3ZoBo_xOFPaFpgS09arqjKTRJw?e=ayYKhy",
-        "en-StoryMapLink": "https://storymaps.arcgis.com/stories/e557e014e37b4a339da2d53c4aaea5dc",
+        "en-StoryMapLink": "https://storymaps.arcgis.com/stories/fee36c773eeb482ba4d766234013816c",
         "Story Card Image": [
           {
             "id": "attKvEaVz0KvtTHBn",
@@ -228,7 +181,54 @@
         "sp-Tagline": "Mapping household air quality",
         "sp-PopUpCardContent": "Most U.S. residents spend 90% of their time indoors, and the combination of chemicals and products used for everyday household activities like cooking and cleaning can lead to unexpected and potentially harmful airborne chemical compounds.",
         "sp-StoryMapLink": "https://storymaps.arcgis.com/stories/e557e014e37b4a339da2d53c4aaea5dc",
-        "sp-StoryTitle": "El aire que respiramos"
+        "sp-StoryTitle": "El Aire Que Respiramos"
+      }
+    },
+    {
+      "id": "recvyevG82galuqu4",
+      "createdTime": "2021-08-29T20:38:35.000Z",
+      "fields": {
+        "Last Name": "Venkatachalam",
+        "First Name": "Chandra",
+        "Production Phase": "Ready to Launch",
+        "Institution": "Fort Collins",
+        "College/Division": [
+          "Walter Scott, Jr. College of Engineering"
+        ],
+        "Unit/Program": [
+          "Electrical and Computer Engineering"
+        ],
+        "Research Focus": "Radar observation - Space",
+        "en-StoryTitle": "Sensing Storms With Radar",
+        "en-Tagline": "Saving lives from the world's most extreme weather",
+        "Research Blurb": "V. \"Chandra\" Chandrasekaran, professor of Electrical and Computer Engineering at CSU, is one of the world's leading experts in geoscience and remote sensing — a field that uses data from satellites to advance understanding of the land, oceans, atmosphere, and space. His work with meteorological radar systems has led to technologies that protect lives and improve weather forecasting all over the world — including Finland, where he was knighted by the government for his international work.",
+        "Blurb Author": "CN",
+        "Spatial Angle": "Locations with severe hurricanes and tornados: If this exists, let's not recreate it.",
+        "LAT": "40",
+        "LONG": "-105",
+        "Story Theme": "Environment",
+        "ID Tags": [
+          "Alumnus"
+        ],
+        "Institutional/Program Stories": [
+          "rec4ydfnP0CQNy7EY",
+          "rec0scLExpYcBzVhl"
+        ],
+        "Production Round": "Round 1",
+        "Year": "1983, 1996",
+        "Degree": [
+          "MS",
+          "PHD"
+        ],
+        "Story Assets": [
+          "Find Existing Map"
+        ],
+        "Start date": "2021-07-01",
+        "End date": "2021-10-01",
+        "SharePoint Folder": "https://colostate.sharepoint.com/:f:/s/CAS_Global_Mapping_and_Strategic_Outreach/EoI94Ka59KdAjQYOW-WcHUEBm5PyXUOwUhxwfdqLebhZrg?e=CDEXu4",
+        "en-StoryMapLink": "https://storymaps.arcgis.com/stories/fa5089ffab354d8d9c21f6dc1ec63623/edit",
+        "sp-Tagline": "Saving lives from the world's most extreme weather",
+        "sp-StoryMapLink": "https://storymaps.arcgis.com/stories/fa5089ffab354d8d9c21f6dc1ec63623/edit"
       }
     },
     {

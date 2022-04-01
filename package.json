@@ -7,8 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "vue-cli-service build",
-    "fetch": "node src/fetch/start.js",
-    "predeploy": "node src/fetch/start.js"
+    "fetch": "node src/fetch/start.ts",
+    "predeploy": "node src/fetch/start.ts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",

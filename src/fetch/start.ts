@@ -1,7 +1,7 @@
 require("dotenv").config();
-const readAirtable = require("./read.js");
-const writeFile = require("./write.js");
-console.log("start of fetch/start.js");
+const readAirtable = require("./read.ts");
+const writeFile = require("./write.ts");
+console.log("start of fetch/start.ts");
 
 // fetch from air table, then write it
 readAirtable(
