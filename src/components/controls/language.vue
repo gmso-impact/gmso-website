@@ -1,29 +1,26 @@
 <template lang="">
-    <div class="btn-group mb-4"
-     role="group" 
-     aria-label="Language Toggle Buttons"
-     >
-        <button 
-            v-for="(lang) in langs" :key="lang.locale"
-            type="button" 
-            class="btn"
-            :class="{
-                'btn-white': $root.$i18n.locale === lang.locale,
-                'btn-secondary': $root.$i18n.locale !== lang.locale 
-            }" 
-            v-on:click="setLanguage(lang.locale)" 
-        >
-            {{lang.language}}
-        </button>
-    </div>
+  <div class="btn-group" role="group" aria-label="Language Toggle Buttons">
+    <button
+      v-for="lang in langs"
+      :key="lang.locale"
+      type="button"
+      class="btn"
+      :class="{
+        'btn-white': $root.$i18n.locale === lang.locale,
+        'btn-secondary': $root.$i18n.locale !== lang.locale,
+      }"
+      v-on:click="setLanguage(lang.locale)"
+    >
+      {{ lang.language }}
+    </button>
+  </div>
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import {languages} from "../../translations.ts"
+import { languages } from "../../translations.ts";
 export default {
-
-  data () {
-    return { langs: languages}
+  data() {
+    return { langs: languages };
   },
   computed: {
     ...mapGetters({
@@ -35,12 +32,10 @@ export default {
       resetTags: "resetTags",
     }),
     setLanguage: function (locale) {
-      this.$root.$i18n.locale = locale
+      this.$root.$i18n.locale = locale;
     },
   },
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

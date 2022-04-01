@@ -6,18 +6,14 @@
     ref="marker"
     v-on:click="clickMarker"
   >
-    <Popup
-            :story="story"
-        :key="story.id"
-    >
-    </Popup>
+    <Popup :story="story" :key="story.id"> </Popup>
   </l-marker>
 </template>
 <script>
 import { LMarker, LIcon } from "vue2-leaflet";
 import { latLng, divIcon, point } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
-import Popup from "./popup.vue"
+import Popup from "./popup.vue";
 
 export default {
   components: {
@@ -71,7 +67,6 @@ export default {
         this.setStoryCurrent(this.story);
       }
     },
-
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {
