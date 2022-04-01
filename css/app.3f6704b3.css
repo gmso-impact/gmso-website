@@ -1,4 +1,4 @@
-.story-card[data-v-4ed9e322]{min-height:10vh;border-radius:0}.summary-blurb{max-height:400px;overflow-y:auto}@use "sass:map"
+.story-card[data-v-4bd29571]{min-height:10vh;border-radius:0}.qrStory{width:200px}.summary-blurb{max-height:400px;overflow-y:auto}@use "sass:map"
 
 .themeIcon{background-size:auto 90%;background-repeat:no-repeat;background-attachment:fixed;background-position:0}/*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
