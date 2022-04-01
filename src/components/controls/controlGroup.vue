@@ -1,8 +1,8 @@
 <template lang="">
   <div class="">
-    <KioskSwitch class='d-block mb-3'> </KioskSwitch>
-    <Language class="d-block mb-3"></Language>
-    <ThemeColumn class="mb-3"></ThemeColumn>
+    <KioskSwitch class='d-block mb-3 mb-xxl-5'> </KioskSwitch>
+    <Language class="d-block mb-3 mb-xxl-5"></Language>
+    <ThemeColumn class="mb-3 mb-xxl5"></ThemeColumn>
     <QrStory></QrStory>
   </div>
 </template>
