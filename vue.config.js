@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/gmso-website/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
 };
