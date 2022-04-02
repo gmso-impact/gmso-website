@@ -22,13 +22,13 @@ export default {
   methods: {
     printURL: function () {
       console.log("router troubleshoot button");
-      this.$route.name === 'Home'
+      this.$route.name === "Home";
     },
   },
 };
 </script>
 <style lang="scss">
 .qrStory {
-  width: 600px;
+  width: 100px;
 }
 </style>

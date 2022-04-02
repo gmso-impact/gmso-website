@@ -2,18 +2,19 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
-
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "node_modules/bootstrap-vue/src/index.scss";
 
 // Override Boostrap Styles
 @import "background.scss";
+@import "title.scss";
 @import "map.scss";
 @import "marker.scss";
 @import "popup.scss";
 @import "helper.scss";
 @import "btn.scss";
+@import "geo.scss";
 @import "boxy.scss";
 @import "borders.scss";
 @import "frames.scss";

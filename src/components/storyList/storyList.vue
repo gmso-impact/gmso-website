@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <QrStory></QrStory>
+    <QrStory v-if="false"></QrStory>
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template lang="">
   <div class="">
-    <KioskSwitch class='d-block mb-3 mb-xxl-5'> </KioskSwitch>
+    <KioskSwitch class="d-block mb-3 mb-xxl-5"> </KioskSwitch>
     <Language class="d-block mb-3 mb-xxl-5"></Language>
     <ThemeColumn class="mb-3 mb-xxl5"></ThemeColumn>
     <QrStory></QrStory>

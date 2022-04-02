@@ -31,13 +31,22 @@
         class="d-none d-xxl-block"
       ></l-control-zoom>
     </LMap>
-    <div class="boxy boxy-top childPoint">
+    <div v-if="$route.name === 'Web'" class="boxy boxy-top childPoint">
       <img
         src="GMSOtitle1.png"
         alt="CSU Impact"
         class="title-img"
         v-on:click="toggleVideoFrame"
       />
+      <div class="breakpoint_testing text-white d-none">
+        <h2 class="text-center">{{ getBreakpoints[0] }}</h2>
+        <div class="text-center d-block d-sm-none">xs</div>
+        <div class="text-center d-none d-sm-block d-md-none">sm</div>
+        <div class="text-center d-none d-md-block d-lg-none">md</div>
+        <div class="text-center d-none d-lg-block d-xl-none">lg</div>
+        <div class="text-center d-none d-xl-block d-xxl-none">xl</div>
+        <div class="text-center d-none d-xxl-block">xxl</div>
+      </div>
     </div>
     <div class="boxy boxy-left childPoint">
       <ControlGroup></ControlGroup>
@@ -113,6 +122,7 @@ export default {
       center: "mapGetCenterNew",
       mapGetBoundsNew: "mapGetBoundsNew",
       storyLayer: "storyLayer",
+      getBreakpoints: "getBreakpoints",
     }),
   },
   methods: {
@@ -149,7 +159,6 @@ export default {
           this.$refs.map.mapObject.removeLayer(this.storyLayerEsriObject);
         });
       }
-      console.log("im here");
       if (newLayer) {
         this.storyLayerEsriObject = featureLayer({
           url: newLayer,
@@ -159,8 +168,6 @@ export default {
           cacheLayers: false,
           minZoom: 6,
           pointToLayer: function (geojson, latlng) {
-            console.log("im here");
-
             return circleMarker(latlng);
           },
         });

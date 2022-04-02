@@ -1,0 +1,26 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+.geo-img {
+  min-width: 60px;
+  width: 10vw;
+  cursor: help;
+}
+.geo-img:hover {
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+@include media-breakpoint-up(md) {
+  .geo-img {
+    max-width: 150px;
+    cursor: help;
+  }
+}
+@include media-breakpoint-only(xxl) {
+  .geo-img {
+    max-width: 300px;
+  }
+  .geo-img:hover {
+    filter: drop-shadow(0px 0px 2px #ffffff);
+  }
+}

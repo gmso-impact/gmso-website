@@ -2,6 +2,8 @@ import Vue from "vue";
 import Vuex from "vuex";
 import map from "./map";
 import storys from "./storys";
+import breakpoint from "./breakpoint";
+
 Vue.use(Vuex);
 const seconds = 1000;
 const minutes = 60 * seconds;
@@ -73,5 +75,6 @@ export default new Vuex.Store({
   modules: {
     map: map,
     storys: storys,
+    breakpoint: breakpoint,
   },
 });

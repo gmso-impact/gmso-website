@@ -82,7 +82,6 @@ export default {
     },
   },
   beforeDestroy() {
-    console.log("beforeDestroy");
     if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
       this.setStoryCurrent(null);
     }

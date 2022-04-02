@@ -1,0 +1,20 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+.title-img {
+  max-width: 200px;
+  cursor: help;
+}
+.title-img:hover {
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+
+@include media-breakpoint-only(xxl) {
+  .title-img {
+    max-width: 1200px;
+  }
+  .title-img:hover {
+    filter: drop-shadow(0px 0px 2px #ffffff);
+  }
+}
