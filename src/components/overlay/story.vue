@@ -16,7 +16,7 @@
         <button
           class="btn"
           :class="`btn-${story.fields['Story Theme']}`"
-          v-on:click="setStoryFrame(null)"
+          v-on:click="clickClose()"
         >
           <font-awesome-icon :icon="['fas', 'times']" />
           Close
@@ -26,7 +26,7 @@
         <button
           class="btn"
           :class="`btn-${story.fields['Story Theme']}`"
-          v-on:click="setStoryFrame(null)"
+          v-on:click="clickClose()"
         >
           <font-awesome-icon :icon="['fas', 'times']" />
           Close
@@ -52,7 +52,14 @@ export default {
     }),
   },
   methods: {
-    ...mapMutations({ setStoryFrame: "setStoryFrame" }),
+    ...mapMutations({
+      setStoryFrame: "setStoryFrame",
+      setStoryCurrent: "setStoryCurrent",
+    }),
+    clickClose: function () {
+      this.setStoryCurrent(null);
+      this.setStoryFrame(null);
+    },
   },
 };
 </script>

@@ -34,6 +34,7 @@ export default {
   computed: {
     ...mapGetters({
       storyCurrent: "storyCurrent",
+      getBreakpoints: "getBreakpoints",
     }),
     latLngObj: function () {
       return latLng(this.story.fields["LAT"], this.story.fields["LONG"]);
@@ -63,18 +64,24 @@ export default {
     clickMarker: function () {
       if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
         this.setStoryCurrent(null);
+        this.setStoryFrame(null);
       } else {
-        this.setStoryCurrent(this.story);
+        if (this.getBreakpoints.includes("xl")) {
+          this.setStoryCurrent(this.story);
+        } else {
+          this.setStoryFrame(this.story);
+        }
       }
     },
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {
+      console.log('iom here')
       if (newStory?.id === this.story.id) {
         this.$nextTick(() => {
           this.$refs.marker.mapObject.openPopup();
         });
-      } else if (oldStory?.id === this.story.id) {
+      } else { //if (this.$refs.marker.mapObject.isOpen()) 
         this.$nextTick(() => {
           this.$refs.marker.mapObject.closePopup();
         });
@@ -82,7 +89,6 @@ export default {
     },
   },
   beforeDestroy() {
-    console.log("beforeDestroy");
     if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
       this.setStoryCurrent(null);
     }

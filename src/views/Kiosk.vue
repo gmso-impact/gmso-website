@@ -1,7 +1,5 @@
 <template>
-  <Main
-      v-on:click="setLastInteraction"
-  ></Main>
+  <Main v-on:click="setLastInteraction"></Main>
 </template>
 
 <script lang="ts">
@@ -14,7 +12,7 @@ export default {
   components: {
     Main,
   },
-    mounted() {
+  mounted() {
     this.startTimer();
   },
   methods: {

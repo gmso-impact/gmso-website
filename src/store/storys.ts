@@ -156,7 +156,6 @@ const storys = {
       });
     },
     resetTags: (state, tagName) => {
-      console.log();
       state[tagName] = state[tagName].map((tag) => {
         return {
           ...tag,

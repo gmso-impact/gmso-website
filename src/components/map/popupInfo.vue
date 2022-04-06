@@ -6,15 +6,7 @@
       "
       :icon="['fas', 'graduation-cap']"
     />
-    <!--<button
-      class="btn btn-outline-dark"
-      v-on:click="clickReadMore"
-      v-if="story.fields['en-StoryMapLink']"
-    >
-      <font-awesome-icon :icon="['fas', 'book']" />
-      {{ $t(`Read More`) }}
-    </button>-->
-    <button class="btn btn-dark mr-0 ml-auto float-right" v-on:click="clickClose">
+    <button class="btn btn-outline-dark" v-on:click="clickClose()">
       <font-awesome-icon :icon="['fas', 'times']" />
       {{ $t(`Close`) }}
     </button>

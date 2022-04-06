@@ -1,18 +1,16 @@
 <template>
-  <div
-    id="app"
-    class="d-flex flex-column h-100"
-  >
+  <div id="app" class="d-flex flex-column h-100">
     <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import breakpoint from "@/mixins/breakpoint.ts";
 
 @Component({
-  components: {
-  },
+  mixins: [breakpoint],
+  components: {},
 })
 export default class App extends Vue {}
 </script>

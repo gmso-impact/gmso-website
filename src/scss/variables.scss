@@ -62,7 +62,8 @@ $theme-colors: (
 .theme-Food {
   background-image:url('https://ibis-test1.nrel.colostate.edu/GMSO/images/icons/Food.png');
 }
-
+// If you change this
+// be sure to also change src/mixin/breakpoint.ts
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

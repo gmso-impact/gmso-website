@@ -16,11 +16,11 @@ const routes: Array<RouteConfig> = [
     name: "Kiosk",
     component: Kiosk,
   },
-  { 
-    path: '/:pathMatch(.*)*',
-    redirect: to => {
-      return { name: 'Web' }
-    }
+  {
+    path: "/:pathMatch(.*)*",
+    redirect: (to) => {
+      return { name: "Web" };
+    },
   },
 ];
 
