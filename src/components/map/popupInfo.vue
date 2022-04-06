@@ -1,21 +1,20 @@
 <template lang="">
-  <div class="d-flex flex-wrap pb-1 px-1 justify-content-between">
-    <div>Header info</div>
+  <div class="d-flex flex-wrap pb-1 px-1">
     <font-awesome-icon
       v-if="
         story.fields['ID Tags'] && story.fields['ID Tags'].includes('Alumnus')
       "
       :icon="['fas', 'graduation-cap']"
     />
-    <button
+    <!--<button
       class="btn btn-outline-dark"
       v-on:click="clickReadMore"
       v-if="story.fields['en-StoryMapLink']"
     >
       <font-awesome-icon :icon="['fas', 'book']" />
       {{ $t(`Read More`) }}
-    </button>
-    <button class="btn btn-outline-dark" v-on:click="clickClose">
+    </button>-->
+    <button class="btn btn-dark mr-0 ml-auto float-right" v-on:click="clickClose">
       <font-awesome-icon :icon="['fas', 'times']" />
       {{ $t(`Close`) }}
     </button>

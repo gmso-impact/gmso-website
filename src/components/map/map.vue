@@ -80,7 +80,7 @@ export default {
   components: {
     LMap,
     //  LTileLayer,
-    ControlGroup,
+    //  ControlGroup,
     MapMarker,
     OverlayStory,
     OverlayVideo,

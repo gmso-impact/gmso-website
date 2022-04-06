@@ -69,7 +69,7 @@
 
 .popup-iframe {
   padding: $font-size-base / 8;
-  height: 60vh ;
+  height: 60vh;
   width: 60vw;
   z-index: 99999 !important;
 }
@@ -90,7 +90,7 @@
   .popup-iframe {
     padding: $font-size-xxl / 4;
     height: 100vh / 5 * $panels * 1.8;
-    width: 100vw / 5 * $panels * 2;
+    width: 100vw / 5 * $panels * 1.5;
     z-index: 99999 !important;
   }
   .iframe-scale {
