@@ -15,7 +15,7 @@
       <font-awesome-icon :icon="['fas', 'book']" />
       {{ $t(`Read More`) }}
     </button>
-    <button class="btn btn-outline-dark" v-on:click="clickClose">
+    <button class="btn btn-outline-dark" v-on:click="clickClose()">
       <font-awesome-icon :icon="['fas', 'times']" />
       {{ $t(`Close`) }}
     </button>
