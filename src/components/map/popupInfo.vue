@@ -1,14 +1,14 @@
 <template lang="">
-  <div class="d-flex flex-wrap pb-1 px-1">
+  <div class="d-flex flex-wrap pb-1 px-1 ml-xxl-5 mr-xxl-5 justify-content-xxl-between">
     <font-awesome-icon
       v-if="
         story.fields['ID Tags'] && story.fields['ID Tags'].includes('Alumnus')
       "
       :icon="['fas', 'graduation-cap']"
     />
-    <button class="btn btn-outline-dark" v-on:click="clickClose()">
+    <button class="btn btn-dark mr-0 ml-auto" v-on:click="clickClose">
       <font-awesome-icon :icon="['fas', 'times']" />
-      {{ $t(`Close`) }}
+      {{ $t(``) }}
     </button>
   </div>
 </template>

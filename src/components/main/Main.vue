@@ -11,7 +11,7 @@
       <div class="left d-none d-lg-block col-lg-4 col-xxl-4">
         <StoryList></StoryList>
       </div>
-      <div class="right col-1 col-lg-1 col-xxl-1 carbon h-100 p-xxl-5 border border-light">
+      <div class="right col-1 col-lg-1 col-xxl-1 carbon h-100 p-xxl-4 border border-light">
           <ThemeColumn></ThemeColumn>
       </div>
       <div class="right col-12 col-lg-7 col-xxl-7"><Map></Map></div>

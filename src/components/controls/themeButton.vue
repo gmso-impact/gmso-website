@@ -1,7 +1,7 @@
 <template lang="">
   <button
     :class="buttonClasses"
-    class="btn mt-2 mt-xxl-4 shadow themeIcon text-black"
+    class="btn mt-2 mt-xxl-4 shadow themeIcon font-weight-bold"
     :key="control.name"
     v-on:click="setTagClicked"
   >
