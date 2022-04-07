@@ -6,6 +6,12 @@
       "
       :icon="['fas', 'graduation-cap']"
     />
+    <font-awesome-icon
+      v-if="
+        story.fields['ID Tags'] && story.fields['ID Tags'].includes('First Generation')
+      "
+      :icon="['fas', 'award']"
+    />
     <button class="btn btn-dark mr-0 ml-auto" v-on:click="clickClose">
       <font-awesome-icon :icon="['fas', 'times']" />
       {{ $t(``) }}
