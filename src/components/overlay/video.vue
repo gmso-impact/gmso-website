@@ -1,6 +1,6 @@
 <template lang="">
   <div class="videoFrame overlay childPoint" v-if="isVideoFrameOpen">
-    <div class="controlFrame px-1 py-1 rounded bg-white">
+    <div class="controlFrame px-1 py-1 rounded carbon border border-light">
       <video
         class="innerFrame"
         title="Stories at CSU"
@@ -15,15 +15,15 @@
         Your browser does not support the video tag.
       </video>
       <div class="topClose">
-        <button class="btn btn-white" v-on:click="closeVideoFrame()">
+        <button class="btn btn-black" v-on:click="closeVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(`Close`) }}
+          {{ $t(``) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">
-        <button class="btn btn-white" v-on:click="closeVideoFrame()">
+        <button class="btn btn-black" v-on:click="closeVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(`Close`) }}
+          {{ $t(``) }}
         </button>
       </div>
     </div>

@@ -28,12 +28,12 @@
           <div>
             {{ story.fields["en-StoryTitle"] }}
           </div>
-          <div
+          <!--<div
             v-if="story.fields['sp-StoryTitle']"
             class="small d-none d-lg-block"
           >
             {{ story.fields["sp-StoryTitle"] }}
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
