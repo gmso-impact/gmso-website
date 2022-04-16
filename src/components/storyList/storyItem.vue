@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    class="col-md-6 col-lg-6 col-xxl-4 pt-4 my-1"
+    class="col-lg-12 col-xl-6 col-xxl-4 pt-2 p2-xxl-4 my-1"
     v-if="story.fields['en-StoryTitle']"
   >
     <div

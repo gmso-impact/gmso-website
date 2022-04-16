@@ -1,13 +1,13 @@
 <template lang="">
   <div class="d-flex flex-column h-100 carbon">
-    <h2 class="text-center my-1 my-xxl-5 bg-white d-xl-none">
+    <h3 class="text-center my-1 my-xxl-5 bg-white d-xl-none">
       {{ $t(`tagline`) }}
-    </h2>
+    </h3>
     <div class="flex-grow-1 overflow-y-auto overflow-x-hidden">
       <div
         class="px-4 carbon min-100 d-flex flex-column justify-content-center"
       >
-        <div class="row pb-3">
+        <div class="row no-gutterspb-3">
           <StoryItem
             v-for="story in stories"
             :key="story.name"

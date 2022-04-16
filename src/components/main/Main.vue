@@ -14,11 +14,11 @@
       />
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">
-      <div class="left d-none d-lg-block col-lg-4 col-xxl-4">
+      <div class="left d-none d-lg-block col-lg-3 col-xxl-3">
         <StoryList></StoryList>
       </div>
-      <div class="right col-1 col-lg-1 col-xxl-1 carbon h-100 p-xxl-4 border-left border-right border-map-light">
-          <ThemeColumn></ThemeColumn>
+      <div class="right d-none d-lg-block col-lg-2 col-xxl-2 carbon h-100 p-2 p-xxl-4 border-left border-right border-map-light">
+          <ControlGroup></ControlGroup>
       </div>
       <div class="right col-12 col-lg-7 col-xxl-7"><Map></Map></div>
     </div>
@@ -36,16 +36,14 @@
 // @ is an alias to /src
 import StoryList from "@/components/storyList/storyList.vue";
 import Map from "@/components/map/map.vue";
-import ThemeColumn from "@/components/controls/themeColumn.vue";
-import ThemeBottom from "@/components/controls/themeBottom.vue";
+import ControlGroup from "@/components/controls/controlGroup.vue";
 
 export default {
   name: "Main",
   components: {
     StoryList,
     Map,
-    ThemeColumn,
-    ThemeBottom,
+    ControlGroup
   },
 };
 </script>

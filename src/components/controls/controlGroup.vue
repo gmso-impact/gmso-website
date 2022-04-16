@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="">
+  <div class="d-flex h-100 flex-column">
     <KioskSwitch class="d-block mb-3 mb-xxl-5"> </KioskSwitch>
     <Language class="d-block mb-3 mb-xxl-5"></Language>
     <ThemeColumn class="mb-3 mb-xxl5"></ThemeColumn>
