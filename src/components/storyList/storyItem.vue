@@ -13,9 +13,9 @@
     >
       <img
         v-if="
-          story.fields['Pop-Up Card Image'] &&
-          story.fields['Pop-Up Card Image'][0] &&
-          story.fields['Pop-Up Card Image'][0].thumbnails
+          story.fields['Story Card Image'] &&
+          story.fields['Story Card Image'][0] &&
+          story.fields['Story Card Image'][0].thumbnails
         "
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
         class="w-100 rounded-top"
