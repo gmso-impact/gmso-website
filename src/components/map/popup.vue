@@ -63,7 +63,6 @@ export default {
       setStoryCurrent: "setStoryCurrent",
       setStoryFrame: "setStoryFrame",
     }),
-
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {

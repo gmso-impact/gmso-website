@@ -4,8 +4,8 @@
     <Language class="d-block mb-3 mb-xxl-5"></Language>
     <ThemeColumn class="mb-3 mb-xxl-5"></ThemeColumn>
     <div class="d-flex row justify-content-between">
-      <QRSite class="col-5 col-xxl-3"></QRSite>
-      <Geo class="col-5 col-xxl-4"></Geo>
+      <QRSite class="col-12 col-xxl-3 order-2 order-xxl-1 mt-3"></QRSite>
+      <Geo class="col-12 col-xxl-4 order-1 order-xxl-2"></Geo>
     </div>
   </div>
 </template>

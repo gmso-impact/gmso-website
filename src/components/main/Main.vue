@@ -13,11 +13,11 @@
         <StoryList></StoryList>
       </div>
       <div
-        class="right d-none d-lg-block col-lg-2 col-xxl-2 carbon h-100 p-2 p-xxl-4 border-left border-right border-map-light"
+        class="right d-none d-lg-block col-lg-1 col-xxl-2 carbon h-100 p-2 p-xxl-4 border-left border-right border-map-light"
       >
         <ControlGroup></ControlGroup>
       </div>
-      <div class="right col-12 col-lg-7 col-xxl-7"><Map></Map></div>
+      <div class="right col-12 col-lg-8 col-xxl-7"><Map></Map></div>
     </div>
     <div
       id="footer"

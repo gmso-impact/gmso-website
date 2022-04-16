@@ -1,7 +1,7 @@
 <template lang="">
   <div class="d-flex flex-column justify-content-md-center h-100">
     <button
-      class="btn btn-white font-weight-bold mb-2"
+      class="btn btn-white font-weight-bold mb-2 mb-xxl-5"
       v-on:click="resetTagsClicked"
     >
       {{ $t(`All`) }}

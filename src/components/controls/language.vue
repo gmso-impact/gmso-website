@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    class="btn-group d-flex"
+    class="btn-group d-flex flex-column flex-xxl-row"
     role="group"
     aria-label="Language Toggle Buttons"
   >

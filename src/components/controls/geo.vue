@@ -1,11 +1,11 @@
 <template lang="">
-<div class='h-100 d-flex align-items-end'>
-  <img
-    src="Geo.png"
-    class="geo-img w-100"
-    v-on:click="toggleVideoFrame"
-    alt="Click to watch the intro video"
-  />
+  <div class="d-flex flex-grow align-items-end">
+    <img
+      src="Geo.png"
+      class="geo-img w-100"
+      v-on:click="toggleVideoFrame"
+      alt="Click to watch the intro video"
+    />
   </div>
 </template>
 <script>

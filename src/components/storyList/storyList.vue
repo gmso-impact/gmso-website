@@ -7,7 +7,7 @@
       <transition-group
         name="story-list"
         tag="div"
-        class="story-list d-flex h-100 align-content-center row no-gutters"
+        class="story-list d-flex h-100 align-content-center row no-gutters mt-xxl-5"
         @before-leave="beforeLeave"
       >
         <StoryItem
@@ -69,7 +69,7 @@ export default {
 
 /* moving */
 .story-list-move {
-  transition: all 500ms ease;
+  transition: all 1000ms ease;
 }
 .story-list-move-active {
 }
@@ -85,7 +85,7 @@ export default {
 
 /* disappearing */
 .story-list-leave-active {
-  transition: all 1000ms ease-in;
+  transition: all 600ms ease-in;
   z-index: 0;
   position: absolute;
 }
