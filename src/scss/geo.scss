@@ -22,16 +22,12 @@
 }
 
 
-.qrStory {
-
-}
-
-
-@include media-breakpoint-up(md) {
-  .qrStory {
-  }
+.font-qr-site {
+  font-size: .7rem;
 }
 @include media-breakpoint-only(xxl) {
-  .qrStory {
+
+  .font-qr-site {
+    font-size: 1.7rem;
   }
 }
