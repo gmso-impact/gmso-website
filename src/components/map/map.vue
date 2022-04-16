@@ -36,7 +36,6 @@
         src="GMSOtitle1.png"
         alt="CSU Impact"
         class="title-img"
-        v-on:click="toggleVideoFrame"
       />
       <div class="breakpoint_testing text-white d-none">
         <h2 class="text-center">{{ getBreakpoints[0] }}</h2>
@@ -97,10 +96,8 @@ export default {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
-      basemapOld: basemapLayer("DarkGray", { apikey }),
-      basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", {
-        apikey: apikey,
-      }),
+      //basemapOld: basemapLayer("DarkGray", { apikey }),
+      //basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       apikey: apikey,
       storyLayerEsriObject: null,
       mapOptions: {

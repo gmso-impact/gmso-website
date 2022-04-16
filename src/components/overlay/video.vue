@@ -15,7 +15,7 @@
         Your browser does not support the video tag.
       </video>
       <div class="topClose">
-        <button class="btn btn-black" v-on:click="closeVideoFrame()">
+        <button class="btn btn-black" v-on:click="clickCloseVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
           {{ $t(``) }}
         </button>
@@ -44,7 +44,7 @@ export default {
     }),
   },
   methods: {
-    ...mapMutations({ closeVideoFrame: "closeVideoFrame" }),
+    ...mapMutations({ clickCloseVideoFrame: "closeVideoFrame" }),
   },
   watch: {
     isVideoFrameOpen: function (isOpen) {

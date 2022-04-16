@@ -36,7 +36,6 @@ export default {
         keepInView: false,
         autoPan: true,
         autoClose: true,
-        closeOnClick: false,
         closeButton: false,
         className: "map-popup-container",
         autoPanPaddingTopLeft: [160, 20],
@@ -64,9 +63,7 @@ export default {
       setStoryCurrent: "setStoryCurrent",
       setStoryFrame: "setStoryFrame",
     }),
-    clickClose: function () {
-      this.setStoryCurrent(null);
-    },
+
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {

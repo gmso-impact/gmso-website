@@ -43,10 +43,6 @@ export default {
     clickClose: function () {
       this.setStoryCurrent(null);
     },
-    clickReadMore: function () {
-      this.setStoryCurrent(null);
-      this.setStoryFrame(this.story);
-    },
   },
 };
 </script>
