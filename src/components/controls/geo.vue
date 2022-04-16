@@ -1,11 +1,10 @@
 <template lang="">
-
-      <img
-        src="Geo.png"
-        class="geo-img ml-2"
-        v-on:click="toggleVideoFrame"
-        alt="Click to watch the intro video"
-      />
+  <img
+    src="Geo.png"
+    class="geo-img ml-2"
+    v-on:click="toggleVideoFrame"
+    alt="Click to watch the intro video"
+  />
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
@@ -15,10 +14,8 @@ import ThemeColumn from "./themeColumn.vue";
 import QrStory from "@/components/qr/qrStory.vue";
 
 export default {
-    methods: {
-    ...mapMutations([
-      "toggleVideoFrame",
-    ]),
+  methods: {
+    ...mapMutations(["toggleVideoFrame"]),
   },
   data() {
     return {};

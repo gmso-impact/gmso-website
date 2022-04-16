@@ -32,6 +32,12 @@
       ></l-control-zoom>
     </LMap>
     <div v-if="$route.name === 'Web'" class="boxy boxy-top childPoint">
+      <img
+        src="GMSOtitle1.png"
+        alt="CSU Impact"
+        class="title-img"
+        v-on:click="toggleVideoFrame"
+      />
       <div class="breakpoint_testing text-white d-none">
         <h2 class="text-center">{{ getBreakpoints[0] }}</h2>
         <div class="text-center d-block d-sm-none">xs</div>
@@ -42,11 +48,8 @@
         <div class="text-center d-none d-xxl-block">xxl</div>
       </div>
     </div>
-    <div class="boxy boxy-left childPoint">
-    </div>
-    <div v-if="false" class="boxy boxy-bottom-right childPoint">
-
-    </div>
+    <div class="boxy boxy-left childPoint"></div>
+    <div v-if="false" class="boxy boxy-bottom-right childPoint"></div>
     <OverlayStory></OverlayStory>
     <OverlayVideo></OverlayVideo>
   </div>

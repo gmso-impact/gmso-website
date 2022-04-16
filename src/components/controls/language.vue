@@ -1,5 +1,9 @@
 <template lang="">
-  <div class="btn-group d-flex" role="group" aria-label="Language Toggle Buttons">
+  <div
+    class="btn-group d-flex"
+    role="group"
+    aria-label="Language Toggle Buttons"
+  >
     <button
       v-for="lang in langs"
       :key="lang.locale"

@@ -76,12 +76,13 @@ export default {
   },
   watch: {
     storyCurrent: function (newStory, oldStory) {
-      console.log('iom here')
+      console.log("iom here");
       if (newStory?.id === this.story.id) {
         this.$nextTick(() => {
           this.$refs.marker.mapObject.openPopup();
         });
-      } else { //if (this.$refs.marker.mapObject.isOpen()) 
+      } else {
+        //if (this.$refs.marker.mapObject.isOpen())
         this.$nextTick(() => {
           this.$refs.marker.mapObject.closePopup();
         });

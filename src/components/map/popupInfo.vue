@@ -1,5 +1,7 @@
 <template lang="">
-  <div class="d-flex flex-wrap pb-1 px-1 ml-xxl-5 mr-xxl-5 justify-content-xxl-between">
+  <div
+    class="d-flex flex-wrap pb-1 px-1 ml-xxl-5 mr-xxl-5 justify-content-xxl-between"
+  >
     <font-awesome-icon
       v-if="
         story.fields['ID Tags'] && story.fields['ID Tags'].includes('Alumnus')
@@ -8,7 +10,8 @@
     />
     <font-awesome-icon
       v-if="
-        story.fields['ID Tags'] && story.fields['ID Tags'].includes('First Generation')
+        story.fields['ID Tags'] &&
+        story.fields['ID Tags'].includes('First Generation')
       "
       :icon="['fas', 'award']"
     />
