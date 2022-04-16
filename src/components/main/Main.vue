@@ -10,7 +10,6 @@
         src="GMSOtitle1.png"
         alt="CSU Impact"
         class="title-img"
-        v-on:click="toggleVideoFrame"
       />
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">

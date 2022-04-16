@@ -15,7 +15,7 @@ const translations = {
     tagline: "Find your story @ CSU",
     "Read More": "Read More",
     Close: "Close",
-    All: "All",
+    All: "All Themes",
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
@@ -60,7 +60,7 @@ const translations = {
     tagline: "Encuentra tu historia @ CSU",
     "Read More": "Leer Más",
     Close: "Salida",
-    All: "Todos",
+    All: "Todos temas",
     storyThemes: {
       Health: "Vida",
     },

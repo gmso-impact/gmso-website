@@ -28,7 +28,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.qrStory {
-  width: 100px;
-}
+
 </style>

@@ -32,12 +32,6 @@
       ></l-control-zoom>
     </LMap>
     <div v-if="$route.name === 'Web'" class="boxy boxy-top childPoint">
-      <img
-        src="GMSOtitle1.png"
-        alt="CSU Impact"
-        class="title-img"
-        v-on:click="toggleVideoFrame"
-      />
       <div class="breakpoint_testing text-white d-none">
         <h2 class="text-center">{{ getBreakpoints[0] }}</h2>
         <div class="text-center d-block d-sm-none">xs</div>
@@ -49,15 +43,9 @@
       </div>
     </div>
     <div class="boxy boxy-left childPoint">
-      <ControlGroup></ControlGroup>
     </div>
-    <div class="boxy boxy-bottom-right childPoint">
-      <img
-        src="Geo.png"
-        class="geo-img"
-        v-on:click="toggleVideoFrame"
-        alt="Click to watch the intro video"
-      />
+    <div v-if="false" class="boxy boxy-bottom-right childPoint">
+
     </div>
     <OverlayStory></OverlayStory>
     <OverlayVideo></OverlayVideo>
@@ -79,7 +67,6 @@ import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
 
-import ControlGroup from "../controls/controlGroup.vue";
 import MapMarker from "./marker.vue";
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
@@ -89,7 +76,6 @@ export default {
   components: {
     LMap,
     //  LTileLayer,
-    //  ControlGroup,
     MapMarker,
     OverlayStory,
     OverlayVideo,
@@ -130,7 +116,6 @@ export default {
       "mapSetZoomCurrent",
       "mapSetCenterCurrent",
       "mapSetBoundsCurrent",
-      "toggleVideoFrame",
     ]),
   },
   mounted() {

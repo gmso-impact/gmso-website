@@ -1,14 +1,15 @@
 <template lang="">
   <div class="d-flex flex-column justify-content-md-center h-100">
-    <button class="btn btn-white font-weight-bold" v-on:click="resetTagsClicked">
+    <button class="btn btn-white font-weight-bold mb-2" v-on:click="resetTagsClicked">
       {{ $t(`All`) }}
     </button>
+    <div class="btn-group-vertical">
     <ThemeButton
       v-for="storyTheme in storyThemes"
       :key="storyTheme.name"
       v-bind:control="storyTheme"
     >
-    </ThemeButton>
+    </ThemeButton>  </div>
   </div>
 </template>
 <script>

@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="btn-group d-none" role="group" aria-label="Kiosk Toggle Buttons">
+  <div class="btn-group d-flex" role="group" aria-label="Kiosk Toggle Buttons">
     <router-link
       :to="{ name: 'Web' }"
       class="btn btn-secondary"
