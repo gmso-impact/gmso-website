@@ -28,19 +28,16 @@
         </div>
       </div>
     </div>
-    <QrStory v-if="false"></QrStory>
   </div>
 </template>
 <script>
 import StoryItem from "./storyItem.vue";
-import QrStory from "@/components/qr/qrStory.vue";
 
 import { mapGetters } from "vuex";
 
 export default {
   components: {
     StoryItem,
-    QrStory,
   },
   data() {
     return {};
