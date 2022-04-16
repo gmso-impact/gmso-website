@@ -66,6 +66,11 @@ import {
 import { latLng, latLngBounds, divIcon, circleMarker } from "leaflet";
 import { basemapLayer, featureLayer } from "esri-leaflet";
 
+import { vectorBasemapLayer } from 'esri-leaflet-vector';
+import mapboxgl from 'mapbox-gl'
+window.mapboxgl = mapboxgl // mapbox-gl-leaflet expects this to be global, used for esri-leaflet-vector
+
+
 import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
@@ -85,10 +90,16 @@ export default {
     LControlZoom,
     LControlScale,
   },
+// list of basemaps
+// https://developers.arcgis.com/documentation/mapping-apis-and-services/maps/services/basemap-layer-service/#default-basemap-styles
+// custom styles
+// https://developers.arcgis.com/documentation/mapping-apis-and-services/visualization/basemap-styles/
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: basemapLayer("DarkGray", { apikey }),
+      basemap: vectorBasemapLayer('ArcGIS:DarkGray:Base', { apikey: apikey }),
+      basemapOld: basemapLayer("DarkGray", { apikey }),
+      basemapNew: vectorBasemapLayer('ArcGIS:DarkGray:Base', { apikey: apikey }),
       apikey: apikey,
       storyLayerEsriObject: null,
       mapOptions: {
