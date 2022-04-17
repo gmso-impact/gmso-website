@@ -1,19 +1,21 @@
 <template lang="">
-  <l-popup :options="options" class="popup" ref="popup">
-    <div class="card shadow" :class="`bg-${story.fields['Story Theme']}`">
-      <div class="p-1">
-        <PopupIFrame
-          :story="story"
-          v-if="story.fields['en-StoryMapLink']"
-        ></PopupIFrame>
-        <PopupSummary :story="story" v-else></PopupSummary>
+  <l-layer-group :ref="`pop-layer-${story.id}`">
+    <l-popup :options="options" class="popup" :ref="`pop-${story.id}`">
+      <div class="card shadow" :class="`bg-${story.fields['Story Theme']}`">
+        <div class="p-1">
+          <PopupIFrame
+            :story="story"
+            v-if="story.fields['en-StoryMapLink']"
+          ></PopupIFrame>
+          <PopupSummary :story="story" v-else></PopupSummary>
+        </div>
+        <PopupInfo :story="story"></PopupInfo>
       </div>
-      <PopupInfo :story="story"></PopupInfo>
-    </div>
-  </l-popup>
+    </l-popup>
+  </l-layer-group>
 </template>
 <script>
-import { LPopup } from "vue2-leaflet";
+import { LPopup, LLayerGroup } from "vue2-leaflet";
 import { latLng, divIcon, point } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
 import PopupSummary from "./popupSummary.vue";
@@ -23,6 +25,7 @@ import PopupInfo from "./popupInfo.vue";
 export default {
   components: {
     LPopup,
+    LLayerGroup,
     PopupSummary,
     PopupIFrame,
     PopupInfo,
@@ -35,7 +38,7 @@ export default {
 
         keepInView: false,
         autoPan: true,
-        autoClose: true,
+        autoClose: false,
         closeButton: false,
         className: "map-popup-container",
         autoPanPaddingTopLeft: [160, 20],
@@ -50,24 +53,19 @@ export default {
     },
   },
   computed: {
-    ...mapGetters({
-      storyCurrent: "storyCurrent",
-    }),
-
-    isCurrentStory: function () {
-      return this.storyCurrent && this.story.id === this.storyCurrent.id;
+    latLngObj: function () {
+      return latLng(this.story.fields["LAT"], this.story.fields["LONG"]);
     },
   },
   methods: {
     ...mapMutations({
-      setStoryCurrent: "setStoryCurrent",
-      setStoryFrame: "setStoryFrame",
+      removeActiveStory: "removeActiveStory",
     }),
   },
-  watch: {
-    storyCurrent: function (newStory, oldStory) {
-      return null;
-    },
+  mounted: function () {
+    this.$nextTick(function () {
+      this.$refs[`pop-layer-${this.story.id}`].mapObject.openPopup(this.latLngObj);
+    });
   },
 };
 </script>

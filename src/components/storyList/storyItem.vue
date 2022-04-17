@@ -9,7 +9,7 @@
         `btn-${story.fields['Story Theme']}`,
         storyCurrent && story.id === storyCurrent.id ? 'active' : '',
       ]"
-      v-on:click="setStoryCurrent(story)"
+      v-on:click="addActiveStory(story)"
     >
       <img
         v-if="
@@ -50,7 +50,7 @@ export default {
     },
   },
   methods: {
-    ...mapMutations({ setStoryCurrent: "setStoryCurrent" }),
+    ...mapMutations({ addActiveStory: "addActiveStory" }),
   },
   computed: {
     ...mapGetters({

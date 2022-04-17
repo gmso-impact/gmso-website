@@ -16,6 +16,15 @@
         :key="story.id"
         v-for="story in stories"
       ></MapMarker>
+      <template v-if="!getBreakpoints.includes('all')">
+        <StoryPopup
+          :story="story"
+          :key="`active-${story.id}`"
+          v-for="story in storysActive"
+        >
+        </StoryPopup
+        >>
+      </template>
 
       <l-control-zoom position="topright"></l-control-zoom>
 
@@ -70,6 +79,8 @@ import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
 
 import MapMarker from "./marker.vue";
+import StoryPopup from "./popup.vue";
+
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
 
@@ -79,6 +90,7 @@ export default {
     LMap,
     //  LTileLayer,
     MapMarker,
+    StoryPopup,
     OverlayStory,
     OverlayVideo,
     LControlZoom,
@@ -112,6 +124,7 @@ export default {
   computed: {
     ...mapGetters({
       stories: "storyFiltered",
+      storysActive: "storysActive",
       zoom: "mapGetZoomNew",
       center: "mapGetCenterNew",
       mapGetBoundsNew: "mapGetBoundsNew",

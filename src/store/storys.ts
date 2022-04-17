@@ -34,6 +34,8 @@ const storys = {
   state: {
     all: stories,
     storyCurrent: null,
+    storysActive: [],
+    storysActiveMax: 1,
     storyFrame: null,
     storyThemes: toFilterTags("Story Theme"),
     storyTags: toFilterTags("Story Tags"),
@@ -87,6 +89,9 @@ const storys = {
     storyCurrent: (state) => {
       return state.storyCurrent;
     },
+    storysActive: (state) => {
+      return state.storysActive;
+    },
     storyFrame: (state) => {
       return state.storyFrame;
     },
@@ -137,6 +142,54 @@ const storys = {
         state.storyFrame = null;
       }
       state.isVideoFrameOpen = !state.isVideoFrameOpen;
+    },
+    addActiveStory: (state, story) => {
+      // add story to active list
+      if (!story) {
+        console.log('addActiveStory requires a story object. To remove all storys use removeActiveStories')
+        return
+      }
+      console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
+
+      // check to see if story is already in the list
+      const filtered = state.storysActive.filter((activeStory) => {
+        return activeStory.id !== story.id
+      })
+
+      state.storysActive = [story, ...filtered].slice(0, state.storysActiveMax)
+    },
+    toggleActiveStory: (state, story) => {
+      if (!story) {
+        console.log('toggleActiveStory requires a story object. To remove all storys use removeActiveStories')
+        return
+      }
+      // remove story from array if it is there
+      const filtered = state.storysActive.filter((activeStory) => {
+        return activeStory.id !== story.id
+      })
+      // add story to the array if is is not
+      if (filtered.length === state.storysActive.length) {
+        state.storysActive = [story, ...state.storysActive].slice(0, state.storysActiveMax)
+        console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
+
+      } else {
+        state.storysActive = filtered
+        console.log(`Removed: ${story.fields["en-StoryTitle"]}`)
+      }
+    },
+    removeActiveStory: (state, story) => {
+      if (!story) {
+        console.log('removeActiveStory requires a story object. To remove all storys use removeActiveStories')
+        return
+      }
+      // remove story from array if it is there
+      const filtered = state.storysActive.filter((activeStory) => {
+        return activeStory.id !== story.id
+      })
+      state.storysActive = filtered
+    },
+    removeActiveStories: (state) => {
+      state.storysActive = [];
     },
     setStoryCurrent: (state, story) => {
       if (story) {

@@ -3,22 +3,20 @@
     :lat-lng="latLngObj"
     :key="story.id"
     :icon="icon"
+    :riseOnHover="true"
     ref="marker"
-    v-on:click="clickMarker"
+    v-on:click="toggleActiveStory(story)"
   >
-    <Popup :story="story" :key="story.id"> </Popup>
   </l-marker>
 </template>
 <script>
 import { LMarker, LIcon } from "vue2-leaflet";
 import { latLng, divIcon, point } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
-import Popup from "./popup.vue";
 
 export default {
   components: {
     LMarker,
-    Popup,
   },
   data() {
     return {
@@ -57,42 +55,11 @@ export default {
     },
   },
   methods: {
-    ...mapMutations({
-      setStoryCurrent: "setStoryCurrent",
-      setStoryFrame: "setStoryFrame",
-    }),
-    clickMarker: function () {
-      if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
-        this.setStoryCurrent(null);
-        this.setStoryFrame(null);
-      } else {
-        if (this.getBreakpoints.includes("xl")) {
-          this.setStoryCurrent(this.story);
-        } else {
-          this.setStoryFrame(this.story);
-        }
-      }
-    },
+    ...mapMutations({ toggleActiveStory: "toggleActiveStory",  }),
   },
-  watch: {
-    storyCurrent: function (newStory, oldStory) {
-      console.log("iom here");
-      if (newStory?.id === this.story.id) {
-        this.$nextTick(() => {
-          this.$refs.marker.mapObject.openPopup();
-        });
-      } else {
-        //if (this.$refs.marker.mapObject.isOpen())
-        this.$nextTick(() => {
-          this.$refs.marker.mapObject.closePopup();
-        });
-      }
-    },
-  },
+
   beforeDestroy() {
-    if (this.storyCurrent && this.storyCurrent.id === this.story.id) {
-      this.setStoryCurrent(null);
-    }
+    this.removeActiveStory(this.story)
   },
 };
 </script>

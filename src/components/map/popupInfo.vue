@@ -15,7 +15,7 @@
       "
       :icon="['fas', 'award']"
     />
-    <button class="btn btn-dark mr-0 ml-auto" v-on:click="clickClose">
+    <button class="btn btn-dark mr-0 ml-auto" v-on:click="removeActiveStory(story)">
       <font-awesome-icon :icon="['fas', 'times']" />
       {{ $t(``) }}
     </button>
@@ -37,12 +37,8 @@ export default {
   },
   methods: {
     ...mapMutations({
-      setStoryCurrent: "setStoryCurrent",
-      setStoryFrame: "setStoryFrame",
+      removeActiveStory: "removeActiveStory",
     }),
-    clickClose: function () {
-      this.setStoryCurrent(null);
-    },
   },
 };
 </script>
