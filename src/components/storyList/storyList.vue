@@ -7,7 +7,7 @@
       <transition-group
         name="story-list"
         tag="div"
-        class="story-list d-flex h-100 align-content-center row no-gutters mt-xxl-5"
+        class="story-list d-flex align-content-center row no-gutters mt-xxl-5"
         @before-leave="beforeLeave"
       >
         <StoryItem

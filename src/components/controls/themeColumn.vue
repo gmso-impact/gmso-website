@@ -1,7 +1,8 @@
 <template lang="">
   <div class="d-flex flex-column justify-content-md-center h-100">
     <button
-      class="btn btn-white font-weight-bold mb-2 mb-xxl-5"
+      class="btn font-weight-bold mb-2 mb-xxl-5"
+      v-bind:class="{ 'btn-white': storyThemesActive.length === storyThemes.length, 'btn-outline-white': storyThemesActive.length !== storyThemes.length }"
       v-on:click="resetTagsClicked"
     >
       {{ $t(`All`) }}
@@ -30,6 +31,7 @@ export default {
   computed: {
     ...mapGetters({
       storyThemes: "storyThemes",
+      storyThemesActive: "storyThemesActive"
     }),
   },
   methods: {

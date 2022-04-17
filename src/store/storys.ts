@@ -110,6 +110,13 @@ const storys = {
     storyThemes: (state) => {
       return state.storyThemes;
     },
+    storyThemesActive: (state) => {
+      const activeThemes = state.storyThemes.filter((storyTheme) => {
+        return storyTheme.isActive
+      });
+      return activeThemes
+
+    },
     idTags: (state) => {
       return state.idTags;
     },
