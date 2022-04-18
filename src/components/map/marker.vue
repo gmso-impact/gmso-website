@@ -55,11 +55,14 @@ export default {
     },
   },
   methods: {
-    ...mapMutations({ toggleActiveStory: "toggleActiveStory",  }),
+    ...mapMutations({
+      toggleActiveStory: "toggleActiveStory",
+      removeActiveStory: "removeActiveStory",
+    }),
   },
 
   beforeDestroy() {
-    this.removeActiveStory(this.story)
+    this.removeActiveStory(this.story);
   },
 };
 </script>
