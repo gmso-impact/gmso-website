@@ -10,6 +10,7 @@ const minutes = 60 * seconds;
 const hours = 60 * minutes;
 export default new Vuex.Store({
   state: {
+    timer: null,
     lastInteraction: new Date(),
     resetTagsTime: 60 * seconds,
     resetStoryTime: 2 * minutes,
@@ -21,7 +22,7 @@ export default new Vuex.Store({
     setLastInteraction: (state) => {
       const now = new Date();
       console.log(`${now.toString()} interaction occured`);
-      state.lastInteraction = new Date();
+      state.lastInteraction = now
     },
   },
   actions: {
@@ -67,9 +68,17 @@ export default new Vuex.Store({
       }
     },
     startTimer({ commit, dispatch, state }) {
-      setInterval(() => {
+      const now = new Date();
+      console.log(`${now.toString()} timer started`);
+      state.lastInteraction = new Date();
+      state.timer = setInterval(() => {
         dispatch("checkTime");
       }, state.timerLoopLength);
+    },
+    stopTimer({ commit, dispatch, state }) {
+      const now = new Date();
+      console.log(`${now.toString()} timer stoped`);
+      clearInterval(state.timer)
     },
   },
   modules: {

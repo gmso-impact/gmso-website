@@ -1,5 +1,5 @@
 <template>
-  <Main v-on:click="setLastInteraction"></Main>
+  <Main v-on:click.native="setLastInteraction"></Main>
 </template>
 
 <script lang="ts">
@@ -8,15 +8,18 @@ import Main from "@/components/main/Main.vue";
 import { mapActions, mapMutations } from "vuex";
 
 export default {
-  name: "Home",
+  name: "Kiosk",
   components: {
     Main,
   },
   mounted() {
     this.startTimer();
   },
+  beforeDestroy() {
+    this.stopTimer();
+  },
   methods: {
-    ...mapActions({ startTimer: "startTimer" }),
+    ...mapActions({ startTimer: "startTimer", stopTimer: "stopTimer" }),
     ...mapMutations({ setLastInteraction: "setLastInteraction" }),
   },
 };
