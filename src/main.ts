@@ -42,8 +42,19 @@ import {
   faBook,
   faGraduationCap,
   faAward,
+  faGlobe,
+  faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
-Iconlibrary.add(faTimes, faBook, faGraduationCap, faAward);
+Iconlibrary.add(faTimes,
+  faBook,
+  faGraduationCap,
+  faAward,
+  faGlobe,
+  faUserGraduate,
+);
+
+
+
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);
