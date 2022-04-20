@@ -1,7 +1,7 @@
 <template lang="">
-  <div class="h-100">
-    <font-awesome-icon class="story-icon" :icon="['fas', icon]" />
-    <div class="text-center small">{{ id }}</div>
+  <div class="h-100 text-center">
+    <font-awesome-icon class="id-icon" :icon="['fas', icon]" />
+    <div class="id-text">{{  $t(`idTags.${id}`) }}</div>
   </div>
 </template>
 <script>
@@ -32,7 +32,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.story-icon {
-  font-size: 70px;
+.id-icon {
+  font-size: 60px;
+}
+.id-text {
+  font-size: .75em;
 }
 </style>

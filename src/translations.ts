@@ -38,8 +38,8 @@ const translations = {
       Conservation: "Conservation",
     },
     idTags: {
-      Alumnus: "Alumnus",
-      International: "International",
+      "Alumnus": "Alumnus",
+      "International": "International",
       "First Generation": "First Generation",
     },
     collegeTags: {
@@ -63,6 +63,9 @@ const translations = {
     All: "Todos temas",
     storyThemes: {
       Health: "Vida",
+    },
+    idTags: {
+      "International": "Internacional",
     },
   },
   fr: {},

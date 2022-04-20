@@ -1,9 +1,9 @@
 <template lang="">
   <div
-    class="d-flex flex-wrap pb-1 px-1 ml-xxl-5 mr-xxl-5 justify-content-xxl-between"
+    class="d-flex flex-wrap pb-1 pb-xxl-3 mx-2 mx-xxl-3 justify-content-xxl-between"
   >
-    <QRStory class="mr-3" :story="story"></QRStory>
-    <IDIcon class='mr-3' v-for="id in story.fields['ID Tags']" v-bind:key="id" :id="id">
+    <QRStory class="mr-3 mr-xxl-5" :story="story"></QRStory>
+    <IDIcon class='mr-3 mr-xxl-5' v-for="id in story.fields['ID Tags']" v-bind:key="id" :id="id">
     </IDIcon>
     <button
       class="btn btn-dark mr-0 ml-auto"
@@ -41,7 +41,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.story-icon {
-  font-size: 80px;
-}
+
 </style>
