@@ -1,7 +1,7 @@
 <template lang="">
   <div class="d-flex flex-column justify-content-md-center h-100">
     <button
-      class="btn font-weight-bold mb-2 mb-xxl-5"
+      class="btn font-weight-bold mb-2 mb-xxl-5 w-50 mx-auto"
       v-bind:class="{ 'btn-white': storyThemesActive.length === storyThemes.length, 'btn-outline-white': storyThemesActive.length !== storyThemes.length }"
       v-on:click="resetTagsClicked"
     >
