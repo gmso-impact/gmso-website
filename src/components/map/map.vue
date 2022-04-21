@@ -41,7 +41,7 @@
       ></l-control-zoom>
     </LMap>
     <div v-if="$route.name === 'Web'" class="boxy boxy-top childPoint">
-      <img src="GMSOtitle1.png" alt="CSU Impact" class="title-img" />
+      <!--<img src="GMSOtitle1.png" alt="CSU Impact" class="title-img" />-->
       <div class="breakpoint_testing text-white d-none">
         <h2 class="text-center">{{ getBreakpoints[0] }}</h2>
         <div class="text-center d-block d-sm-none">xs</div>
