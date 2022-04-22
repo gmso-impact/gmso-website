@@ -1,12 +1,14 @@
 <template lang="">
+<div class="col-xxl-6">
   <button
     :class="buttonClasses"
-    class="btn mt-2 themeIcon font-weight-bold w-50 mx-auto"
+    class="btn btn-block mt-2 themeIcon font-weight-bold"
     :key="control.name"
     v-on:click="setTagClicked"
   >
     {{ $t(`storyThemes.${control.name}`) }}
   </button>
+  </div>
 </template>
 <script>
 import { mapMutations } from "vuex";
