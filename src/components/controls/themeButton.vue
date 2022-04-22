@@ -2,10 +2,11 @@
 <div class="col-xxl-6">
   <button
     :class="buttonClasses"
-    class="btn btn-block mt-2 themeIcon font-weight-bold"
+    class="btn btn-block mt-2 themeIcon font-weight-bold px-1"
     :key="control.name"
     v-on:click="setTagClicked"
   >
+    <img v-if='control.name === "Food"' class='float-left theme-icon' src='https://ibis-test1.nrel.colostate.edu/GMSO/images/icons/Food.png' />
     {{ $t(`storyThemes.${control.name}`) }}
   </button>
   </div>
@@ -51,3 +52,9 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+.theme-icon {
+  height: 24px;
+
+}
+</style>

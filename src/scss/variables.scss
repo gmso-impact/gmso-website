@@ -54,16 +54,6 @@ $theme-colors: (
   "map-light": #3f3f41,
 );
 
-.themeIcon{
-  background-size: auto 90%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left center;
-}
-
-.theme-Food {
-  background-image:url('https://ibis-test1.nrel.colostate.edu/GMSO/images/icons/Food.png');
-}
 // If you change this
 // be sure to also change src/mixin/breakpoint.ts
 $grid-breakpoints: (
