@@ -4,7 +4,7 @@
     v-if="story.fields['en-StoryTitle']"
   >
     <div
-      class="story-card w-100 h-100 p-0 p-xxl-3 btn d-flex flex-column"
+      class="story-card w-100 h-100 p-0 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
         storyCurrent && story.id === storyCurrent.id ? 'active' : '',

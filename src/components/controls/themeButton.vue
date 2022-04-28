@@ -1,13 +1,13 @@
 <template lang="">
-<div class="col-xxl-6">
+<div class="col-xxl-12">
   <button
-    :class="buttonClasses"
-    class="btn btn-block mt-2 themeIcon font-weight-bold px-1"
+    class="btn-xxl-lg btn-block mt-2 themeIcon font-weight-bold px-0 py-0 carbon text-white"
     :key="control.name"
     v-on:click="setTagClicked"
   >
-    <img v-if='control.name === "Food"' class='float-left theme-icon' src='https://ibis-test1.nrel.colostate.edu/GMSO/images/icons/Food.png' />
-    {{ $t(`storyThemes.${control.name}`) }}
+    <!--<img v-if='control.name === "Food"' class='float-left theme-icon' src='Food.png' />-->
+    <div :class="buttonClasses" class="float-left h-100 xxl-buttonWallSize">&nbsp;</div>
+    <span class="float-left ml-xxl-3">{{ $t(`storyThemes.${control.name}`) }}</span>
   </button>
   </div>
 </template>
@@ -53,8 +53,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.theme-icon {
-  height: 24px;
 
+.theme-icon-xxl {
+  height: 24px;
 }
+
+.buttonWallSize {
+  min-height: 160px !important;
+  min-width: 110px !important;
+}
+
 </style>

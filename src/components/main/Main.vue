@@ -13,7 +13,7 @@
         <StoryList></StoryList>
       </div>
       <div
-        class="right d-none d-lg-block col-lg-1 col-xxl-2 carbon h-100 p-2 p-xxl-4 border-left border-right border-map-light"
+        class="right d-none d-lg-block col-lg-1 col-xxl-1 carbon h-100 p-2 p-xxl-1 border-left border-right border-map-light"
       >
         <ControlGroup></ControlGroup>
       </div>
