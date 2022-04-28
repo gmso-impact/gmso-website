@@ -67,7 +67,7 @@ export default {
       return [buttonStyle, icon];
     },
     themeIconSRC: function () {
-      return `theme/${this.control.name}_IMpact_white.svg`;
+      return `theme/${this.control.name}_Impact_white.svg`;
     },
   },
   methods: {
