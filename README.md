@@ -93,3 +93,37 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+# Kiosk Config
+
+1. Install Windows 11 Enterprise
+2. Create local admin account
+3. Connect to internet
+3. Setup up a Kiosk
+- account -> Other users -> get started
+- Name: kiosk
+- Choose app: Microsfot Edge
+- How will this kiosk be used: As a digital sign or interactive display
+- URL: https://impact.csusystem.edu/#/kiosk
+- Restart Edge: 1 hour
+5. Setup group policies using regedit
+https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#urlblocklist
+
+Tested
+- SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\1 = "https://impact.csusystem.edu/#/kiosk"
+- SOFTWARE\Policies\Microsoft\Edge\URLAllowlist\2 = "https://storymaps.arcgis.com/stories/"
+- SOFTWARE\Policies\Microsoft\Edge\URLBlocklist\1 = "*"
+
+Untested
+https://docs.microsoft.com/en-us/windows/configuration/kiosk-prepare
+- SOFTWARE\Policies\Microsoft\Edge\ShowHomeButton = 0x00000001
+- SOFTWARE\Policies\Microsoft\Edge\HomepageLocation
+- SOFTWARE\Policies\Microsoft\Edge\NewTabPageLocation
+
+4. Sign in with Kiosk by restarting machine
+- First time may take a while to create the account
+- user: SPURLT-GMSO\kiosk
+5. Exit Kiosk mode using CTRL + ALT + DELETE & enter local admin password
+- user: SPURLT-GMSO\gmso_admin
