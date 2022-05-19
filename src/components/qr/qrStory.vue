@@ -41,9 +41,9 @@ export default {
         colorLight: getComputedStyle(document.documentElement).getPropertyValue(
           `--${this.story.fields["Story Theme"]}`
         ),
-        autoColor: true,
+        autoColor: false,
         // unusued when autoColor true
-        //colorDark: "#212529",
+        colorDark: "#000000",
         ...qrConfig,
       },
     };

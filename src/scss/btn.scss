@@ -2,6 +2,16 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
+
+.themeIcon {
+  width: 100%;
+}
+
+.themeIconContainer {
+  height: $font-size-base * 2.5;
+  width: $font-size-base * 2.5
+}
+
 @include media-breakpoint-only(xxl) {
   .btn {
     @include font-size($font-size-xxl);
@@ -9,4 +19,10 @@
     border-radius: $font-size-xxl / 4;
     padding: 0.25 * $font-size-xxl 0.75 * $font-size-xxl;
   }
+  .themeIconContainer {
+    height: $font-size-xxl * 2;
+    width: $font-size-xxl * 2;
+  }
 }
+
+

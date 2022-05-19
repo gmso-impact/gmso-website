@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="h-100 text-center">
+  <div class="h-100 text-center flex-column justify-content-between">
     <font-awesome-icon class="id-icon" :icon="['fas', icon]" />
     <div class="id-text">{{  $t(`idTags.${id}`) }}</div>
   </div>
@@ -33,7 +33,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .id-icon {
-  font-size: 60px;
+  font-size: 50px;
 }
 .id-text {
   font-size: .75em;
