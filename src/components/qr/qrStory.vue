@@ -1,5 +1,9 @@
 <template lang="">
-  <div class="qr-story d-flex align-items-end" v-if="story.fields['en-StoryMapLink']">
+  <div
+    class="qr-story d-flex align-items-end"
+    v-if="story.fields['en-StoryMapLink']"
+    v-on:click="printURL"
+  >
     <vue-qr
       v-bind="qrConfig"
       class="w-100"
@@ -54,11 +58,11 @@ export default {
       required: true,
     },
   },
-  computed:{},
+  computed: {},
   methods: {
     printURL: function () {
-      console.log("router troubleshoot button");
-      this.$route.name === "Home";
+      console.log("QR URL is");
+      console.log(this.story.fields["en-StoryMapLink"]);
     },
   },
 };
