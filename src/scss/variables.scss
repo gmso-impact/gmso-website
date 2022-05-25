@@ -28,30 +28,35 @@ $font-size-sm: $font-size-base * 0.875;
 $enable-shadows: true;
 
 // modify variables before importing them
+// WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text. 
+// WCAG 2.1 requires a contrast ratio of at least 3:1 for graphics and user interface components (such as form input borders).
+// WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
+// https://webaim.org/resources/contrastchecker/
+
 $theme-colors: (
-  "orange": #f15647, /* #ff5a01 */
-  "Health": #f15647, /* #ff5a01 */
-  "Vida": #f15647, /* #ff5a01 */
-  "lime": #83a44e, /* #b0f954 */
-  "Food": #83a44e, /* #b0f954 */
-  "Ag": #83a44e, /* #b0f954 */
-  "Terra": #83a44e, /* #b0f954 */
-  "skyBlue": #37a0a5, /* #00e9ff */
-  "Water": #37a0a5, /* #00e9ff */
-  "Hydro": #37a0a5, /* #00e9ff */
-  "yellow": #a6093d, /* #ffd62d */
-  "Community": #a6093d, /* #ffd62d */
-  "green": #00205b, /* #00d48a */
-  "Environment": #00205b, /* #00d48a */
-  "blue": #dfae65, /* #0596f5 */
-  "Energy": #dfae65, /* #0596f5 */
-  "charcoal": #323e48,
-  "Institutional": #323e48,
-  "Stories": #323e48,
-  "white": #ffffff,
-  "black": #000000,
-  "map-dark": #232227,
-  "map-light": #3f3f41,
+  "orange": #f15647,        /* fail on white 3.40 contrast */ /* old #ff5a01 */
+  "Health": #f15647,        /* fail on white 3.40 contrast */ /* old #ff5a01 */
+  "Vida": #f15647,          /* fail on white 3.40 contrast */ /* old #ff5a01 */
+  "lime": #83a44e,          /* fail on white 2.84 contrast */ /* old #b0f954 */
+  "Food": #83a44e,          /* fail on white 2.84 contrast */ /* old #b0f954 */
+  "Ag": #83a44e,            /* fail on white 2.84 contrast */ /* old #b0f954 */
+  "Terra": #83a44e,         /* fail on white 2.84 contrast */ /* old #b0f954 */
+  "skyBlue": #37a0a5,       /* fail on white 3.11 contrast */ /* old #00e9ff */
+  "Water": #37a0a5,         /* fail on white 3.11 contrast */ /* old #00e9ff */
+  "Hydro": #37a0a5,         /* fail on white 3.11 contrast */ /* old #00e9ff */
+  "yellow": #a6093d,        /* pass on white 7.69 contrast */ /* old #ffd62d */
+  "Community": #a6093d,     /* pass on white 7.69 contrast */ /* old #ffd62d */
+  "green": #00205b,         /* pass on white 15.5 contrast */ /* old #00d48a */
+  "Environment": #00205b,   /* pass on white 15.5 contrast */ /* old #00d48a */
+  "blue": #00205b,          /* pass on white 15.5 contrast */ /* old #0596f5 */
+  "Energy": #dfae65,        /* fail on white 2.02 contrast */ /* old #0596f5 */
+  "charcoal": #323e48,      /* pass on white 10.9 contrast */ 
+  "Institutional": #323e48, /* pass on white 10.9 contrast */
+  "Stories": #323e48,       /* pass on white 10.9 contrast */
+  "white": #ffffff,         /* fail on white 00.0 contrast */
+  "black": #000000,         /* pass on white 21.0 contrast */
+  "map-dark": #232227,      /* pass on white 15.8 contrast */
+  "map-light": #3f3f41,     /* pass on white 10.5 contrast */
 );
 
 // If you change this
