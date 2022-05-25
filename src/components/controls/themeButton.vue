@@ -1,7 +1,7 @@
 <template lang="">
   <div class="col-xxl-12">
     <div
-      class="themeButton btn-dark d-flex mb-2 mb-xxl-4 rounded"
+      class="themeButton btn-dark text-white d-flex mb-2 mb-xxl-4 rounded"
       :class="themeButtonClasses"
       :key="control.name"
       v-on:click="setTagClicked"

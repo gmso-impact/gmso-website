@@ -22,7 +22,7 @@
         alt="Card image cap"
       />
       <div
-        class="card-body d-flex justify-content-center align-items-center p-1 text-center font-weight-bold"
+        class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white font-weight-bold"
       >
         <div>
           <div>
