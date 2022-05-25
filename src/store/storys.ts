@@ -157,8 +157,8 @@ const storys = {
         return
       }
       console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
-      event(`story`, {
-        'event_category': 'set-story',
+      event(`set-story`, {
+        'event_category': 'story',
         'event_label': 'enable',
         'value': story.fields["en-StoryTitle"],
         method: 'Google'
@@ -184,8 +184,8 @@ const storys = {
       if (filtered.length === state.storysActive.length) {
         state.storysActive = [story, ...state.storysActive].slice(0, state.storysActiveMax)
         console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
-        event(`story`, {
-          'event_category': 'set-story',
+        event(`set-story`, {
+          'event_category': 'story',
           'event_label': 'enable',
           'value': story.fields["en-StoryTitle"],
           method: 'Google'
@@ -226,8 +226,8 @@ const storys = {
     setTag: (state, payload) => {
       // payload.tagName
       // payload.name
-      event(`controls`, {
-        'event_category': 'set-tag',
+      event(`set-tag`, {
+        'event_category': 'controls',
         'event_label': 'enable',
         'value': payload.tagName,
         method: 'Google'
@@ -240,8 +240,8 @@ const storys = {
       });
     },
     resetTags: (state, tagName) => {
-      event(`controls`, {
-        'event_category': 'set-tag',
+      event(`set-tag`, {
+        'event_category': 'controls',
         'event_label': 'enable',
         'value': 'all',
         method: 'Google'
