@@ -29,6 +29,11 @@ Vue.use(VueI18n);
 import { I18nSetup } from "./translations";
 const i18n = new VueI18n(I18nSetup);
 
+import VueGtag from "vue-gtag";
+Vue.use(VueGtag, {
+  config: { id: "G-9Y7C77KWYD" }
+})
+
 Vue.config.productionTip = false;
 
 import {
