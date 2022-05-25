@@ -1,5 +1,6 @@
 import * as storiesFile from "../assets/allStories.json";
 import { latLng, bounds } from "leaflet";
+import { event } from 'vue-gtag'
 
 const stories = storiesFile.response;
 
@@ -136,6 +137,12 @@ const storys = {
     openVideoFrame: (state) => {
       state.isVideoFrameOpen = true;
       state.storyFrame = null;
+      event(`open-video`, {
+        'event_category': 'video',
+        'event_label': 'open-video',
+        'value': 'enable',
+        method: 'Google'
+      })
     },
     toggleVideoFrame: (state) => {
       if (!state.isVideoFrameOpen) {
@@ -150,7 +157,12 @@ const storys = {
         return
       }
       console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
-
+      event(`story`, {
+        'event_category': 'set-story',
+        'event_label': 'enable',
+        'value': story.fields["en-StoryTitle"],
+        method: 'Google'
+      })
       // check to see if story is already in the list
       const filtered = state.storysActive.filter((activeStory) => {
         return activeStory.id !== story.id
@@ -163,6 +175,7 @@ const storys = {
         console.log('toggleActiveStory requires a story object. To remove all storys use removeActiveStories')
         return
       }
+
       // remove story from array if it is there
       const filtered = state.storysActive.filter((activeStory) => {
         return activeStory.id !== story.id
@@ -171,7 +184,12 @@ const storys = {
       if (filtered.length === state.storysActive.length) {
         state.storysActive = [story, ...state.storysActive].slice(0, state.storysActiveMax)
         console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
-
+        event(`story`, {
+          'event_category': 'set-story',
+          'event_label': 'enable',
+          'value': story.fields["en-StoryTitle"],
+          method: 'Google'
+        })
       } else {
         state.storysActive = filtered
         console.log(`Removed: ${story.fields["en-StoryTitle"]}`)
@@ -208,6 +226,12 @@ const storys = {
     setTag: (state, payload) => {
       // payload.tagName
       // payload.name
+      event(`controls`, {
+        'event_category': 'set-tag',
+        'event_label': 'enable',
+        'value': payload.tagName,
+        method: 'Google'
+      })
       state[payload.tagName] = state[payload.tagName].map((tag) => {
         return {
           ...tag,
@@ -216,6 +240,13 @@ const storys = {
       });
     },
     resetTags: (state, tagName) => {
+      event(`controls`, {
+        'event_category': 'set-tag',
+        'event_label': 'enable',
+        'value': 'all',
+        method: 'Google'
+      })
+
       state[tagName] = state[tagName].map((tag) => {
         return {
           ...tag,
