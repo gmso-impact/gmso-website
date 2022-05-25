@@ -1,7 +1,9 @@
 <template lang="">
-  <div class="h-100 text-center flex-column justify-content-between">
+  <div>
+  <div class="text-center d-flex flex-column h-100 justify-content-between">
     <font-awesome-icon class="id-icon" :icon="['fas', icon]" />
     <div class="id-text">{{  $t(`idTags.${id}`) }}</div>
+  </div>
   </div>
 </template>
 <script>
