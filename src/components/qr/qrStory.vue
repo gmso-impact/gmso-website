@@ -47,7 +47,7 @@ export default {
         ),
         autoColor: false,
         // unusued when autoColor true
-        colorDark: "#000000",
+        colorDark: "#ffffff",
         ...qrConfig,
       },
     };

@@ -1,7 +1,7 @@
 <template lang="">
   <l-layer-group :ref="`pop-layer-${story.id}`">
     <l-popup :options="options" class="popup" :ref="`pop-${story.id}`">
-      <div class="card shadow p-1" :class="`bg-${story.fields['Story Theme']}`">
+      <div class="card shadow p-1 p-xxl-4" :class="`bg-${story.fields['Story Theme']}`">
           <PopupIFrame
             :story="story"
             v-if="story.fields['en-StoryMapLink']"

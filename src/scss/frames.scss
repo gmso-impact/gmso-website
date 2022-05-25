@@ -68,7 +68,7 @@
 }
 
 .popup-iframe {
-  padding: $font-size-base / 8;
+  padding: 0;
   height: 60vh;
   width: 60vw;
   z-index: 99999 !important;
@@ -76,7 +76,6 @@
 
 @include media-breakpoint-up(xl){
   .popup-iframe {
-    padding: $font-size-base / 4;
     height: 40vh ;
     width: 40vw;
     z-index: 99999 !important;
@@ -89,7 +88,6 @@
   $panels-tall: 1.25;
   $panels-wide: 2;
   .popup-iframe {
-    padding: $font-size-xxl / 4;
     height: 100vh / 2 * $panels-tall;
     width: 100vw / 8 * $panels-wide ;
     z-index: 99999 !important;
