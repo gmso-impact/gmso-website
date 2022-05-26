@@ -40,9 +40,9 @@ export default {
     setLanguage: function (locale) {
       this.$root.$i18n.locale = locale;
       event(`language`, {
-        'event_category': 'control',
-        'event_label': 'enable',
-        'value': locale,
+        'event_category': 'controld',
+        'event_label': locale,
+        'value': 1,
         method: 'Google'
       })
     },

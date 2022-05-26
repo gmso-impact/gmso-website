@@ -138,9 +138,9 @@ const storys = {
       state.isVideoFrameOpen = true;
       state.storyFrame = null;
       event(`open-video`, {
-        'event_category': 'video',
+        'event_category': 'content',
         'event_label': 'open-video',
-        'value': 'enable',
+        'value': 1,
         method: 'Google'
       })
     },
@@ -158,9 +158,9 @@ const storys = {
       }
       console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
       event(`set-story`, {
-        'event_category': 'story',
-        'event_label': 'enable',
-        'value': story.fields["en-StoryTitle"],
+        'event_category': 'content',
+        'event_label': story.fields["en-StoryTitle"],
+        'value': 1,
         method: 'Google'
       })
       // check to see if story is already in the list
@@ -185,9 +185,9 @@ const storys = {
         state.storysActive = [story, ...state.storysActive].slice(0, state.storysActiveMax)
         console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
         event(`set-story`, {
-          'event_category': 'story',
-          'event_label': 'enable',
-          'value': story.fields["en-StoryTitle"],
+          'event_category': 'content',
+          'event_label': story.fields["en-StoryTitle"],
+          'value': 1,
           method: 'Google'
         })
       } else {
@@ -228,8 +228,8 @@ const storys = {
       // payload.name
       event(`set-tag`, {
         'event_category': 'controls',
-        'event_label': 'enable',
-        'value': payload.tagName,
+        'event_label': payload.tagName,
+        'value': 1,
         method: 'Google'
       })
       state[payload.tagName] = state[payload.tagName].map((tag) => {
@@ -242,8 +242,8 @@ const storys = {
     resetTags: (state, tagName) => {
       event(`set-tag`, {
         'event_category': 'controls',
-        'event_label': 'enable',
-        'value': 'all',
+        'event_label': 'all',
+        'value': 1,
         method: 'Google'
       })
 
