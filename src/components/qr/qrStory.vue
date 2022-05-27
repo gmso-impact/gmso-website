@@ -7,8 +7,6 @@
     <vue-qr
       v-bind="qrConfig"
       class="w-100"
-      :text="story.fields['en-StoryMapLink']"
-      qid="testid"
     ></vue-qr>
   </div>
 </template>
@@ -48,6 +46,7 @@ export default {
         autoColor: false,
         // unusued when autoColor true
         colorDark: "#ffffff",
+        text: this.story.fields['en-StoryMapLink'],
         ...qrConfig,
       },
     };
