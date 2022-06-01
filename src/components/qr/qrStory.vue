@@ -44,7 +44,7 @@ export default {
         // unusued when autoColor true
         colorDark: "#ffffff",*/
         text: this.story.fields["en-StoryMapLink"],
-        //...qrConfig,
+        ...qrConfig,
       },
     };
   },
