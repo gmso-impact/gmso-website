@@ -90,4 +90,9 @@ $grid-breakpoints: (
 */
 
 
-@import "bootstrap/scss/_variables.scss";
+:export {
+  @each $name, $hex in $theme-colors {
+    #{unquote($name)}: $hex;
+  }
+}
+

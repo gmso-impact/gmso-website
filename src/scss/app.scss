@@ -1,6 +1,7 @@
 @import "bootstrap/scss/_mixins.scss";
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
+@import "bootstrap/scss/_variables.scss";
 
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
 @import "node_modules/bootstrap/scss/bootstrap.scss";

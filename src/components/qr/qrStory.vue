@@ -9,6 +9,7 @@
 </template>
 <script>
 import VueQr from "vue-qr";
+import cssColors from "@/scss/variables.scss";
 
 const qrConfig = {
   data: {
@@ -29,7 +30,6 @@ const qrConfig = {
     protectors: true,
   },
 };
-
 export default {
   components: {
     VueQr,
@@ -37,12 +37,10 @@ export default {
   data() {
     return {
       qrConfig: {
-        /*colorLight: getComputedStyle(document.documentElement).getPropertyValue(
-          `--${this.story.fields["Story Theme"]}`
-        ),
+        colorLight: cssColors[this.story.fields["Story Theme"]],
         // autoColor: false,*/
         // unusued when autoColor true
-        colorDark: "#ff00ff",
+        colorDark: "#ffffff",
         text: this.story.fields["en-StoryMapLink"],
         ...qrConfig,
       },
