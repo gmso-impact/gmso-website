@@ -40,9 +40,9 @@ export default {
         /*colorLight: getComputedStyle(document.documentElement).getPropertyValue(
           `--${this.story.fields["Story Theme"]}`
         ),
-        // autoColor: false,
+        // autoColor: false,*/
         // unusued when autoColor true
-        colorDark: "#ffffff",*/
+        colorDark: "#ff00ff",
         text: this.story.fields["en-StoryMapLink"],
         ...qrConfig,
       },
