@@ -22,7 +22,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import { languages } from "../../translations.ts";
-import { event } from 'vue-gtag'
+import { event } from "vue-gtag";
 
 export default {
   data() {
@@ -40,11 +40,11 @@ export default {
     setLanguage: function (locale) {
       this.$root.$i18n.locale = locale;
       event(`language`, {
-        'event_category': 'controld',
-        'event_label': locale,
-        'value': 1,
-        method: 'Google'
-      })
+        event_category: "controld",
+        event_label: locale,
+        value: 1,
+        method: "Google",
+      });
     },
   },
 };

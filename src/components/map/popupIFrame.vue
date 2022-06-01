@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="popup-iframe" v-if='true'>
+  <div class="popup-iframe" v-if="true">
     <StoryIFrame :story="story"></StoryIFrame>
   </div>
 </template>

@@ -1,12 +1,15 @@
 <template lang="">
   <l-layer-group :ref="`pop-layer-${story.id}`">
     <l-popup :options="options" class="popup" :ref="`pop-${story.id}`">
-      <div class="card shadow p-1 p-xxl-4" :class="`bg-${story.fields['Story Theme']}`">
-          <PopupIFrame
-            :story="story"
-            v-if="story.fields['en-StoryMapLink']"
-          ></PopupIFrame>
-          <PopupSummary :story="story" v-else></PopupSummary>
+      <div
+        class="card shadow p-1 p-xxl-4"
+        :class="`bg-${story.fields['Story Theme']}`"
+      >
+        <PopupIFrame
+          :story="story"
+          v-if="story.fields['en-StoryMapLink']"
+        ></PopupIFrame>
+        <PopupSummary :story="story" v-else></PopupSummary>
         <PopupInfo :story="story"></PopupInfo>
       </div>
     </l-popup>
@@ -62,7 +65,9 @@ export default {
   },
   mounted: function () {
     this.$nextTick(function () {
-      this.$refs[`pop-layer-${this.story.id}`].mapObject.openPopup(this.latLngObj);
+      this.$refs[`pop-layer-${this.story.id}`].mapObject.openPopup(
+        this.latLngObj
+      );
     });
   },
 };

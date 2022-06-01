@@ -1,7 +1,7 @@
 <template lang="">
   <div class="d-flex flex-column justify-content-md-center h-100">
     <div class="row mb-2 mb-xxl-5">
-      <div class="col-12 col-xxl-12 ">
+      <div class="col-12 col-xxl-12">
         <button
           class="btn btn-block font-weight-bold mb-2 mb-xxl-5"
           v-bind:class="{

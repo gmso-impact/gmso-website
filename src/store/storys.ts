@@ -1,6 +1,6 @@
 import * as storiesFile from "../assets/allStories.json";
 import { latLng, bounds } from "leaflet";
-import { event } from 'vue-gtag'
+import { event } from "vue-gtag";
 
 const stories = storiesFile.response;
 
@@ -118,10 +118,9 @@ const storys = {
     },
     storyThemesActive: (state) => {
       const activeThemes = state.storyThemes.filter((storyTheme) => {
-        return storyTheme.isActive
+        return storyTheme.isActive;
       });
-      return activeThemes
-
+      return activeThemes;
     },
     idTags: (state) => {
       return state.idTags;
@@ -138,11 +137,11 @@ const storys = {
       state.isVideoFrameOpen = true;
       state.storyFrame = null;
       event(`open-video`, {
-        'event_category': 'content',
-        'event_label': 'open-video',
-        'value': 1,
-        method: 'Google'
-      })
+        event_category: "content",
+        event_label: "open-video",
+        value: 1,
+        method: "Google",
+      });
     },
     toggleVideoFrame: (state) => {
       if (!state.isVideoFrameOpen) {
@@ -153,58 +152,67 @@ const storys = {
     addActiveStory: (state, story) => {
       // add story to active list
       if (!story) {
-        console.log('addActiveStory requires a story object. To remove all storys use removeActiveStories')
-        return
+        console.log(
+          "addActiveStory requires a story object. To remove all storys use removeActiveStories"
+        );
+        return;
       }
-      console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
+      console.log(`Activated: ${story.fields["en-StoryTitle"]}`);
       event(`set-story`, {
-        'event_category': 'content',
-        'event_label': story.fields["en-StoryTitle"],
-        'value': 1,
-        method: 'Google'
-      })
+        event_category: "content",
+        event_label: story.fields["en-StoryTitle"],
+        value: 1,
+        method: "Google",
+      });
       // check to see if story is already in the list
       const filtered = state.storysActive.filter((activeStory) => {
-        return activeStory.id !== story.id
-      })
+        return activeStory.id !== story.id;
+      });
 
-      state.storysActive = [story, ...filtered].slice(0, state.storysActiveMax)
+      state.storysActive = [story, ...filtered].slice(0, state.storysActiveMax);
     },
     toggleActiveStory: (state, story) => {
       if (!story) {
-        console.log('toggleActiveStory requires a story object. To remove all storys use removeActiveStories')
-        return
+        console.log(
+          "toggleActiveStory requires a story object. To remove all storys use removeActiveStories"
+        );
+        return;
       }
 
       // remove story from array if it is there
       const filtered = state.storysActive.filter((activeStory) => {
-        return activeStory.id !== story.id
-      })
+        return activeStory.id !== story.id;
+      });
       // add story to the array if is is not
       if (filtered.length === state.storysActive.length) {
-        state.storysActive = [story, ...state.storysActive].slice(0, state.storysActiveMax)
-        console.log(`Activated: ${story.fields["en-StoryTitle"]}`)
+        state.storysActive = [story, ...state.storysActive].slice(
+          0,
+          state.storysActiveMax
+        );
+        console.log(`Activated: ${story.fields["en-StoryTitle"]}`);
         event(`set-story`, {
-          'event_category': 'content',
-          'event_label': story.fields["en-StoryTitle"],
-          'value': 1,
-          method: 'Google'
-        })
+          event_category: "content",
+          event_label: story.fields["en-StoryTitle"],
+          value: 1,
+          method: "Google",
+        });
       } else {
-        state.storysActive = filtered
-        console.log(`Removed: ${story.fields["en-StoryTitle"]}`)
+        state.storysActive = filtered;
+        console.log(`Removed: ${story.fields["en-StoryTitle"]}`);
       }
     },
     removeActiveStory: (state, story) => {
       if (!story) {
-        console.log('removeActiveStory requires a story object. To remove all storys use removeActiveStories')
-        return
+        console.log(
+          "removeActiveStory requires a story object. To remove all storys use removeActiveStories"
+        );
+        return;
       }
       // remove story from array if it is there
       const filtered = state.storysActive.filter((activeStory) => {
-        return activeStory.id !== story.id
-      })
-      state.storysActive = filtered
+        return activeStory.id !== story.id;
+      });
+      state.storysActive = filtered;
     },
     removeActiveStories: (state) => {
       state.storysActive = [];
@@ -227,11 +235,11 @@ const storys = {
       // payload.tagName
       // payload.name
       event(`set-tag`, {
-        'event_category': 'controls',
-        'event_label': payload.tagName,
-        'value': 1,
-        method: 'Google'
-      })
+        event_category: "controls",
+        event_label: payload.tagName,
+        value: 1,
+        method: "Google",
+      });
       state[payload.tagName] = state[payload.tagName].map((tag) => {
         return {
           ...tag,
@@ -241,11 +249,11 @@ const storys = {
     },
     resetTags: (state, tagName) => {
       event(`set-tag`, {
-        'event_category': 'controls',
-        'event_label': 'all',
-        'value': 1,
-        method: 'Google'
-      })
+        event_category: "controls",
+        event_label: "all",
+        value: 1,
+        method: "Google",
+      });
 
       state[tagName] = state[tagName].map((tag) => {
         return {

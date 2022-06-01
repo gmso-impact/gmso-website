@@ -1,13 +1,10 @@
 <template lang="">
   <div
     class="qr-story d-flex align-items-end"
-    v-if="story.fields['en-StoryMapLink']"
+    v-if="story.fields['en-StoryMapLink'] && this.$route.name === 'Kiosk'"
     v-on:click="printURL"
   >
-    <vue-qr
-      v-bind="qrConfig"
-      class="w-100"
-    ></vue-qr>
+    <vue-qr v-bind="qrConfig" class="w-100"></vue-qr>
   </div>
 </template>
 <script>
@@ -40,13 +37,13 @@ export default {
   data() {
     return {
       qrConfig: {
-        colorLight: getComputedStyle(document.documentElement).getPropertyValue(
+        /*colorLight: getComputedStyle(document.documentElement).getPropertyValue(
           `--${this.story.fields["Story Theme"]}`
         ),
         // autoColor: false,
         // unusued when autoColor true
-        colorDark: "#ffffff",
-        text: this.story.fields['en-StoryMapLink'],
+        colorDark: "#ffffff",*/
+        text: this.story.fields["en-StoryMapLink"],
         //...qrConfig,
       },
     };

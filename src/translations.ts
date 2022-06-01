@@ -38,8 +38,8 @@ const translations = {
       Conservation: "Conservation",
     },
     idTags: {
-      "Alumnus": "Alumnus",
-      "International": "International",
+      Alumnus: "Alumnus",
+      International: "International",
       "First Generation": "First Generation",
     },
     collegeTags: {
@@ -67,10 +67,10 @@ const translations = {
       Water: "Agua",
       Food: "Alimento",
       Energy: "Energía",
-      Community: "Comunidad"
+      Community: "Comunidad",
     },
     idTags: {
-      "International": "Internacional",
+      International: "Internacional",
     },
   },
   fr: {},

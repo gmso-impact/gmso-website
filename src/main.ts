@@ -29,7 +29,6 @@ Vue.use(VueI18n);
 import { I18nSetup } from "./translations";
 const i18n = new VueI18n(I18nSetup);
 
-
 Vue.config.productionTip = false;
 
 import {
@@ -46,15 +45,14 @@ import {
   faGlobe,
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
-Iconlibrary.add(faTimes,
+Iconlibrary.add(
+  faTimes,
   faBook,
   faGraduationCap,
   faAward,
   faGlobe,
-  faUserGraduate,
+  faUserGraduate
 );
-
-
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.component("font-awesome-layers", FontAwesomeLayers);
@@ -71,11 +69,14 @@ new Vue({
   render: (h) => h(App),
 }).$mount("#app");
 
-
 import VueGtag from "vue-gtag";
 // https://matteo-gabriele.gitbook.io/vue-gtag/v/master/methods/events
 // https://support.google.com/analytics/answer/1033068#Anatomy&zippy=%2Cin-this-article
 
-Vue.use(VueGtag, {
-  config: { id: "G-9Y7C77KWYD" }
-}, router)
+Vue.use(
+  VueGtag,
+  {
+    config: { id: "G-9Y7C77KWYD" },
+  },
+  router
+);

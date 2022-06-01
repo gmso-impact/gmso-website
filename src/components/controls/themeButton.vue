@@ -6,7 +6,10 @@
       :key="control.name"
       v-on:click="setTagClicked"
     >
-      <div class="themeIconContainer p-1 rounded" :class="[`bg-${control.name}`]">
+      <div
+        class="themeIconContainer p-1 rounded"
+        :class="[`bg-${control.name}`]"
+      >
         <img :src="themeIconSRC" class="themeIcon" />
       </div>
       <div class="themeText flex-fill text-center p-2">

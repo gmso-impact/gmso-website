@@ -3,7 +3,12 @@
     class="d-flex text-white flex-wrap pt-1 pt-xxl-3 justify-content-xxl-between"
   >
     <QRStory class="mr-3 mr-xxl-5" v-if="true" :story="story"></QRStory>
-    <IDIcon class='mr-3 mr-xxl-5' v-for="id in story.fields['ID Tags']" v-bind:key="id" :id="id">
+    <IDIcon
+      class="mr-3 mr-xxl-5"
+      v-for="id in story.fields['ID Tags']"
+      v-bind:key="id"
+      :id="id"
+    >
     </IDIcon>
     <button
       class="btn btn-dark mr-0 ml-auto"
@@ -40,6 +45,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

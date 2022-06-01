@@ -22,7 +22,7 @@ export default new Vuex.Store({
     setLastInteraction: (state) => {
       const now = new Date();
       console.log(`${now.toString()} interaction occured`);
-      state.lastInteraction = now
+      state.lastInteraction = now;
     },
   },
   actions: {
@@ -78,7 +78,7 @@ export default new Vuex.Store({
     stopTimer({ commit, dispatch, state }) {
       const now = new Date();
       console.log(`${now.toString()} timer stoped`);
-      clearInterval(state.timer)
+      clearInterval(state.timer);
     },
   },
   modules: {
