@@ -1,6 +1,6 @@
 <template lang="">
   <div class="d-flex h-100 p-xxl-5 flex-column">
-    <KioskSwitch class="mb-3 mb-xxl-5 d-none"> </KioskSwitch>
+    <KioskSwitch class="mb-3 mb-xxl-5" v-if='false'> </KioskSwitch>
     <Language class="d-block mb-3 mb-xxl-5"></Language>
     <ThemeColumn class="mb-3 mb-xxl-5"></ThemeColumn>
     <div class="d-flex row justify-content-between">
