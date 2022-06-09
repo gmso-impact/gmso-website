@@ -2,7 +2,6 @@ import * as storiesFile from "../assets/allStories.json";
 import { latLng, bounds } from "leaflet";
 import { event } from "vue-gtag";
 import { breakpointCalculate } from "./breakpoint";
-import router from "./router";
 
 const stories = storiesFile.response;
 
