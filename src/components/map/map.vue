@@ -32,16 +32,16 @@
         position="bottomleft"
         :imperial="true"
         :metric="true"
-        class="d-xxl-none"
+        v-if="true"
       ></l-control-scale>
 
       <l-control-zoom
         position="bottomleft"
-        class="d-none d-xxl-block"
+        v-if="getBreakpoints.includes('xxl')"
       ></l-control-zoom>
     </LMap>
     <div v-if="$route.name === 'Web'" class="boxy boxy-top childPoint">
-      <!--<img src="GMSOtitle1.png" alt="CSU Impact" class="title-img" />-->
+      <img src="GMSOtitle1.png" alt="CSU Impact" class="title-img d-lg-none" />
       <div class="breakpoint_testing text-white d-none">
         <h2 class="text-center">{{ getBreakpoints[0] }}</h2>
         <div class="text-center d-block d-sm-none">xs</div>
@@ -54,6 +54,7 @@
     </div>
     <div class="boxy boxy-left childPoint"></div>
     <div v-if="false" class="boxy boxy-bottom-right childPoint"></div>
+    <OverlayHelp></OverlayHelp>
     <OverlayStory></OverlayStory>
     <OverlayVideo></OverlayVideo>
   </div>
@@ -77,7 +78,7 @@ window.mapboxgl = mapboxgl; // mapbox-gl-leaflet expects this to be global, used
 import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
-
+import OverlayHelp from "../overlay/help.vue";
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
@@ -93,6 +94,7 @@ export default {
     StoryPopup,
     OverlayStory,
     OverlayVideo,
+    OverlayHelp,
     LControlZoom,
     LControlScale,
   },

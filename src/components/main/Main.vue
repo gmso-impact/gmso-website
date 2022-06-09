@@ -3,10 +3,14 @@
     <div
       id="header"
       v-if="$route.name === 'Web'"
-      class="d-none d-md-block carbon text-center border-bottom"
+      class="d-none d-lg-block carbon text-center border-bottom"
     >
       <!--<h2 class="mb-0">Header</h2>-->
-      <img src="GMSOtitle1.png" alt="CSU Impact" class="title-img" />
+      <img
+        src="GMSOtitle1.png"
+        alt="CSU Impact"
+        class="title-img d-none d-md-inline-block"
+      />
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">
       <div class="left d-none d-lg-block col-lg-3 col-xxl-3">

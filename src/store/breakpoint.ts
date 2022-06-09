@@ -10,10 +10,25 @@ const bpl = {
   xl: 1200,
   xxl: 4000,
 };
+
+// can be used in inital state like the getter getBreakpoints()
+// see getBreakpoints for documentation
+
+export const breakpointCalculate = function () {
+  const newWidth = window.innerWidth;
+  const bpsLess = Object.entries(bpl).filter(([name, minWidth]) => {
+    return newWidth >= minWidth;
+  });
+  // array of breakpoints like ['xl', 'xxl']
+  const breakpointArray = Object.keys(Object.fromEntries(bpsLess)).reverse();
+  return breakpointArray;
+};
+
 const breakpoint = {
   state: {
-    breakpoints: [],
-    width: null,
+    breakpoints: breakpointCalculate(),
+    width: window.innerWidth,
+    hasBeenResized: false,
   },
   getters: {
     getBreakpoints: (state) => {
@@ -21,15 +36,14 @@ const breakpoint = {
       //
       // media-breakpoint-up
       // greater than or equal
-      // breakpoint.includes('xl')
+      // getBreakpoints.includes('xl')
       //
       // media-breakpoint-only
       // equal to
-      // breakpoint[0] === 'xl'
-      //
+      // getBreakpoints[0] === 'xl'
       //
       // less than
-      // !breakpoint.includes('xl')
+      // !getBreakpoints.includes('xl')
       //
       return state.breakpoints;
     },
@@ -38,25 +52,19 @@ const breakpoint = {
     },
   },
   actions: {
-    setBreakpoint: ({ state, commit }, newWidth) => {
-      console.log("resized action!");
-      if (!newWidth) {
-        return;
+    setBreakpoint: ({ state, commit }) => {
+      if (!state.hasBeenResized) {
+        // action to take if the page has never been resize (initial page load)
       }
-      const bpsLess = Object.entries(bpl).filter(([name, minWidth]) => {
-        return newWidth >= minWidth;
-      });
-      // array of breakpoints like ['xl', 'xxl']
-      const breakpointArray = Object.keys(
-        Object.fromEntries(bpsLess)
-      ).reverse();
+      console.log("resized action!");
+      const breakpointArray = breakpointCalculate();
       // only update if breakpoint changed
       if (
         JSON.stringify(state.breakpoints) !== JSON.stringify(breakpointArray)
       ) {
         commit("setBreakpoint", {
           nbps: breakpointArray,
-          newWidth: newWidth,
+          newWidth: window.innerWidth,
         });
       }
     },
@@ -65,6 +73,7 @@ const breakpoint = {
     setBreakpoint: (state, newState) => {
       state.breakpoints = newState.nbps;
       state.width = newState.newWidth;
+      state.hasBeenResized = true;
     },
   },
 };

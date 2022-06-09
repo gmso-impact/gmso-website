@@ -5,7 +5,7 @@
 <script lang="ts">
 // @ is an alias to /src
 import Main from "@/components/main/Main.vue";
-import { mapActions, mapMutations } from "vuex";
+import { mapGetters, mapActions, mapMutations } from "vuex";
 
 export default {
   name: "Kiosk",
@@ -17,6 +17,9 @@ export default {
   },
   beforeDestroy() {
     this.stopTimer();
+  },
+  computed: {
+    ...mapGetters({ getBreakpoints: "getBreakpoints" }),
   },
   methods: {
     ...mapActions({ startTimer: "startTimer", stopTimer: "stopTimer" }),

@@ -10,9 +10,6 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import KioskSwitch from "./kioskSwitch.vue";
-import Language from "./language.vue";
-import ThemeColumn from "./themeColumn.vue";
 
 export default {
   methods: {

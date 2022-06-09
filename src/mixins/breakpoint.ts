@@ -4,10 +4,10 @@ import { mapGetters, mapActions, mapMutations } from "vuex";
 const breakpoint = {
   mounted() {
     const checkCurrentSize = () => {
-      this.setBreakpoint(window.innerWidth);
+      this.setBreakpoint();
     };
     window.addEventListener("resize", debounce(checkCurrentSize, 200));
-    checkCurrentSize();
+    this.setBreakpoint();
   },
   computed: {
     ...mapGetters({

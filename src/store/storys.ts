@@ -1,6 +1,8 @@
 import * as storiesFile from "../assets/allStories.json";
 import { latLng, bounds } from "leaflet";
 import { event } from "vue-gtag";
+import { breakpointCalculate } from "./breakpoint";
+import router from "./router";
 
 const stories = storiesFile.response;
 
@@ -43,10 +45,14 @@ const storys = {
     idTags: toFilterTags("ID Tags"),
     collegeTags: toFilterTags("College/Division"),
     isVideoFrameOpen: false,
+    isHelpFrameOpen: false,
   },
   getters: {
     isVideoFrameOpen: (state) => {
       return state.isVideoFrameOpen;
+    },
+    isHelpFrameOpen: (state) => {
+      return state.isHelpFrameOpen;
     },
     storyAll: (state) => {
       return state.all.map((story) => {
@@ -136,6 +142,7 @@ const storys = {
     openVideoFrame: (state) => {
       state.isVideoFrameOpen = true;
       state.storyFrame = null;
+      state.isHelpFrameOpen = false;
       event(`open-video`, {
         event_category: "content",
         event_label: "open-video",
@@ -145,9 +152,35 @@ const storys = {
     },
     toggleVideoFrame: (state) => {
       if (!state.isVideoFrameOpen) {
+        state.isVideoFrameOpen = true;
         state.storyFrame = null;
+        state.isHelpFrameOpen = false;
+      } else {
+        state.isVideoFrameOpen = false;
       }
-      state.isVideoFrameOpen = !state.isVideoFrameOpen;
+    },
+    closeHelpFrame: (state) => {
+      state.isHelpFrameOpen = false;
+    },
+    openHelpFrame: (state) => {
+      state.isVideoFrameOpen = false;
+      state.storyFrame = null;
+      state.isHelpFrameOpen = true;
+      event(`open-Help`, {
+        event_category: "content",
+        event_label: "open-Help",
+        value: 1,
+        method: "Google",
+      });
+    },
+    toggleHelpFrame: (state) => {
+      if (!state.isHelpFrameOpen) {
+        state.isVideoFrameOpen = false;
+        state.storyFrame = null;
+        state.isHelpFrameOpen = true;
+      } else {
+        state.isHelpFrameOpen = false;
+      }
     },
     addActiveStory: (state, story) => {
       // add story to active list
