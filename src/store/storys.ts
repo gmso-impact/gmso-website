@@ -43,8 +43,11 @@ const storys = {
     storyTags: toFilterTags("Story Tags"),
     idTags: toFilterTags("ID Tags"),
     collegeTags: toFilterTags("College/Division"),
+
     isVideoFrameOpen: false,
     isHelpFrameOpen: false,
+    isStoriesFrameOpen: false,
+    isFilterFrameOpen: false,
   },
   getters: {
     isVideoFrameOpen: (state) => {
@@ -52,6 +55,12 @@ const storys = {
     },
     isHelpFrameOpen: (state) => {
       return state.isHelpFrameOpen;
+    },
+    isStoriesFrameOpen: (state) => {
+      return state.isStoriesFrameOpen;
+    },
+    isFilterFrameOpen: (state) => {
+      return state.isFilterFrameOpen;
     },
     storyAll: (state) => {
       return state.all.map((story) => {
@@ -142,6 +151,9 @@ const storys = {
       state.isVideoFrameOpen = true;
       state.storysActive = [];
       state.isHelpFrameOpen = false;
+      state.isStoriesFrameOpen = false;
+      state.isFilterFrameOpen = false;
+
       event(`open-video`, {
         event_category: "content",
         event_label: "open-video",
@@ -154,6 +166,8 @@ const storys = {
         state.isVideoFrameOpen = true;
         state.storysActive = [];
         state.isHelpFrameOpen = false;
+        state.isStoriesFrameOpen = false;
+        state.isFilterFrameOpen = false;
       } else {
         state.isVideoFrameOpen = false;
       }
@@ -165,6 +179,8 @@ const storys = {
       state.isVideoFrameOpen = false;
       state.storysActive = [];
       state.isHelpFrameOpen = true;
+      state.isStoriesFrameOpen = false;
+      state.isFilterFrameOpen = false;
       event(`open-Help`, {
         event_category: "content",
         event_label: "open-Help",
@@ -177,10 +193,69 @@ const storys = {
         state.isVideoFrameOpen = false;
         state.storysActive = [];
         state.isHelpFrameOpen = true;
+        state.isStoriesFrameOpen = false;
+        state.isFilterFrameOpen = false;
       } else {
         state.isHelpFrameOpen = false;
       }
     },
+
+    closeStoriesFrame: (state) => {
+      state.isStoriesFrameOpen = false;
+    },
+    openStoriesFrame: (state) => {
+      state.isVideoFrameOpen = false;
+      state.storysActive = [];
+      state.isHelpFrameOpen = false;
+      state.isStoriesFrameOpen = true;
+      state.isFilterFrameOpen = false;
+      event(`open-video`, {
+        event_category: "content",
+        event_label: "open-video",
+        value: 1,
+        method: "Google",
+      });
+    },
+    toggleStoriesFrame: (state) => {
+      if (!state.isStoriesFrameOpen) {
+        state.isVideoFrameOpen = false;
+        state.storysActive = [];
+        state.isHelpFrameOpen = false;
+        state.isStoriesFrameOpen = true;
+        state.isFilterFrameOpen = false;
+      } else {
+        state.isStoriesFrameOpen = false;
+      }
+    },
+
+    closeFilterFrame: (state) => {
+      state.isFilterFrameOpen = false;
+    },
+    openFilterFrame: (state) => {
+      state.isVideoFrameOpen = false;
+      state.storysActive = [];
+      state.isHelpFrameOpen = false;
+      state.isStoriesFrameOpen = false;
+      state.isFilterFrameOpen = true;
+      event(`open-video`, {
+        event_category: "content",
+        event_label: "open-video",
+        value: 1,
+        method: "Google",
+      });
+    },
+    toggleFilterFrame: (state) => {
+      if (!state.isFilterFrameOpen) {
+        state.isVideoFrameOpen = false;
+        state.storysActive = [];
+        state.isHelpFrameOpen = false;
+        state.isStoriesFrameOpen = false;
+        state.isFilterFrameOpen = true;
+      } else {
+        state.isFilterFrameOpen = false;
+      }
+    },
+
     addActiveStory: (state, story) => {
       // add story to active list
       if (!story) {
@@ -205,6 +280,8 @@ const storys = {
 
       state.isVideoFrameOpen = false;
       state.isHelpFrameOpen = false;
+      //state.isStoriesFrameOpen = false;
+      state.isFilterFrameOpen = false;
     },
     toggleActiveStory: (state, story) => {
       if (!story) {
@@ -226,6 +303,8 @@ const storys = {
         );
         state.isVideoFrameOpen = false;
         state.isHelpFrameOpen = false;
+        //state.isStoriesFrameOpen = false;
+        state.isFilterFrameOpen = false;
         console.log(`Activated: ${story.fields["en-StoryTitle"]}`);
         event(`set-story`, {
           event_category: "content",
@@ -277,6 +356,7 @@ const storys = {
         value: 1,
         method: "Google",
       });
+      state.isFilterFrameOpen = false;
       state[payload.tagName] = state[payload.tagName].map((tag) => {
         return {
           ...tag,
@@ -291,7 +371,7 @@ const storys = {
         value: 1,
         method: "Google",
       });
-
+      state.isFilterFrameOpen = false;
       state[tagName] = state[tagName].map((tag) => {
         return {
           ...tag,

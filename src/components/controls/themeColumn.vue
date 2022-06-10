@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex flex-column justify-content-md-center h-100">
+  <div class="d-flex flex-column justify-content-center h-100">
     <div class="row mb-2 mb-xxl-5">
       <div class="col-12 col-xxl-12">
         <button

@@ -15,7 +15,7 @@
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">
       <div class="left d-none d-lg-block col-lg-3 col-xxl-3">
-        <StoryList></StoryList>
+        <StoryListMap></StoryListMap>
       </div>
       <div
         class="middle d-none d-lg-block carbon h-100 p-2 p-xxl-1 border-left border-right border-map-light"
@@ -49,7 +49,7 @@
 
 <script lang="ts">
 // @ is an alias to /src
-import StoryList from "@/components/storyList/storyList.vue";
+import StoryListMap from "@/components/storyList/storyListMap.vue";
 import Map from "@/components/map/map.vue";
 import ControlGroup from "@/components/controls/controlGroup.vue";
 import { mapGetters, mapMutations } from "vuex";
@@ -57,7 +57,7 @@ import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Main",
   components: {
-    StoryList,
+    StoryListMap,
     Map,
     ControlGroup,
   },

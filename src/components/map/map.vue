@@ -58,13 +58,31 @@
       </div>
     </div>
     <div class="boxy boxy-left childPoint"></div>
-    <div v-if="false" class="boxy boxy-bottom-right childPoint"></div>
+    <div class="boxy boxy-bottom childPoint d-block d-lg-none">
+      <div class="btn-group">
+        <button
+          class="btn btn-light border-right"
+          v-on:click="openStoriesFrame()"
+        >
+          <font-awesome-icon :icon="['fas', 'globe']" />
+          Stories
+        </button>
+        <button class="btn btn-light" v-on:click="openFilterFrame()">
+          <font-awesome-icon :icon="['fas', 'filter']" />
+
+          Filter
+        </button>
+      </div>
+    </div>
     <OverlayHelp></OverlayHelp>
+
+    <OverlayVideo></OverlayVideo>
+    <OverlayFilter></OverlayFilter>
+    <OverlayStories></OverlayStories>
     <OverlayStory
       :story="storysActive[0]"
       v-if="storysActive.length > 0 && !getBreakpoints.includes('xxl')"
     ></OverlayStory>
-    <OverlayVideo></OverlayVideo>
   </div>
 </template>
 <script>
@@ -87,6 +105,9 @@ import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
 import OverlayHelp from "../overlay/help.vue";
+import OverlayFilter from "../overlay/filter.vue";
+import OverlayStories from "../overlay/stories.vue";
+
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
@@ -103,6 +124,8 @@ export default {
     OverlayStory,
     OverlayVideo,
     OverlayHelp,
+    OverlayStories,
+    OverlayFilter,
     LControlZoom,
     LControlScale,
   },
@@ -148,6 +171,8 @@ export default {
       "mapSetCenterCurrent",
       "mapSetBoundsCurrent",
       "toggleHelpFrame",
+      "openStoriesFrame",
+      "openFilterFrame",
     ]),
   },
   mounted() {

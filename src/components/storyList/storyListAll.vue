@@ -1,6 +1,6 @@
 <template lang="">
   <div class="d-flex flex-column h-100 carbon">
-    <h3 class="text-center my-1 my-xxl-5 bg-white d-xl-none">
+    <h3 class="text-center my-1 my-xxl-5 bg-white d-none d-lg-block d-xl-none">
       {{ $t(`tagline`) }}
     </h3>
     <div class="flex-grow-1 overflow-y-auto overflow-x-hidden carbon p-2">
@@ -35,7 +35,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      stories: "storyInMap",
+      stories: "storyFiltered",
     }),
   },
   methods: {

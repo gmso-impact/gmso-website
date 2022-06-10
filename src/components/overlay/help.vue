@@ -24,7 +24,10 @@
           <button
             class="btn btn-lg btn-white mx-3 my-3"
             alt="Continue to map showing stories"
-            v-on:click="clickCloseHelpFrame(); $root.$i18n.locale = 'es' "
+            v-on:click="
+              clickCloseHelpFrame();
+              $root.$i18n.locale = 'es';
+            "
           >
             {{ $t("ContinueES") }}
           </button>
