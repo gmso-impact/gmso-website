@@ -1,15 +1,25 @@
 import { latLng, latLngBounds } from "leaflet";
-const initialState = {
-  zoom: 12,
-  center: latLng(0, 0),
-  bounds: latLngBounds(latLng(90, -180), latLng(-90, 180)),
+export const maps = {
+  globe: latLngBounds(latLng(80, 70), latLng(-60, -130)),
+  northAmerica: latLngBounds(latLng(50, -74), latLng(20, -120)),
+  sourthAmerica: latLngBounds(latLng(27, -8), latLng(-56, -110)),
+  europe: latLngBounds(latLng(74, 66), latLng(16, -34)),
+  africe: latLngBounds(latLng(45, 72), latLng(-40, -26)),
+  asia: latLngBounds(latLng(82, 180), latLng(-32, 5)),
+  australia: latLngBounds(latLng(30, 180), latLng(-53, 84)),
+};
+const stateTemplate = {
+  bounds: null,
+  zoom: null,
+  center: null,
+  duration: 2,
   date: new Date(),
 };
 
 const map = {
   state: {
-    current: { ...initialState },
-    new: { ...initialState, duration: 5 },
+    current: { ...stateTemplate},
+    new: { ...stateTemplate, bounds: maps.globe },
   },
   getters: {
     mapGetZoom: (state) => {
@@ -24,12 +34,15 @@ const map = {
     mapGetBoundsNew: (state) => {
       return state.new;
     },
+    mapGetBoundsCurrent: (state) => {
+      return state.current;
+    },
   },
   mutations: {
     resetMap: (state) => {
       state.new = {
-        ...initialState,
-        duration: 1,
+        ...stateTemplate, 
+        bounds: maps.globe,
         date: new Date(),
       };
     },

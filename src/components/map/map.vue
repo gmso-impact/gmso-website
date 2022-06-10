@@ -58,8 +58,9 @@
       </div>
     </div>
     <div class="boxy boxy-left childPoint"></div>
-    <div class="boxy boxy-bottom childPoint d-block d-lg-none">
-      <div class="btn-group">
+    <div class="boxy boxy-bottom childPoint">
+      <button class="btn btn-dark" v-on:click="fly()">Fly</button>
+      <div class="btn-group d-block d-lg-none">
         <button
           class="btn btn-light border-right"
           v-on:click="openStoriesFrame()"
@@ -111,6 +112,8 @@ import OverlayStories from "../overlay/stories.vue";
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
+import { maps } from "@/store/map" 
+
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
 
@@ -146,8 +149,8 @@ export default {
         zoomSnap: 1,
         worldCopyJump: true,
         zoomDelta: 1,
-        maxZoom: 12,
-        minZoom: 2,
+        maxZoom: 10, // town
+        minZoom: 3, // globe
         zoomControl: false,
       },
       showMap: true,
@@ -161,6 +164,7 @@ export default {
       zoom: "mapGetZoomNew",
       center: "mapGetCenterNew",
       mapGetBoundsNew: "mapGetBoundsNew",
+      mapGetBoundsCurrent: "mapGetBoundsCurrent",
       storyLayer: "storyLayer",
       getBreakpoints: "getBreakpoints",
     }),
@@ -174,11 +178,18 @@ export default {
       "openStoriesFrame",
       "openFilterFrame",
     ]),
+    fly() {
+      console.log("fly");
+      this.$refs.map.mapObject.flyToBounds(this.mapGetBoundsNew.bounds, {
+        duration: this.mapGetBoundsNew.duration,
+      });
+    },
   },
   mounted() {
+    this.$refs.map.mapObject.fitBounds(maps.northAmerica);
     this.$refs.map.mapObject.addLayer(this.basemap);
-    this.$refs.map.mapObject.flyToBounds(this.mapGetBoundsNew.bounds, {
-      duration: 6,
+    this.$nextTick(() => {
+      this.$refs.map.mapObject.flyToBounds(maps.globe, {  duration: 3 });
     });
   },
   watch: {
