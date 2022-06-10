@@ -1,22 +1,27 @@
 <template lang="">
   <div
-    class="btn-group d-flex flex-column flex-xxl-row"
+    class="d-flex"
+    :class="{
+      'btn-group': false,
+      'btn-group-vertical': true,
+    }"
     role="group"
     aria-label="Language Toggle Buttons"
   >
     <button
-      v-for="lang in langs"
-      :key="lang.locale"
+      v-for="language in languages"
+      :key="language.locale"
       type="button"
-      class="btn"
+      class="btn btn-fade"
       :class="{
-        'btn-white': $root.$i18n.locale === lang.locale,
-        'btn-secondary': $root.$i18n.locale !== lang.locale,
+        'btn-white': $root.$i18n.locale === language.locale,
+        'btn-secondary': $root.$i18n.locale !== language.locale,
       }"
-      v-on:click="setLanguage(lang.locale)"
+      v-on:click="setLanguage(language.locale)"
     >
-      {{ lang.language }}
+          {{ language.language }}
     </button>
+
   </div>
 </template>
 <script>
@@ -26,7 +31,7 @@ import { event } from "vue-gtag";
 
 export default {
   data() {
-    return { langs: languages };
+    return { languages: languages };
   },
   computed: {
     ...mapGetters({
@@ -50,4 +55,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.btn-fade {
+  transition: all .6s ease;
+}
+</style>

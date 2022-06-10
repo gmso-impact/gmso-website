@@ -1,7 +1,7 @@
 <template lang="">
   <div class="col-xxl-12">
     <div
-      class="themeButton btn-dark text-white d-flex mb-2 mb-xxl-4 rounded"
+      class="themeButton btn-dark btn-fade text-white d-flex mb-2 mb-xxl-4 rounded"
       :class="themeButtonClasses"
       :key="control.name"
       v-on:click="setTagClicked"
@@ -13,7 +13,11 @@
         <img :src="themeIconSRC" class="themeIcon" />
       </div>
       <div class="themeText flex-fill text-center p-2">
-        {{ $t(`storyThemes.${control.name}`) }}
+        <transition name="slide-right" mode="out-in">
+          <div :key="$t(`storyThemes.${control.name}`)">
+            {{ $t(`storyThemes.${control.name}`) }}
+          </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -64,4 +68,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 // check btn.scss
+
+.slide-right-enter-active {
+  transition: all .3s ease;
+}
+.slide-right-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-right-enter,  {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.slide-right-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
 </style>

@@ -1,6 +1,6 @@
 <template lang="">
   <div class="qr-site d-flex align-items-end">
-    <div class="w-100" v-if="this.$route.name === 'Kiosk'">
+    <div class="w-100">
       <!--<div
         class="text-center font-qr-site text-white pb-1 pb-xxl-3 w-100 text-break"
       >

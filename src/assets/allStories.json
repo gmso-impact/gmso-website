@@ -1,6 +1,6 @@
 {
-  "dateString": "Tue May 24 2022 11:53:10 GMT-0500 (Central Daylight Time)",
-  "date": "2022-05-24T16:53:10.407Z",
+  "dateString": "Thu Jun 09 2022 19:28:29 GMT-0600 (Mountain Daylight Time)",
+  "date": "2022-06-10T01:28:29.642Z",
   "recordsCount": 34,
   "url": "https://api.airtable.com/v0/appyTc8xRR9nR9sSB/All%20Stories?view=publicWebsite",
   "response": [
@@ -41,52 +41,52 @@
             "id": "attKvEaVz0KvtTHBn",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/62d64dc3a75b0f3e08f1bfd3b0548cbc/572d94c7/DelphineFarmerThumbnail.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3917c0d7470a9f92",
+            "url": "https://dl.airtable.com/.attachments/62d64dc3a75b0f3e08f1bfd3b0548cbc/572d94c7/DelphineFarmerThumbnail.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=537269206ffaa467",
             "filename": "DelphineFarmerThumbnail.jpg",
             "size": 274068,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2be8c9fb2328eac9dc5f7b6ea42c5f9b/a769caed?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=0084457381f75c9c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2be8c9fb2328eac9dc5f7b6ea42c5f9b/a769caed?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=02432014550d6352",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5485a3fd08748aebb3dd9ece201bc0fe/d03efad4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ba9751361aba68a8",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5485a3fd08748aebb3dd9ece201bc0fe/d03efad4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0edf8d8904e664c6",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/047a0ea5019f9c3468dc2acf08ff241c/ae66c1ed?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=597aded8410f3a65",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/047a0ea5019f9c3468dc2acf08ff241c/ae66c1ed?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=30f67adb650376cf",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "El aire que respiramos",
+        "es-StoryTitle": "El aire que respiramos",
         "QR Code": [
           {
             "id": "attW3TtpiFWGuzysp",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/5ef360f9b22cb260595709cef207c622/f870d7ed/TheAirWeBreathe.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3ec6dba679724584",
+            "url": "https://dl.airtable.com/.attachments/5ef360f9b22cb260595709cef207c622/f870d7ed/TheAirWeBreathe.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7348137860cb344d",
             "filename": "The Air We Breathe.png",
             "size": 44124,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/18e289388ce1c075b8245c202ae1512f/c9183e02?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8e7e61f1027c8680",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/18e289388ce1c075b8245c202ae1512f/c9183e02?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=de73d02abc3fb26d",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3fa40dcf0dfbc31071c4fd38fd5e9b99/ecf56432?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d38a79732ee08054",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3fa40dcf0dfbc31071c4fd38fd5e9b99/ecf56432?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5c59fa7327865f4b",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1921554091c1561c8afa98037fa78326/c387c8d3?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=7a795eadf87e9daa",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1921554091c1561c8afa98037fa78326/c387c8d3?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e13a428b38973cf2",
                 "width": 3000,
                 "height": 3000
               }
@@ -146,52 +146,52 @@
             "id": "attBn1RQDs5pIHyQs",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/41de1c0f8a55857552b1f97bfd859f47/cd17ccd2/radar.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=2be752d406f26758",
+            "url": "https://dl.airtable.com/.attachments/41de1c0f8a55857552b1f97bfd859f47/cd17ccd2/radar.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=aa8f75773302ec28",
             "filename": "radar.png",
             "size": 2926743,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/56117adaaf2a963651cd8ae3906a3ff0/3db1d675?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a97b25c88513b4b1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/56117adaaf2a963651cd8ae3906a3ff0/3db1d675?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3d147283f223ee66",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2833b3cda5efd6e03ebec8c775781c07/8b6ba648?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=63174fc51cf3f6b7",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2833b3cda5efd6e03ebec8c775781c07/8b6ba648?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=cfc270ffc55de740",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1707ef0356c1bea1e5d488ab8015b5db/96e8d1a9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=698be9e344bf4189",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1707ef0356c1bea1e5d488ab8015b5db/96e8d1a9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b70d73211aefe5fa",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Detección de tormentas con radar",
+        "es-StoryTitle": "Detección de tormentas con radar",
         "QR Code": [
           {
             "id": "attLEBRWfNqiMSFIx",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/5487ba37be9988f5cead6da1f4243718/cbba9547/QRCode1.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=2bfbe77a999767ef",
+            "url": "https://dl.airtable.com/.attachments/5487ba37be9988f5cead6da1f4243718/cbba9547/QRCode1.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e8f6470d368cddc9",
             "filename": "QRCode (1).png",
             "size": 43915,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/56acf1893a2c74b7679f1604d969165c/14cf544f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=712a1a08ba93c27a",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/56acf1893a2c74b7679f1604d969165c/14cf544f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=ebd687dc42164b46",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/38d8cced0493843ba6fcb903cfa21a24/0747706a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=642cfe24ff8dac28",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/38d8cced0493843ba6fcb903cfa21a24/0747706a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=151bb3d14fc5961c",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/662488b24d57cd4961afe240fe75df50/532017c8?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f942fd9530d34c31",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/662488b24d57cd4961afe240fe75df50/532017c8?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6e7d0d6afffb6ec2",
                 "width": 3000,
                 "height": 3000
               }
@@ -244,52 +244,52 @@
             "id": "attk7Ab5ui8u78Bpz",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/4d78c4abacfbee4332229063d1c152b0/38052ced/2_EphemeralStreams.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=15004a4cb040074f",
+            "url": "https://dl.airtable.com/.attachments/4d78c4abacfbee4332229063d1c152b0/38052ced/2_EphemeralStreams.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f517452f948d2bf2",
             "filename": "2_EphemeralStreams.jpg",
             "size": 495786,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/9b230d86be3a728d056a668c5b7c8973/7b545e21?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=0bb889fccf6d7bc6",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9b230d86be3a728d056a668c5b7c8973/7b545e21?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=49dae557cd53a6cb",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/808131694a53f9501f1db78db35941b2/e5108fda?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b0437a4560b14f10",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/808131694a53f9501f1db78db35941b2/e5108fda?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=cf7765a54886781b",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/205deb5499a378281f6477d423fac0a8/e86cdfab?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a707a59114693d27",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/205deb5499a378281f6477d423fac0a8/e86cdfab?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=ecca1c3e29b5eb1b",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Corrientes efímeras",
+        "es-StoryTitle": "Corrientes efímeras",
         "QR Code": [
           {
             "id": "attRlm0vqHXemn4Gq",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/10e1d8519d5d0465af9976d657a9600b/30d7b493/QRCode2.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6a7df6ab315f34b7",
+            "url": "https://dl.airtable.com/.attachments/10e1d8519d5d0465af9976d657a9600b/30d7b493/QRCode2.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9d4c7d4bd339ef1b",
             "filename": "QRCode (2).png",
             "size": 43260,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d3cdda947c8ef7dadabad6c3f75ecec7/f31d5c69?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=90170bcd89c786a7",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d3cdda947c8ef7dadabad6c3f75ecec7/f31d5c69?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=18f995e082f72b15",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2f040181db4d6641f5408ea059199883/4566fcb9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=276cf328ca441126",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2f040181db4d6641f5408ea059199883/4566fcb9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a5ee572247fad7f3",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3f7bbaeb4db02226a75502d355eaa852/5b5d5553?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=9d3a0abc0d491d1c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3f7bbaeb4db02226a75502d355eaa852/5b5d5553?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a9b77f37fa405818",
                 "width": 3000,
                 "height": 3000
               }
@@ -343,52 +343,52 @@
             "id": "attP5J7UglINvcccN",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/52a92e99d66f0498656bc0830ea38b73/f2c893ac/rice_Leach.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e6808388b015a690",
+            "url": "https://dl.airtable.com/.attachments/52a92e99d66f0498656bc0830ea38b73/f2c893ac/rice_Leach.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=513f61588516dc7a",
             "filename": "rice_Leach.jpg",
             "size": 1202138,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f39d558b1b8b172f18927373c444760a/1d8416fc?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ba3872ef1f217ca1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f39d558b1b8b172f18927373c444760a/1d8416fc?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=88a883d7a6a24f43",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/230adc459b13c18d1b5492c0044a655e/847659ec?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ca59edb5706a4acb",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/230adc459b13c18d1b5492c0044a655e/847659ec?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=61863d6d65c92d6f",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/37f943449b810d275c46805aa954e665/c1dbaa42?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4832cdb14a618d8f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/37f943449b810d275c46805aa954e665/c1dbaa42?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a0df90c89f03f669",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Revolucionando la agricultura",
+        "es-StoryTitle": "Revolucionando la agricultura",
         "QR Code": [
           {
             "id": "attIHdDLTMzwEXw8z",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/6c16577b912e3cdf93c4844305956a65/be3afb6d/QRCode3.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ccac30a7bdb6dfe5",
+            "url": "https://dl.airtable.com/.attachments/6c16577b912e3cdf93c4844305956a65/be3afb6d/QRCode3.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=80805361c5992820",
             "filename": "QRCode (3).png",
             "size": 44103,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/24dd7fb8305edc0eff19c5d5836f0e8f/d10bf42d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3bdea8ac50257898",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/24dd7fb8305edc0eff19c5d5836f0e8f/d10bf42d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3c53fbb7e3050adb",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/152dcf3eb65d363bd894cf5231ce9f0c/dfd08a8c?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3eb2ac51793dd793",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/152dcf3eb65d363bd894cf5231ce9f0c/dfd08a8c?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2d9ab1d568a04e3c",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f92e424c1cf7f28c4e9d26d4c3272e79/e5b4e61a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=2a1018f6d932bfe7",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f92e424c1cf7f28c4e9d26d4c3272e79/e5b4e61a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=627cc7f74cf719d4",
                 "width": 3000,
                 "height": 3000
               }
@@ -443,52 +443,52 @@
             "id": "attzd49WULPN5ajVH",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/17cfc2999c3f0ce09dafcc1aff5c98c4/66fc924d/3_BloodMeal.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ec7bbbd68e47aa0d",
+            "url": "https://dl.airtable.com/.attachments/17cfc2999c3f0ce09dafcc1aff5c98c4/66fc924d/3_BloodMeal.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=204a3d219c8d5322",
             "filename": "3_BloodMeal.jpg",
             "size": 452927,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/6b602aa7f90e192793f13d7ab802ea82/ee2ce81f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3f232913e30795bd",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/6b602aa7f90e192793f13d7ab802ea82/ee2ce81f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=95c0feea95563887",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/70be5d10da1674e74a818baa28d12c06/49026c00?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b8d46ada8675706e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/70be5d10da1674e74a818baa28d12c06/49026c00?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=eb0449c9d33e9986",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/328066ea8e29157028eab668ddb44fb2/c872d868?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=32951b7745bb0a9e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/328066ea8e29157028eab668ddb44fb2/c872d868?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=36deea62ae7207bd",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Comida de sangre",
+        "es-StoryTitle": "Comida de sangre",
         "QR Code": [
           {
             "id": "attW1BmUktjxStGiR",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/d89a454b39192254d8f82a1d3417c36f/402067cd/QRCode4.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=35b30d6b3987d99b",
+            "url": "https://dl.airtable.com/.attachments/d89a454b39192254d8f82a1d3417c36f/402067cd/QRCode4.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c937e5f70c066d45",
             "filename": "QRCode (4).png",
             "size": 44057,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/4533af4a2ea9af765385740103db32ca/f84c02e6?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=409bdb74429e70ae",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4533af4a2ea9af765385740103db32ca/f84c02e6?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9522aae91380dd8b",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2ccfd588f7f7e318445dea328d715759/2e112ceb?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=1f4e0dfe4e87c27d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2ccfd588f7f7e318445dea328d715759/2e112ceb?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3691c57238ac99fd",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/0799ca18eaaef52352e92c0cb74b5e90/6bc1e052?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=1ae1ae793980c101",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/0799ca18eaaef52352e92c0cb74b5e90/6bc1e052?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0e343d72b481e59d",
                 "width": 3000,
                 "height": 3000
               }
@@ -541,52 +541,52 @@
             "id": "attZRRnjUPMesPsYU",
             "width": 5310,
             "height": 3540,
-            "url": "https://dl.airtable.com/.attachments/e5a85f8fd0229b8e492cf2b7a9ba767d/0529f15e/jasmin-sessler-HfgMyrPrLxI-unsplash.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=7aedcd60df5dc5d3",
+            "url": "https://dl.airtable.com/.attachments/e5a85f8fd0229b8e492cf2b7a9ba767d/0529f15e/jasmin-sessler-HfgMyrPrLxI-unsplash.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c4417d0d22e9e75d",
             "filename": "jasmin-sessler-HfgMyrPrLxI-unsplash.jpg",
             "size": 7758849,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/6d02b6aff00d835960fc3b3796f75a4b/1be3ad0f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=bd61ae149a2f0c29",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/6d02b6aff00d835960fc3b3796f75a4b/1be3ad0f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a6bd24e5ac514eae",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e3fbee776792da26d11da8eafe5cfbcf/930c5508?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8545cc6bbc24f2b9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e3fbee776792da26d11da8eafe5cfbcf/930c5508?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fc8b9d561467c8c1",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c3027ffbac9682948b6610d54a65f881/26452218?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=eb4e86f0bbc83e0c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c3027ffbac9682948b6610d54a65f881/26452218?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b9c027a33f66692c",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Química verde",
+        "es-StoryTitle": "Química verde",
         "QR Code": [
           {
             "id": "attRsq0dBKThKIaMP",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/e828606ba9264f668b6997472442bcb7/e31335b5/QRCode5.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=1fdf5fb83735e0fd",
+            "url": "https://dl.airtable.com/.attachments/e828606ba9264f668b6997472442bcb7/e31335b5/QRCode5.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=290f4fc1d58808c7",
             "filename": "QRCode (5).png",
             "size": 43820,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f4d4bae6c466fdcf395a00a959b07685/3604e1c5?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=729e719200a9080f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f4d4bae6c466fdcf395a00a959b07685/3604e1c5?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d857dacfadddc957",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/12740591f2d51ed4f174d065afab20fb/a4ac60c9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=36f7fc6c4abd1c0c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/12740591f2d51ed4f174d065afab20fb/a4ac60c9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d8c6877161338366",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/79d84bb2a7fcd5f466f939e59281a2f8/2565fefd?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d444ff4edf481bd9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/79d84bb2a7fcd5f466f939e59281a2f8/2565fefd?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b140db8bd568050c",
                 "width": 3000,
                 "height": 3000
               }
@@ -633,52 +633,52 @@
             "id": "attlaup5mYv5A3TzM",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/21d6dfddd672bbf8daf1ad38b3388c4d/327e6a58/Grandin.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6340f4b7a273270f",
+            "url": "https://dl.airtable.com/.attachments/21d6dfddd672bbf8daf1ad38b3388c4d/327e6a58/Grandin.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=79a43e27d3dc7e97",
             "filename": "Grandin.jpg",
             "size": 565857,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e0572536e9af9a42b06d5b8ad2489e9c/24f54613?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=577c66ac3c602c0d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e0572536e9af9a42b06d5b8ad2489e9c/24f54613?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9f7fd9f86eb946f5",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b4abf89d1f0e247cccab89ad1b36c0fa/e8440c3b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6385d5ca13333820",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b4abf89d1f0e247cccab89ad1b36c0fa/e8440c3b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=078f945ab20abbb6",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/40a7aa1011135a6dbb677cc275c7a54e/3b420c54?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e67d3b4fcec5a004",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/40a7aa1011135a6dbb677cc275c7a54e/3b420c54?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e64e4ff209fb9011",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Los animales nos hacen humanos",
+        "es-StoryTitle": "Los animales nos hacen humanos",
         "QR Code": [
           {
             "id": "att72fy8yVkH6oFLH",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/2c678169f427c6834fe2a9444d3085b9/bf50fda1/QRCode6.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=09fae12def463a4c",
+            "url": "https://dl.airtable.com/.attachments/2c678169f427c6834fe2a9444d3085b9/bf50fda1/QRCode6.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=61a350041e17a985",
             "filename": "QRCode (6).png",
             "size": 43900,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/57f53dcfdd26bd532bf2f6ef5be7161e/505d3e00?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=23e1589648789ac0",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/57f53dcfdd26bd532bf2f6ef5be7161e/505d3e00?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e3c3d3bdb3cc6056",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/8355e71b419823f04743cfa2ad954217/30c3606f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4581d13572f96f82",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/8355e71b419823f04743cfa2ad954217/30c3606f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1d7e08d2c8e737a6",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3bb53c2f390fd00a4b7b181339b8f58e/e6242e82?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d9c388d0eaed48e4",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3bb53c2f390fd00a4b7b181339b8f58e/e6242e82?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4cfb7a203f5c271b",
                 "width": 3000,
                 "height": 3000
               }
@@ -740,52 +740,52 @@
             "id": "attJMH3h6WBq9bgQ7",
             "width": 5616,
             "height": 3744,
-            "url": "https://dl.airtable.com/.attachments/c847174e712b4876357de29ccb543403/b8438980/rod-long-0x-TlW_QsYk-unsplash.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f0e08ba82923be24",
+            "url": "https://dl.airtable.com/.attachments/c847174e712b4876357de29ccb543403/b8438980/rod-long-0x-TlW_QsYk-unsplash.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8a2c9118d711f91c",
             "filename": "rod-long-0x-TlW_QsYk-unsplash.jpg",
             "size": 2618201,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3e8c28471395c0f15abfa533bef3e17c/72af02f3?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6d60daed12be836c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3e8c28471395c0f15abfa533bef3e17c/72af02f3?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e2548a15f719cf33",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/0754c3c60575baf802b713584ee0f097/d2ff60e0?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5b6ddc9b2164c724",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/0754c3c60575baf802b713584ee0f097/d2ff60e0?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6d8a1be49a143e2b",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e1bbb57f7d03f052c914387c167a0cef/54a2d41f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=bf8eceff0892305c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e1bbb57f7d03f052c914387c167a0cef/54a2d41f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4d9319dab56e58fc",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Una tormenta ártica perfecta",
+        "es-StoryTitle": "Una tormenta ártica perfecta",
         "QR Code": [
           {
             "id": "att9gRvNK4gC029As",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/40c2dcd51337f27bf1a4da3555920cc0/8c2efdb8/QRCode7.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=86f2f316a107ed8d",
+            "url": "https://dl.airtable.com/.attachments/40c2dcd51337f27bf1a4da3555920cc0/8c2efdb8/QRCode7.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=cb219b8dc2716d04",
             "filename": "QRCode (7).png",
             "size": 43985,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/ba89b8e0e93345dc2dd6298b51f9a179/afa2b003?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=1584c1ef95d6ae7b",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ba89b8e0e93345dc2dd6298b51f9a179/afa2b003?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1a3937ad2be5fcff",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b52d9fe8f503d3c90b22300de3475788/5b940820?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=0c79d67750aeb979",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b52d9fe8f503d3c90b22300de3475788/5b940820?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2ecfbea974034ee9",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bfad44b0873476be548ca9ab56c502dc/70516075?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=fb2f2d461fd33467",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bfad44b0873476be548ca9ab56c502dc/70516075?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9ea00fa2aae3486a",
                 "width": 3000,
                 "height": 3000
               }
@@ -841,52 +841,52 @@
             "id": "att08MbKUNHxqQCby",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/0d71f44af77f98c9c1ee2c19adfb412d/0f37f767/nuclearpower.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=64d64090e51234fb",
+            "url": "https://dl.airtable.com/.attachments/0d71f44af77f98c9c1ee2c19adfb412d/0f37f767/nuclearpower.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b70d768f0eeb22eb",
             "filename": "nuclear power.jpg",
             "size": 562680,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1e8300d93e725063e4da2adfee8bfd3e/df3bd8f2?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b468ca23855b3d99",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1e8300d93e725063e4da2adfee8bfd3e/df3bd8f2?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9ab02767e67644c2",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/981739f0c21733a6a2d21d64a92ec87e/add3b411?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=138be5e6ce6d441e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/981739f0c21733a6a2d21d64a92ec87e/add3b411?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d92648ae5cca4a2a",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/82ebc708932107b94e8a0ede7c1100ed/6f9d37dd?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=be78c89d93eabdb1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/82ebc708932107b94e8a0ede7c1100ed/6f9d37dd?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4a5937bc7eac2b7a",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "El precio de la energía nuclear",
+        "es-StoryTitle": "El precio de la energía nuclear",
         "QR Code": [
           {
             "id": "attPl5CviZtUcRNwF",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/f3d0bd2bc89b95c1803fd7586766b712/c0d57225/QRCode8.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=017ffe9344523903",
+            "url": "https://dl.airtable.com/.attachments/f3d0bd2bc89b95c1803fd7586766b712/c0d57225/QRCode8.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=94db61c1d42ef296",
             "filename": "QRCode (8).png",
             "size": 43941,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2b85171e565ea6b2d338cdf2fad4f11e/9d64421a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ae1f4e0d14dcbf51",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2b85171e565ea6b2d338cdf2fad4f11e/9d64421a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a8cc5a1c570b8e5f",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2f490479df6cbcb42f54d27c70835f89/d113df63?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5899c31d29b3ebc9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2f490479df6cbcb42f54d27c70835f89/d113df63?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=eb7ebcfb5e7fcf8e",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/784a4015cd1510b21c2d2988231e243f/c3319582?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ac6e1c7389197ecf",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/784a4015cd1510b21c2d2988231e243f/c3319582?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5208450463a14ed6",
                 "width": 3000,
                 "height": 3000
               }
@@ -945,52 +945,52 @@
             "id": "attzB4Z1RplFWJXIf",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/123e450a28f7e8a25ad8efaf3689b27a/c2226631/LuminaAlbertThumbnail.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c3bafd428e77ab7f",
+            "url": "https://dl.airtable.com/.attachments/123e450a28f7e8a25ad8efaf3689b27a/c2226631/LuminaAlbertThumbnail.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=017e0033fd051d86",
             "filename": "LuminaAlbertThumbnail.jpg",
             "size": 296936,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/50d30cb5f9fbb641300cb16eeb2c0b4f/0272a9f3?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=2039dae1709b34e8",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/50d30cb5f9fbb641300cb16eeb2c0b4f/0272a9f3?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=12e454792bfba24e",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f5d47043d42865cfd21f95d548a066cf/04826402?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d5c472cbd0723f5f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f5d47043d42865cfd21f95d548a066cf/04826402?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2b2f6c71ff69fab0",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/096e5888fb3b89287989386d843d3ee0/986a6cb2?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3584b825bdfb9a40",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/096e5888fb3b89287989386d843d3ee0/986a6cb2?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fb9345e384a104d5",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Emprendimiento ético",
+        "es-StoryTitle": "Emprendimiento ético",
         "QR Code": [
           {
             "id": "attgAQ3UtrrSZ6CXU",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/10e0bf7435a396101c8183bb9130e5ed/73e6d01f/QRCode9.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f907dbfb8f817e94",
+            "url": "https://dl.airtable.com/.attachments/10e0bf7435a396101c8183bb9130e5ed/73e6d01f/QRCode9.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c1d52af6bf089084",
             "filename": "QRCode (9).png",
             "size": 43603,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1ea7d2401e3968719bf8c3e8cb084224/70443da6?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=bab12332ebbca27c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1ea7d2401e3968719bf8c3e8cb084224/70443da6?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c163092503da83b5",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e85faa7db64f3cc5a402de4a0d85e74a/972349c9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6d32f3e794b96444",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e85faa7db64f3cc5a402de4a0d85e74a/972349c9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f080cb2f4d0d5670",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/166150830074477aefa718d87da8dc6f/d41d5dec?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=dd66a6756b758c0c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/166150830074477aefa718d87da8dc6f/d41d5dec?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1eb5ebdbf5aa4bef",
                 "width": 3000,
                 "height": 3000
               }
@@ -1052,52 +1052,52 @@
             "id": "atte7STKVb77QPb1n",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/4732a22a4768ae2327826e13b97dff07/c3dafd9f/ian-macharia-NRv8BsouFBQ-unsplash11.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f263c05efb8337ce",
+            "url": "https://dl.airtable.com/.attachments/4732a22a4768ae2327826e13b97dff07/c3dafd9f/ian-macharia-NRv8BsouFBQ-unsplash11.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2d504743dcf38466",
             "filename": "ian-macharia-NRv8BsouFBQ-unsplash (1) (1).jpg",
             "size": 576403,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/96f93170286132dfcc62f04e4de09973/5d362faf?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8b746b31e57e64fa",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/96f93170286132dfcc62f04e4de09973/5d362faf?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a938cb86f1b62158",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/4c8e9dc817971cbd8c98acb4bb12f198/9e741006?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=09710614ceb3ce81",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4c8e9dc817971cbd8c98acb4bb12f198/9e741006?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e8b706b6485744b5",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/995d291e3a76113ab0200093b1554a11/05532938?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e7e028bca11aefcf",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/995d291e3a76113ab0200093b1554a11/05532938?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3d30a45bd5aefd56",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Escuchando el pastoralismo",
+        "es-StoryTitle": "Escuchando el pastoralismo",
         "QR Code": [
           {
             "id": "attjEWO60tEMrOZMq",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/92968c9fe534212f45b67a70386f0f9c/6b0e5f58/QRCode10.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b0ba3864715f3453",
+            "url": "https://dl.airtable.com/.attachments/92968c9fe534212f45b67a70386f0f9c/6b0e5f58/QRCode10.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e26045f32a7a5ff4",
             "filename": "QRCode (10).png",
             "size": 43603,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/9aa4af70a4bbbe7ed24b329b2b1cbd33/9659f114?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ac007e5848e863b3",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9aa4af70a4bbbe7ed24b329b2b1cbd33/9659f114?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a84684b539742ec4",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5fdf2829719246cca10fea506f7fb2e7/30bb506f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=443734b6a13e0d86",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5fdf2829719246cca10fea506f7fb2e7/30bb506f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d2c4d494618e51c7",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/a5ef52f5370f1d6dbaacac3a33320718/eb3ae61d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=afeea6a39f804d61",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/a5ef52f5370f1d6dbaacac3a33320718/eb3ae61d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=16ae5f1a19cc2ab7",
                 "width": 3000,
                 "height": 3000
               }
@@ -1145,52 +1145,52 @@
             "id": "attBi9UZAJ0sk289b",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/fc3dff794314a777cbe381eb3ec8389a/dde4c4d2/foy.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6ce1627a876d0b27",
+            "url": "https://dl.airtable.com/.attachments/fc3dff794314a777cbe381eb3ec8389a/dde4c4d2/foy.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e4dd86147d97fb36",
             "filename": "foy.jpg",
             "size": 682014,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/de42026dd2b6fa448aa58ff5d15bfd2a/adb05292?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ac431ccad70ed3c7",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/de42026dd2b6fa448aa58ff5d15bfd2a/adb05292?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f336cbd7e7358496",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/314105b5b06139a5067ec56ccd4692f7/d2e86e46?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b09c9ceb989abd35",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/314105b5b06139a5067ec56ccd4692f7/d2e86e46?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c7e104aa65c86e80",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c8ce38da7d3258efbccf92e151429075/56a71dcd?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6a1676e00ef4953a",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c8ce38da7d3258efbccf92e151429075/56a71dcd?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1096805a91c56497",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Prevención en la mordedura",
+        "es-StoryTitle": "Prevención en la mordedura",
         "QR Code": [
           {
             "id": "attxEzLLC3opIbyhg",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/43341f58bedf6dad4eac901a7f30e09a/0b2619b3/QRCode12.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4484f5141df717be",
+            "url": "https://dl.airtable.com/.attachments/43341f58bedf6dad4eac901a7f30e09a/0b2619b3/QRCode12.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5caf48c30ea4cd76",
             "filename": "QRCode (12).png",
             "size": 44025,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/219bbe48d4ce538e8e732c270fd37705/6d1af0c4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b58d6ab6bc264361",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/219bbe48d4ce538e8e732c270fd37705/6d1af0c4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fed10882bbacea65",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f40c2f9860225002f31dfd2cd38facde/28bc6175?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=35bb95022605d22d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f40c2f9860225002f31dfd2cd38facde/28bc6175?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5fbb605e669ab756",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/dcddf05960186360b0b3096f8fb74ec8/0dd6d764?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e97e21b664b83509",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/dcddf05960186360b0b3096f8fb74ec8/0dd6d764?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=bff1e57e69ba85fc",
                 "width": 3000,
                 "height": 3000
               }
@@ -1240,52 +1240,52 @@
             "id": "attHgERf50TlvN5r0",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/01e2f5857cde5a4710b4f93ed2048ba8/b49897f5/7_ElectricVillages.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d6106bb779f750d3",
+            "url": "https://dl.airtable.com/.attachments/01e2f5857cde5a4710b4f93ed2048ba8/b49897f5/7_ElectricVillages.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5fdf174c27e988d9",
             "filename": "7_ElectricVillages.jpg",
             "size": 421171,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/759003e02f8dc20c2bbe5368cb8d272d/1b1ced27?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=04da06e460d78be2",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/759003e02f8dc20c2bbe5368cb8d272d/1b1ced27?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fda9ecff00f71abd",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d378b366dc2f17f9a25d41f8662e57af/4ff5fe24?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5b3a8c07844d9b7b",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d378b366dc2f17f9a25d41f8662e57af/4ff5fe24?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=26e75574b313a76c",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3bdec8a0ccd4684f0b6dd3fba0b1985e/a6eaa670?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4e7665c74a6eb6d8",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3bdec8a0ccd4684f0b6dd3fba0b1985e/a6eaa670?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d05b838ebe59870f",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Pueblos eléctricos",
+        "es-StoryTitle": "Pueblos eléctricos",
         "QR Code": [
           {
             "id": "attfaW4rlEot4nhay",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/0e4515bbf25fa7c7afbdde0e29e927ad/c1e92308/QRCode13.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c0e53fd7710d30e6",
+            "url": "https://dl.airtable.com/.attachments/0e4515bbf25fa7c7afbdde0e29e927ad/c1e92308/QRCode13.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=cd30cde0fb38624a",
             "filename": "QRCode (13).png",
             "size": 43951,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d7f077a02d218deb9dea42398e73b47d/cec86784?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=38ce75a8ec97078d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d7f077a02d218deb9dea42398e73b47d/cec86784?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=231d6ab5bf57de64",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e7b0efa52e641de236f0ecfa29960486/33cf630f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d85b18ecc4438b30",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e7b0efa52e641de236f0ecfa29960486/33cf630f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=949c9a4bd446d3d9",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bea4f9aaa2e13940b0be5630aeec7427/f138daf0?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=1351437e52e5b43c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bea4f9aaa2e13940b0be5630aeec7427/f138daf0?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b647922414be7a5b",
                 "width": 3000,
                 "height": 3000
               }
@@ -1339,52 +1339,52 @@
             "id": "attbI16A39GmLXS0q",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/befe77ca5b4b2f2a44017606cc201d1e/ebff51df/8_TheMongolianMiracle.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c972aed175a45cdd",
+            "url": "https://dl.airtable.com/.attachments/befe77ca5b4b2f2a44017606cc201d1e/ebff51df/8_TheMongolianMiracle.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3e10034de123dc1d",
             "filename": "8_TheMongolianMiracle.jpg",
             "size": 540982,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/ee9addf2fb7a1b1187581b5c3afee6fc/6a3df30d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8284fbdee241236f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ee9addf2fb7a1b1187581b5c3afee6fc/6a3df30d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=caa8fc445ff8a02d",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/50b47410c80ad740d4b88bb4b79de36f/ee13b02e?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=363d28829e14a10b",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/50b47410c80ad740d4b88bb4b79de36f/ee13b02e?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3b8347fb535438c2",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/491883b2a70f873db6f41ef72b89b28d/97974a29?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=14957918a10cb723",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/491883b2a70f873db6f41ef72b89b28d/97974a29?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=738569da619909a6",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "El milagro mongol",
+        "es-StoryTitle": "El milagro mongol",
         "QR Code": [
           {
             "id": "attY9Z4Ii3BgE88Ib",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/a80fdd1a45f162cf6ff750ba220b1e62/2b151372/QRCode.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b2299bada529417a",
+            "url": "https://dl.airtable.com/.attachments/a80fdd1a45f162cf6ff750ba220b1e62/2b151372/QRCode.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6deb1fc070ba5f23",
             "filename": "QRCode.png",
             "size": 44202,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/244d5aac9d1fb254a17d2a3e705bf337/493d3915?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=dd459b65356d8d17",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/244d5aac9d1fb254a17d2a3e705bf337/493d3915?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f1bb9dc3b9d307fd",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d9a72003882dbf0a1ad389137b9cb872/8a832675?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=cb40a442d9abdf0f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d9a72003882dbf0a1ad389137b9cb872/8a832675?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=77430410b3fcb5e8",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f5437cf3d1c87b9485bd4ece852cf9e4/4abb94a8?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a50a09bf76fc9d74",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f5437cf3d1c87b9485bd4ece852cf9e4/4abb94a8?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2106dc45a6aac99e",
                 "width": 3000,
                 "height": 3000
               }
@@ -1450,52 +1450,52 @@
             "id": "attHFCYjeV2Ha2ore",
             "width": 2302,
             "height": 1536,
-            "url": "https://dl.airtable.com/.attachments/69fba0a31efed42fd7b1c8776aa84200/573e371b/img_0336.jpeg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=11e457b959cc9eb6",
+            "url": "https://dl.airtable.com/.attachments/69fba0a31efed42fd7b1c8776aa84200/573e371b/img_0336.jpeg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=701003440c08ec8c",
             "filename": "img_0336.jpeg",
             "size": 918760,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d91dbaf08ea48ab3e536732198168541/c444cad5?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=02689d9092a42c28",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d91dbaf08ea48ab3e536732198168541/c444cad5?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=37f85dbb70a6853f",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d19902bc89e81fdee82b3a9135bd800b/5a8bbde0?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e4dad14b110c9381",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d19902bc89e81fdee82b3a9135bd800b/5a8bbde0?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5b9289903a61a63d",
                 "width": 767,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/972529b6f001610a5a7d94b1c6f86a81/f2e2b979?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5f844770e4ace7e2",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/972529b6f001610a5a7d94b1c6f86a81/f2e2b979?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=45b6fa08001b7df5",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Para todas nuestras relaciones",
+        "es-StoryTitle": "Para todas nuestras relaciones",
         "QR Code": [
           {
             "id": "attYApdLvKQWEI4MQ",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/c63e0c8ced73d70728bde9394316f7be/0f1d00bb/QRCode14.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5bb0f974f0cdca5c",
+            "url": "https://dl.airtable.com/.attachments/c63e0c8ced73d70728bde9394316f7be/0f1d00bb/QRCode14.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6c31121681a5d342",
             "filename": "QRCode (14).png",
             "size": 44038,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/21549004ef9e64ea025eb53b8ffef904/fa92b705?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=7da4f0a3d97ff1d1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/21549004ef9e64ea025eb53b8ffef904/fa92b705?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=add39b95c5e4cc17",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/4d53f44874cf5c0d55dd6e552965eb80/9b82962a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=fc46f9f364e6e176",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4d53f44874cf5c0d55dd6e552965eb80/9b82962a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=74e56b14935ab0bb",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/4b1b43a2f53e037bd8a9894e04867c3f/05759dae?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e8adaef78d06341d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4b1b43a2f53e037bd8a9894e04867c3f/05759dae?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b1bdf8a145d6f031",
                 "width": 3000,
                 "height": 3000
               }
@@ -1547,52 +1547,52 @@
             "id": "attvdRRHnj3XmppIV",
             "width": 3392,
             "height": 1908,
-            "url": "https://dl.airtable.com/.attachments/bb640712e978cdb7633911767739acae/4f131af2/morethantusks.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a65f0696ca1a3d27",
+            "url": "https://dl.airtable.com/.attachments/bb640712e978cdb7633911767739acae/4f131af2/morethantusks.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b9f149223738ce76",
             "filename": "more than tusks.jpg",
             "size": 2556533,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/ddb341c170aa0f183d879ae943dba47c/e1019174?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=006b026abcd833af",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ddb341c170aa0f183d879ae943dba47c/e1019174?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7e219685aeac4b33",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d01aea05d1b5f74b109e97c9bbd79207/88e24b8d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b2024ae513e00a7b",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d01aea05d1b5f74b109e97c9bbd79207/88e24b8d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e569ddf86d36c884",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/416f8d9d75252eef8d754632c5fc3031/b7c3353b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a149acf49b696726",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/416f8d9d75252eef8d754632c5fc3031/b7c3353b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fe6b6d8d56eb3ed0",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Más que colmillos y dientes",
+        "es-StoryTitle": "Más que colmillos y dientes",
         "QR Code": [
           {
             "id": "attniVyrXD2hTgmk9",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/5eacb0b527f2e8d06827dd8cecae00e1/8d2141e5/QRCode15.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4b0c9f1d69343f7d",
+            "url": "https://dl.airtable.com/.attachments/5eacb0b527f2e8d06827dd8cecae00e1/8d2141e5/QRCode15.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=75f29350fbe53c10",
             "filename": "QRCode (15).png",
             "size": 43778,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3b9a3c537198b39fe7a9d594bfe997a3/8b13670b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4982bc875da5460a",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3b9a3c537198b39fe7a9d594bfe997a3/8b13670b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e54db6999a61ce88",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d6833dc078e3a22a7c447034f2e0d124/0e3c9040?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4cb09864bab328a3",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d6833dc078e3a22a7c447034f2e0d124/0e3c9040?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7afcf345daac5167",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/abc191e172271cedadec1ed164dd49af/fc749b6d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b84b9f9637295ac1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/abc191e172271cedadec1ed164dd49af/fc749b6d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=03d85ffe2332461b",
                 "width": 3000,
                 "height": 3000
               }
@@ -1634,52 +1634,52 @@
             "id": "attilir6Ewt0RlehI",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/d63c38a18954642676e4e70101286bac/0980e0d4/myriam-zilles-KltoLK6Mk-g-unsplash1.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=99db16035169ec71",
+            "url": "https://dl.airtable.com/.attachments/d63c38a18954642676e4e70101286bac/0980e0d4/myriam-zilles-KltoLK6Mk-g-unsplash1.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=188d80cfb402fa72",
             "filename": "myriam-zilles-KltoLK6Mk-g-unsplash (1).jpg",
             "size": 446071,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d09e4917f845b9592f3a5987351c73d0/69c64c13?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b529c0cb9aa351f5",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d09e4917f845b9592f3a5987351c73d0/69c64c13?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6e23d23dd79402fa",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2a05ee295b40912d7d27c46cb6ba619e/61f88a86?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=92ebc54a98e272b5",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2a05ee295b40912d7d27c46cb6ba619e/61f88a86?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=91d06ca8929be79e",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1d5d0ead48f2e7cb0d1ce0bc902db445/03cbd496?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c05d5c25f06f8b86",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1d5d0ead48f2e7cb0d1ce0bc902db445/03cbd496?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3200e4b3dd8b49e8",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Dosificación óptima",
+        "es-StoryTitle": "Dosificación óptima",
         "QR Code": [
           {
             "id": "att6fn9wNgZHBdaaB",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/3a000e9d28b1c574aab197bfd7f921ce/8fdddb4e/QRCode16.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ea598542e3c6bd32",
+            "url": "https://dl.airtable.com/.attachments/3a000e9d28b1c574aab197bfd7f921ce/8fdddb4e/QRCode16.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d4322603d3a8fef6",
             "filename": "QRCode (16).png",
             "size": 43838,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/da7ca84fc06aa1de3005c6f441b3fa37/d6fbe7fd?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3f23d878c06c16c5",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/da7ca84fc06aa1de3005c6f441b3fa37/d6fbe7fd?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8ab3388521c0cfcb",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/196e94c5045d81fa2007439c93d439f5/681cb091?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e9ed63322c18eaa1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/196e94c5045d81fa2007439c93d439f5/681cb091?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d7441154d9966185",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/96ec82a01c6e934ca8b04d7c8a1e864a/77020313?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=db4ffb3fa8184442",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/96ec82a01c6e934ca8b04d7c8a1e864a/77020313?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=353e75aa63c56dd2",
                 "width": 3000,
                 "height": 3000
               }
@@ -1737,52 +1737,52 @@
             "id": "attHOJpRbMDPUpJ4X",
             "width": 4052,
             "height": 2279,
-            "url": "https://dl.airtable.com/.attachments/ea4d641356b1544ee00151b7dc2f7496/fd3d8b96/ivan-botha-biz5Kfa-JMQ-unsplash1.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=34ea0ed473f208ec",
+            "url": "https://dl.airtable.com/.attachments/ea4d641356b1544ee00151b7dc2f7496/fd3d8b96/ivan-botha-biz5Kfa-JMQ-unsplash1.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=08398f93dd161dc7",
             "filename": "ivan-botha-biz5Kfa-JMQ-unsplash (1).jpg",
             "size": 2455635,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d6e94c36ac05040b7e71d680498ed05d/fe6ef41e?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=38109d8a486c9f75",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d6e94c36ac05040b7e71d680498ed05d/fe6ef41e?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=73ee2ed99259cc2b",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/92cc241a343fe832c09e8854d76fc407/4b5e38db?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=606d41a31c41cda8",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/92cc241a343fe832c09e8854d76fc407/4b5e38db?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e33f765ba5499152",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/4797b9bf2dac884d949a5f0e924cfc1e/3e5d831b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f135a695ac73d35f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4797b9bf2dac884d949a5f0e924cfc1e/3e5d831b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4aac0307efefb8a8",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Ser dueño de su poder",
+        "es-StoryTitle": "Ser dueño de su poder",
         "QR Code": [
           {
             "id": "attBidyeiQZVz17MF",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/43e9fdc52a172a0297e4bf87511b0549/3e77f503/QRCode17.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b873698d5f5326a4",
+            "url": "https://dl.airtable.com/.attachments/43e9fdc52a172a0297e4bf87511b0549/3e77f503/QRCode17.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=01650287178e55f6",
             "filename": "QRCode (17).png",
             "size": 43593,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/631c5b986a0ec892e9b868882c4e270c/c7fc83f0?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=1ace0b304a9eef61",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/631c5b986a0ec892e9b868882c4e270c/c7fc83f0?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=843226a4ecbdda69",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/a68cfc6a41e8beb53addb7e83caa7293/026a4475?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3d8ae56ff2179c3e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/a68cfc6a41e8beb53addb7e83caa7293/026a4475?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7a5be57340324289",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e8d947a48e210f2278f8e1067b14a434/5690cc66?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ce4bda45ef15949f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e8d947a48e210f2278f8e1067b14a434/5690cc66?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=67cb1baee9bc51c8",
                 "width": 3000,
                 "height": 3000
               }
@@ -1843,52 +1843,52 @@
             "id": "attaSI03sSdh86UQ6",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/d764a6801b9b8c21f40b982de861a849/24b73e08/ChrisFisherThumbnail1.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3faa8a64230c8674",
+            "url": "https://dl.airtable.com/.attachments/d764a6801b9b8c21f40b982de861a849/24b73e08/ChrisFisherThumbnail1.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=ea36306d27b60958",
             "filename": "ChrisFisherThumbnail (1).jpg",
             "size": 444995,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3ef8c27007c8b1facd4cd61912ff2532/8adc29f4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=28c7add7c5664cdc",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3ef8c27007c8b1facd4cd61912ff2532/8adc29f4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fbed70c9ea96e267",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1a3843a6527f28e5687a1e874c6262df/17624a82?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c815e62e0b44a744",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1a3843a6527f28e5687a1e874c6262df/17624a82?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=77ab798c37cdec68",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/403658bae306d22306ca6bb473d174ae/d6e0e50a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=591ecc71801e6226",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/403658bae306d22306ca6bb473d174ae/d6e0e50a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=99cb62f26cea8415",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Ciudades bajo el LiDAR",
+        "es-StoryTitle": "Ciudades bajo el LiDAR",
         "QR Code": [
           {
             "id": "atttCEb1D3UAApms5",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/96ca7988845174eabed0c58e5440768f/97d85470/QRCode18.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=780316c90a3826cf",
+            "url": "https://dl.airtable.com/.attachments/96ca7988845174eabed0c58e5440768f/97d85470/QRCode18.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=bc7d69d11487294b",
             "filename": "QRCode (18).png",
             "size": 43999,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bffd405726dddad8bf0d147a59ba8fec/d70e64c8?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e716a213c586be4c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bffd405726dddad8bf0d147a59ba8fec/d70e64c8?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1ae0aeea27c94529",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/50cbc48287990b92f0439ba1e37f8ecc/49986bc9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=43b98f9d2e00af58",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/50cbc48287990b92f0439ba1e37f8ecc/49986bc9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=aed4f927c80d25be",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b67c7b4b2a368438c6e5e07a4a06c631/22aa1c02?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=393f106c1cd77263",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b67c7b4b2a368438c6e5e07a4a06c631/22aa1c02?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c255a6cc1334ef25",
                 "width": 3000,
                 "height": 3000
               }
@@ -1946,52 +1946,52 @@
             "id": "attuBJTK7o8lEPeuk",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/388ed0a29a4917c47120631c51be6655/2001f330/11_SilentSpecies.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=dd9dc01c8e1343aa",
+            "url": "https://dl.airtable.com/.attachments/388ed0a29a4917c47120631c51be6655/2001f330/11_SilentSpecies.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=de50e8ae22668639",
             "filename": "11_SilentSpecies.jpg",
             "size": 532146,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/66e82da0dad316ae01623882aff46144/eb2b7c41?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b2a4b8e28bb94da1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/66e82da0dad316ae01623882aff46144/eb2b7c41?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9b0475c58cf63e8c",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/693012c36ba63a6bdb898c3b5a219718/a6ba8319?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=099f4154df9718af",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/693012c36ba63a6bdb898c3b5a219718/a6ba8319?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4dace3a693e6975c",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d89d1d6463ce9b0d32c5fef59a9e0e16/5e8fa8c8?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b311e58e093077e4",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d89d1d6463ce9b0d32c5fef59a9e0e16/5e8fa8c8?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=58801fb260b46b64",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Especies silenciosas",
+        "es-StoryTitle": "Especies silenciosas",
         "QR Code": [
           {
             "id": "attqNgmUiJpBBKIh5",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/0480991ef30cc424341982abb4dc2ce8/68fae917/QRCode19.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=316ee13f11b8bd92",
+            "url": "https://dl.airtable.com/.attachments/0480991ef30cc424341982abb4dc2ce8/68fae917/QRCode19.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=305db0e11cc0a299",
             "filename": "QRCode (19).png",
             "size": 43960,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/ffdb3407a3b55115e8db65e5f6eecab6/6ce6746a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=2965a1dc0b05aefd",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ffdb3407a3b55115e8db65e5f6eecab6/6ce6746a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=97ad2793e7abec4d",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/db4421b5b58db1e4aec025057b3f8e93/b8dda686?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=38c9a26e453811ad",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/db4421b5b58db1e4aec025057b3f8e93/b8dda686?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9890e03b902fb9b0",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2134d0bc40754479fdb97513af2b4662/864ffc5f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=081567d070c17558",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2134d0bc40754479fdb97513af2b4662/864ffc5f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=90817bcc52335aba",
                 "width": 3000,
                 "height": 3000
               }
@@ -2037,52 +2037,52 @@
             "id": "attJMipDQv2ItO6ef",
             "width": 4378,
             "height": 2462,
-            "url": "https://dl.airtable.com/.attachments/23fc0f8b535649135373df8ebc520c5b/8052c9d3/utsman-media-tyVcPQfncrg-unsplash1.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8429a9b55deb4d32",
+            "url": "https://dl.airtable.com/.attachments/23fc0f8b535649135373df8ebc520c5b/8052c9d3/utsman-media-tyVcPQfncrg-unsplash1.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7a12784e18ad530d",
             "filename": "utsman-media-tyVcPQfncrg-unsplash (1).jpg",
             "size": 1356247,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/18fc3c104730bd1ec59b8545b163deb0/d13bed48?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=31a71ba363adc777",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/18fc3c104730bd1ec59b8545b163deb0/d13bed48?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a4825dd151bed3f4",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c8f6969c1105a9f4e9c6bc9b2ebeaa8c/94b02f8a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=92cbcaacd9f4b7c6",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c8f6969c1105a9f4e9c6bc9b2ebeaa8c/94b02f8a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0ac9a5f526dab140",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/245b760327f061b7b31c70b5098e88f0/8f923f49?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b6d22845bc0c175a",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/245b760327f061b7b31c70b5098e88f0/8f923f49?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=386d2e4fbccaf9ac",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Un salvado de arroz",
+        "es-StoryTitle": "Un salvado de arroz",
         "QR Code": [
           {
             "id": "attPRieTTilvlHZTO",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/42c0f2bdc57ef9d7c69261724162bc0e/2cda9671/QRCode25.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d019ffa9a7fe54e3",
+            "url": "https://dl.airtable.com/.attachments/42c0f2bdc57ef9d7c69261724162bc0e/2cda9671/QRCode25.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=66da188769054b5a",
             "filename": "QRCode (25).png",
             "size": 43890,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/8b89d1a3b7b375ad47ece6b254caa14b/7b4ae634?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4a6a24263380f3f2",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/8b89d1a3b7b375ad47ece6b254caa14b/7b4ae634?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=62e84a77c31c216d",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/95844219bbb3543eea68ab6fd19b43e6/78141fae?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=af3c746fcd179a11",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/95844219bbb3543eea68ab6fd19b43e6/78141fae?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=92cf9cd12135054c",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b185bc471b86951238a34119eb499c95/d2fcd99b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=84cf475df6fad598",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b185bc471b86951238a34119eb499c95/d2fcd99b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c3d9a336be3f1c50",
                 "width": 3000,
                 "height": 3000
               }
@@ -2138,52 +2138,52 @@
             "id": "attB6rL4fkG757hjB",
             "width": 921,
             "height": 517,
-            "url": "https://dl.airtable.com/.attachments/0827503da1dc84535361bbec4ae2d562/bbabc8f2/reid.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=701ec4ad53de0572",
+            "url": "https://dl.airtable.com/.attachments/0827503da1dc84535361bbec4ae2d562/bbabc8f2/reid.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=50895aff016f5815",
             "filename": "reid.jpg",
             "size": 204254,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1ca1869412b2eb4e13675fb8ef35d433/dc7698bb?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f41a6524ea18fe45",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1ca1869412b2eb4e13675fb8ef35d433/dc7698bb?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7c317b1618de7e5c",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/10f161070dbaba5340b5e449bd32b51e/1ede5320?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e951d1a32eedb0e8",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/10f161070dbaba5340b5e449bd32b51e/1ede5320?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3d057025110cd53d",
                 "width": 912,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b7a8c3c7fd76f327b19915701b56adfb/bc1d739c?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8aa665588fc805af",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b7a8c3c7fd76f327b19915701b56adfb/bc1d739c?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1bd55ec7045287b1",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Conservación colaborativa",
+        "es-StoryTitle": "Conservación colaborativa",
         "QR Code": [
           {
             "id": "attdujbQMtxLLU4fP",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/0dbeace1fe632eee4d14cc1b537e8d81/a76160f3/QRCode26.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=0b44faf2fad35bf9",
+            "url": "https://dl.airtable.com/.attachments/0dbeace1fe632eee4d14cc1b537e8d81/a76160f3/QRCode26.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=47a471b25b21324c",
             "filename": "QRCode (26).png",
             "size": 43677,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/cb251e53798954d44f97ddba56b509b1/1482b2ac?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=bceadca6a069fc4d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/cb251e53798954d44f97ddba56b509b1/1482b2ac?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e83a90abe5e4e396",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f8b1f5f92d97834415f86637ff872dac/062c8b25?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=430ca67e383f6531",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f8b1f5f92d97834415f86637ff872dac/062c8b25?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7313e68a2e4a5d30",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c2f62e1dad8592fedc19fdf218e4c554/62d394da?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e1405a206ba11dd1",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c2f62e1dad8592fedc19fdf218e4c554/62d394da?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=bbb540bd7ee75fbe",
                 "width": 3000,
                 "height": 3000
               }
@@ -2244,52 +2244,52 @@
             "id": "attcvrr4jCqcxAhVY",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/b27609c8ef2610be7854d4c8041299a7/f82b670a/12_SportCultureAndEducation.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=2585f9f74ef34ad2",
+            "url": "https://dl.airtable.com/.attachments/b27609c8ef2610be7854d4c8041299a7/f82b670a/12_SportCultureAndEducation.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b8f9a4915a077f15",
             "filename": "12_SportCultureAndEducation.jpg",
             "size": 485867,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c7f0f0499a02e2c920a2b3b6e9816f1b/ec2a68d8?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=504497c30552d5be",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c7f0f0499a02e2c920a2b3b6e9816f1b/ec2a68d8?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=037558990f9be730",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/7132a0cdc64f529c2ab1bb3d12fa6df2/109acaad?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=7b28ff26e972da6f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/7132a0cdc64f529c2ab1bb3d12fa6df2/109acaad?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1e7bc65b2574c076",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/47c86b2c70b9c8003e242a4567ba73e4/6f9d2679?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=269aa2091d7cf9b0",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/47c86b2c70b9c8003e242a4567ba73e4/6f9d2679?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b0d89d112f5c2bc4",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Deporte cultura y educación",
+        "es-StoryTitle": "Deporte cultura y educación",
         "QR Code": [
           {
             "id": "attvYzCmUshRURnkm",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/d3291ec79a2c185ac417bc4e2c9346ab/d6b0eca6/QRCode20.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4ad02db0006561bc",
+            "url": "https://dl.airtable.com/.attachments/d3291ec79a2c185ac417bc4e2c9346ab/d6b0eca6/QRCode20.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=cbe118163aaed9b3",
             "filename": "QRCode (20).png",
             "size": 43967,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c272e60aeed4b343f98101057aeeca72/3da9bc02?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=623922b276d565a4",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c272e60aeed4b343f98101057aeeca72/3da9bc02?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=dfa71198b661981b",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/8b3910378de7872a5b692f84e24ec5d8/734ebc51?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=682fc0ae15482b08",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/8b3910378de7872a5b692f84e24ec5d8/734ebc51?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4686c34e13a3bc7c",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/ad828cf51e47c07719e2b9532da36a3f/f8606474?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8f1b89ce65bea27d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ad828cf51e47c07719e2b9532da36a3f/f8606474?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=89bf5066afc9e145",
                 "width": 3000,
                 "height": 3000
               }
@@ -2345,52 +2345,52 @@
             "id": "attYFdzzj7WPMELSz",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/2f326a8493ab8aea7705987fc750bb18/e24fe301/13_AdaptingToNature.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f922ed738f55ae42",
+            "url": "https://dl.airtable.com/.attachments/2f326a8493ab8aea7705987fc750bb18/e24fe301/13_AdaptingToNature.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c50d07791d7f147f",
             "filename": "13_AdaptingToNature.jpg",
             "size": 273281,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/0590037dd0e6d518fa16795d67d57630/87a9baf2?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c967e8e2fbaad4a9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/0590037dd0e6d518fa16795d67d57630/87a9baf2?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=38f09a4f17ae8c52",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/a370a42a8a20289ecbe4a593ec8ebe54/d79945a4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f5d076af83aba26c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/a370a42a8a20289ecbe4a593ec8ebe54/d79945a4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=9169487602a8e389",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/4622a4e89a268b700fded6e5b0cc4f1f/f0158b2b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=be493fa8c01ebb4d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4622a4e89a268b700fded6e5b0cc4f1f/f0158b2b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8d9c0c553a609fae",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Adaptarse a la naturaleza",
+        "es-StoryTitle": "Adaptarse a la naturaleza",
         "QR Code": [
           {
             "id": "attZBFE9FXOIocWrs",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/3f82707ef9d71364f43f53bc5d8a9053/26604153/QRCode21.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ec311dc4727a3fcb",
+            "url": "https://dl.airtable.com/.attachments/3f82707ef9d71364f43f53bc5d8a9053/26604153/QRCode21.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3e586c873b5888b3",
             "filename": "QRCode (21).png",
             "size": 43253,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bb00a6ad5a416c0270f9e88334620b0c/ca6bd7c9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=9a626b7489453f98",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bb00a6ad5a416c0270f9e88334620b0c/ca6bd7c9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=98eccec9abe45392",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e8505a4212e1e5258d3d74e0745ef787/5554949c?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=9c7c392449c99da8",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e8505a4212e1e5258d3d74e0745ef787/5554949c?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8039a2a0ef65b6b2",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b58b30627cdccf4e0d10703ad621bd3a/7e6624da?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=37f67c0d887d2a45",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b58b30627cdccf4e0d10703ad621bd3a/7e6624da?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=82cfa05077563685",
                 "width": 3000,
                 "height": 3000
               }
@@ -2442,23 +2442,23 @@
             "id": "attjLCdBXqL9w6dvA",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/c45f968f6eb4027b46149c308647bd37/0239e272/14_GeospatialTechnologies.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b622414a258b93d1",
+            "url": "https://dl.airtable.com/.attachments/c45f968f6eb4027b46149c308647bd37/0239e272/14_GeospatialTechnologies.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=1bf214b3cf7d683e",
             "filename": "14_GeospatialTechnologies.jpg",
             "size": 574406,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/89dee0334b414bc5390695436e6d9c3c/1651b54a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=72f163cd8a303ae9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/89dee0334b414bc5390695436e6d9c3c/1651b54a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c10d30be4caa2ca2",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bc7df9de0c6234d7dde945562ff50e84/3722ea03?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a31f50d93e2c8bfc",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bc7df9de0c6234d7dde945562ff50e84/3722ea03?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f60690a4969c94bd",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/56aa002436f899f0170390c6b9208709/9cc4f4c4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a7654a2145f32886",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/56aa002436f899f0170390c6b9208709/9cc4f4c4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5e0f31bb4d6ff1ee",
                 "width": 3000,
                 "height": 3000
               }
@@ -2466,29 +2466,29 @@
           }
         ],
         "Impact Map Layer URL": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/Secondary_Cities_Updated_WFL1/FeatureServer/0",
-        "sp-StoryTitle": "Tecnologías geoespaciales",
+        "es-StoryTitle": "Tecnologías geoespaciales",
         "QR Code": [
           {
             "id": "atts4Y6fxalyxCxJ6",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/36cba4a6c32ccbf88d902009487904aa/7077220c/QRCode22.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=64bc774a90c6cce2",
+            "url": "https://dl.airtable.com/.attachments/36cba4a6c32ccbf88d902009487904aa/7077220c/QRCode22.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0a1e4d31a525793c",
             "filename": "QRCode (22).png",
             "size": 43839,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/9c019d5fd4cbddeb120612cf2f9da45f/1649f718?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ed7b7476e5fbcef4",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9c019d5fd4cbddeb120612cf2f9da45f/1649f718?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=380e435e0ce5e6f7",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/1fe5488bf0d28646847f32a4865705ab/c4f99d3e?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4a44c542c43ec84f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/1fe5488bf0d28646847f32a4865705ab/c4f99d3e?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e168b3c5d73e9066",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b0873ced53457e14eac37a6775636a83/4125aff6?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=56caa69da9a14a9c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b0873ced53457e14eac37a6775636a83/4125aff6?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=449f95892cc71bd4",
                 "width": 3000,
                 "height": 3000
               }
@@ -2549,52 +2549,52 @@
             "id": "attmNJQYP42wQHqaV",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/927f32c270365127d18a4274c9f30f33/f4a38d8b/MazdakArabiThumbnail.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=158e9a6a48a31a56",
+            "url": "https://dl.airtable.com/.attachments/927f32c270365127d18a4274c9f30f33/f4a38d8b/MazdakArabiThumbnail.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8e8f67e54e85d134",
             "filename": "MazdakArabiThumbnail.jpg",
             "size": 328701,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b798455dabc259895abcc5fa9f3f6481/d1b4c964?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=cd7fb3b60d53152d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b798455dabc259895abcc5fa9f3f6481/d1b4c964?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6fbc3586d79a4165",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/9d986c2afe976f60063264b826d93bf2/9170977e?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e7e9e7ad98f8f50b",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9d986c2afe976f60063264b826d93bf2/9170977e?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=aa9eab56ad5756ad",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/eff0776be4febf9135cc87c96fd72585/2df2d4f1?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=22b7541ae7ae0159",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/eff0776be4febf9135cc87c96fd72585/2df2d4f1?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4e2593b952cad0e9",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Modelado de la calidad del agua",
+        "es-StoryTitle": "Modelado de la calidad del agua",
         "QR Code": [
           {
             "id": "attCUGMLZQWdhRD5p",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/2f5ca146284e720d3cf8cce8911b3750/96034095/QRCode23.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=6b66bb7e47c7253a",
+            "url": "https://dl.airtable.com/.attachments/2f5ca146284e720d3cf8cce8911b3750/96034095/QRCode23.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=80b4bcd59d13de3b",
             "filename": "QRCode (23).png",
             "size": 44008,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/f6e64559e0c1ccb1afad63de40793a1c/31687592?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=bd8cdf4f564d9760",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/f6e64559e0c1ccb1afad63de40793a1c/31687592?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fc5a7171738a18cf",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/84f86f6e740fa261898e53f7f937b50b/4a8dc9b8?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4d0b7c72157f7849",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/84f86f6e740fa261898e53f7f937b50b/4a8dc9b8?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fc8be153060703a0",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/071dfe0f8252ddbc19b3fa0000b9d50b/4df15b3a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5d3617d0c0f899ce",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/071dfe0f8252ddbc19b3fa0000b9d50b/4df15b3a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b1507f3a4f80f33b",
                 "width": 3000,
                 "height": 3000
               }
@@ -2651,52 +2651,52 @@
             "id": "attbvBBqnmJieraTO",
             "width": 4800,
             "height": 2700,
-            "url": "https://dl.airtable.com/.attachments/1aa17381e934d739caf7ab7b1cde4c5b/0c0b27e9/geoffrey-crofte-u8k7wJFAy90-unsplash21.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8c09257fcb192aa8",
+            "url": "https://dl.airtable.com/.attachments/1aa17381e934d739caf7ab7b1cde4c5b/0c0b27e9/geoffrey-crofte-u8k7wJFAy90-unsplash21.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d0154a07911e2b79",
             "filename": "geoffrey-crofte-u8k7wJFAy90-unsplash (2) (1).jpg",
             "size": 3890285,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5e3707dd264f8a65a9f98ff395ad3d6b/42d5d435?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=94f730490fe39efb",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5e3707dd264f8a65a9f98ff395ad3d6b/42d5d435?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=30a278e1ac95921c",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/3ec52588415797e1cec9ddba76748413/7070d2c3?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3bdc63d9038a3c61",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3ec52588415797e1cec9ddba76748413/7070d2c3?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=332c87a23fb8b03c",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/59a35a65d40197624a9e73a746eebfa5/b2bdf3a2?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8dbb16926fa41c2b",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/59a35a65d40197624a9e73a746eebfa5/b2bdf3a2?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f2ef8aafa33fac69",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Agua resiliente",
+        "es-StoryTitle": "Agua resiliente",
         "QR Code": [
           {
             "id": "attVcXoiZXflPz5vF",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/36a6b68368b4bd12ed33e19699f8eb38/6cce62c2/QRCode24.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ba906f305c489d42",
+            "url": "https://dl.airtable.com/.attachments/36a6b68368b4bd12ed33e19699f8eb38/6cce62c2/QRCode24.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=bc09ece528f959d7",
             "filename": "QRCode (24).png",
             "size": 43981,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/cbf84f4932cdb218278b6d00efebe144/d926a6d7?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=f869260da8f1cdee",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/cbf84f4932cdb218278b6d00efebe144/d926a6d7?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=da59c97a6cb3ca69",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/99e516b42ca16adef382968abb75878a/d0d65930?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e93318f4e65bba0e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/99e516b42ca16adef382968abb75878a/d0d65930?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8c220e9aef57a00a",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/35103683e2c6bdd7343afd6f62cb5771/6843006b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ed8c44e14caf6cee",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/35103683e2c6bdd7343afd6f62cb5771/6843006b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4245cafc89800a7a",
                 "width": 3000,
                 "height": 3000
               }
@@ -2744,52 +2744,52 @@
             "id": "attUWMwitqXjSUrav",
             "width": 3098,
             "height": 1742,
-            "url": "https://dl.airtable.com/.attachments/0049adc72a2fad62ee2caa752dba2203/e54271b9/robert-linder-eLqujf98t6E-unsplash1.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=4072969153177328",
+            "url": "https://dl.airtable.com/.attachments/0049adc72a2fad62ee2caa752dba2203/e54271b9/robert-linder-eLqujf98t6E-unsplash1.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=041ae2b289c75fe6",
             "filename": "robert-linder-eLqujf98t6E-unsplash (1).jpg",
             "size": 1494119,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/81ab412e96e830a1cb0cb1c6294494f0/153a44ef?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ba019381f95aaa56",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/81ab412e96e830a1cb0cb1c6294494f0/153a44ef?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=15b7c873574d77b6",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/44f30adaba313d35c13947579d5e2479/dd6db1c4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=87e8fe37dc7136b4",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/44f30adaba313d35c13947579d5e2479/dd6db1c4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=25425dc3a787f241",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/970070466704c0e4642cb18c8c873825/470287ea?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5a991ea7eacfeca2",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/970070466704c0e4642cb18c8c873825/470287ea?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8a339727c3418e1f",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Algo en el agua urbana",
+        "es-StoryTitle": "Algo en el agua urbana",
         "QR Code": [
           {
             "id": "attGVH4q2PxXTu89r",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/41a096017f4ec9e90d84a160e244f53e/88417615/QRCode27.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e0de1f712af5dcac",
+            "url": "https://dl.airtable.com/.attachments/41a096017f4ec9e90d84a160e244f53e/88417615/QRCode27.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d6c8e714d0f9a638",
             "filename": "QRCode (27).png",
             "size": 44168,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b84e1dc13b7adb1c6b2b93071847cc27/9614f44f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=25cb69fd9de34035",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b84e1dc13b7adb1c6b2b93071847cc27/9614f44f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=4f6e0d69669bab0f",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b5ef90f76c726cc203fe874172008725/74f480ba?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3f1efe1f090f7fb6",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b5ef90f76c726cc203fe874172008725/74f480ba?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=518b2d71acf9a35a",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/a8be38bbe94c5b822c1eb62b5cb90ff6/23e34f0b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e1ffd180d7d90c6e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/a8be38bbe94c5b822c1eb62b5cb90ff6/23e34f0b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=5c828261e22e645c",
                 "width": 3000,
                 "height": 3000
               }
@@ -2842,52 +2842,52 @@
             "id": "attXFlDKwaBfGxJgZ",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/fed14263cc343edb132b56b163924139/89886de6/bats.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=908b97650c3b18f3",
+            "url": "https://dl.airtable.com/.attachments/fed14263cc343edb132b56b163924139/89886de6/bats.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=36ab9ab82fa0ec8d",
             "filename": "bats.png",
             "size": 2418352,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/7ad3c5542d0326b37fabb62c5b04b37f/1ee930ed?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=55546d4804cd8d34",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/7ad3c5542d0326b37fabb62c5b04b37f/1ee930ed?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=bccaa3eacebe2b20",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/80ffc926f417ba3edfa2dfbc52a7ff3d/1c1163c2?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=fec1e508032aee97",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/80ffc926f417ba3edfa2dfbc52a7ff3d/1c1163c2?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=52811494c3b59aec",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5bc90c3cafb0491c0f2596b40292687d/5b185450?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e88114fab86397dc",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5bc90c3cafb0491c0f2596b40292687d/5b185450?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=eabb70e2c1dceaf9",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Ensambles virales",
+        "es-StoryTitle": "Ensambles virales",
         "QR Code": [
           {
             "id": "att0MnrlvGDKtGq89",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/4b83736be0a9ad236fd6fa3eb432b5ab/cff7813d/QRCode28.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8fa638e96134ada6",
+            "url": "https://dl.airtable.com/.attachments/4b83736be0a9ad236fd6fa3eb432b5ab/cff7813d/QRCode28.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=efa5ee27541b961a",
             "filename": "QRCode (28).png",
             "size": 44047,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/2202c1e2831dd289dd7c4221d673ce0f/a7f6e5e5?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=bd4ea1011a5d41db",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/2202c1e2831dd289dd7c4221d673ce0f/a7f6e5e5?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e92879a65037ef38",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/a179bb740954a8f16145ecc2428c7e35/1af56229?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5eb727ec1df1071c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/a179bb740954a8f16145ecc2428c7e35/1af56229?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=585fecb4442c9203",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/7adf2349fb24ffd7caf4428c789444fe/ed639d43?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d514617e8ffa23c3",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/7adf2349fb24ffd7caf4428c789444fe/ed639d43?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2c059a1f0851fb39",
                 "width": 3000,
                 "height": 3000
               }
@@ -2934,52 +2934,52 @@
             "id": "attcYeWZnYpXqsK6j",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/5a60ec425c7488386fe739c033d40f08/93f79f64/pangolin.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=55f33ef85933401a",
+            "url": "https://dl.airtable.com/.attachments/5a60ec425c7488386fe739c033d40f08/93f79f64/pangolin.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7ef587d0af1954ae",
             "filename": "pangolin.jpg",
             "size": 328925,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5761145a58d294db6a80854c9c804fec/1ad0a825?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=36015e828c9d6f2e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5761145a58d294db6a80854c9c804fec/1ad0a825?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=16b9497f8359d194",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/885dd551c37afd0d6725efb98c63d9ff/b6335b9b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=aea33519b77497ae",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/885dd551c37afd0d6725efb98c63d9ff/b6335b9b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=af50d90d88eb5cb1",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e4a90ed2f95c82d0126bf3277b6e1775/f2d1c749?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=ea1a4a3e163e4e1d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e4a90ed2f95c82d0126bf3277b6e1775/f2d1c749?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=465f255fde572d8d",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Sigue el dinero",
+        "es-StoryTitle": "Sigue el dinero",
         "QR Code": [
           {
             "id": "attSaercOpG4zrEZI",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/eb0c3cce718015d5458e16d8b9e3ea51/14d49875/QRCode29.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d6bf3622255eeae2",
+            "url": "https://dl.airtable.com/.attachments/eb0c3cce718015d5458e16d8b9e3ea51/14d49875/QRCode29.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=709603ae94f4ba98",
             "filename": "QRCode (29).png",
             "size": 44122,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/9febb7c74749409b510287e95035c389/b555164e?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b60dfa3b6f72dd9c",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9febb7c74749409b510287e95035c389/b555164e?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=24a80fba957c81b3",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/78cf27fa778c0d843ab698e65d9593ad/2498dae6?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a05243f35176a05d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/78cf27fa778c0d843ab698e65d9593ad/2498dae6?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=e0d7e20da799251c",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/470d6d9c8bb7e8b21dd87c00afaed3ac/93eef3fb?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3367d7343a83333e",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/470d6d9c8bb7e8b21dd87c00afaed3ac/93eef3fb?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=6f612e3f0f27c3f5",
                 "width": 3000,
                 "height": 3000
               }
@@ -3034,52 +3034,52 @@
             "id": "attc1VZhTvDlyhAHK",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/ffceb248ac9015f65c61099fcb9edf0b/2b22cd4d/westnilevirus.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e71b2e311aaffe06",
+            "url": "https://dl.airtable.com/.attachments/ffceb248ac9015f65c61099fcb9edf0b/2b22cd4d/westnilevirus.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=532f5d356bdc1134",
             "filename": "west nile virus.jpg",
             "size": 1035231,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/9eb6489d3bf2864146ac511245c4e9a7/5b37474d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c35fab391da07fb3",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9eb6489d3bf2864146ac511245c4e9a7/5b37474d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0619ad35fb03ab90",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e3d3ba9cedde2c20b0a06d52d62a8ccd/e817057d?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=da79bdcd43709ac9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e3d3ba9cedde2c20b0a06d52d62a8ccd/e817057d?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7e2194e5998c87a7",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/89f10c93e8134dfd0d25dc1071e535be/75fb4371?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a26465e9ebac61a9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/89f10c93e8134dfd0d25dc1071e535be/75fb4371?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2da186895565630e",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Prevención de enfermedades infecciosas",
+        "es-StoryTitle": "Prevención de enfermedades infecciosas",
         "QR Code": [
           {
             "id": "attbxpTTElYzNqLRw",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/e88f9c8e9285ae31076041b95dc6b67a/6ddda149/QRCode33.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=fbf0ef998733b446",
+            "url": "https://dl.airtable.com/.attachments/e88f9c8e9285ae31076041b95dc6b67a/6ddda149/QRCode33.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=62f69dc14a45b5e1",
             "filename": "QRCode (33).png",
             "size": 44020,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c0482a0cc9de7afd971ed2f4f3d27c1b/ab1f44c9?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5cc23a232dde3ea9",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c0482a0cc9de7afd971ed2f4f3d27c1b/ab1f44c9?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=34cadd0bbbba788b",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5b015769514e828a36b7ea659acc3dbb/63cbabff?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b58bcbca1762a6df",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5b015769514e828a36b7ea659acc3dbb/63cbabff?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=51583d315e328e5b",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/255f1f72bd76a41f79f3d15f316fda86/01e8e6d4?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=05f90c339d8e8591",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/255f1f72bd76a41f79f3d15f316fda86/01e8e6d4?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=fe1c7af38518c1f2",
                 "width": 3000,
                 "height": 3000
               }
@@ -3123,52 +3123,52 @@
             "id": "attO5gmZfZPYJFGDb",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/e5346d084166a16fd24d13e29b589353/8a3542f0/soil.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=58f5bd8286d8d0a6",
+            "url": "https://dl.airtable.com/.attachments/e5346d084166a16fd24d13e29b589353/8a3542f0/soil.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=8fbd7ede9a0fa3be",
             "filename": "soil.png",
             "size": 4284441,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/10a74b426ba4b182fd0a38962411bfdd/1b66e40b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3a697dd1473d30cd",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/10a74b426ba4b182fd0a38962411bfdd/1b66e40b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=27183b07172ccaf7",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d2b884f612ffcc8ab97c5b4c376a19d1/f478013a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=40e3dfdba4a9d42d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d2b884f612ffcc8ab97c5b4c376a19d1/f478013a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=3d24fdeabd8a756b",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/e47ff6ed457816f9e7d8bf61590c4a0a/5209f046?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=996310c1b84f4e60",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/e47ff6ed457816f9e7d8bf61590c4a0a/5209f046?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=848eb50ad2a26d32",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "La vida secreta del suelo",
+        "es-StoryTitle": "La vida secreta del suelo",
         "QR Code": [
           {
             "id": "attJBncHPZ0QNCBsu",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/37000da4c5b6a837ec9b0c44cbe9baa3/ba5a4945/QRCode34.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b0098e02239ce2fa",
+            "url": "https://dl.airtable.com/.attachments/37000da4c5b6a837ec9b0c44cbe9baa3/ba5a4945/QRCode34.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=314c1098f45d0964",
             "filename": "QRCode (34).png",
             "size": 43740,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/fc6fafccc59a501d911d47ed5d0c0fa6/f6f8580f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=5aa17e9e8c779b75",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/fc6fafccc59a501d911d47ed5d0c0fa6/f6f8580f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=bac09a5cdf7989fc",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/b9c3212563eb6c9a060ed4e1128fcd3b/de4dd6a3?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=b9cd147eacc9328a",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/b9c3212563eb6c9a060ed4e1128fcd3b/de4dd6a3?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=d60ae6dca9d0c66d",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/d8425670920596b6415f48a354e91706/47d8052b?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=622c031da22b292f",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/d8425670920596b6415f48a354e91706/47d8052b?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=09fe9291c4e3788d",
                 "width": 3000,
                 "height": 3000
               }
@@ -3225,52 +3225,52 @@
             "id": "attfmb680C5FMQCad",
             "width": 900,
             "height": 600,
-            "url": "https://dl.airtable.com/.attachments/59b19cc5c366d65b24f5401f31791898/41aeb471/16_FelineInfections.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=c56d568104c07ae6",
+            "url": "https://dl.airtable.com/.attachments/59b19cc5c366d65b24f5401f31791898/41aeb471/16_FelineInfections.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=2091b6ebfc7ebc3e",
             "filename": "16_FelineInfections.jpg",
             "size": 419750,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bff986fb5fc493ff0f1a41bbf096e461/4f7f582f?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=98364219d9a1b886",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bff986fb5fc493ff0f1a41bbf096e461/4f7f582f?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=7849e0bba873dff4",
                 "width": 54,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/bb3709965d57318096eea7fb7d909794/526458d6?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=a5d7966b8ec9f5a4",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/bb3709965d57318096eea7fb7d909794/526458d6?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=c85d8776f5608981",
                 "width": 768,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/095e794aac08986fa9d17891aa1a06b5/4f84fe6a?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=242c6bc3624c6428",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/095e794aac08986fa9d17891aa1a06b5/4f84fe6a?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=a1173c3dc8adf90e",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "Infecciones felinas",
+        "es-StoryTitle": "Infecciones felinas",
         "QR Code": [
           {
             "id": "attJJoBPRCfFZbgE1",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/0b98aa35ff38c7455cae5fceaf960bcc/db517dbc/QRCode35.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=703cf0e5e7ee3763",
+            "url": "https://dl.airtable.com/.attachments/0b98aa35ff38c7455cae5fceaf960bcc/db517dbc/QRCode35.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f3902eb7c338194e",
             "filename": "QRCode (35).png",
             "size": 43981,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/dc5fd4e1f46b7d59c6f0be07cd72bdf7/359c04a3?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=35695de9e1ae8fa0",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/dc5fd4e1f46b7d59c6f0be07cd72bdf7/359c04a3?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0a89c03f1de63d1d",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/44e7f4fb589b69ce0b87886852f4093f/e3722aca?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=8ff92e6266919ba2",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/44e7f4fb589b69ce0b87886852f4093f/e3722aca?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=f310ff8b17ce46e1",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/ee45a83f99ee3ff33bda640159284f03/a5d986cc?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=482c04d30b94af34",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ee45a83f99ee3ff33bda640159284f03/a5d986cc?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=af16f6692c18cdf4",
                 "width": 3000,
                 "height": 3000
               }
@@ -3314,52 +3314,52 @@
             "id": "attxz80XWsGFLXVTE",
             "width": 1920,
             "height": 1080,
-            "url": "https://dl.airtable.com/.attachments/aed8ff4ced60a1564353913fffbec381/88a04161/national-cancer-institute-cI8T6zeDbZw-unsplash1.jpg?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3d685c656ad4b3b0",
+            "url": "https://dl.airtable.com/.attachments/aed8ff4ced60a1564353913fffbec381/88a04161/national-cancer-institute-cI8T6zeDbZw-unsplash1.jpg?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=0c437d43907de7a0",
             "filename": "national-cancer-institute-cI8T6zeDbZw-unsplash (1).jpg",
             "size": 542248,
             "type": "image/jpeg",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/603b5b7287eccfa5d2cba06766f0ae1f/512a4e24?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=3c8dc55966e98e13",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/603b5b7287eccfa5d2cba06766f0ae1f/512a4e24?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=27a44716a0dd15ab",
                 "width": 64,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/c6cd9312c1912fed8caba3604f97af7e/588365fd?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=e9938cc66a51d322",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c6cd9312c1912fed8caba3604f97af7e/588365fd?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=116ee0f98223be13",
                 "width": 910,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/460dedbc72fe2a5e62bd37bd50019eb3/1e35ca3e?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=99e6b943d90a354d",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/460dedbc72fe2a5e62bd37bd50019eb3/1e35ca3e?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=35ad830446b0caa0",
                 "width": 3000,
                 "height": 3000
               }
             }
           }
         ],
-        "sp-StoryTitle": "(R)Evolución viral",
+        "es-StoryTitle": "(R)Evolución viral",
         "QR Code": [
           {
             "id": "atttfiQ5DotpyYbrM",
             "width": 660,
             "height": 660,
-            "url": "https://dl.airtable.com/.attachments/7ddf451ebaca19947298e6380abe6f2f/18287d16/QRCode32.png?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=af5990dde07375dc",
+            "url": "https://dl.airtable.com/.attachments/7ddf451ebaca19947298e6380abe6f2f/18287d16/QRCode32.png?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=040481780c01aa17",
             "filename": "QRCode (32).png",
             "size": 44193,
             "type": "image/png",
             "thumbnails": {
               "small": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/5d242daf9fbc8017a499975725317067/5f3c40bf?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=357b08751fb358f5",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/5d242daf9fbc8017a499975725317067/5f3c40bf?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=84f91fa9671bdbfd",
                 "width": 36,
                 "height": 36
               },
               "large": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/eab812e8ea3009b63c583199b1421fa8/b7b76af6?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=d08b8763f53e2575",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/eab812e8ea3009b63c583199b1421fa8/b7b76af6?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=136a54428a3037ca",
                 "width": 512,
                 "height": 512
               },
               "full": {
-                "url": "https://dl.airtable.com/.attachmentThumbnails/922bc1f06571ed3c896418b1af8388ed/c642ca89?ts=1653411189&userId=usr4dlUZPXXwaIEys&cs=200d1005e093ad93",
+                "url": "https://dl.airtable.com/.attachmentThumbnails/922bc1f06571ed3c896418b1af8388ed/c642ca89?ts=1654824511&userId=usr4dlUZPXXwaIEys&cs=b68da7a8eeb75e21",
                 "width": 3000,
                 "height": 3000
               }

@@ -1,37 +1,23 @@
 <template lang="">
   <div
     class="storyFrame overlay childPoint"
-    v-if="
-      story !== null &&
-      story.fields !== undefined &&
-      story.fields['en-StoryMapLink']
-    "
   >
     <div
       class="controlFrame p-1 p-xxl-3 rounded"
       :class="`bg-${story.fields['Story Theme']}`"
     >
-      <StoryIFrame :story="story"></StoryIFrame>
       <div class="topClose">
         <button
           class="btn"
           :class="`btn-${story.fields['Story Theme']}`"
-          v-on:click="clickClose()"
+          v-on:click="removeActiveStory(story)"
         >
           <font-awesome-icon :icon="['fas', 'times']" />
           Close
         </button>
       </div>
-      <div class="d-none d-xxl-block bottomClose">
-        <button
-          class="btn"
-          :class="`btn-${story.fields['Story Theme']}`"
-          v-on:click="clickClose()"
-        >
-          <font-awesome-icon :icon="['fas', 'times']" />
-          Close
-        </button>
-      </div>
+            <StoryIFrame :story="story"></StoryIFrame>
+
     </div>
   </div>
 </template>
@@ -45,21 +31,16 @@ export default {
   data() {
     return {};
   },
-  props: {},
-  computed: {
-    ...mapGetters({
-      story: "storyFrame",
-    }),
+  props: {
+    story: {
+      type: Object,
+      required: true,
+    },
   },
   methods: {
     ...mapMutations({
-      setStoryFrame: "setStoryFrame",
-      setStoryCurrent: "setStoryCurrent",
+      removeActiveStory: "removeActiveStory",
     }),
-    clickClose: function () {
-      this.setStoryCurrent(null);
-      this.setStoryFrame(null);
-    },
   },
 };
 </script>

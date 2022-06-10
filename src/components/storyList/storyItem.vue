@@ -24,17 +24,11 @@
       <div
         class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white font-weight-bold"
       >
-        <div>
-          <div>
-            {{ story.fields["en-StoryTitle"] }}
+        <transition name="fade" mode="out-in">
+          <div :key="storyTitle">
+            {{ storyTitle }}
           </div>
-          <!--<div
-            v-if="story.fields['sp-StoryTitle']"
-            class="small d-none d-lg-block"
-          >
-            {{ story.fields["sp-StoryTitle"] }}
-          </div>-->
-        </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -56,6 +50,14 @@ export default {
     ...mapGetters({
       storyCurrent: "storyCurrent",
     }),
+    storyTitle: function () {
+      if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`];
+      } else {
+        // default to english
+        return this.story.fields["en-StoryTitle"];
+      }
+    },
   },
 };
 </script>

@@ -16,7 +16,7 @@
         :key="story.id"
         v-for="story in stories"
       ></MapMarker>
-      <template v-if="!getBreakpoints.includes('all')">
+      <template v-if="getBreakpoints.includes('xxl')">
         <StoryPopup
           :story="story"
           :key="`active-${story.id}`"
@@ -55,7 +55,7 @@
     <div class="boxy boxy-left childPoint"></div>
     <div v-if="false" class="boxy boxy-bottom-right childPoint"></div>
     <OverlayHelp></OverlayHelp>
-    <OverlayStory></OverlayStory>
+    <OverlayStory :story='storysActive[0]' v-if="storysActive.length > 0 && !getBreakpoints.includes('xxl')"></OverlayStory>
     <OverlayVideo></OverlayVideo>
   </div>
 </template>

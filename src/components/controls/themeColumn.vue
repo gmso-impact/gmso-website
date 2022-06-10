@@ -11,7 +11,11 @@
           }"
           v-on:click="resetTagsClicked"
         >
-          {{ $t(`All`) }}
+          <transition name="fade" mode="out-in">
+            <div :key="$t(`All`)">
+              {{ $t(`All`) }}
+            </div>
+          </transition>
         </button>
       </div>
       <ThemeButton
@@ -51,4 +55,17 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.fade-enter-active {
+  transition: all 0.1s ease;
+}
+.fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

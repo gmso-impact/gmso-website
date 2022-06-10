@@ -8,18 +8,7 @@
 .geo-img:hover {
   filter: drop-shadow(0px 0px 2px #ffffff);
 }
-@include media-breakpoint-up(md) {
-  .geo-img {
-    cursor: help;
-  }
-}
-@include media-breakpoint-only(xxl) {
-  .geo-img {
-  }
-  .geo-img:hover {
-    filter: drop-shadow(0px 0px 2px #ffffff);
-  }
-}
+
 
 
 .font-qr-site {
