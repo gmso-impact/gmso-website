@@ -140,7 +140,7 @@ const storys = {
     },
     openVideoFrame: (state) => {
       state.isVideoFrameOpen = true;
-      state.storyFrame = null;
+      state.storysActive = [];
       state.isHelpFrameOpen = false;
       event(`open-video`, {
         event_category: "content",
@@ -152,7 +152,7 @@ const storys = {
     toggleVideoFrame: (state) => {
       if (!state.isVideoFrameOpen) {
         state.isVideoFrameOpen = true;
-        state.storyFrame = null;
+        state.storysActive = [];
         state.isHelpFrameOpen = false;
       } else {
         state.isVideoFrameOpen = false;
@@ -163,7 +163,7 @@ const storys = {
     },
     openHelpFrame: (state) => {
       state.isVideoFrameOpen = false;
-      state.storyFrame = null;
+      state.storysActive = [];
       state.isHelpFrameOpen = true;
       event(`open-Help`, {
         event_category: "content",
@@ -175,7 +175,7 @@ const storys = {
     toggleHelpFrame: (state) => {
       if (!state.isHelpFrameOpen) {
         state.isVideoFrameOpen = false;
-        state.storyFrame = null;
+        state.storysActive = [];
         state.isHelpFrameOpen = true;
       } else {
         state.isHelpFrameOpen = false;
@@ -202,6 +202,10 @@ const storys = {
       });
 
       state.storysActive = [story, ...filtered].slice(0, state.storysActiveMax);
+
+      state.isVideoFrameOpen = false;
+      state.isHelpFrameOpen = false;
+
     },
     toggleActiveStory: (state, story) => {
       if (!story) {
@@ -221,6 +225,8 @@ const storys = {
           0,
           state.storysActiveMax
         );
+        state.isVideoFrameOpen = false;
+        state.isHelpFrameOpen = false;
         console.log(`Activated: ${story.fields["en-StoryTitle"]}`);
         event(`set-story`, {
           event_category: "content",
