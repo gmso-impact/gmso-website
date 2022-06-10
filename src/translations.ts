@@ -15,7 +15,7 @@ const translations = {
     tagline: "Find your story @ CSU!",
     "Read More": "Read More",
     help1:
-      "Explore stories of CSU impact throughout the world by tapping or clicking on a map marker on the map (mobile) or either a story card at right or a map marker (web).",
+      "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     Close: "Close",
     All: "All Stories",
     ContinueEN: "Continue",
