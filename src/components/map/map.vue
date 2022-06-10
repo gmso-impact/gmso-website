@@ -5,7 +5,7 @@
       class="h-100 w-100"
       :options="mapOptions"
       :center="center"
-      :zoom='zoom'
+      :zoom="zoom"
       @update:zoom="mapSetZoomCurrent"
       @update:center="mapSetCenterCurrent"
       @update:bounds="mapSetBoundsCurrent"
@@ -111,7 +111,7 @@ import OverlayStories from "../overlay/stories.vue";
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
-import { maps } from "@/store/map" 
+import { maps } from "@/store/map";
 
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
@@ -177,12 +177,10 @@ export default {
       "openStoriesFrame",
       "openFilterFrame",
     ]),
-
   },
   mounted() {
     this.$refs.map.mapObject.addLayer(this.basemap);
-    this.$refs.map.mapObject.flyToBounds(maps.globe.bounds, {  duration: 10 });
-
+    this.$refs.map.mapObject.flyToBounds(maps.globe.bounds, { duration: 10 });
   },
   watch: {
     mapGetBoundsNew: function (newObject) {

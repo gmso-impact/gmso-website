@@ -14,7 +14,7 @@
           Close
         </button>
       </div>
-      <StoryIFrame :story="story"></StoryIFrame>
+      <StoryIFrame :story="story" :key="story.id"></StoryIFrame>
     </div>
   </div>
 </template>

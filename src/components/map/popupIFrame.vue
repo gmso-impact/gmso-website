@@ -1,6 +1,6 @@
 <template lang="">
   <div class="popup-iframe" v-if="true">
-    <StoryIFrame :story="story"></StoryIFrame>
+    <StoryIFrame :story="story" :key="story.id"></StoryIFrame>
   </div>
 </template>
 <script>

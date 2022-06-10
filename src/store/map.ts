@@ -1,51 +1,43 @@
 import { latLng, latLngBounds } from "leaflet";
 
 export const maps = {
-  globe:
-  {
+  globe: {
     bounds: latLngBounds(latLng(80, 70), latLng(-60, -130)),
 
     center: latLng(82, 180),
     zoom: 5,
   },
-  northAmerica:
-  {
+  northAmerica: {
     bounds: latLngBounds(latLng(50, -74), latLng(20, -120)),
     center: latLng(82, 180),
     zoom: 5,
   },
-  sourthAmerica:
-  {
+  sourthAmerica: {
     bounds: latLngBounds(latLng(27, -8), latLng(-56, -110)),
     center: latLng(82, 180),
     zoom: 5,
   },
-  europe:
-  {
+  europe: {
     bounds: latLngBounds(latLng(74, 66), latLng(16, -34)),
     center: latLng(82, 180),
     zoom: 5,
   },
-  africe:
-  {
+  africe: {
     bounds: latLngBounds(latLng(45, 72), latLng(-40, -26)),
     center: latLng(82, 180),
     zoom: 5,
   },
-  asia:
-  {
+  asia: {
     bounds: latLngBounds(latLng(82, 180), latLng(-32, 5)),
     center: latLng(82, 180),
     zoom: 5,
   },
-  australia:
-  {
+  australia: {
     bounds: latLngBounds(latLng(30, 180), latLng(-53, 84)),
     center: latLng(82, 180),
     zoom: 5,
   },
-  colorado:
-  {
+  colorado: {
     bounds: latLngBounds(latLng(50, -74), latLng(20, -120)),
     center: latLng(41, -100),
     zoom: 5,
