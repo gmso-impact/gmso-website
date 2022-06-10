@@ -19,9 +19,8 @@
       }"
       v-on:click="setLanguage(language.locale)"
     >
-          {{ language.language }}
+      {{ language.language }}
     </button>
-
   </div>
 </template>
 <script>
@@ -57,6 +56,6 @@ export default {
 
 <style>
 .btn-fade {
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 </style>

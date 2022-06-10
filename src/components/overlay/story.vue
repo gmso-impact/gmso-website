@@ -1,7 +1,5 @@
 <template lang="">
-  <div
-    class="storyFrame overlay childPoint"
-  >
+  <div class="storyFrame overlay childPoint">
     <div
       class="controlFrame p-1 p-xxl-3 rounded"
       :class="`bg-${story.fields['Story Theme']}`"
@@ -16,8 +14,7 @@
           Close
         </button>
       </div>
-            <StoryIFrame :story="story"></StoryIFrame>
-
+      <StoryIFrame :story="story"></StoryIFrame>
     </div>
   </div>
 </template>

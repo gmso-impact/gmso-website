@@ -7,11 +7,20 @@
       <div
         class="h-100 d-flex flex-column text-white text-center justify-content-start p-3"
       >
-        <div>Welcome to the CSU Impact Map</div>
-        <div class="pt-4">Explore stories of CSU impact throughout the world by tapping or
-        clicking on a map marker on the map (mobile) or either a story card at
-        right or a map marker (web).</div>
-        <div class="pt-4">Find your story at CSU!</div>
+        <div>{{ $t("greeting") }}</div>
+        <div class="pt-4">
+          {{ $t("help1") }}
+        </div>
+        <div class="pt-4">{{ $t("tagline") }}</div>
+        <div class="pt-4">
+          <button
+            class="btn btn-lg btn-white"
+            alt="Continue to map showing stories"
+            v-on:click="clickCloseHelpFrame()"
+          >
+            {{ $t("Continue") }}
+          </button>
+        </div>
       </div>
       <div class="topClose">
         <button class="btn btn-black" v-on:click="clickCloseHelpFrame()">

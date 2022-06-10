@@ -11,11 +11,14 @@ export const languages = [
 
 const translations = {
   en: {
-    hello: "hello",
-    tagline: "Find your story @ CSU",
+    greeting: "Welcome to the CSU Impact Map",
+    tagline: "Find your story @ CSU!",
     "Read More": "Read More",
+    help1:
+      "Explore stories of CSU impact throughout the world by tapping or clicking on a map marker on the map (mobile) or either a story card at right or a map marker (web).",
     Close: "Close",
     All: "All Stories",
+    Continue: "Continue to the map",
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
@@ -56,11 +59,12 @@ const translations = {
     },
   },
   es: {
-    hello: "Hola",
+    greeting: "Bienvenido al Mapa de Impacto de CSU",
     tagline: "Encuentra tu historia @ CSU",
     "Read More": "Leer Más",
     Close: "Salida",
     All: "Todos Cuentos",
+    Continue: "Continuar al mapa",
     storyThemes: {
       Health: "Vida",
       Environment: "El Entorno",

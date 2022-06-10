@@ -8,10 +8,11 @@
         v-if="this.$route.name === 'Kiosk'"
         class="col-6 col-xxl-3 order-2 order-xxl-1 mt-3"
       ></QRSite>
-      <Geo class="col-xxl-4 order-1 order-xxl-2"
+      <Geo
+        class="col-xxl-4 order-1 order-xxl-2"
         :class="{
-          'col-lg-6': ($route.name === 'Web') ,
-          'col-lg-4': ($route.name === 'Kiosk') ,
+          'col-lg-6': $route.name === 'Web',
+          'col-lg-4': $route.name === 'Kiosk',
         }"
       ></Geo>
     </div>

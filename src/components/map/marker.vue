@@ -69,16 +69,19 @@ export default {
 <style lang="scss">
 .leaflet-marker-icon,
 .leaflet-marker-shadow {
-  -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein .8s; /* Firefox < 16 */
-  -ms-animation: fadein .8s; /* Internet Explorer */
-  -o-animation: fadein .8s; /* Opera < 12.1 */
-  animation: fadein .8s;
+  -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.8s; /* Firefox < 16 */
+  -ms-animation: fadein 0.8s; /* Internet Explorer */
+  -o-animation: fadein 0.8s; /* Opera < 12.1 */
+  animation: fadein 0.8s;
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 </style>

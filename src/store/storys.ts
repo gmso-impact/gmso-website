@@ -205,7 +205,6 @@ const storys = {
 
       state.isVideoFrameOpen = false;
       state.isHelpFrameOpen = false;
-
     },
     toggleActiveStory: (state, story) => {
       if (!story) {
