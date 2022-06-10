@@ -5,10 +5,13 @@
         <img src="GMSOtitle1.png" alt="CSU Impact" class="title-img" />
       </div>
       <div
-        class="h-100 d-flex flex-column text-white text-center justify-content-center p-3"
+        class="h-100 d-flex flex-column text-white text-center justify-content-start p-3"
       >
-        <div>Paragraph 1 with all kinds of text</div>
-        <div>Paragraph 2 with all kinds of text</div>
+        <div>Welcome to the CSU Impact Map</div>
+        <div class="pt-4">Explore stories of CSU impact throughout the world by tapping or
+        clicking on a map marker on the map (mobile) or either a story card at
+        right or a map marker (web).</div>
+        <div class="pt-4">Find your story at CSU!</div>
       </div>
       <div class="topClose">
         <button class="btn btn-black" v-on:click="clickCloseHelpFrame()">
