@@ -1,13 +1,57 @@
 import { latLng, latLngBounds } from "leaflet";
+
 export const maps = {
-  globe: latLngBounds(latLng(80, 70), latLng(-60, -130)),
-  northAmerica: latLngBounds(latLng(50, -74), latLng(20, -120)),
-  sourthAmerica: latLngBounds(latLng(27, -8), latLng(-56, -110)),
-  europe: latLngBounds(latLng(74, 66), latLng(16, -34)),
-  africe: latLngBounds(latLng(45, 72), latLng(-40, -26)),
-  asia: latLngBounds(latLng(82, 180), latLng(-32, 5)),
-  australia: latLngBounds(latLng(30, 180), latLng(-53, 84)),
+  globe:
+  {
+    bounds: latLngBounds(latLng(80, 70), latLng(-60, -130)),
+
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  northAmerica:
+  {
+    bounds: latLngBounds(latLng(50, -74), latLng(20, -120)),
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  sourthAmerica:
+  {
+    bounds: latLngBounds(latLng(27, -8), latLng(-56, -110)),
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  europe:
+  {
+    bounds: latLngBounds(latLng(74, 66), latLng(16, -34)),
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  africe:
+  {
+    bounds: latLngBounds(latLng(45, 72), latLng(-40, -26)),
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  asia:
+  {
+    bounds: latLngBounds(latLng(82, 180), latLng(-32, 5)),
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  australia:
+  {
+    bounds: latLngBounds(latLng(30, 180), latLng(-53, 84)),
+    center: latLng(82, 180),
+    zoom: 5,
+  },
+  colorado:
+  {
+    bounds: latLngBounds(latLng(50, -74), latLng(20, -120)),
+    center: latLng(41, -100),
+    zoom: 5,
+  },
 };
+
 const stateTemplate = {
   bounds: null,
   zoom: null,
@@ -18,7 +62,7 @@ const stateTemplate = {
 
 const map = {
   state: {
-    current: { ...stateTemplate},
+    current: { ...stateTemplate },
     new: { ...stateTemplate, bounds: maps.globe },
   },
   getters: {
@@ -41,7 +85,7 @@ const map = {
   mutations: {
     resetMap: (state) => {
       state.new = {
-        ...stateTemplate, 
+        ...stateTemplate,
         bounds: maps.globe,
         date: new Date(),
       };

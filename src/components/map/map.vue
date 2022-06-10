@@ -3,9 +3,9 @@
     <LMap
       id="main-map"
       class="h-100 w-100"
-      v-if="showMap"
       :options="mapOptions"
-      :bounds="bounds"
+      :center="center"
+      :zoom='zoom'
       @update:zoom="mapSetZoomCurrent"
       @update:center="mapSetCenterCurrent"
       @update:bounds="mapSetBoundsCurrent"
@@ -59,7 +59,6 @@
     </div>
     <div class="boxy boxy-left childPoint"></div>
     <div class="boxy boxy-bottom childPoint">
-      <button class="btn btn-dark" v-on:click="fly()">Fly</button>
       <div class="btn-group d-block d-lg-none">
         <button
           class="btn btn-light border-right"
@@ -153,16 +152,16 @@ export default {
         minZoom: 3, // globe
         zoomControl: false,
       },
-      showMap: true,
-      bounds: null,
+      center: maps.colorado.center, // initial map center before load
+      zoom: maps.colorado.zoom,
     };
   },
   computed: {
     ...mapGetters({
       stories: "storyFiltered",
       storysActive: "storysActive",
-      zoom: "mapGetZoomNew",
-      center: "mapGetCenterNew",
+      mapGetZoomNew: "mapGetZoomNew",
+      mapGetCenterNew: "mapGetCenterNew",
       mapGetBoundsNew: "mapGetBoundsNew",
       mapGetBoundsCurrent: "mapGetBoundsCurrent",
       storyLayer: "storyLayer",
@@ -178,19 +177,12 @@ export default {
       "openStoriesFrame",
       "openFilterFrame",
     ]),
-    fly() {
-      console.log("fly");
-      this.$refs.map.mapObject.flyToBounds(this.mapGetBoundsNew.bounds, {
-        duration: this.mapGetBoundsNew.duration,
-      });
-    },
+
   },
   mounted() {
-    this.$refs.map.mapObject.fitBounds(maps.northAmerica);
     this.$refs.map.mapObject.addLayer(this.basemap);
-    this.$nextTick(() => {
-      this.$refs.map.mapObject.flyToBounds(maps.globe, {  duration: 3 });
-    });
+    this.$refs.map.mapObject.flyToBounds(maps.globe.bounds, {  duration: 10 });
+
   },
   watch: {
     mapGetBoundsNew: function (newObject) {
