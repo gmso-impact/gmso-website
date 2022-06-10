@@ -43,7 +43,7 @@ export default {
         iconAnchor: [0, 24],
         labelAnchor: [-6, 0],
         popupAnchor: [0, -36],
-        html: `<span class="marker-pin bg-${
+        html: `<span class="marker-pin btn-fade bg-${
           this.story.fields["Story Theme"] ?? "white"
         } ${
           this.storyCurrent && this.story.id === this.storyCurrent.id
@@ -66,4 +66,19 @@ export default {
   },
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  -webkit-animation: fadein .8s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .8s; /* Firefox < 16 */
+  -ms-animation: fadein .8s; /* Internet Explorer */
+  -o-animation: fadein .8s; /* Opera < 12.1 */
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+</style>
