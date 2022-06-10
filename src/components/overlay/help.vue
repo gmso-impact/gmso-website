@@ -14,11 +14,19 @@
         <div class="pt-4">{{ $t("tagline") }}</div>
         <div class="pt-4">
           <button
-            class="btn btn-lg btn-white"
+            class="btn btn-lg btn-white mx-3 my-3"
             alt="Continue to map showing stories"
             v-on:click="clickCloseHelpFrame()"
           >
-            {{ $t("Continue") }}
+            {{ $t("ContinueEN") }}
+          </button>
+
+          <button
+            class="btn btn-lg btn-white mx-3 my-3"
+            alt="Continue to map showing stories"
+            v-on:click="clickCloseHelpFrame(); $root.$i18n.locale = 'es' "
+          >
+            {{ $t("ContinueES") }}
           </button>
         </div>
       </div>

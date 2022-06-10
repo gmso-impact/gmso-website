@@ -18,7 +18,8 @@ const translations = {
       "Explore stories of CSU impact throughout the world by tapping or clicking on a map marker on the map (mobile) or either a story card at right or a map marker (web).",
     Close: "Close",
     All: "All Stories",
-    Continue: "Continue to the map",
+    ContinueEN: "Continue",
+    ContinueES: "Continuar",
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
