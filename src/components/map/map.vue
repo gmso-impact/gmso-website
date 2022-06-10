@@ -138,7 +138,7 @@ export default {
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
+      basemap: vectorBasemapLayer("OSM:DarkGray", { apikey: apikey }),
       //basemapOld: basemapLayer("DarkGray", { apikey }),
       //basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       apikey: apikey,
@@ -149,7 +149,7 @@ export default {
         worldCopyJump: true,
         zoomDelta: 1,
         maxZoom: 10, // town
-        minZoom: 3, // globe
+        minZoom: 2, // globe
         zoomControl: false,
       },
       center: maps.colorado.center, // initial map center before load
@@ -180,7 +180,7 @@ export default {
   },
   mounted() {
     this.$refs.map.mapObject.addLayer(this.basemap);
-    this.$refs.map.mapObject.flyToBounds(maps.globe.bounds, { duration: 10 });
+    this.$refs.map.mapObject.fitBounds(maps.globe.bounds, { duration: 0 });
   },
   watch: {
     mapGetBoundsNew: function (newObject) {
