@@ -138,7 +138,7 @@ export default {
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: vectorBasemapLayer("OSM:DarkGray", { apikey: apikey }),
+      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
       //basemapOld: basemapLayer("DarkGray", { apikey }),
       //basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       apikey: apikey,
@@ -180,6 +180,7 @@ export default {
   },
   mounted() {
     this.$refs.map.mapObject.addLayer(this.basemap);
+    // there is an issue with the map if it has not ever zoomed
     this.$refs.map.mapObject.fitBounds(maps.globe.bounds, { duration: 0 });
   },
   watch: {
