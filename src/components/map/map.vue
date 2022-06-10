@@ -143,9 +143,9 @@ export default {
       storyLayerEsriObject: null,
       mapOptions: {
         preferCanvas: true,
-        zoomSnap: 0.5,
+        zoomSnap: 1,
         worldCopyJump: true,
-        zoomDelta: 0.5,
+        zoomDelta: 1,
         maxZoom: 12,
         minZoom: 2,
         zoomControl: false,
