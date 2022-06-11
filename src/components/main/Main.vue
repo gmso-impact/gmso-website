@@ -1,5 +1,6 @@
 <template>
   <div class="d-flex flex-column h-100">
+      <KioskOverlay></KioskOverlay>
     <div
       id="header"
       v-if="$route.name === 'Web'"
@@ -44,6 +45,7 @@
     >
       <ThemeBottom></ThemeBottom>
     </div>
+
   </div>
 </template>
 
@@ -52,6 +54,7 @@
 import StoryListMap from "@/components/storyList/storyListMap.vue";
 import Map from "@/components/map/map.vue";
 import ControlGroup from "@/components/controls/controlGroup.vue";
+import KioskOverlay from "@/components/kioskOverlay/index.vue";
 import { mapGetters, mapMutations } from "vuex";
 
 export default {
@@ -60,6 +63,7 @@ export default {
     StoryListMap,
     Map,
     ControlGroup,
+    KioskOverlay,
   },
   methods: {
     ...mapMutations({

@@ -63,7 +63,7 @@ export default {
 }
 .story {
   backface-visibility: hidden;
-  z-index: 1;
+  z-index: 0;
   display: inline-block;
 }
 
@@ -86,7 +86,7 @@ export default {
 /* disappearing */
 .story-list-leave-active {
   transition: all 600ms ease-in;
-  z-index: 0;
+  z-index: -0;
   position: absolute;
 }
 .story-list-leave-to {
