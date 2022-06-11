@@ -4,6 +4,7 @@
       id="main-map"
       class="h-100 w-100"
       :options="mapOptions"
+      :minZoom='minZoom'
       :center="center"
       :zoom="zoom"
       @update:zoom="mapSetZoomCurrent"
@@ -145,11 +146,10 @@ export default {
       storyLayerEsriObject: null,
       mapOptions: {
         preferCanvas: true,
-        zoomSnap: 1,
+        zoomSnap: 0.1,
         worldCopyJump: true,
-        zoomDelta: 1,
+        zoomDelta: 0.5,
         maxZoom: 10, // town
-        minZoom: 2, // globe
         zoomControl: false,
       },
       center: maps.colorado.center, // initial map center before load
@@ -160,13 +160,22 @@ export default {
     ...mapGetters({
       stories: "storyFiltered",
       storysActive: "storysActive",
-      mapGetZoomNew: "mapGetZoomNew",
-      mapGetCenterNew: "mapGetCenterNew",
       mapGetBoundsNew: "mapGetBoundsNew",
       mapGetBoundsCurrent: "mapGetBoundsCurrent",
       storyLayer: "storyLayer",
       getBreakpoints: "getBreakpoints",
     }),
+    minZoom: function () {
+      const minZoomList = {
+        xs: 2.1,
+        sm: 2.4,
+        md: 2.4,
+        lg: 2.2,
+        xl: 2.8,
+        xxl: 3.7, // 4.3 for no world copy
+      };
+      return minZoomList[this.getBreakpoints[0]];
+    },
   },
   methods: {
     ...mapMutations([

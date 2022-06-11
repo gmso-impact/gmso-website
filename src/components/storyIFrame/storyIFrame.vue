@@ -10,13 +10,14 @@
       title="Story Map"
     ></iframe>
     <div
-      class="iframe-scale iframe-border-none flex-column text-center text-white justify-content-center"
+      class="flex-column h-100 text-center text-white justify-content-center"
       :class="{ 'd-none': loaded, 'd-flex': !loaded }"
     >
-      <div>{{ storyTitle }}</div>
+      <div class="h1">{{ storyTitle }}</div>
       <div class="mt-4">
-        <font-awesome-icon :icon="['fas', 'spinner']" spin />
+        <font-awesome-icon class='fa-2x' :icon="['fas', 'spinner']" spin />
       </div>
+      <div class='mt-4' >Get ready to explore!</div>
     </div>
   </div>
 </template>

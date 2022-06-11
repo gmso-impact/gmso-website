@@ -3,11 +3,11 @@
     <h3 class="text-center my-1 my-xxl-5 bg-white d-none d-lg-block d-xl-none">
       {{ $t(`tagline`) }}
     </h3>
-    <div class="flex-grow-1 overflow-y-auto overflow-x-hidden carbon p-2">
+    <div class="flex-grow-1 overflow-y-auto overflow-x-hidden carbon p-2 p-0">
       <transition-group
         name="story-list"
         tag="div"
-        class="story-list d-flex align-content-center row no-gutters mt-xxl-5"
+        class="story-list d-flex align-content-center row no-gutters"
         @before-leave="beforeLeave"
       >
         <StoryItem
