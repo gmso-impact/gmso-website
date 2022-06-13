@@ -4,7 +4,7 @@
       id="main-map"
       class="h-100 w-100"
       :options="mapOptions"
-      :minZoom='minZoom'
+      :minZoom="minZoom"
       :center="center"
       :zoom="zoom"
       @update:zoom="mapSetZoomCurrent"
@@ -188,9 +188,42 @@ export default {
     ]),
   },
   mounted() {
+    const initialView = {
+      xs: {
+        latLng: latLng(-5, -89.5),
+        zoom: 2.1,
+      },
+      sm: {
+        latLng: latLng(7, -27),
+        zoom: 2,
+      },
+      md: {
+        latLng: latLng(15, -42.2),
+        zoom: 2.4,
+      },
+      lg: {
+        latLng: latLng(7.4, -29.9),
+        zoom: 2.2,
+      },
+      xl: {
+        latLng: latLng(5.1, -27),
+        zoom: 2.8,
+      },
+      xxl: {
+        latLng: latLng(-1.6, 21.5),
+        zoom: 4.3,
+      },
+    };
     this.$refs.map.mapObject.addLayer(this.basemap);
     // there is an issue with the map if it has not ever zoomed
-    this.$refs.map.mapObject.fitBounds(maps.globe.bounds, { duration: 0 });
+    this.$refs.map.mapObject.setView(
+      initialView[this.getBreakpoints[0]].latLng,
+      initialView[this.getBreakpoints[0]].zoom,
+      {
+        duration: 0,
+        animate: false,
+      }
+    );
   },
   watch: {
     mapGetBoundsNew: function (newObject) {

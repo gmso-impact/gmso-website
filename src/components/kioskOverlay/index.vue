@@ -1,7 +1,9 @@
 <template>
   <div
     class="d-flex h-100 position-absolute kioskOverlay flex-wrap"
-    v-if="true && (this.$route.name === 'Kiosk' && getBreakpoints.includes('xxl'))"
+    v-if="
+      true && this.$route.name === 'Kiosk' && getBreakpoints.includes('xxl')
+    "
   >
     <div
       class="border w-25 h-50 panel d-flex justify-content-center align-items-center"

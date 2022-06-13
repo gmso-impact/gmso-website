@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-column h-100">
-      <KioskOverlay></KioskOverlay>
+    <KioskOverlay></KioskOverlay>
     <div
       id="header"
       v-if="$route.name === 'Web'"
@@ -45,7 +45,6 @@
     >
       <ThemeBottom></ThemeBottom>
     </div>
-
   </div>
 </template>
 
