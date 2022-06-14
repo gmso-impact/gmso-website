@@ -6,15 +6,25 @@
     ref="marker"
     v-on:click="toggleActiveStory(story)"
   >
-    <l-icon :icon-anchor="iconAnchor" v-if="false && getBreakpoints[0] !== 'xxl'">
-
-        <div class='bg-white iconSize'>
-          <div>Hello</div>
+    <Transition-group name="markerImg" appear>
+      <l-icon :icon-anchor="iconAnchor" key='img' v-if="getBreakpoints[0] === 'xxl' && mapGetZoom > 6.5">
+        <div class="marker-img d-flex flex-column" :class='`border-${this.story.fields["Story Theme"]} bg-${this.story.fields["Story Theme"]}`'>
+          <img
+            v-if="
+              story.fields['Story Card Image'] &&
+              story.fields['Story Card Image'][0] &&
+              story.fields['Story Card Image'][0].thumbnails
+            "
+            :src="story.fields['Story Card Image'][0].thumbnails.large.url"
+            class="w-100"
+            alt="Card image cap"
+          />
         </div>
-    </l-icon>
-    <l-icon :icon-anchor="iconAnchor" v-else>
-      <span class="marker-pin btn-fade" :class="smallMarkerClass"></span>
-    </l-icon>
+      </l-icon>
+      <l-icon :icon-anchor="iconAnchor" key='pin' v-else>
+        <span class="marker-pin btn-fade" :class="smallMarkerClass"></span>
+      </l-icon>
+    </Transition-group>
   </l-marker>
 </template>
 <script>
@@ -45,21 +55,10 @@ export default {
     ...mapGetters({
       isStoryActive: "isStoryActive",
       getBreakpoints: "getBreakpoints",
+      mapGetZoom: "mapGetZoom",
     }),
     latLngObj: function () {
       return latLng(this.story.fields["LAT"], this.story.fields["LONG"]);
-    },
-    icon: function () {
-      const icon = divIcon({
-        className: "",
-        iconAnchor: [0, 24],
-        labelAnchor: [-6, 0],
-        popupAnchor: [0, -36],
-        html: `<span class="marker-pin btn-fade bg-${
-          this.story.fields["Story Theme"] ?? "white"
-        } ${this.isStoryActive(this.story.id) ? "active" : ""}"/>`,
-      });
-      return icon;
     },
     smallMarkerClass: function () {
       return this.story.fields["Story Theme"]
@@ -98,9 +97,17 @@ export default {
   }
 }
 
-.iconSize {
-    width: auto !important;
-  height: auto !important;
-  margin: 0 !important;
+
+.markerImg-enter-active {
+  transition: all 0.6s ease-out;
+}
+
+.markerImg-leave-active {
+  transition: all 1.8s ease-in;
+}
+
+.markerImg-enter-from,
+.markerImg-leave-to {
+  opacity: 0;
 }
 </style>

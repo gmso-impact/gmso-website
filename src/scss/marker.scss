@@ -48,3 +48,18 @@
   }
 }
 
+.marker-img {
+  border: 3 * $font-size-base/16 solid #ffffff;
+  width: 150px !important;
+  margin: 0 !important;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+}
+@include media-breakpoint-only(xxl) {
+  .marker-img {
+    width: 300px !important;
+    border: 8 * $font-size-base/16 solid #ffffff;
+  }
+}
