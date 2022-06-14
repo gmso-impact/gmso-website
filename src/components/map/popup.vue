@@ -39,7 +39,7 @@ export default {
         autoClose: false,
         closeButton: false,
         className: "map-popup-container",
-        autoPanPaddingTopLeft: [800, 20],
+        autoPanPaddingTopLeft: [20, 20],
         autoPanPaddingBottomRight: [20, 20],
       },
     };

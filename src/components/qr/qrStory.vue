@@ -63,6 +63,6 @@ export default {
 </script>
 <style lang="scss">
 .qr-story {
-  width: 80px;
+  width: 124px;
 }
 </style>

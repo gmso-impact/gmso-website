@@ -56,7 +56,7 @@ const map = {
     current: { ...stateTemplate },
     new: { ...stateTemplate, bounds: maps.globe },
     initial: {
-      ...stateTemplate
+      ...stateTemplate,
     },
   },
   getters: {
@@ -89,32 +89,34 @@ const map = {
     },
     mapSetCenter: (state, center) => {
       state.new.center = center;
-
     },
     mapSetBounds: (state, bounds) => {
-      
       state.new = {
         ...state.current,
         bounds: bounds,
         duration: 1,
         date: new Date(),
       };
-
     },
     /// the curent functions are for internal to the map
     // this allows the map to be responsive
     mapSetZoomCurrent: (state, zoom) => {
-      if(!state.current.zoom){state.initial.zoom = zoom; }
+      if (!state.current.zoom) {
+        state.initial.zoom = zoom;
+      }
       state.current.zoom = zoom;
     },
     mapSetCenterCurrent: (state, center) => {
-      if(!state.current.center){state.initial.center = center; }
+      if (!state.current.center) {
+        state.initial.center = center;
+      }
 
       state.current.center = center;
-
     },
     mapSetBoundsCurrent: (state, bounds) => {
-      if(!state.current.bounds){state.initial.bounds = bounds; }
+      if (!state.current.bounds) {
+        state.initial.bounds = bounds;
+      }
       state.current.bounds = bounds;
     },
   },
