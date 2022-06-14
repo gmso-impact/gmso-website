@@ -2,11 +2,19 @@
   <l-marker
     :lat-lng="latLngObj"
     :key="story.id"
-    :icon="icon"
     :riseOnHover="true"
     ref="marker"
     v-on:click="toggleActiveStory(story)"
   >
+    <l-icon :icon-anchor="iconAnchor" v-if="false && getBreakpoints[0] !== 'xxl'">
+
+        <div class='bg-white iconSize'>
+          <div>Hello</div>
+        </div>
+    </l-icon>
+    <l-icon :icon-anchor="iconAnchor" v-else>
+      <span class="marker-pin btn-fade" :class="smallMarkerClass"></span>
+    </l-icon>
   </l-marker>
 </template>
 <script>
@@ -17,10 +25,14 @@ import { mapGetters, mapMutations } from "vuex";
 export default {
   components: {
     LMarker,
+    LIcon,
   },
   data() {
     return {
       test: null,
+      iconAnchor: [0, 24],
+      labelAnchor: [-6, 0],
+      popupAnchor: [0, -36],
     };
   },
   props: {
@@ -48,6 +60,11 @@ export default {
         } ${this.isStoryActive(this.story.id) ? "active" : ""}"/>`,
       });
       return icon;
+    },
+    smallMarkerClass: function () {
+      return this.story.fields["Story Theme"]
+        ? `bg-${this.story.fields["Story Theme"]}`
+        : "bg-white";
     },
   },
   methods: {
@@ -79,5 +96,11 @@ export default {
   to {
     opacity: 1;
   }
+}
+
+.iconSize {
+    width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
 }
 </style>
