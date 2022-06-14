@@ -1,5 +1,4 @@
 import { latLng, latLngBounds } from "leaflet";
-
 export const maps = {
   globe: {
     bounds: latLngBounds(latLng(80, 70), latLng(-60, -130)),
@@ -56,6 +55,9 @@ const map = {
   state: {
     current: { ...stateTemplate },
     new: { ...stateTemplate, bounds: maps.globe },
+    initial: {
+      ...stateTemplate
+    },
   },
   getters: {
     mapGetZoom: (state) => {
@@ -78,7 +80,7 @@ const map = {
     resetMap: (state) => {
       state.new = {
         ...stateTemplate,
-        bounds: maps.globe.bounds,
+        bounds: state.initial.bounds,
         date: new Date(),
       };
     },
@@ -87,24 +89,32 @@ const map = {
     },
     mapSetCenter: (state, center) => {
       state.new.center = center;
+
     },
     mapSetBounds: (state, bounds) => {
+      
       state.new = {
         ...state.current,
         bounds: bounds,
         duration: 1,
         date: new Date(),
       };
+
     },
     /// the curent functions are for internal to the map
     // this allows the map to be responsive
     mapSetZoomCurrent: (state, zoom) => {
+      if(!state.current.zoom){state.initial.zoom = zoom; }
       state.current.zoom = zoom;
     },
     mapSetCenterCurrent: (state, center) => {
+      if(!state.current.center){state.initial.center = center; }
+
       state.current.center = center;
+
     },
     mapSetBoundsCurrent: (state, bounds) => {
+      if(!state.current.bounds){state.initial.bounds = bounds; }
       state.current.bounds = bounds;
     },
   },
