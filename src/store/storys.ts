@@ -35,7 +35,6 @@ function toFilterTags(tagName) {
 const storys = {
   state: {
     all: stories,
-    storyCurrent: null,
     storysActive: [],
     storysActiveMax: 1,
     storyFrame: null,
@@ -101,22 +100,25 @@ const storys = {
         return isInBounds;
       });
     },
-    storyCurrent: (state) => {
-      return state.storyCurrent;
-    },
     storysActive: (state) => {
       return state.storysActive;
+    },
+    isStoryActive: (state) => (id) => {
+      const isStoryActive = state.storysActive.some((story) => {
+        return story.id === id;
+      });
+      return isStoryActive;
     },
     storyFrame: (state) => {
       return state.storyFrame;
     },
     storyLayer: (state) => {
       if (
-        state.storyCurrent &&
-        state.storyCurrent.fields &&
-        state.storyCurrent.fields["Impact Map Layer URL"]
+        state.storysActive[0] &&
+        state.storysActive[0].fields &&
+        state.storysActive[0].fields["Impact Map Layer URL"]
       ) {
-        return state.storyCurrent.fields["Impact Map Layer URL"];
+        return state.storysActive[0].fields["Impact Map Layer URL"];
       } else if (
         state.storyFrame &&
         state.storyFrame.fields &&
@@ -332,20 +334,6 @@ const storys = {
     },
     removeActiveStories: (state) => {
       state.storysActive = [];
-    },
-    setStoryCurrent: (state, story) => {
-      if (story) {
-        state.storyFrame = null;
-        state.isVideoFrameOpen = false;
-      }
-      state.storyCurrent = story;
-    },
-    setStoryFrame: (state, story) => {
-      if (story) {
-        state.storyCurrent = null;
-        state.isVideoFrameOpen = false;
-      }
-      state.storyFrame = story;
     },
     setTag: (state, payload) => {
       // payload.tagName

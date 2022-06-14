@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      storyCurrent: "storyCurrent",
+      isStoryActive: "isStoryActive",
       getBreakpoints: "getBreakpoints",
     }),
     latLngObj: function () {
@@ -45,11 +45,7 @@ export default {
         popupAnchor: [0, -36],
         html: `<span class="marker-pin btn-fade bg-${
           this.story.fields["Story Theme"] ?? "white"
-        } ${
-          this.storyCurrent && this.story.id === this.storyCurrent.id
-            ? "active"
-            : ""
-        }"/>`,
+        } ${this.isStoryActive(this.story.id) ? "active" : ""}"/>`,
       });
       return icon;
     },

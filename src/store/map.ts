@@ -78,7 +78,7 @@ const map = {
     resetMap: (state) => {
       state.new = {
         ...stateTemplate,
-        bounds: maps.globe,
+        bounds: maps.globe.bounds,
         date: new Date(),
       };
     },

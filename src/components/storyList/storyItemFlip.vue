@@ -1,13 +1,13 @@
 <template lang="">
   <div
-    class="col-lg-12 col-xl-4 col-xxl-4 py-2 py-xxl-4 px-2 px-xxl-4"
+    class="col-6 col-lg-12 col-xl-4 col-xxl-4 py-2 py-xxl-3 px-2 px-xxl-5"
     v-if="story.fields['en-StoryTitle']"
   >
     <div
       class="story-card w-100 h-100 p-0 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
-        storyCurrent && story.id === storyCurrent.id ? 'active' : '',
+        isStoryActive(story.id) ? 'active' : '',
       ]"
       v-on:click="addActiveStory(story)"
     >
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      storyCurrent: "storyCurrent",
+      isStoryActive: "isStoryActive",
     }),
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {

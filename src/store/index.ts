@@ -13,8 +13,8 @@ export default new Vuex.Store({
     timer: null,
     lastInteraction: new Date(),
     resetTagsTime: 60 * seconds,
-    resetStoryTime: 2 * minutes,
-    resetVideoTime: 15 * minutes,
+    resetStoryTime: 1 * minutes,
+    resetVideoTime: 20 * minutes,
     refreshPageTime: 2 * hours,
     timerLoopLength: 60 * seconds,
   },
@@ -55,8 +55,7 @@ export default new Vuex.Store({
       ) {
         console.log("resetStoryTime");
         commit("resetMap", null);
-        commit("setStoryCurrent", null);
-        //commit('setStoryFrame', null)
+        commit("removeActiveStories");
       } else if (
         state.resetTagsTime + state.lastInteraction.getTime() <
         now.getTime()

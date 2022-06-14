@@ -9,7 +9,6 @@
           :story="story"
           v-if="story.fields['en-StoryMapLink']"
         ></PopupIFrame>
-        <PopupSummary :story="story" v-else></PopupSummary>
         <PopupInfo :story="story"></PopupInfo>
       </div>
     </l-popup>
@@ -19,7 +18,6 @@
 import { LPopup, LLayerGroup } from "vue2-leaflet";
 import { latLng, divIcon, point } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
-import PopupSummary from "./popupSummary.vue";
 import PopupIFrame from "./popupIFrame.vue";
 import PopupInfo from "./popupInfo.vue";
 
@@ -27,7 +25,6 @@ export default {
   components: {
     LPopup,
     LLayerGroup,
-    PopupSummary,
     PopupIFrame,
     PopupInfo,
   },
