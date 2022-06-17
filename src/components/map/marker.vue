@@ -26,7 +26,7 @@
               "
               :src="story.fields['Story Card Image'][0].thumbnails.large.url"
               class="w-100 content"
-              alt="Card image cap"
+              :alt="story.fields['Research Blurb']"
             />
           </div>
         </div>

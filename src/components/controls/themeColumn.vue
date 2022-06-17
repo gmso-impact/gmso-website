@@ -12,7 +12,7 @@
           v-on:click="resetTagsClicked"
         >
           <transition name="fade" mode="out-in">
-            <div :key="$t(`All`)">
+            <div :key="$t(`AllStories`)">
               {{ $t(`AllStories`) }}
             </div>
           </transition>
