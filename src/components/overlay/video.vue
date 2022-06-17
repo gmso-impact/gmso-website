@@ -12,7 +12,6 @@
           src="https://ibis-test1.nrel.colostate.edu/GMSO/videos/CSUS.mp4"
           type="video/mp4"
         />
-        Your browser does not support the video tag.
       </video>
       <div class="topClose">
         <button class="btn btn-black" v-on:click="clickCloseVideoFrame()">

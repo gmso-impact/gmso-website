@@ -13,7 +13,7 @@
         >
           <transition name="fade" mode="out-in">
             <div :key="$t(`All`)">
-              {{ $t(`All`) }}
+              {{ $t(`AllStories`) }}
             </div>
           </transition>
         </button>

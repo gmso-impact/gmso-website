@@ -17,9 +17,14 @@ const translations = {
     help1:
       "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     Close: "Close",
-    All: "All Stories",
+    AllStories: "All Stories",
+    Stories: "Stories",
+    Filter: "Filter",
+    Explore: "Get ready to explore!",
+
     ContinueEN: "Continue",
     ContinueES: "Continuar",
+
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
@@ -63,19 +68,54 @@ const translations = {
     greeting: "Bienvenido al Mapa de Impacto de CSU",
     tagline: "Encuentra tu historia @ CSU",
     "Read More": "Leer Más",
+    help1:
+      "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     Close: "Salida",
-    All: "Todos Cuentos",
-    Continue: "Continuar al mapa",
+    AllStories: "Todos Cuentos",
+    Stories: "Cuentos",
+    Filter: "Filtrar",
+    Explore: "Get ready to explore!",
+
+    ContinueEN: "Continue",
+    ContinueES: "Continuar",
+
     storyThemes: {
       Health: "Vida",
-      Environment: "El Entorno",
+      Environment: "Entorno",
       Water: "Agua",
       Food: "Alimento",
       Energy: "Energía",
       Community: "Comunidad",
     },
+    storyTags: {
+      "Environmental Justice": "Environmental Justice",
+      "Community Health": "Community Health",
+      "Civic Engagement": "Civic Engagement",
+      "Culture/Arts": "Culture/Arts",
+      "Development/Innovation": "Development/Innovation",
+      "Water Quality": "Water Quality",
+      "Human Health": "Human Health",
+      "Animal Health": "Animal Health",
+      "Environmental Health": "Environmental Health",
+      Climate: "Climate",
+      Conservation: "Conservation",
+    },
     idTags: {
+      Alumnus: "Alumnus",
       International: "Internacional",
+      "First Generation": "First Generation",
+    },
+    collegeTags: {
+      "Warner College of Natural Resources":
+        "Warner College of Natural Resources",
+      "Walter Scott, Jr. College of Engineering":
+        "Walter Scott, Jr. College of Engineering",
+      "Natural Sciences": "Natural Sciences",
+      "Agricultural Sciences": "Agricultural Sciences",
+      "Veterinary Medicine and Biomedical Sciences":
+        "Veterinary Medicine and Biomedical Sciences",
+      "Liberal Arts": "Liberal Arts",
+      "Health and Human Sciences": "Health and Human Sciences",
     },
   },
   fr: {},

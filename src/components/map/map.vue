@@ -66,12 +66,11 @@
           v-on:click="openStoriesFrame()"
         >
           <font-awesome-icon :icon="['fas', 'globe']" />
-          Stories
+          {{ $t(`Stories`) }}
         </button>
         <button class="btn btn-light" v-on:click="openFilterFrame()">
           <font-awesome-icon :icon="['fas', 'filter']" />
-
-          Filter
+          {{ $t(`Filter`) }}
         </button>
       </div>
     </div>

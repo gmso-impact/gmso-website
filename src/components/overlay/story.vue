@@ -11,7 +11,7 @@
           v-on:click="removeActiveStory(story)"
         >
           <font-awesome-icon :icon="['fas', 'times']" />
-          Close
+          {{ $t(`Close`) }}
         </button>
       </div>
       <StoryIFrame :story="story" :key="story.id"></StoryIFrame>

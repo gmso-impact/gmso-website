@@ -17,7 +17,9 @@
       <div class="mt-4">
         <font-awesome-icon class="fa-2x" :icon="['fas', 'spinner']" spin />
       </div>
-      <div class="mt-4">Get ready to explore!</div>
+      <div class="mt-4">
+        {{ $t(`Explore`) }}
+      </div>
     </div>
   </div>
 </template>
