@@ -1,10 +1,17 @@
 <template lang="">
-  <div class="d-flex h-100 flex-column">
-    <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
-    <ThemeColumn class="mx-1 mx-xl-2"></ThemeColumn>
-    <Language class="mb-3 mx-1 mx-xl-2"></Language>
-    <Geo class="align-self-center mb-3"></Geo>
-    <QRSite v-if="this.$route.name === 'Kiosk'" class="px-3 pb-3"></QRSite>
+  <div class="d-flex h-100 px-5 flex-column">
+    <div class="h-50 d-flex flex-column justify-content-between py-5">
+      <KioskSwitch class="" v-if="false"> </KioskSwitch>
+      <Geo class="align-self-center"></Geo>
+      <QRSite
+        v-if="this.$route.name === 'Kiosk'"
+        class="align-self-center"
+      ></QRSite>
+      <Language class="d-block"></Language>
+    </div>
+    <div class="h-50">
+      <ThemeColumn></ThemeColumn>
+    </div>
   </div>
 </template>
 <script>

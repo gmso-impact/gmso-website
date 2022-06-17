@@ -19,22 +19,16 @@
         <StoryListMap></StoryListMap>
       </div>
       <div
-        class="middle d-none d-lg-block carbon h-100 p-2 p-xxl-1 border-left border-right border-map-light"
-        :class="{
-          'col-lg-1': $route.name === 'Web',
-          'col-lg-2': $route.name === 'Kiosk',
-          'col-xxl-1': true,
-        }"
+        class="d-none d-lg-block d-xxl-none h-100 col-2 col-xl-1 border-left border-right carbon"
       >
         <ControlGroup></ControlGroup>
       </div>
       <div
-        class="right col-12 col-xxl-8"
-        :class="{
-          'col-lg-8': $route.name === 'Web',
-          'col-lg-7': $route.name === 'Kiosk',
-        }"
+        class="d-none d-xxl-block h-100 col-1 border-left border-right carbon"
       >
+        <ControlGroupXXL></ControlGroupXXL>
+      </div>
+      <div class="right col-12 col-lg-7 col-xl-8">
         <Map></Map>
       </div>
     </div>
@@ -53,6 +47,8 @@
 import StoryListMap from "@/components/storyList/storyListMap.vue";
 import Map from "@/components/map/map.vue";
 import ControlGroup from "@/components/controls/controlGroup.vue";
+import ControlGroupXXL from "@/components/controls/controlGroupXXL.vue";
+
 import KioskOverlay from "@/components/kioskOverlay/index.vue";
 import { mapGetters, mapMutations } from "vuex";
 
@@ -62,6 +58,7 @@ export default {
     StoryListMap,
     Map,
     ControlGroup,
+    ControlGroupXXL,
     KioskOverlay,
   },
   methods: {

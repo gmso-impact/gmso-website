@@ -4,18 +4,26 @@
 
 .geo-img {
   cursor: help;
+  max-width: 90px;
 }
 .geo-img:hover {
   filter: drop-shadow(0px 0px 2px #ffffff);
 }
 
-
+.qr-site {
+ // max-width: 120px;
+}
 
 .font-qr-site {
   font-size: .7rem;
 }
 @include media-breakpoint-only(xxl) {
-
+  .geo-img {
+    width: 300px;
+  }
+  .qr-site {
+    width: 300px;
+  }
   .font-qr-site {
     font-size: 1.7rem;
   }

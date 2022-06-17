@@ -14,7 +14,7 @@
         />
       </video>
       <div class="topClose">
-        <button class="btn btn-black" v-on:click="clickCloseVideoFrame()">
+        <button class="btn btn-black" v-on:click="closeVideoFrame()">
           <font-awesome-icon :icon="['fas', 'times']" />
           {{ $t(``) }}
         </button>
@@ -43,7 +43,7 @@ export default {
     }),
   },
   methods: {
-    ...mapMutations({ clickCloseVideoFrame: "closeVideoFrame" }),
+    ...mapMutations({ closeVideoFrame: "closeVideoFrame" }),
   },
   watch: {
     isVideoFrameOpen: function (isOpen) {
