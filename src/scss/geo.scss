@@ -19,7 +19,7 @@
 }
 @include media-breakpoint-only(xxl) {
   .geo-img {
-    width: 300px;
+    max-width: 300px;
   }
   .qr-site {
     width: 300px;

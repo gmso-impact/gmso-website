@@ -205,7 +205,7 @@ export default {
         zoom: 2.2,
       },
       xl: {
-        latLng: latLng(5.1, -27),
+        latLng: latLng(8.6, 13),
         zoom: 2.8,
       },
       xxl: {
