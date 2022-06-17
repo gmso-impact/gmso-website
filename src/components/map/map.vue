@@ -150,6 +150,7 @@ export default {
         zoomDelta: 0.5,
         maxZoom: 10, // town
         zoomControl: false,
+        closePopupOnClick: false,
       },
       center: maps.colorado.center, // initial map center before load
       zoom: maps.colorado.zoom,
