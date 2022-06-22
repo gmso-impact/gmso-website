@@ -1,13 +1,13 @@
 <template lang="">
   <div
-    class="col-6 col-lg-12 col-xl-4 col-xxl-4 py-2 py-xxl-3 px-2 px-xxl-5"
+    class="col-6 col-lg-12 col-xl-4 col-xxl-4 py-2 py-xxl-4 px-2 px-xxl-4"
     v-if="story.fields['en-StoryTitle']"
   >
     <div
       class="story-card w-100 h-100 p-0 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
-        isStoryActive(story.id) ? 'active' : '',
+        storyCurrent && story.id === storyCurrent.id ? 'active' : '',
       ]"
       v-on:click="addActiveStory(story)"
     >
@@ -18,8 +18,8 @@
           story.fields['Story Card Image'][0].thumbnails
         "
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
-        class="w-100 rounded-top"
-        :alt="story.fields['Research Blurb']"
+        class="w-100"
+        alt="Card image cap"
       />
       <div
         class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white font-weight-bolds"
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      isStoryActive: "isStoryActive",
+      storyCurrent: "storyCurrent",
     }),
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {

@@ -19,7 +19,7 @@
         <StoryListMap></StoryListMap>
       </div>
       <div
-        class="d-none d-lg-block d-xxl-none h-100 col-2 col-xl-1 border-left border-right carbon"
+        class="d-none d-lg-block d-xxl-none h-100 col-1 col-xl-1 border-left border-right carbon"
       >
         <ControlGroup></ControlGroup>
       </div>

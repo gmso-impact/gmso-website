@@ -151,6 +151,7 @@ export default {
         maxZoom: 10, // town
         zoomControl: false,
         closePopupOnClick: false,
+        attributionControl: false,
       },
       center: maps.colorado.center, // initial map center before load
       zoom: maps.colorado.zoom,
@@ -166,7 +167,8 @@ export default {
       getBreakpoints: "getBreakpoints",
     }),
     minZoom: function () {
-      const minZoomList = {
+      return 0;
+      /*const minZoomList = {
         xs: 2.1,
         sm: 2.4,
         md: 2.4,
@@ -174,7 +176,7 @@ export default {
         xl: 2.8,
         xxl: 3.7, // 4.3 for no world copy
       };
-      return minZoomList[this.getBreakpoints[0]];
+      return minZoomList[this.getBreakpoints[0]];*/
     },
   },
   methods: {

@@ -12,7 +12,7 @@
       >
         <img :src="themeIconSRC" class="themeIcon" />
       </div>
-      <div class="themeText flex-fill text-center p-2">
+      <div class="themeText flex-fill text-left p-2 pl-xxl-4">
         <transition name="slide-right" mode="out-in">
           <div :key="$t(`storyThemes.${control.name}`)">
             {{ $t(`storyThemes.${control.name}`) }}
