@@ -26,8 +26,8 @@ chrome.tabs.onUpdated.addListener((tabId, info, tab) => {
         tab.url === '' ||
         tab.url.indexOf("chrome://") === 0 ||
         tab.url.indexOf("edge://extensions") === 0 ||
-        tab.url.indexOf("https://impact.csusystem.edu/#/kiosk") === 0 ||
-        tab.pendingUrl.indexOf("https://impact.csusystem.edu/#/kiosk")
+        tab.url.indexOf("https://impact.csusystem.edu/#/kiosk") === 0 //||
+//        tab.pendingUrl.indexOf("https://impact.csusystem.edu/#/kiosk")
     ) {
         return;
     } else {
