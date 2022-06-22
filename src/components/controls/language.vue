@@ -2,8 +2,8 @@
   <div
     class="d-flex"
     :class="{
-      'btn-group': false,
-      'btn-group-vertical': true,
+      'btn-group': true,
+      'btn-group-vertical': false,
     }"
     role="group"
     aria-label="Language Toggle Buttons"
@@ -12,7 +12,7 @@
       v-for="language in languages"
       :key="language.locale"
       type="button"
-      class="btn btn-fade"
+      class="btn btn-fade px-0"
       :class="{
         'btn-white': $root.$i18n.locale === language.locale,
         'btn-secondary': $root.$i18n.locale !== language.locale,

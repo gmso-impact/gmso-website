@@ -1,16 +1,21 @@
 <template lang="">
   <div class="d-flex h-100 px-5 flex-column">
-    <div class="h-50 d-flex flex-column justify-content-between py-5">
+    <div class="h-25">
+      <!--<ThemeColumn></ThemeColumn>-->
+    </div>
+    <div class="h-75 d-flex flex-column justify-content-between py-5">
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
-      <Geo class="align-self-center"></Geo>
-      <QRSite
-        v-if="this.$route.name === 'Kiosk'"
-        class="align-self-center"
-      ></QRSite>
+      <ThemeColumn></ThemeColumn>
       <Language class="d-block"></Language>
     </div>
-    <div class="h-50">
-      <ThemeColumn></ThemeColumn>
+    <div class="h-25 d-flex flex-column justify-content-end">
+      <div class="d-flex justify-content-around mb-4">
+        <QRSite
+          v-if="this.$route.name === 'Kiosk'"
+          class="w-25"
+        ></QRSite>
+        <Geo class="w-25"></Geo>
+      </div>
     </div>
   </div>
 </template>

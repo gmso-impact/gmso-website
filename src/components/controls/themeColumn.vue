@@ -3,7 +3,7 @@
     <div class="row mb-2">
       <div class="col-12">
         <button
-          class="btn btn-block font-weight-bold mb-2 mb-xxl-5"
+          class="btn btn-block font-weight-bold mb-2 mb-xxl-4"
           v-bind:class="{
             'btn-white': storyThemesActive.length === storyThemes.length,
             'btn-outline-white':
