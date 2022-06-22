@@ -6,7 +6,7 @@ The GMSO Impact extension for the Edge browser is intented for use on the public
 
 Group Policy
 ```
-SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 =  "ckjbkailafbelecgkfgkebgkhendegda;hhttps://impact.csusystem.edu/extension/manifest.xml"
+SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist\1 =  "ckjbkailafbelecgkfgkebgkhendegda;https://impact.csusystem.edu/extension/manifest.xml"
 
 ```
 
