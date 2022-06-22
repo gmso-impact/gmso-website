@@ -1,0 +1,18 @@
+{
+  "name": "GMSO Impact Kiosk Mode",
+  "description": "Prevents opening new tabs on the kiosk machines displaying the GMSO Impact map.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background-wraper.js"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "icons": {
+    "128": "icons/icon-128.png"
+  },
+  "action": {}
+}
