@@ -7,7 +7,7 @@
       class="story-card w-100 h-100 p-0 btn d-flex flex-column"
       :class="[
         `btn-${story.fields['Story Theme']}`,
-        storyCurrent && story.id === storyCurrent.id ? 'active' : '',
+        isStoryActive(story.id) ? 'active' : '',
       ]"
       v-on:click="addActiveStory(story)"
     >
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      storyCurrent: "storyCurrent",
+      isStoryActive: "isStoryActive",
     }),
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
