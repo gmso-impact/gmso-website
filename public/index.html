@@ -14,4 +14,10 @@
     <div id="app" class='h-100'></div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+    if(isIE11){
+      document.body.innerHTML = "Internet Explorer is not supported. Please use Microsoft Edge, Chrome, or Firefox"
+    }
+  </script>
 </html>

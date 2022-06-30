@@ -28,7 +28,7 @@
       >
         <ControlGroupXXL></ControlGroupXXL>
       </div>
-      <div class="right col-12 col-lg-7 col-xl-8">
+      <div class="right col-12 col-lg-8 col-xl-8">
         <Map></Map>
       </div>
     </div>
