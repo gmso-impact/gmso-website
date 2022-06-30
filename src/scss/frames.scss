@@ -84,12 +84,12 @@
 
 
 @include media-breakpoint-only(xxl) {
-  $storyScale: 3.5;
-  $panels-tall: 1.25;
-  $panels-wide: 2;
+  $storyScale: 2;
+  $panels-tall: 1;
+  $panels-wide: 1;
   .popup-iframe {
     height: 100vh / 2 * $panels-tall;
-    width: 100vw / 8 * $panels-wide ;
+    width: 100vw / 4 * $panels-wide ;
     z-index: 99999 !important;
   }
   .iframe-scale {
