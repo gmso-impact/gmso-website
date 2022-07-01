@@ -94,7 +94,14 @@ import {
   LControlZoom,
   LControlScale,
 } from "vue2-leaflet";
-import { latLng, latLngBounds, divIcon, circleMarker } from "leaflet";
+import {
+  latLng,
+  latLngBounds,
+  divIcon,
+  circleMarker,
+  icon,
+  marker,
+} from "leaflet";
 import { basemapLayer, featureLayer } from "esri-leaflet";
 
 import { vectorBasemapLayer } from "esri-leaflet-vector";
@@ -112,6 +119,7 @@ import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
 import { maps } from "@/store/map";
+import cssColors from "@/scss/variables.scss";
 
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
@@ -143,6 +151,8 @@ export default {
       //basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       apikey: apikey,
       storyLayerEsriObject: null,
+      storyLayerId: null,
+
       mapOptions: {
         preferCanvas: true,
         zoomSnap: 0.1,
@@ -240,27 +250,77 @@ export default {
       this.$refs.map.mapObject.removeLayer(oldBaseMap);
       this.$refs.map.mapObject.addLayer(newBaseMap);
     },
-    storyLayer: function (newLayer, oldLayer) {
+    storyLayer: function (newStory, oldStory) {
       // remove old layer whenever a new story is selected
-      if (this.storyLayerEsriObject && newLayer) {
-        this.$nextTick(() => {
-          this.$refs.map.mapObject.removeLayer(this.storyLayerEsriObject);
-        });
+      console.log("setting new story layer");
+      if (newStory && newStory.id === this.storyLayerId) {
+        return;
       }
-      if (newLayer) {
-        this.storyLayerEsriObject = featureLayer({
-          url: newLayer,
+
+      if (this.storyLayerEsriObject && newStory) {
+        this.$refs.map.mapObject.removeLayer(this.storyLayerEsriObject);
+        this.storyLayerId = null;
+      }
+      if (newStory) {
+        let layer = featureLayer({
+          url: newStory.fields["Impact Map Layer URL"],
           apikey: this.apikey,
           simplifyFactor: 0.1,
           fetchAllFeatures: false,
-          cacheLayers: false,
-          minZoom: 6,
-          pointToLayer: function (geojson, latlng) {
-            return circleMarker(latlng);
+          cacheLayers: true,
+          minZoom: 0, // zoom level to show layer at, 0 = world
+          style: (feature) => {
+            let color = cssColors[newStory.fields["Story Theme"]];
+            return {
+              color: color, //"#BA55D3",
+              weight: 8,
+            };
           },
         });
-        this.$nextTick(() => {
-          this.$refs.map.mapObject.addLayer(this.storyLayerEsriObject);
+
+        // use metadata to set values
+        layer.metadata((error, metadata) => {
+          if (error) {
+            return;
+          }
+          const style = metadata.drawingInfo.renderer.symbol;
+
+          if (style.type === "esriPMS") {
+            // they are points
+            console.log({ stylePoints: { style } });
+
+            layer.options.pointToLayer = (geojson, latlng) => {
+              return circleMarker(latlng);
+              // the following will show the icons from the origional feature layer
+              // this function cannot be used above because if the feature layer is a polygon it throws an error.
+
+              // return marker(latlng, {
+              //   icon: icon({
+              //     iconUrl: `data:${style.contentType};base64, ${style.imageData}`,
+              //     iconSize:[style.height * 3, style.width * 3],
+              //   })
+              // })
+              //);
+            };
+          } else if (style.type === "esriSFS") {
+            // they are polygons
+            console.log({ stylePolygon: { style } });
+
+            // unfortunately, setting the style after the fact does not work
+            // layer.options.style = (feature) => {
+            //   let color = cssColors[newStory.fields["Story Theme"]];
+            //   return {
+            //     color: color, //"#BA55D3",
+            //     weight: 100,
+            //   };
+            // };
+          } else {
+            console.log({ styleUnknown: { style } });
+          }
+          this.$nextTick(() => {
+            this.storyLayerEsriObject = layer.addTo(this.$refs.map.mapObject);
+            this.storyLayerId = newStory.id;
+          });
         });
       }
     },

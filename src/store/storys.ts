@@ -37,7 +37,6 @@ const storys = {
     all: stories,
     storysActive: [],
     storysActiveMax: 1,
-    storyFrame: null,
     storyThemes: toFilterTags("Story Theme"),
     storyTags: toFilterTags("Story Tags"),
     idTags: toFilterTags("ID Tags"),
@@ -109,24 +108,15 @@ const storys = {
       });
       return isStoryActive;
     },
-    storyFrame: (state) => {
-      return state.storyFrame;
-    },
     storyLayer: (state) => {
       if (
         state.storysActive[0] &&
         state.storysActive[0].fields &&
         state.storysActive[0].fields["Impact Map Layer URL"]
       ) {
-        return state.storysActive[0].fields["Impact Map Layer URL"];
-      } else if (
-        state.storyFrame &&
-        state.storyFrame.fields &&
-        state.storyFrame.fields["Impact Map Layer URL"]
-      ) {
-        return state.storyFrame.fields["Impact Map Layer URL"];
+        return state.storysActive[0]
       } else {
-        return;
+        return null;
       }
     },
     storyThemes: (state) => {
