@@ -257,7 +257,7 @@ export default {
         return;
       }
 
-      if (this.storyLayerEsriObject && newStory) {
+      if (this.storyLayerEsriObject) {
         this.$refs.map.mapObject.removeLayer(this.storyLayerEsriObject);
         this.storyLayerId = null;
       }
@@ -270,6 +270,7 @@ export default {
           cacheLayers: true,
           minZoom: 0, // zoom level to show layer at, 0 = world
           style: (feature) => {
+            console.log(feature)
             let color = cssColors[newStory.fields["Story Theme"]];
             return {
               color: color, //"#BA55D3",
