@@ -114,7 +114,7 @@ const storys = {
         state.storysActive[0].fields &&
         state.storysActive[0].fields["Impact Map Layer URL"]
       ) {
-        return state.storysActive[0]
+        return state.storysActive[0];
       } else {
         return null;
       }

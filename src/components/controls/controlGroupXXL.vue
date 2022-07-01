@@ -10,10 +10,7 @@
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
       <div class="d-flex justify-content-around mb-4">
-        <QRSite
-          v-if="this.$route.name === 'Kiosk'"
-          class="w-25"
-        ></QRSite>
+        <QRSite v-if="this.$route.name === 'Kiosk'" class="w-25"></QRSite>
         <Geo class="w-25"></Geo>
       </div>
     </div>
