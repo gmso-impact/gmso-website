@@ -19,6 +19,14 @@ npm install --global yarn
     - Vue 3 Snippets (hollowtree)
     - SVG (Jock)
 
+5. Login to Github through Visual Studio Code
+- Will ask you to install git-scm for your operating system
+
+6. Clone Repository to local machine
+
+```
+git clone https://github.com/gmso-impact/gmso-website.git
+```
 
 ### Developer setup (first run)
 
