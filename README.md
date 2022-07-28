@@ -10,6 +10,14 @@
 
 ```
 npm install --global yarn 
+
+```
+
+As Powershell Admin
+
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
 ```
 
 4. Add Extensions to Visual Studio Code (publisher)
@@ -21,6 +29,12 @@ npm install --global yarn
 
 5. Login to Github through Visual Studio Code
 - Will ask you to install git-scm for your operating system
+
+```
+git config --global user.name "Budnicki"
+git config --global user.email brandon@budnicki.net
+
+```
 
 6. Clone Repository to local machine
 
