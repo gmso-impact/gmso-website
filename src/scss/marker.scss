@@ -2,24 +2,28 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
+$marker-size: 2.5;
+
+$marker-size-lg: 6;
+
 .marker-pin {
   background: white;
-  width: 2 * $font-size-base;
-  height: 2 * $font-size-base;
+  width: $marker-size * $font-size-base;
+  height: $marker-size * $font-size-base;
   display: block;
   left: -1 * $font-size-base;
   top: -1 * $font-size-base;
   position: relative;
-  border-radius: 2 * $font-size-base 2 * $font-size-base 0;
+  border-radius: $marker-size * $font-size-base $marker-size * $font-size-base 0;
   transform: rotate(45deg);
   border: 3 * $font-size-base/16 solid #ffffff;
 }
 .marker-pin.active {
-  width: 2.1 * $font-size-base;
-  height: 2.1 * $font-size-base;
+  width: 1.1 * $marker-size * $font-size-base;
+  height: 1.1 * $marker-size * $font-size-base;
   left: -1.05 * $font-size-base;
   top: -1.055 * $font-size-base;
-  border-radius: 2.1 * $font-size-base 2.1 * $font-size-base 0;
+  border-radius: 1.1 * $marker-size * $font-size-base 1.1 * $marker-size * $font-size-base 0;
   border: 5 * $font-size-base/16 solid #ffffff;
   z-index: 10;
 }
@@ -27,23 +31,23 @@
 @include media-breakpoint-only(xxl) {
   .marker-pin {
     background: white;
-    width: 6 * $font-size-base;
-    height: 6 * $font-size-base;
+    width: $marker-size-lg * $font-size-base;
+    height: $marker-size-lg * $font-size-base;
     display: block;
     left: -2 * $font-size-base;
     top: -2 * $font-size-base;
     position: relative;
-    border-radius: 6 * $font-size-base 6 * $font-size-base 0;
+    border-radius: $marker-size-lg * $font-size-base $marker-size-lg * $font-size-base 0;
     transform: rotate(45deg);
-    border: 3 * $font-size-base/16 solid #ffffff;
+    border: 6 * $font-size-base/16 solid #ffffff;
   }
   .marker-pin.active {
-    width: 6.6 * $font-size-base;
-    height: 6.6 * $font-size-base;
+    width: 1.1 * $marker-size-lg * $font-size-base;
+    height: 1.1 * $marker-size-lg * $font-size-base;
     left: -2.05 * $font-size-base;
     top: -2.055 * $font-size-base;
-    border-radius: 6.6 * $font-size-base 6.6 * $font-size-base 0;
-    border: 5 * $font-size-base/16 solid #ffffff;
+    border-radius: 1.1 * $marker-size-lg * $font-size-base 1.1 * $marker-size-lg * $font-size-base 0;
+    border: 10 * $font-size-base/16 solid #ffffff;
     z-index: 10;
   }
 }

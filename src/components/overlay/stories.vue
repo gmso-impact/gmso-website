@@ -4,8 +4,8 @@
       <StoryListAll></StoryListAll>
       <div class="topClose">
         <button class="btn btn-black" v-on:click="clickCloseStoriesFrame()">
-          <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(``) }}
+          <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
+          {{ $t(`Close`) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">

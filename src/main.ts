@@ -31,6 +31,9 @@ import "leaflet/dist/leaflet.css";
 // // Optionally install the BootstrapVue icon components plugin
 // Vue.use(IconsPlugin)
 
+import { BPopover } from "bootstrap-vue";
+Vue.component("b-popover", BPopover);
+
 import VueI18n from "vue-i18n";
 Vue.use(VueI18n);
 import { I18nSetup } from "./translations";

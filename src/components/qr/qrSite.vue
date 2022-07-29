@@ -1,30 +1,33 @@
 <template lang="">
   <div class="qr-site d-flex align-items-end">
     <div class="w-100">
-      <!--<div
-        class="text-center font-qr-site text-white pb-1 pb-xxl-3 w-100 text-break"
-      >
-        impact.csusystem.edu
-      </div>-->
-      <button
-        class="btn btn-block btn-secondary d-none"
-        v-on:click="printURL()"
-      >
-        {{ url }}
-      </button>
       <vue-qr
+        id="popover-target-1"
         v-bind="qrConfig"
         class="w-100"
         text="https://impact.csusystem.edu"
         qid="testid"
       ></vue-qr>
+      <b-popover
+        target="popover-target-1"
+        triggers="hover focus"
+        placement="top"
+      >
+        <div class="font-weight-bold">
+          {{ $t(`QRpopover`) }}
+        </div>
+      </b-popover>
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
 import VueQr from "vue-qr";
+import { BPopover } from "bootstrap-vue";
 
 const qrConfig = {
+  components: {
+    BPopover,
+  },
   data: {
     scale: 1,
   },

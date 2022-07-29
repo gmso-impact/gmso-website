@@ -6,11 +6,11 @@
     >
       <div class="topClose">
         <button
-          class="btn"
+          class="btn btn-lg"
           :class="`btn-${story.fields['Story Theme']}`"
           v-on:click="removeActiveStory(story)"
         >
-          <font-awesome-icon :icon="['fas', 'times']" />
+          <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
           {{ $t(`Close`) }}
         </button>
       </div>

@@ -20,11 +20,11 @@ const translations = {
     AllStories: "All Stories",
     Stories: "Stories",
     Filter: "Filter",
+    QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
-
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
@@ -74,6 +74,7 @@ const translations = {
     AllStories: "Todos Cuentos",
     Stories: "Cuentos",
     Filter: "Filtrar",
+    QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
 
     ContinueEN: "Continue",

@@ -14,9 +14,9 @@
         />
       </video>
       <div class="topClose">
-        <button class="btn btn-black" v-on:click="closeVideoFrame()">
-          <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(``) }}
+        <button class="btn btn-lg btn-black" v-on:click="closeVideoFrame()">
+          <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
+          {{ $t(`Close`) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">

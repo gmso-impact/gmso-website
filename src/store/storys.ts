@@ -273,7 +273,7 @@ const storys = {
         return;
       }
       console.log(`Activated: ${story.fields["en-StoryTitle"]}`);
-      event(`set-story`, {
+      event(`view-story`, {
         event_category: "content",
         event_label: story.fields["en-StoryTitle"],
         value: 1,
