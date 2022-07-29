@@ -3,6 +3,8 @@
     <iframe
       @load="setIframeLoaded()"
       class="iframe-scale iframe-border-none btn-fade"
+      frameborder="0" 
+      allow='fullscreen; geolocation;'
       :class="{
         'd-none': !loaded,
       }"

@@ -5,6 +5,12 @@ import store from "./store";
 
 // missing leaflet icons
 import { Icon } from "leaflet";
+
+
+// disable console.clear used by ESRI libraries
+// Doesn't always work, you can also set the developer console setting "Preserve log upon navigation" to FALSE
+window.console.clear = () => {return}
+
 type D = Icon.Default & {
   _getIconUrl?: string;
 };
