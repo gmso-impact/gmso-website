@@ -3,7 +3,11 @@ import { latLng, bounds } from "leaflet";
 import { event } from "vue-gtag";
 import { breakpointCalculate } from "./breakpoint";
 
-const stories = storiesFile.response;
+const stories = storiesFile.response.filter((story)=>{
+  if(story.fields['en-StoryTitle']){
+    return true
+  }
+});
 
 function toFilterTags(tagName) {
   //console.log(`Tag: ${tagName}`)
@@ -88,7 +92,8 @@ const storys = {
       });
     },
     storyInMap: (state, getters) => {
-      if (getters.mapGetBounds === null || getters.mapGetBounds === undefined) {
+      console.log(typeof getters.mapGetBounds)
+      if (!getters.mapGetBounds) {
         return getters.storyFiltered;
       }
       return getters.storyFiltered.filter((story) => {
