@@ -154,9 +154,11 @@ export default {
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, style: getBasemapStyle }),
+      // custom basemap can be modified here: https://developers.arcgis.com/vector-tile-style-editor/fe3c8d5151de424bb25ad0655ca6c080/json
+      //customBasemap: vectorBasemapLayer("fe3c8d5151de424bb25ad0655ca6c080", { apikey: apikey }),
+      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),      
+      //basemapDefault: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       //basemapOld: basemapLayer("DarkGray", { apikey }),
-      //basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       apikey: apikey,
       storyLayerEsriObject: null,
       storyLayerId: null,
