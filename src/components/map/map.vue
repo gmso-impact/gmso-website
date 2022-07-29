@@ -105,6 +105,14 @@ import {
 import { basemapLayer, featureLayer } from "esri-leaflet";
 
 import { vectorBasemapLayer } from "esri-leaflet-vector";
+
+import * as basemapStyle from "./basemapStyle/DarkGrayBaseTinted.json";
+
+const getBasemapStyle = function (defaultStyle){
+  console.log('getBasemapStyle')
+  return basemapStyle
+}
+
 import mapboxgl from "mapbox-gl";
 window.mapboxgl = mapboxgl; // mapbox-gl-leaflet expects this to be global, used for esri-leaflet-vector
 
@@ -146,7 +154,7 @@ export default {
   data() {
     return {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
+      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, style: getBasemapStyle }),
       //basemapOld: basemapLayer("DarkGray", { apikey }),
       //basemapNew: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       apikey: apikey,
