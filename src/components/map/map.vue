@@ -108,10 +108,10 @@ import { vectorBasemapLayer } from "esri-leaflet-vector";
 
 import * as basemapStyle from "./basemapStyle/DarkGrayBaseTinted.json";
 
-const getBasemapStyle = function (defaultStyle){
-  console.log('getBasemapStyle')
-  return basemapStyle
-}
+const getBasemapStyle = function (defaultStyle) {
+  console.log("getBasemapStyle");
+  return basemapStyle;
+};
 
 import mapboxgl from "mapbox-gl";
 window.mapboxgl = mapboxgl; // mapbox-gl-leaflet expects this to be global, used for esri-leaflet-vector
@@ -156,7 +156,7 @@ export default {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       // custom basemap can be modified here: https://developers.arcgis.com/vector-tile-style-editor/fe3c8d5151de424bb25ad0655ca6c080/json
       //customBasemap: vectorBasemapLayer("fe3c8d5151de424bb25ad0655ca6c080", { apikey: apikey }),
-      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),      
+      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
       //basemapDefault: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       //basemapOld: basemapLayer("DarkGray", { apikey }),
       apikey: apikey,
@@ -280,7 +280,7 @@ export default {
           cacheLayers: true,
           minZoom: 0, // zoom level to show layer at, 0 = world
           style: (feature) => {
-            console.log(feature)
+            console.log(feature);
             let color = cssColors[newStory.fields["Story Theme"]];
             return {
               color: color, //"#BA55D3",

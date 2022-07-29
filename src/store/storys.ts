@@ -3,24 +3,23 @@ import { latLng, bounds } from "leaflet";
 import { event } from "vue-gtag";
 import { breakpointCalculate } from "./breakpoint";
 
-const stories = storiesFile.response.filter((story)=>{
-  // Filter out stories that might cause UI bugs
-  if(
-    story.fields['en-StoryTitle'] &&
-    story.fields["en-StoryMapLink"]  
-  ){
-    return true
-  }
-}).map((story)=>{
-  // Replace missing data with default data
-  return {
-    ...story,
-    fields: {
-      ...story.fields,
-      "Story Theme":  story.fields["Story Theme"] || "Unknown"
+const stories = storiesFile.response
+  .filter((story) => {
+    // Filter out stories that might cause UI bugs
+    if (story.fields["en-StoryTitle"] && story.fields["en-StoryMapLink"]) {
+      return true;
     }
-  }
-})
+  })
+  .map((story) => {
+    // Replace missing data with default data
+    return {
+      ...story,
+      fields: {
+        ...story.fields,
+        "Story Theme": story.fields["Story Theme"] || "Unknown",
+      },
+    };
+  });
 
 function toFilterTags(tagName) {
   //console.log(`Tag: ${tagName}`)
@@ -105,7 +104,6 @@ const storys = {
       });
     },
     storyInMap: (state, getters) => {
-      console.log(typeof getters.mapGetBounds)
       if (!getters.mapGetBounds) {
         return getters.storyFiltered;
       }

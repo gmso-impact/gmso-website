@@ -114,12 +114,6 @@ const map = {
       state.current.center = center;
     },
     mapSetBoundsCurrent: (state, bounds) => {
-      console.log("mapSetBoundsCurrent")
-      console.log({
-        new: bounds,
-        current: state.current.bounds,
-        initial: state.initial.bounds
-      })
       if (!state.current.bounds) {
         state.initial.bounds = bounds;
       }
