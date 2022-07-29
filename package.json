@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build",
+    "deploy": "vue-cli-service build --mode development",
     "fetch": "node src/fetch/start.js",
     "predeploy": "node src/fetch/start.js"
   },
