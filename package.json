@@ -6,9 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build --mode development",
+    "deploy": "vue-cli-service build",
     "fetch": "node src/fetch/start.js",
-    "predeploy": "node src/fetch/start.js"
+    "predeploy": "node src/fetch/start.js",
+    "deploydev": "vue-cli-service build --mode development"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1",

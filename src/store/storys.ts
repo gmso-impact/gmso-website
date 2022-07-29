@@ -4,10 +4,23 @@ import { event } from "vue-gtag";
 import { breakpointCalculate } from "./breakpoint";
 
 const stories = storiesFile.response.filter((story)=>{
-  if(story.fields['en-StoryTitle']){
+  // Filter out stories that might cause UI bugs
+  if(
+    story.fields['en-StoryTitle'] &&
+    story.fields["en-StoryMapLink"]  
+  ){
     return true
   }
-});
+}).map((story)=>{
+  // Replace missing data with default data
+  return {
+    ...story,
+    fields: {
+      ...story.fields,
+      "Story Theme":  story.fields["Story Theme"] || "Unknown"
+    }
+  }
+})
 
 function toFilterTags(tagName) {
   //console.log(`Tag: ${tagName}`)
