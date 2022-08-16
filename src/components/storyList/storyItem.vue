@@ -12,6 +12,12 @@
       v-on:click="addActiveStory(story)"
     >
       <img
+        v-if="storyImagePath"
+        :src="storyImagePath"
+        class="w-100"
+        alt="Card image cap"
+      />
+      <!-- <img
         v-if="
           story.fields['Story Card Image'] &&
           story.fields['Story Card Image'][0] &&
@@ -20,7 +26,7 @@
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
         class="w-100"
         alt="Card image cap"
-      />
+      /> -->
       <div
         class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white font-weight-bolds"
       >
@@ -49,6 +55,7 @@ export default {
   computed: {
     ...mapGetters({
       isStoryActive: "isStoryActive",
+      getBreakpoints: "getBreakpoints",
     }),
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
@@ -58,8 +65,31 @@ export default {
         return this.story.fields["en-StoryTitle"];
       }
     },
+    storyImagePath: function () {
+      if (
+        !this.story.fields["Story Card Image"] ||
+        !this.story.fields["Story Card Image"][0]
+      ) {
+        return null;
+      }
+      const rootpath = "stories";
+      return `${rootpath}/${this.story.id}/${this.getBreakpoints[0]}-${
+        this.story.fields["Story Card Image"][0].id
+      }.${getExt(this.story.fields["Story Card Image"][0].type)}`;
+    },
   },
 };
+
+function getExt(type) {
+  if (type === "image/jpeg") {
+    return "jpg";
+  }
+  if (type === "image/png") {
+    return "png";
+  } else {
+    console.log(`Bad file extension ${type}`);
+  }
+}
 </script>
 
 <style scoped lang="scss">

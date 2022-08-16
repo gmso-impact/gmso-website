@@ -9,5 +9,6 @@ readAirtable(
   "https://api.airtable.com/v0/appyTc8xRR9nR9sSB/All%20Stories?view=publicWebsite"
 ).then((content) => {
   writeFile({ content, path: "./src/assets/allStories.json" });
-  downloadImages({stories: content.response, path: "./public/images/" })
+  // do not add trailing slash '/' on image path
+  downloadImages({ stories: content.response });
 });
