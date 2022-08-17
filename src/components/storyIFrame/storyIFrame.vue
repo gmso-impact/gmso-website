@@ -32,7 +32,7 @@ export default {
   components: {},
   data() {
     return {
-      loaded: false,
+      loaded: true,
     };
   },
   props: {
