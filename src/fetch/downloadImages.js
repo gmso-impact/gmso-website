@@ -72,7 +72,7 @@ function getExt(imageMetadata) {
 async function downloadImage(imageMetadata) {
   //console.log(`Downloading ${path}`)
   const response = await fetch(imageMetadata.url);
-  const folder = `${rootPath}/${imageMetadata.storyId}`;
+  const folder = rootPath; // `${rootPath}/${imageMetadata.storyId}`;
   makeDirectories(folder);
 
   // write origional image
