@@ -3,13 +3,21 @@
     <div class="controlFrame px-1 py-1 rounded carbon border border-light">
       <ThemeColumn></ThemeColumn>
       <div class="topClose">
-        <button class="btn btn-black" v-on:click="clickCloseFilterFrame()">
+        <button
+          class="btn btn-black"
+          v-on:click="clickCloseFilterFrame()"
+          :aria-label="$t(`Close`)"
+        >
           <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
           {{ $t(`Close`) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">
-        <button class="btn btn-black" v-on:click="clickCloseFilterFrame()">
+        <button
+          class="btn btn-black"
+          v-on:click="clickCloseFilterFrame()"
+          :aria-label="$t(`Close`)"
+        >
           <font-awesome-icon :icon="['fas', 'times']" />
           {{ $t(``) }}
         </button>

@@ -35,29 +35,31 @@ $enable-shadows: true;
 // https://webaim.org/resources/contrastchecker/
 
 $theme-colors: (
-  "orange": #f15647,        /* fail on white 3.40 contrast */ /* old #ff5a01 */
-  "Health": #f15647,        /* fail on white 3.40 contrast */ /* old #ff5a01 */
-  "Vida": #f15647,          /* fail on white 3.40 contrast */ /* old #ff5a01 */
-  "green": #83a44e,         /* fail on white 2.84 contrast */ /* old #b0f954 */
-  "lime": #83a44e,          /* fail on white 2.84 contrast */ /* old #b0f954 */
-  "Food": #83a44e,          /* fail on white 2.84 contrast */ /* old #b0f954 */
-  "Ag": #83a44e,            /* fail on white 2.84 contrast */ /* old #b0f954 */
-  "Terra": #83a44e,         /* fail on white 2.84 contrast */ /* old #b0f954 */
-  "skyBlue": #37a0a5,       /* fail on white 3.11 contrast */ /* old #00e9ff */
-  "Water": #37a0a5,         /* fail on white 3.11 contrast */ /* old #00e9ff */
-  "Hydro": #37a0a5,         /* fail on white 3.11 contrast */ /* old #00e9ff */
-  "red": #a6093d,           /* pass on white 7.69 contrast */ /* old #ffd62d */
-  "Community": #a6093d,     /* pass on white 7.69 contrast */ /* old #ffd62d */
-  "blue": #00205b,          /* pass on white 15.5 contrast */ /* old #0596f5 */
-  "Environment": #00205b,   /* pass on white 15.5 contrast */ /* old #00d48a */
-  "yellow": #dfae65,        /* pass on white 7.69 contrast */ /* old #ffd62d */
-  "Energy": #dfae65,        /* fail on white 2.02 contrast */ /* old #0596f5 */
+  "orange": #dd5e4d,        /* fail on white 3.63 contrast */ /* old #f15647 */
+  "Health": #dd5e4d,        /* fail on white 3.63 contrast */ /* old #f15647 */
+  "Vida": #dd5e4d,          /* fail on white 3.63 contrast */ /* old #f15647 */
+  "green": #5d985d,         /* fail on white 3.43 contrast */ /* old #83a44e */
+  "lime": #5d985d,          /* fail on white 3.43 contrast */ /* old #83a44e */
+  "Food": #5d985d,          /* fail on white 3.43 contrast */ /* old #83a44e */
+  "Ag": #5d985d,            /* fail on white 3.43 contrast */ /* old #83a44e */
+  "Terra": #5d985d,         /* fail on white 3.43 contrast */ /* old #83a44e */
+  "skyBlue": #2e9ea4,       /* fail on white 3.20 contrast */ /* old #37a0a5 */
+  "Water": #2e9ea4,         /* fail on white 3.20 contrast */ /* old #37a0a5 */
+  "Hydro": #2e9ea4,         /* fail on white 3.20 contrast */ /* old #37a0a5 */
+  "red": #aa1d40,           /* pass on white 7.09 contrast */ /* old #a6093d */
+  "Community": #aa1d40,     /* pass on white 7.09 contrast */ /* old #a6093d */
+  "blue": #1f2759,          /* pass on white 14.0 contrast */ /* old #00205b */
+  "Environment": #1f2759,   /* pass on white 14.0 contrast */ /* old #00205b */
+  "yellow": #a78f31,        /* pass on white 3.17 contrast */ /* old #dfae65 */
+  "Energy": #a78f31,        /* fail on white 3.17 contrast */ /* old #dfae65 */
+  "purple": #824783,        /* pass on white 6.60 contrast */
   "charcoal": #323e48,      /* pass on white 10.9 contrast */
   "Institutional": #323e48, /* pass on white 10.9 contrast */
   "Stories": #323e48,       /* pass on white 10.9 contrast */
+  "slate": #505b65,         /* pass on white 6.94 contrast */
+  "Unkown": #505b65,        /* pass on white 6.94 contrast */ 
   "white": #ffffff,         /* fail on white 00.0 contrast */
   "black": #000000,         /* pass on white 21.0 contrast */
-  "Unkown": #444444,
   "map-dark": #232227,      /* pass on white 15.8 contrast */
   "map-light": #3f3f41,     /* pass on white 10.5 contrast */
 );

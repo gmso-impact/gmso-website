@@ -10,6 +10,7 @@
               storyThemesActive.length !== storyThemes.length,
           }"
           v-on:click="resetTagsClicked"
+          :aria-label="$t(`AllStories`)"
         >
           <transition name="fade" mode="out-in">
             <div :key="$t(`AllStories`)">
