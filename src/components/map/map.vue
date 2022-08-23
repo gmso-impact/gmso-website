@@ -64,11 +64,16 @@
         <button
           class="btn btn-light border-right"
           v-on:click="openStoriesFrame()"
+          :aria-label="$t(`Stories`)"
         >
           <font-awesome-icon :icon="['fas', 'globe']" />
           {{ $t(`Stories`) }}
         </button>
-        <button class="btn btn-light" v-on:click="openFilterFrame()">
+        <button
+          class="btn btn-light"
+          v-on:click="openFilterFrame()"
+          :aria-label="$t(`Filter`)"
+        >
           <font-awesome-icon :icon="['fas', 'filter']" />
           {{ $t(`Filter`) }}
         </button>
@@ -171,7 +176,6 @@ export default {
         maxZoom: 10, // town
         zoomControl: false,
         closePopupOnClick: false,
-        attributionControl: false,
       },
       center: maps.colorado.center, // initial map center before load
       zoom: maps.colorado.zoom,

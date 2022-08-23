@@ -14,13 +14,21 @@
         />
       </video>
       <div class="topClose">
-        <button class="btn btn-lg btn-black" v-on:click="closeVideoFrame()">
+        <button
+          class="btn btn-lg btn-black"
+          v-on:click="closeVideoFrame()"
+          :aria-label="$t(`Close`)"
+        >
           <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
           {{ $t(`Close`) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">
-        <button class="btn btn-black" v-on:click="closeVideoFrame()">
+        <button
+          class="btn btn-black"
+          v-on:click="closeVideoFrame()"
+          :aria-label="$t(`Close`)"
+        >
           <font-awesome-icon :icon="['fas', 'times']" />
           {{ $t(``) }}
         </button>

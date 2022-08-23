@@ -15,6 +15,7 @@
           (mapGetZoom > 6.5 || storyInMap.length <= 3) &&
           !isStoryActive(story.id)
         "
+        :aria-label="storyTitle"
       >
         <div class="marker-img">
           <div class="marker-img-body">
@@ -26,12 +27,17 @@
               "
               :src="story.fields['Story Card Image'][0].thumbnails.large.url"
               class="w-100 content"
-              :alt="story.fields['Research Blurb']"
+              :alt="storyTitle"
             />
           </div>
         </div>
       </l-icon>
-      <l-icon :icon-anchor="iconAnchor" key="pin" v-else>
+      <l-icon
+        :icon-anchor="iconAnchor"
+        key="pin"
+        v-else
+        :aria-label="storyTitle"
+      >
         <span class="marker-pin btn-fade" :class="smallMarkerClass"></span>
       </l-icon>
     </Transition-group>
@@ -75,6 +81,14 @@ export default {
       return this.story.fields["Story Theme"]
         ? `bg-${this.story.fields["Story Theme"]}`
         : "bg-white";
+    },
+    storyTitle: function () {
+      if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`];
+      } else {
+        // default to english
+        return this.story.fields["en-StoryTitle"];
+      }
     },
   },
   methods: {

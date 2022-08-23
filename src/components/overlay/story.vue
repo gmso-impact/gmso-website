@@ -9,6 +9,7 @@
           class="btn btn-lg"
           :class="`btn-${story.fields['Story Theme']}`"
           v-on:click="removeActiveStory(story)"
+          :aria-label="$t(`Close`)"
         >
           <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
           {{ $t(`Close`) }}

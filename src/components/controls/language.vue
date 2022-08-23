@@ -13,6 +13,7 @@
       :key="language.locale"
       type="button"
       class="btn btn-fade px-0"
+      :aria-label="language.language"
       :class="{
         'btn-white': $root.$i18n.locale === language.locale,
         'btn-secondary': $root.$i18n.locale !== language.locale,

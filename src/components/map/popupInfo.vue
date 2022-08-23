@@ -13,6 +13,7 @@
     <button
       class="btn btn-dark mr-0 ml-auto"
       v-on:click="removeActiveStory(story)"
+      :aria-label="$t(`Close`)"
     >
       <font-awesome-icon :icon="['fas', 'times']" />
       {{ $t(``) }}

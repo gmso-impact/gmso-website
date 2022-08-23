@@ -19,7 +19,7 @@
         "
         :src="story.fields['Story Card Image'][0].thumbnails.large.url"
         class="w-100 rounded-top"
-        :alt="story.fields['Research Blurb']"
+        :alt="storyTitle"
       />
       <div
         class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white font-weight-bolds"
