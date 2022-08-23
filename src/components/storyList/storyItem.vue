@@ -14,8 +14,10 @@
       <img
         v-if="storyImagePath"
         :src="storyImagePath"
-        class="w-100"
+        class="w-100 img-fluid"
         alt="Card image cap"
+        :width="width"
+        :height="height"
       />
       <!-- <img
         v-if="
@@ -41,6 +43,7 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
+import imageSizes from "@/helper/imagesSizes.js"
 
 export default {
   props: {
@@ -48,6 +51,9 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  data() {
+    return {imageSizes: imageSizes,}
   },
   methods: {
     ...mapMutations({ addActiveStory: "addActiveStory" }),
@@ -64,6 +70,13 @@ export default {
         // default to english
         return this.story.fields["en-StoryTitle"];
       }
+    },
+    height: function(){
+      return this.imageSizes[this.getBreakpoints[0]].height
+    },
+    width: function(){
+      return this.imageSizes[this.getBreakpoints[0]].width
+
     },
     storyImagePath: function () {
       if (

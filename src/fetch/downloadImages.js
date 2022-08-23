@@ -1,25 +1,13 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
 const sharp = require("sharp");
-function height(width) {
-  return (width * 9) / 16;
-}
+const imageSizes = require("../helper/imagesSizes")
 
 const rootPath = "./public/stories";
 
-const breakpoints = {
-  xs: { width: 128, height: height(128) },
-  sm: { width: 128, height: height(128) },
-  md: { width: 128, height: height(128) },
-  lg: { width: 640, height: height(640) },
-  xl: { width: 160, height: height(160) },
-  xxl: { width: 960, height: height(960) },
-  oi: { width: null, height: null },
-};
-
 async function downloadImages({ stories }) {
   console.log(`Begin downloading images`);
-  console.log(breakpoints);
+  console.log(imageSizes);
   makeDirectories(rootPath);
   const imagesMetadata = stories.reduce(getImagesMetadata, []);
   imagesMetadata.forEach(downloadImage);
@@ -78,7 +66,7 @@ async function downloadImage(imageMetadata) {
   // write origional image
   //response.body.pipe(fs.createWriteStream(`./public/images/origional/${imageMetadata.newFilename}.${imageMetadata.ext}`))
 
-  Object.entries(breakpoints).forEach(async ([key, value]) => {
+  Object.entries(imageSizes).forEach(async ([key, value]) => {
     const fullPath = `${folder}/${imageMetadata.newFilename}-${key}.${imageMetadata.ext}`;
     const transformer = sharp()
       .resize(value)
