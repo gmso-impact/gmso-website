@@ -10,7 +10,7 @@
         class="themeIconContainer p-1 rounded"
         :class="[`bg-${control.name}`]"
       >
-        <img :src="themeIconSRC" class="themeIcon" />
+        <img :src="themeIconSRC" class="themeIcon" :alt='`Logo for ${control.name}`'/>
       </div>
       <div class="themeText flex-fill text-left p-2 pl-xxl-4">
         <transition name="slide-right" mode="out-in">
