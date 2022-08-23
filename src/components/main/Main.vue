@@ -15,11 +15,11 @@
       />
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">
-      <div class="left d-none d-lg-block col-lg-3 col-xxl-3">
+      <div class="left d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3">
         <StoryListMap></StoryListMap>
       </div>
       <div
-        class="d-none d-lg-block d-xxl-none h-100 col-1 col-xl-1 border-left border-right carbon"
+        class="d-none d-lg-block d-xxl-none h-100 col-2 col-xl-1 col-xl-1 border-left border-right carbon"
       >
         <ControlGroup></ControlGroup>
       </div>

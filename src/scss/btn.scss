@@ -8,8 +8,10 @@
 }
 
 .themeIconContainer {
-  height: $font-size-base * 2.5;
-  width: $font-size-base * 2.5
+  width: $font-size-base * 2.2;
+}
+@include media-breakpoint-only(md) {
+  width: $font-size-base * 1.8;
 }
 
 @include media-breakpoint-only(xxl) {
@@ -20,7 +22,6 @@
     padding: 0.25 * $font-size-xxl 0.75 * $font-size-xxl;
   }
   .themeIconContainer {
-    height: $font-size-xxl * 2;
     width: $font-size-xxl * 2;
   }
 }
