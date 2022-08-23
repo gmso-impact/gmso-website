@@ -73,9 +73,8 @@ export default {
         return null;
       }
       const rootpath = "stories";
-      return `${rootpath}/${this.story.id}/${this.getBreakpoints[0]}-${
-        this.story.fields["Story Card Image"][0].id
-      }.${getExt(this.story.fields["Story Card Image"][0].type)}`;
+
+      return `${rootpath}/${this.story.fields["Story Card Image"][0].id}-${this.getBreakpoints[0]}.${getExt(this.story.fields["Story Card Image"][0].type)}`;
     },
   },
 };

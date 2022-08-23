@@ -79,7 +79,7 @@ async function downloadImage(imageMetadata) {
   //response.body.pipe(fs.createWriteStream(`./public/images/origional/${imageMetadata.newFilename}.${imageMetadata.ext}`))
 
   Object.entries(breakpoints).forEach(async ([key, value]) => {
-    const fullPath = `${folder}/${key}-${imageMetadata.newFilename}.${imageMetadata.ext}`;
+    const fullPath = `${folder}/${imageMetadata.newFilename}-${key}.${imageMetadata.ext}`;
     const transformer = sharp()
       .resize(value)
       .toFormat(imageMetadata.ext)
