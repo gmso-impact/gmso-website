@@ -4,11 +4,11 @@
     <div
       id="header"
       v-if="$route.name === 'Web'"
-      class="d-none d-lg-block carbon text-center border-bottom"
+      class="d-none d-lg-block carbon text-center border-bottom py-3"
     >
       <!--<h2 class="mb-0">Header</h2>-->
       <img
-        src="GMSOtitle1.png"
+        src="impact_white.svg"
         alt="CSU Impact"
         class="title-img d-none d-md-inline-block"
         v-on:click="toggleHelpFrame"

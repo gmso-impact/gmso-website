@@ -1,16 +1,16 @@
 <template lang="">
   <div class="videoFrame overlay childPoint" v-if="isHelpFrameOpen">
     <div class="controlFrame px-1 py-1 rounded carbon border border-light">
-      <div class="d-lg-none text-center py-3">
-        <img
-          src="GMSOtitle1.png"
-          alt="CSU Impact text logo"
-          class="title-img"
-        />
-      </div>
       <div
-        class="h-100 d-flex flex-column text-white text-center justify-content-start p-3"
+        class="h-100 d-flex flex-column text-white text-center justify-content-center p-3"
       >
+        <div class="d-lg-none text-center py-3">
+          <img
+            src="impact_white.svg"
+            alt="CSU Impact text logo"
+            class="title-img"
+          />
+        </div>
         <div>{{ $t("greeting") }}</div>
         <div class="pt-4">
           {{ $t("help1") }}
@@ -46,7 +46,7 @@
           :aria-label="$t(`Close`)"
         >
           <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(``) }}
+          {{ $t(`Close`) }}
         </button>
       </div>
       <div class="d-none d-xxl-block bottomClose">
@@ -56,7 +56,7 @@
           :aria-label="$t(`Close`)"
         >
           <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(``) }}
+          {{ $t(`Close`) }}
         </button>
       </div>
     </div>

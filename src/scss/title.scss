@@ -2,6 +2,10 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
+#header {
+  z-index: 9999;
+}
+
 .title-img {
   max-width: 200px;
   cursor: help;

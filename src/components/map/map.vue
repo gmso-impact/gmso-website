@@ -43,7 +43,7 @@
     </LMap>
     <div v-if="$route.name === 'Web'" class="boxy boxy-top childPoint">
       <img
-        src="GMSOtitle1.png"
+        src="impact_white.svg"
         alt="CSU Impact"
         class="title-img d-lg-none"
         v-on:click="toggleHelpFrame"
