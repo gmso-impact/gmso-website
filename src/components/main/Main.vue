@@ -15,7 +15,7 @@
       />
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">
-      <div class="left d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3">
+      <div class="left d-none d-lg-block col-lg-2 col-xl-3 col-xxl-2">
         <StoryListMap></StoryListMap>
       </div>
       <div
@@ -28,7 +28,7 @@
       >
         <ControlGroupXXL></ControlGroupXXL>
       </div>
-      <div class="right col-12 col-lg-8 col-xl-8">
+      <div class="right col-12 col-lg-8 col-xl-8 col-xxl-9">
         <Map></Map>
       </div>
     </div>
