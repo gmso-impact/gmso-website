@@ -34,7 +34,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .id-icon {
-  font-size: 50px;
+  font-size: 80px;
 }
 .id-text {
   font-size: 0.75em;

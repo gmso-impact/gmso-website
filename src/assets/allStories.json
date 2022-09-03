@@ -1,6 +1,6 @@
 {
-  "dateString": "Mon Aug 22 2022 21:08:54 GMT-0600 (Mountain Daylight Time)",
-  "date": "2022-08-23T03:08:54.767Z",
+  "dateString": "Fri Sep 02 2022 14:27:43 GMT-0600 (Mountain Daylight Time)",
+  "date": "2022-09-02T20:27:43.378Z",
   "recordsCount": 67,
   "url": "https://api.airtable.com/v0/appyTc8xRR9nR9sSB/All%20Stories?view=publicWebsite",
   "response": [
@@ -19,8 +19,10 @@
           "Microbiology, Immunology, and Pathology"
         ],
         "en-StoryTitle": "Viral (R)Evolution",
-        "Research Blurb": "Dr. Ramesh Akkina is a professor of Microbiology, Immunology, and Pathology at Colorado State University, Fort Collins, USA. \n\nA PhD from the University of Minnesota, Minneapolis, he did his post-doctoral work and was a visiting professor at the UCLA School of Medicine, Los Angeles. \n\nHe is a leading researcher in the HIV field and made many ground breaking discoveries in viral infectious diseases. His early contributions were in Influenza virology and stem-cell based gene therapy strategies. His lab pioneered in work with humanized mice with a transplanted human immune system for HIV and Dengue virus research as well as for delivery of novel gene therapy molecules. \n\nRecent work developed new pre-exposure prophylaxis methods to prevent HIV transmission, successfully tested anti-HIV si-RNAs and aptamers and showed that immune exhaustion during HIV infection can be partly reversed by PD-1 blockade. \n\nOngoing work is centered on HIV latency, prevention, novel therapeutics and viral evolution. His research is supported by multiple NIH grants. He is a member of many editorial and international grant review boards. He is currently the Center Director for Global Virus Network at Colorado State University and Chair of the NIH AIDS ADDT grant review study section.  ",
+        "Primary Story Content": "Dr. Ramesh Akkina is a professor of Microbiology, Immunology, and Pathology at Colorado State University, Fort Collins, USA. \n\nA PhD from the University of Minnesota, Minneapolis, he did his post-doctoral work and was a visiting professor at the UCLA School of Medicine, Los Angeles. \n\nHe is a leading researcher in the HIV field and made many ground breaking discoveries in viral infectious diseases. His early contributions were in Influenza virology and stem-cell based gene therapy strategies. His lab pioneered in work with humanized mice with a transplanted human immune system for HIV and Dengue virus research as well as for delivery of novel gene therapy molecules. \n\nRecent work developed new pre-exposure prophylaxis methods to prevent HIV transmission, successfully tested anti-HIV si-RNAs and aptamers and showed that immune exhaustion during HIV infection can be partly reversed by PD-1 blockade. \n\nOngoing work is centered on HIV latency, prevention, novel therapeutics and viral evolution. His research is supported by multiple NIH grants. He is a member of many editorial and international grant review boards. He is currently the Center Director for Global Virus Network at Colorado State University and Chair of the NIH AIDS ADDT grant review study section.  ",
         "Spatial Angle": "Aids around the world?",
+        "LAT": "38.03044",
+        "LONG": "-38.58447",
         "Story Theme": "Health",
         "ID Tags": [
           "International"
@@ -28,7 +30,6 @@
         "Story Tags": [
           "Human Health"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Infectious Disease"
         ],
@@ -64,6 +65,8 @@
             }
           }
         ],
+        "Email": "Ramesh.Akkina@ColoState.EDU",
+        "Impact Map Layer URL": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/HIVAIDS_DeathRate_2019_Dots/FeatureServer/0",
         "es-StoryTitle": "(R)Evolución viral",
         "QR Code": [
           {
@@ -95,7 +98,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/taqSm",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -114,7 +117,7 @@
         ],
         "Research Focus": "Human Trafficking - Global",
         "en-StoryTitle": "Ethical Entrepreneurship",
-        "Research Blurb": "There are currently more than 40 million victims of slavery around the world, with most of them being women and girls. This illegal industry generates approximately $150 billion every year. Dr. Lumina Albert, associate professor of management in the College of Business at CSU, applies her background in management and marketing to the fight against human trafficking in the U.S. and abroad. As a board member for Rescue:Freedom International and consultant for other organizations, Albert provides key input on issues ranging from strategic public relations to organizing social marketing campaigns.",
+        "Primary Story Content": "There are currently more than 40 million victims of slavery around the world, with most of them being women and girls. This illegal industry generates approximately $150 billion every year. Dr. Lumina Albert, associate professor of management in the College of Business at CSU, applies her background in management and marketing to the fight against human trafficking in the U.S. and abroad. As a board member for Rescue:Freedom International and consultant for other organizations, Albert provides key input on issues ranging from strategic public relations to organizing social marketing campaigns.",
         "LAT": "26",
         "LONG": "83",
         "Story Theme": "Community",
@@ -127,12 +130,9 @@
           "Culture/Arts",
           "Development/Innovation"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Human Trafficking"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Marketer "
         ],
@@ -166,6 +166,7 @@
             }
           }
         ],
+        "Email": "lumina.albert@colostate.edu",
         "es-StoryTitle": "Emprendimiento ético",
         "QR Code": [
           {
@@ -197,7 +198,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/I8t9A",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -223,7 +224,6 @@
           "recmScHSCFSW4GrXh",
           "recadwuOjUez3QFCP"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Historian"
         ],
@@ -289,7 +289,7 @@
         "Shortened CSU Branded URL": "https://col.st/4lpb8",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Up close image of cacti",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -308,7 +308,7 @@
         ],
         "Research Focus": "Water - Middle East\n\nhttps://www.engr.colostate.edu/ce/mazdak-arabi/\n\nhttps://engr.source.colostate.edu/csu-researchers-develop-tool-to-help-cities-make-better-stormwater-management-decisions/\n\n",
         "en-StoryTitle": "Water Quality Modeling",
-        "Research Blurb": "In today’s data-driven world, global challenges cannot be solved without access to relevant, accurate information — fast. Under the direction of professor and founder Mazdak Arabi, CSU’s One Water Solutions Institute (OWSI) has developed a robust portfolio of cloud-based software and research tools to equip public, private, and nongovernmental entities with world-class research and innovations necessary to address existing and emerging challenges in watershed sustainability and management. OWSI’s eRAMS (Environmental Resource Assessment and Management System) platform, created by Arabi, delivers location-based information, data analytics and modeling, and content management tools to inform the plans, policies, and practices of water-focused stakeholders and decisionmakers around the world.",
+        "Primary Story Content": "In today’s data-driven world, global challenges cannot be solved without access to relevant, accurate information — fast. Under the direction of professor and founder Mazdak Arabi, CSU’s One Water Solutions Institute (OWSI) has developed a robust portfolio of cloud-based software and research tools to equip public, private, and nongovernmental entities with world-class research and innovations necessary to address existing and emerging challenges in watershed sustainability and management. OWSI’s eRAMS (Environmental Resource Assessment and Management System) platform, created by Arabi, delivers location-based information, data analytics and modeling, and content management tools to inform the plans, policies, and practices of water-focused stakeholders and decisionmakers around the world.",
         "Spatial Angle": "map of projects worldwide",
         "LAT": "33",
         "LONG": "36",
@@ -323,12 +323,9 @@
           "Climate",
           "Development/Innovation"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Civil and Environmental Engineer"
         ],
@@ -362,6 +359,7 @@
             }
           }
         ],
+        "Email": "mazdak.arabi@colostate.edu",
         "es-StoryTitle": "Modelado de la calidad del agua",
         "QR Code": [
           {
@@ -393,7 +391,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/C2URg",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -412,7 +410,7 @@
         ],
         "Research Focus": "Conservation Biology - Antarctica",
         "en-StoryTitle": "Silent Species",
-        "Research Blurb": "Most people are familiar with the plight of polar bears affected by climate change, or rhinos affected by poaching, but few are likely familiar with the huemul — the rarest species of deer in the Americas, described as a mix of a kangaroo and a mountain goat in a deer body. Without the same name recognition, animals like the huemul or the saiga (a kind of antelope) or the takin (a member of the camel family) are less likely to receive the funding needed to study the challenges they face and the efforts that could mean the difference between rebound and extinction. Wildlife conservation biologist and CSU researcher Joel Berger advocates for these lesser-known species and one of the world’s preeminent field biologists, and focuses on species in North America, Mongolia, Namibia, and the Arctic.",
+        "Primary Story Content": "Most people are familiar with the plight of polar bears affected by climate change, or rhinos affected by poaching, but few are likely familiar with the huemul — the rarest species of deer in the Americas, described as a mix of a kangaroo and a mountain goat in a deer body. Without the same name recognition, animals like the huemul or the saiga (a kind of antelope) or the takin (a member of the camel family) are less likely to receive the funding needed to study the challenges they face and the efforts that could mean the difference between rebound and extinction. Wildlife conservation biologist and CSU researcher Joel Berger advocates for these lesser-known species and one of the world’s preeminent field biologists, and focuses on species in North America, Mongolia, Namibia, and the Arctic.",
         "Spatial Angle": "Included a map (.docx) but no spatial files. Recreate the map (so it's interactive).",
         "LAT": " -51",
         "LONG": "-73",
@@ -425,12 +423,9 @@
           "Conservation",
           "Environmental Health"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Biologist"
         ],
@@ -464,6 +459,7 @@
             }
           }
         ],
+        "Email": "joel.berger@colostate.edu",
         "es-StoryTitle": "Especies silenciosas",
         "QR Code": [
           {
@@ -495,7 +491,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/3p0jY",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -514,7 +510,7 @@
         ],
         "Research Focus": "Cultural exchange - Jamaica",
         "en-StoryTitle": "Sport Culture and Education",
-        "Research Blurb": "Dr. Albert Bimper, Jr., senior associate athletic director for diversity and inclusion and associate professor of ethnic studies at CSU, understands that student-athletes in college often don't see much further than the boundaries of their playing field. Balancing the demands of school and competition keeps many athletes from experiencing some of the best parts of college life — including the chance to study abroad. Bimper, a 2006 CSU graduate who went on to play on the Indianapolis Colts Super Bowl champion team, returned to his alma mater with a goal of promoting diversity and inclusion in Athletics and improving the overall academic experience of student working their way through college as athletes. Bimper created the Green and Global service experience, which takes a group of student-athletes each summer to Petersfield, Jamaica, to stretch their boundaries, immerse themselves in another culture, and learn to better understand their role and connections as global citizens.",
+        "Primary Story Content": "Dr. Albert Bimper, Jr., senior associate athletic director for diversity and inclusion and associate professor of ethnic studies at CSU, understands that student-athletes in college often don't see much further than the boundaries of their playing field. Balancing the demands of school and competition keeps many athletes from experiencing some of the best parts of college life — including the chance to study abroad. Bimper, a 2006 CSU graduate who went on to play on the Indianapolis Colts Super Bowl champion team, returned to his alma mater with a goal of promoting diversity and inclusion in Athletics and improving the overall academic experience of student working their way through college as athletes. Bimper created the Green and Global service experience, which takes a group of student-athletes each summer to Petersfield, Jamaica, to stretch their boundaries, immerse themselves in another culture, and learn to better understand their role and connections as global citizens.",
         "Spatial Angle": "Jamaica Country Boundary and Larimer County Boundary with line connecting the two",
         "LAT": " 18",
         "LONG": "-78",
@@ -530,10 +526,7 @@
           "Civic Engagement",
           "Culture/Arts"
         ],
-        "Production Round": "Round 1",
         "Graduation Year": "2013",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Administrator "
         ],
@@ -567,6 +560,7 @@
             }
           }
         ],
+        "Email": "albert.bimper@colostate.edu",
         "es-StoryTitle": "Deporte cultura y educación",
         "QR Code": [
           {
@@ -598,7 +592,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/qVcRs",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -624,14 +618,11 @@
         "ID Tags": [
           "Alumnus"
         ],
-        "Production Round": "Round 1",
         "Degree": [
           "MS",
           "PHD",
           "DVM"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Biomedical Scientist"
         ],
@@ -665,6 +656,7 @@
             }
           }
         ],
+        "Email": "richard.bowen@colostate.edu",
         "es-StoryTitle": "Prevención de enfermedades infecciosas",
         "QR Code": [
           {
@@ -696,7 +688,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/TmCrS",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -724,7 +716,6 @@
           "Agricultural Sustainability",
           "Engineering/Infrastructure"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Irrigation Specialist"
         ],
@@ -790,7 +781,7 @@
         "Shortened CSU Branded URL": "https://col.st/JjizP",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Aerial view of a center pivot and green crops",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -809,7 +800,7 @@
         ],
         "Research Focus": "Ocean Plastics - Global ",
         "en-StoryTitle": "Green Chemistry",
-        "Research Blurb": "Chemistry brought us plastics, and now CSU professor Eugene Chen is using chemistry to save us from these synthetic materials and their unintended environmental impacts. Roughly 56 million tons of plastic trash are overflowing the world's landfills and bobbing in our oceans. By 2050, this means there will be more plastic (by weight) in the oceans than fish. Chen and his research team are creating fully recyclable polymers that can compete with conventional petroleum plastics.",
+        "Primary Story Content": "Chemistry brought us plastics, and now CSU professor Eugene Chen is using chemistry to save us from these synthetic materials and their unintended environmental impacts. Roughly 56 million tons of plastic trash are overflowing the world's landfills and bobbing in our oceans. By 2050, this means there will be more plastic (by weight) in the oceans than fish. Chen and his research team are creating fully recyclable polymers that can compete with conventional petroleum plastics.",
         "Spatial Angle": "Global map of plastic waste per country... how do we make this interactive?",
         "LAT": " 42",
         "LONG": "-135",
@@ -818,9 +809,6 @@
           "recqA4f1wKaCTNa5P",
           "rec2zYLo664u5hi4o"
         ],
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Chemist"
         ],
@@ -854,6 +842,7 @@
             }
           }
         ],
+        "Email": "eugene.chen@colostate.edu",
         "es-StoryTitle": "Química verde",
         "QR Code": [
           {
@@ -885,7 +874,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/Lk5XN",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -911,7 +900,6 @@
         "Institutional/Program Stories": [
           "recz5lIQrJxWz00es"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -980,7 +968,7 @@
         "Shortened CSU Branded URL": "https://col.st/5lsDf",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Aerial view of a dense, green forrest",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -999,7 +987,7 @@
         ],
         "Research Focus": "Quantification of pyrogenic carbon in the EU LUCAS soil samples, European Commission",
         "en-StoryTitle": "Litter Decomposition",
-        "Research Blurb": "Soil ecology - Litter decomposition",
+        "Primary Story Content": "Soil ecology - Litter decomposition",
         "Spatial Angle": "Pasture and rangelands are among the largest ecosystems on the planet, covering 70% of the world agricultural area.",
         "Story Theme": "Environment",
         "ID Tags": [
@@ -1009,7 +997,6 @@
           "recPhtCUU6jUqCK2G",
           "recPCM0PuGS5qrDD1"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -1078,7 +1065,7 @@
         "Shortened CSU Branded URL": "https://col.st/fFTWC",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Close up view of decomposing leaves",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1102,7 +1089,6 @@
         "ID Tags": [
           "Alumnus"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1985, 1988, 1991",
         "Degree": [
           "BS",
@@ -1175,7 +1161,7 @@
         "Shortened CSU Branded URL": "https://col.st/8sUeM",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Microscopic view of the COVID-19 virus",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1193,7 +1179,7 @@
           "Animal Science"
         ],
         "en-StoryTitle": "Beef Stick For Backpacks",
-        "Research Blurb": "Meat Science - Food Safety?",
+        "Primary Story Content": "Meat Science - Food Safety?",
         "Spatial Angle": "Greely, Colorado/ JBS ",
         "LAT": "40.442951",
         "LONG": "-104.691399",
@@ -1201,7 +1187,6 @@
         "ID Tags": [
           "Alumnus"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1998",
         "Degree": [
           "PHD"
@@ -1271,7 +1256,7 @@
         "Shortened CSU Branded URL": "https://col.st/weP0D",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Close up view of raw meat",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1302,7 +1287,6 @@
         "Story Tags": [
           "Conservation"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Ecologist"
         ],
@@ -1368,7 +1352,7 @@
         "Shortened CSU Branded URL": "https://col.st/ACGls",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a burned, forrest area ",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1387,7 +1371,7 @@
         ],
         "Research Focus": "Seal infectious disease - Antarctica ",
         "en-StoryTitle": "A Perfect Arctic Storm",
-        "Research Blurb": "Many species of wildlife have been adversely impacted, or even have gone extinct, due to climate change. Polar bears, however, have become the poster species, as the effects of climate change are the most pronounced in the Arctic due to rapidly melting sea ice. Colleen Duncan, a veterinary pathologist at CSU, studies infectious disease and population dynamics in wildlife, and works with wildlife researchers at the U.S. Geological Survey and the U.S. Department of Agriculture to collect biological samples and health data from polar bears in northernmost Alaska.",
+        "Primary Story Content": "Many species of wildlife have been adversely impacted, or even have gone extinct, due to climate change. Polar bears, however, have become the poster species, as the effects of climate change are the most pronounced in the Arctic due to rapidly melting sea ice. Colleen Duncan, a veterinary pathologist at CSU, studies infectious disease and population dynamics in wildlife, and works with wildlife researchers at the U.S. Geological Survey and the U.S. Department of Agriculture to collect biological samples and health data from polar bears in northernmost Alaska.",
         "Spatial Angle": "Alaska study area; this could be an interactive map about health... let's push on how to make this a bit more dynamic and less locational. ",
         "LAT": "68",
         "LONG": "-143",
@@ -1398,7 +1382,6 @@
         "Institutional/Program Stories": [
           "rec0scLExpYcBzVhl"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -1406,8 +1389,6 @@
         "Degree": [
           "PHD"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Epidemiologist ",
           "Pathologist"
@@ -1442,6 +1423,7 @@
             }
           }
         ],
+        "Email": "colleen.duncan@colostate.edu",
         "es-StoryTitle": "Una tormenta ártica perfecta",
         "QR Code": [
           {
@@ -1473,7 +1455,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/jnDnE",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1492,7 +1474,7 @@
         ],
         "Research Focus": "Infectious Disease Survival - Guatemala",
         "en-StoryTitle": "Blood Meal",
-        "Research Blurb": "After a mosquito takes a bloodmeal from its host, it can be thought of as a small, flying syringe. If we can trap these insects and study the contents of their bloodmeals, we can understand not only which mammal the mosquito took a bloodmeal from but also which infectious diseases they may be carrying. Working in Guatemala, CSU professor Greg Ebel's lab is exploiting these feeding patterns to better characterize which viruses, bacteria, and parasites are circulating in humans and animals.",
+        "Primary Story Content": "After a mosquito takes a bloodmeal from its host, it can be thought of as a small, flying syringe. If we can trap these insects and study the contents of their bloodmeals, we can understand not only which mammal the mosquito took a bloodmeal from but also which infectious diseases they may be carrying. Working in Guatemala, CSU professor Greg Ebel's lab is exploiting these feeding patterns to better characterize which viruses, bacteria, and parasites are circulating in humans and animals.",
         "Spatial Angle": "Population density heat map of mosquitos around the world; what is the interactive component here? Can we look at a feeding pattern of a single mosquito? Or a few examples?",
         "LAT": "15.7835",
         "LONG": "90.2308",
@@ -1500,13 +1482,10 @@
         "Institutional/Program Stories": [
           "recdM8k6oztYQhjWT"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Infectious Disease",
           "COVID 19"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Virologist "
         ],
@@ -1540,6 +1519,7 @@
             }
           }
         ],
+        "Email": "gregory.ebel@colostate.edu",
         "es-StoryTitle": "Comida de sangre",
         "QR Code": [
           {
@@ -1571,7 +1551,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/vMxcn",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1590,7 +1570,7 @@
         ],
         "Research Focus": "Wildlife habitat connectivity and illegal trade in Ethiopia",
         "en-StoryTitle": "Traditional Plant Medicine",
-        "Research Blurb": "Fields of Expertise\nData, GIS, and Modeling, Ecology, Ecosystem Dynamics, Education and Outreach\n\nAreas of Interest\nEcosystem services, Invasive species, Mountain ecology\n\nBiography\nDr. Paul Evangelista is a Research Ecologist at the Natural Resource Ecology Laboratory (NREL) and Assistant Professor in the Department of Ecosystem Science and Sustainability. His research at the NREL has extended across a broad array of interests, including invasive species, forestry, rare and endangered wildlife, ecosystem services, fire ecology, and climate change. His interests are frequently examined in the context of space and time through a suite of integrative spatial modeling techniques that combine field data, traditional and expert knowledge, geographic information systems (GIS), remote sensing and spatial statistics. Such analytical approaches have been used for early detection of invasive species, discovery of new wildlife populations, mapping land-cover and critical habitats, and predicting species’ distribution in response to changing climates. Dr. Evangelista’s research spans a wide breadth of ecosystems, including semi-arid canyon lands of the American Southwest, coniferous forests of the Rocky Mountains, Afro-alpine communities of Ethiopia’s highlands, and marine systems of the Atlantic Ocean. His research is regularly coupled with non-traditional educational programs that aim to build capacity through experiential learning, applied science and stakeholder engagement. This is best demonstrated by his advisory role with the DEVELOP Program, part of NASA’s Applied Science Program, hosted by the NREL and the US Geological Survey. Ultimately, Dr. Evangelista’s broad research interests center on supporting sustainable management, stewardship and conservation of natural resources.",
+        "Primary Story Content": "Fields of Expertise\nData, GIS, and Modeling, Ecology, Ecosystem Dynamics, Education and Outreach\n\nAreas of Interest\nEcosystem services, Invasive species, Mountain ecology\n\nBiography\nDr. Paul Evangelista is a Research Ecologist at the Natural Resource Ecology Laboratory (NREL) and Assistant Professor in the Department of Ecosystem Science and Sustainability. His research at the NREL has extended across a broad array of interests, including invasive species, forestry, rare and endangered wildlife, ecosystem services, fire ecology, and climate change. His interests are frequently examined in the context of space and time through a suite of integrative spatial modeling techniques that combine field data, traditional and expert knowledge, geographic information systems (GIS), remote sensing and spatial statistics. Such analytical approaches have been used for early detection of invasive species, discovery of new wildlife populations, mapping land-cover and critical habitats, and predicting species’ distribution in response to changing climates. Dr. Evangelista’s research spans a wide breadth of ecosystems, including semi-arid canyon lands of the American Southwest, coniferous forests of the Rocky Mountains, Afro-alpine communities of Ethiopia’s highlands, and marine systems of the Atlantic Ocean. His research is regularly coupled with non-traditional educational programs that aim to build capacity through experiential learning, applied science and stakeholder engagement. This is best demonstrated by his advisory role with the DEVELOP Program, part of NASA’s Applied Science Program, hosted by the NREL and the US Geological Survey. Ultimately, Dr. Evangelista’s broad research interests center on supporting sustainable management, stewardship and conservation of natural resources.",
         "Spatial Angle": "Bale Mountains, Ethiopia",
         "LAT": "12.286390",
         "LONG": "39.673321",
@@ -1606,7 +1586,6 @@
           "Community Health",
           "Conservation"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1999, 2003, 2009",
         "Degree": [
           "BS",
@@ -1678,7 +1657,7 @@
         "Shortened CSU Branded URL": "https://col.st/ubMjp",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a lush green valley",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1697,14 +1676,11 @@
         ],
         "Research Focus": "Air Quality - India",
         "en-StoryTitle": "The Air We Breathe",
-        "Research Blurb": "While outdoor air chemistry is a much-studied discipline, the science of indoor air chemistry has been less explored — until recently. Most U.S. residents spend 90% of their time indoors, and the combination of chemicals and products used for everyday household activities like cooking and cleaning can lead to unexpected and potentially harmful airborne chemical compounds. CSU atmospheric chemist Delphine Farmer and her CU collaborator Marina Vance won a Sloan Foundation grant to map the airborne chemistry of a typical home — a first-of-its-kind project dubbed HOMEChem — which will serve as a baseline study of what a person at home, doing typical home activities, can expect to breathe.",
+        "Primary Story Content": "While outdoor air chemistry is a much-studied discipline, the science of indoor air chemistry has been less explored — until recently. Most U.S. residents spend 90% of their time indoors, and the combination of chemicals and products used for everyday household activities like cooking and cleaning can lead to unexpected and potentially harmful airborne chemical compounds. CSU atmospheric chemist Delphine Farmer and her CU collaborator Marina Vance won a Sloan Foundation grant to map the airborne chemistry of a typical home — a first-of-its-kind project dubbed HOMEChem — which will serve as a baseline study of what a person at home, doing typical home activities, can expect to breathe.",
         "Spatial Angle": "Hmmm",
         "LAT": "25",
         "LONG": "79",
         "Story Theme": "Health",
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Atmospheric Chemist"
         ],
@@ -1738,6 +1714,7 @@
             }
           }
         ],
+        "Email": "delphine.farmer@colostate.edu",
         "es-StoryTitle": "El aire que respiramos",
         "QR Code": [
           {
@@ -1769,7 +1746,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/YagZE",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1788,7 +1765,7 @@
         ],
         "Research Focus": "Climate change and pastorial livelihoods - Mongolia",
         "en-StoryTitle": "The Mongolian Miracle ",
-        "Research Blurb": "Rangelands make up three-quarters of Mongolia and are vitally important to the Mongolian people, and important to wildlife populations globally. Since 2008, CSU professor Maria Fernández-Giménez has led the Mongolian Rangelands and Resilience Project, tracking the impacts of ecological and climate change on Mongolia’s traditional herding families and strengthening connections between natural resource science and the country’s policymakers. Fernández-Giménez was awarded the Order of the Polar Star in 2016 — the highest civilian honor Mongolia bestows on foreign nationals.",
+        "Primary Story Content": "Rangelands make up three-quarters of Mongolia and are vitally important to the Mongolian people, and important to wildlife populations globally. Since 2008, CSU professor Maria Fernández-Giménez has led the Mongolian Rangelands and Resilience Project, tracking the impacts of ecological and climate change on Mongolia’s traditional herding families and strengthening connections between natural resource science and the country’s policymakers. Fernández-Giménez was awarded the Order of the Polar Star in 2016 — the highest civilian honor Mongolia bestows on foreign nationals.",
         "Spatial Angle": "Let's brainstorm this map. It would be cool to do something that plays with policy and rangeland use...",
         "LAT": "47",
         "LONG": "106",
@@ -1796,12 +1773,9 @@
         "Institutional/Program Stories": [
           "rec0scLExpYcBzVhl"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Ecologist"
         ],
@@ -1835,6 +1809,7 @@
             }
           }
         ],
+        "Email": "maria.fernandez-gimenez@colostate.edu",
         "es-StoryTitle": "El milagro mongol",
         "QR Code": [
           {
@@ -1866,7 +1841,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/Y5mBm",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1885,7 +1860,7 @@
         ],
         "Research Focus": "LiDAR/Archaeology - Mexico, Central and South America",
         "en-StoryTitle": "Cities Under the LiDAR",
-        "Research Blurb": "In Honduras, a previously hidden ancient city came to light when archaeologist and CSU professor Chris Fisher used LiDAR technology to look under the dense tree canopy and undergrowth of the jungle. Fisher’s groundbreaking, or really ground-viewing, use of LiDAR has changed the face of modern archaeology, speeding discovery by radically shortening the time it takes to “uncover” previously undiscovered sites. Ultimately, Fisher’s research expeditions in the jungles of Honduras and Mexico aim to help us better understand the causes and consequences of urbanism and environmental change.",
+        "Primary Story Content": "In Honduras, a previously hidden ancient city came to light when archaeologist and CSU professor Chris Fisher used LiDAR technology to look under the dense tree canopy and undergrowth of the jungle. Fisher’s groundbreaking, or really ground-viewing, use of LiDAR has changed the face of modern archaeology, speeding discovery by radically shortening the time it takes to “uncover” previously undiscovered sites. Ultimately, Fisher’s research expeditions in the jungles of Honduras and Mexico aim to help us better understand the causes and consequences of urbanism and environmental change.",
         "Spatial Angle": "Amanda: I am open to where we take this. Ideas include locations where this LiDAR technology has been used to uncover ancient cities or finding existing map assets that could be dynamic and engaging. Slide 3.",
         "LAT": " 15",
         "LONG": "-86",
@@ -1896,12 +1871,9 @@
         "Story Tags": [
           "Climate"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Archaeologist"
         ],
@@ -1935,6 +1907,7 @@
             }
           }
         ],
+        "Email": "christopher.fisher@colostate.edu",
         "es-StoryTitle": "Ciudades bajo el LiDAR",
         "QR Code": [
           {
@@ -1966,7 +1939,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/UChz2",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -1985,14 +1958,13 @@
         ],
         "Research Focus": "malaria",
         "en-StoryTitle": "Prevention at the Bite",
-        "Research Blurb": "Malaria, a preventable and potentially fatal disease transmitted by mosquitos, kills 445,000 people, mostly children, each year. In Burkina Faso, nearly every single person has malaria parasites in his or her system during the rainy season, and children can get the disease repeatedly before they develop immunity. Dr. Brian Foy, a professor in the Department of Microbiology, Immunology and Pathology at CSU, found that the use of Ivermectin, typically used to treat parasitic worms, led to a significant reduction in cases of malaria among children under the age of five. While Ivermectin has been known to kill blood feeding insects like mosquitos, Dr. Foy thinks it may also have an effect on the malaria parasite inside the body. If he's right, the findings could have implications for communities and inviduals across West Africa.",
+        "Primary Story Content": "Malaria, a preventable and potentially fatal disease transmitted by mosquitos, kills 445,000 people, mostly children, each year. In Burkina Faso, nearly every single person has malaria parasites in his or her system during the rainy season, and children can get the disease repeatedly before they develop immunity. Dr. Brian Foy, a professor in the Department of Microbiology, Immunology and Pathology at CSU, found that the use of Ivermectin, typically used to treat parasitic worms, led to a significant reduction in cases of malaria among children under the age of five. While Ivermectin has been known to kill blood feeding insects like mosquitos, Dr. Foy thinks it may also have an effect on the malaria parasite inside the body. If he's right, the findings could have implications for communities and inviduals across West Africa.",
         "LAT": "12.933333",
         "LONG": "0.000000",
         "Story Theme": "Health",
         "Institutional/Program Stories": [
           "rec0scLExpYcBzVhl"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Infectious Disease",
           "COVID 19"
@@ -2029,6 +2001,7 @@
             }
           }
         ],
+        "Email": "brian.foy@colostate.edu",
         "es-StoryTitle": "Prevención en la mordedura",
         "QR Code": [
           {
@@ -2060,7 +2033,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/fyWTt",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2087,7 +2060,6 @@
         "Institutional/Program Stories": [
           "recQCiv7n0YhrDl65"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "2004, 2006, 2009",
         "Degree": [
           "BS",
@@ -2159,7 +2131,7 @@
         "Shortened CSU Branded URL": "https://col.st/V7Brj",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of golden wheat crops",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2178,7 +2150,7 @@
         ],
         "Research Focus": "Human Environment Interactions - Kenya",
         "en-StoryTitle": "Listening Out For Pastoralism ",
-        "Research Blurb": "For pastoral people in East Africa, daily life revolves around the herd of animals that sustain them — and the land they travel to make sure the animals have room to graze and grow. As the climate changes, their traditional lifestyles are also changing, from subsistence to greater reliance on local villages for food, health care, and other services. CSU Anthropologist Kathleen Galvin has spent 30 years learning from the people who populate East African savannas. Listening to the Maasai share knowledge of climate change and the challenges it creates in their daily lives, Galvin also brings them together in a conversation with scientists and civil leaders to better understand the real human impacts of climate change on this vulnerable population.",
+        "Primary Story Content": "For pastoral people in East Africa, daily life revolves around the herd of animals that sustain them — and the land they travel to make sure the animals have room to graze and grow. As the climate changes, their traditional lifestyles are also changing, from subsistence to greater reliance on local villages for food, health care, and other services. CSU Anthropologist Kathleen Galvin has spent 30 years learning from the people who populate East African savannas. Listening to the Maasai share knowledge of climate change and the challenges it creates in their daily lives, Galvin also brings them together in a conversation with scientists and civil leaders to better understand the real human impacts of climate change on this vulnerable population.",
         "Spatial Angle": "Kenya on a map of Africa",
         "LAT": "-1.28638",
         "LONG": "36.81722",
@@ -2190,7 +2162,6 @@
           "rec0scLExpYcBzVhl",
           "recVXI3qT2R2M3umJ"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -2198,8 +2169,6 @@
           "BA",
           "MA"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Anthropologist"
         ],
@@ -2233,6 +2202,7 @@
             }
           }
         ],
+        "Email": "kathleen.galvin@colostate.edu",
         "es-StoryTitle": "Escuchando el pastoralismo",
         "QR Code": [
           {
@@ -2264,7 +2234,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/I8t9A",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2290,7 +2260,6 @@
         "ID Tags": [
           "Alumnus"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1980",
         "Degree": [
           "MS"
@@ -2360,7 +2329,7 @@
         "Shortened CSU Branded URL": "https://col.st/sG68s",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of an irrigation center pivot",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2379,7 +2348,6 @@
         "Institutional/Program Stories": [
           "recSYo8jT63xCEEGY"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Infectious Disease",
           "COVID 19"
@@ -2449,7 +2417,7 @@
         "Shortened CSU Branded URL": "https://col.st/UCDLF",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of blood collection tubes",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2468,13 +2436,10 @@
         ],
         "Research Focus": "Animal Welfare - Global Focus ",
         "en-StoryTitle": "Animals Make Us Human",
-        "Research Blurb": "Individuals on the autism spectrum have different ways of thinking. Some are photorealistic visual thinkers, others are pattern thinkers who view things spatially, and still others think verbally. And CSU Professor Dr. Temple Grandin says the world needs all these different kinds of minds engaged in solving problems.",
+        "Primary Story Content": "Individuals on the autism spectrum have different ways of thinking. Some are photorealistic visual thinkers, others are pattern thinkers who view things spatially, and still others think verbally. And CSU Professor Dr. Temple Grandin says the world needs all these different kinds of minds engaged in solving problems.",
         "LAT": "-42",
         "LONG": "172",
         "Story Theme": "Health",
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Animal Behaviorist"
         ],
@@ -2508,6 +2473,7 @@
             }
           }
         ],
+        "Email": "t.grandin@colostate.edu",
         "Impact Map Layer URL": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/FacilitiesUsedCountries/FeatureServer/0",
         "es-StoryTitle": "Los animales nos hacen humanos",
         "QR Code": [
@@ -2540,7 +2506,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/sRYMR",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2559,7 +2525,7 @@
         ],
         "Research Focus": "Water - Middle East",
         "en-StoryTitle": "Resilient Water",
-        "Research Blurb": "The world runs on water — and Neil Grigg, a civil and environmental engineering professor at CSU, studies how to protect water systems from natural disasters and terrorist attacks. This focus is just the latest aspect of Grigg's critical research; he's been helping to educate and work alongside the world's top water administrators since the 1960s. His research on engineering and management systems for water resources has influenced policy and infrastructure in Colombia, Egypt, Brazil, Somalia, and worldwide.",
+        "Primary Story Content": "The world runs on water — and Neil Grigg, a civil and environmental engineering professor at CSU, studies how to protect water systems from natural disasters and terrorist attacks. This focus is just the latest aspect of Grigg's critical research; he's been helping to educate and work alongside the world's top water administrators since the 1960s. His research on engineering and management systems for water resources has influenced policy and infrastructure in Colombia, Egypt, Brazil, Somalia, and worldwide.",
         "Spatial Angle": "Major waterways in Brazil ",
         "LAT": " 14.2350",
         "LONG": "51.9253",
@@ -2571,13 +2537,10 @@
           "rec0scLExpYcBzVhl",
           "recgh0HXJG2zMUgpR"
         ],
-        "Production Round": "Round 1",
         "Graduation Year": "1969",
         "Degree": [
           "PHD"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Civil and Environmental Engineer"
         ],
@@ -2611,6 +2574,7 @@
             }
           }
         ],
+        "Email": "neil.grigg@colostate.edu",
         "es-StoryTitle": "Agua resiliente",
         "QR Code": [
           {
@@ -2642,7 +2606,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/6aEhI",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2668,7 +2632,6 @@
         "ID Tags": [
           "International"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Bacteriologist"
         ],
@@ -2734,7 +2697,7 @@
         "Shortened CSU Branded URL": "https://col.st/rlpkn",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a researcher in a white lab coat filling vials",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2753,7 +2716,7 @@
         ],
         "Research Focus": "Enviro Justice, Uranium Mining - Navajo Nation",
         "en-StoryTitle": "For All Our Relations",
-        "Research Blurb": "In 1979, toxic and radioactive material from the Church Rock uranium mill in Northwest New Mexico spilled into the Puerco River and made its way onto the Navajo Nation, whose people were not alerted of the spill’s toxic dangers until days later. It was not until 2008, however, that Congress authorized a five-year cleanup plan for the affected area. Dr. Gilbert John, a CSU microbiologist and member of the Navajo Nation, works to study and better understand the health issues and psychological impacts of the uranium disaster on the Navajo people, who used the river's water for drinking, irrigation, and livestock. John also actively empowers young Native students to pursue careers in STEM disciplines.",
+        "Primary Story Content": "In 1979, toxic and radioactive material from the Church Rock uranium mill in Northwest New Mexico spilled into the Puerco River and made its way onto the Navajo Nation, whose people were not alerted of the spill’s toxic dangers until days later. It was not until 2008, however, that Congress authorized a five-year cleanup plan for the affected area. Dr. Gilbert John, a CSU microbiologist and member of the Navajo Nation, works to study and better understand the health issues and psychological impacts of the uranium disaster on the Navajo people, who used the river's water for drinking, irrigation, and livestock. John also actively empowers young Native students to pursue careers in STEM disciplines.",
         "Spatial Angle": "Navajo Nation; layering toxic and radioactive material zones with known spills + tribal nations around the U.S.?\n\nPerhaps work from a map like this: https://www.epa.gov/navajo-nation-uranium-cleanup",
         "LAT": "36",
         "LONG": "-111",
@@ -2770,14 +2733,11 @@
           "Animal Health",
           "Environmental Health"
         ],
-        "Production Round": "Round 1",
         "Degree": [
           "BS",
           "MS",
           "PHD"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Microbiologist"
         ],
@@ -2811,6 +2771,7 @@
             }
           }
         ],
+        "Email": "gilbert.john@colostate.edu",
         "es-StoryTitle": "Para todas nuestras relaciones",
         "QR Code": [
           {
@@ -2842,7 +2803,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/euQ1l",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2861,7 +2822,7 @@
         ],
         "Research Focus": "Bat viruses & infectious disease ecology in Uganda",
         "en-StoryTitle": "Viral Assemblages",
-        "Research Blurb": "Bats, the only mammals with powered flight, are the second-most abundant order of mammals behind rodents and carry an equally impressive assemblage of viruses, many of which can make people sick. In Uganda, Dr. Rebekah Kading's lab studies not only which viruses the bats are infected with, but also how those viruses may be transmitted. By better understanding how these pathogens spread, we can paint a picture of the possible ways humans may be exposed, and how to prevent the next virus outbreak.",
+        "Primary Story Content": "Bats, the only mammals with powered flight, are the second-most abundant order of mammals behind rodents and carry an equally impressive assemblage of viruses, many of which can make people sick. In Uganda, Dr. Rebekah Kading's lab studies not only which viruses the bats are infected with, but also how those viruses may be transmitted. By better understanding how these pathogens spread, we can paint a picture of the possible ways humans may be exposed, and how to prevent the next virus outbreak.",
         "Spatial Angle": "map of Zika forest; how do we make this interactive by looking at pathogen spread?",
         "LAT": "1.3733",
         "LONG": "32.2903",
@@ -2871,13 +2832,10 @@
           "Animal Health",
           "Community Health"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Infectious Disease",
           "COVID 19"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Microbiologist",
           "Entomologist"
@@ -2912,6 +2870,7 @@
             }
           }
         ],
+        "Email": "rebekah.kading@colostate.edu",
         "es-StoryTitle": "Ensambles virales",
         "QR Code": [
           {
@@ -2943,7 +2902,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/GsR3E",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -2961,7 +2920,7 @@
           "Ecosystem Science and Sustainability"
         ],
         "en-StoryTitle": "Ephemeral Streams",
-        "Research Blurb": "What we call things matters, and when it comes to streams and small waterways, it can matter a lot. Under the EPA’s recent Navigable Waters Protection Rule, streams classified as “ephemeral streams” — those which only flow briefly after rain or snowmelt — are not protected under the Clean Water Act. With fewer protections, more pollutants can be washed downstream — but some streams classified as ephemeral may actually be intermittent or seasonal, which would qualify them for protection. That’s where CSU professor Dr. Stephanie Kampf comes in. Dr. Kampf has been working for four years to map and define small headwater streams. Kampf and her team recently enlisted the help of the public through the Stream Tracker Project, an app that allows users to collect and submit their own data on nearby waterways.",
+        "Primary Story Content": "What we call things matters, and when it comes to streams and small waterways, it can matter a lot. Under the EPA’s recent Navigable Waters Protection Rule, streams classified as “ephemeral streams” — those which only flow briefly after rain or snowmelt — are not protected under the Clean Water Act. With fewer protections, more pollutants can be washed downstream — but some streams classified as ephemeral may actually be intermittent or seasonal, which would qualify them for protection. That’s where CSU professor Dr. Stephanie Kampf comes in. Dr. Kampf has been working for four years to map and define small headwater streams. Kampf and her team recently enlisted the help of the public through the Stream Tracker Project, an app that allows users to collect and submit their own data on nearby waterways.",
         "Spatial Angle": "Ask researcher for maps of watersheds that they have created (maps mentioned in blurb)",
         "LAT": " 41",
         "LONG": "-105",
@@ -2969,9 +2928,6 @@
         "Institutional/Program Stories": [
           "recgh0HXJG2zMUgpR"
         ],
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Hydrogeologist "
         ],
@@ -3005,6 +2961,7 @@
             }
           }
         ],
+        "Email": "stephanie.kampf@colostate.edu",
         "es-StoryTitle": "Corrientes efímeras",
         "QR Code": [
           {
@@ -3036,7 +2993,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/6wS9L",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3060,7 +3017,6 @@
         "ID Tags": [
           "First Generation"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -3129,7 +3085,7 @@
         "Shortened CSU Branded URL": "https://col.st/kh4fC",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of the sun setting over the ocean and an aerosol filter",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3148,7 +3104,7 @@
         ],
         "Research Focus": "Secondary Cities - Global ",
         "en-StoryTitle": "Geospatial Technologies",
-        "Research Blurb": "The Geospatial Centroid in the Morgan Library at CSU, directed by professor Melinda Laituri, serves a dual role. CSU faculty and students can use a multitude of GIS programs through the Centroid to map and analyze data across disciplines and for a variety of purposes — vegetation cover, population growth, animal migration. But Dr. Laituri also wants the Centroid to be an educational tool, promoting critical thinking around how to use tools like GIS properly, and both what can and cannot be learned from technology.",
+        "Primary Story Content": "The Geospatial Centroid in the Morgan Library at CSU, directed by professor Melinda Laituri, serves a dual role. CSU faculty and students can use a multitude of GIS programs through the Centroid to map and analyze data across disciplines and for a variety of purposes — vegetation cover, population growth, animal migration. But Dr. Laituri also wants the Centroid to be an educational tool, promoting critical thinking around how to use tools like GIS properly, and both what can and cannot be learned from technology.",
         "Spatial Angle": "Let's work with Laituri on this and perhaps showcase one of the Secondary Cities Interactive maps that she has developed.",
         "LAT": "-7",
         "LONG": "112",
@@ -3160,9 +3116,6 @@
           "rechYc6m71NDqJXH9",
           "reczq7bBll5BU3KvI"
         ],
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Geographer"
         ],
@@ -3196,6 +3149,7 @@
             }
           }
         ],
+        "Email": "melinda.laituri@colostate.edu",
         "Impact Map Layer URL": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/arcgis/rest/services/Secondary_Cities_Updated_WFL1/FeatureServer/0",
         "es-StoryTitle": "Tecnologías geoespaciales",
         "QR Code": [
@@ -3228,7 +3182,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/n74IX",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3247,7 +3201,7 @@
         ],
         "Research Focus": "Plant Pathogens - China and the Philippines ",
         "en-StoryTitle": "Revolutionizing Agriculture",
-        "Research Blurb": "Dr. Jan Leach, associate dean for research and professor of Bioagricultural Sciences and Pest Management in the College of Agricultural Sciences at CSU, combats world hunger one grain of rice at a time. Defending one of the world's most important food crops from the ravages of pests and climate change, driven by a strong sense of purpose in her work, Leach partners closely with rice growers and scientific collaborators in the Philippines and worldwide. She believes collaboration is key to protecting the food that sustains most of the developing world.",
+        "Primary Story Content": "Dr. Jan Leach, associate dean for research and professor of Bioagricultural Sciences and Pest Management in the College of Agricultural Sciences at CSU, combats world hunger one grain of rice at a time. Defending one of the world's most important food crops from the ravages of pests and climate change, driven by a strong sense of purpose in her work, Leach partners closely with rice growers and scientific collaborators in the Philippines and worldwide. She believes collaboration is key to protecting the food that sustains most of the developing world.",
         "LAT": "14.676208",
         "LONG": "121",
         "Story Theme": "Food",
@@ -3255,12 +3209,9 @@
           "recQCiv7n0YhrDl65",
           "rec0scLExpYcBzVhl"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Plant Pathologist"
         ],
@@ -3294,6 +3245,7 @@
             }
           }
         ],
+        "Email": "jan.leach@colostate.edu",
         "es-StoryTitle": "Revolucionando la agricultura",
         "QR Code": [
           {
@@ -3325,7 +3277,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/SZ4PA",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3353,7 +3305,6 @@
         "International/Institutional Partners": [
           "recehdSQz21L7MXzz"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Exercise Scientist"
         ],
@@ -3419,7 +3370,7 @@
         "Shortened CSU Branded URL": "https://col.st/OE83r",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of kids playing tug of war",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3438,13 +3389,10 @@
         ],
         "Research Focus": "Illegal Wildlife Trade - West Africa",
         "en-StoryTitle": "Follow the Money",
-        "Research Blurb": "Supply chain management is usually used to build up a business, but CSU professor John McDonald wants to use supply chain management to bring down wildlife-destroying criminals. McDonald’s work in Africa is centered in Sri Lanka. Illegal wildlife trafficking generates an estimated $23 billion each year in the worldwide criminal economy. Thriving illegal businesses, just like legal ones, have a steady — and often complicated — integrated flow of purchasing and distribution operations. Disrupting the supply chain can kill the business. Understanding the supply chain of wildlife trafficking may be able to help slow the crime and prosecute criminals.",
+        "Primary Story Content": "Supply chain management is usually used to build up a business, but CSU professor John McDonald wants to use supply chain management to bring down wildlife-destroying criminals. McDonald’s work in Africa is centered in Sri Lanka. Illegal wildlife trafficking generates an estimated $23 billion each year in the worldwide criminal economy. Thriving illegal businesses, just like legal ones, have a steady — and often complicated — integrated flow of purchasing and distribution operations. Disrupting the supply chain can kill the business. Understanding the supply chain of wildlife trafficking may be able to help slow the crime and prosecute criminals.",
         "LAT": "8",
         "LONG": "77",
         "Story Theme": "Environment",
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Supply Chain Professional"
         ],
@@ -3478,6 +3426,7 @@
             }
           }
         ],
+        "Email": "john.macdonald@colostate.edu",
         "es-StoryTitle": "Sigue el dinero",
         "QR Code": [
           {
@@ -3509,7 +3458,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/mgMuH",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3528,7 +3477,6 @@
         ],
         "en-StoryTitle": "Conquering Cancer",
         "Story Theme": "Health",
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Pathologist"
         ],
@@ -3594,7 +3542,7 @@
         "Shortened CSU Branded URL": "https://col.st/ikuyb",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a researcher conducting COVID19 Coronavirus MIP Vaccine research",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3620,7 +3568,6 @@
         "Story Tags": [
           "Engineering/Infrastructure"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -3689,7 +3636,7 @@
         "Shortened CSU Branded URL": "https://col.st/xqCdO",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Close up view of a steel bridge",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3707,7 +3654,7 @@
           "Sociology"
         ],
         "en-StoryTitle": "The Price of Nuclear Power",
-        "Research Blurb": "The world’s population is expected to exceed 9 billion by 2050. With this growth will come heightened demand for clean water, healthy food, manufactured goods, and abundant energy — all requiring accelerated natural resource development and extraction. Stephanie Malin, environmental sociology professor and founding member of the Center for Environmental Justice at CSU, researches the impacts and outcomes of energy production and globalization on the health and sustainability of Earth’s finite ecosystems, resources, and communities. In her book, The Price of Nuclear Power: Uranium Communities and Environmental Justice, Malin asks whether nuclear power provides a socially sustainable solution in the age of climate change mitigation, exploring the intersection of legacy uranium mining and current efforts to renew uranium production at sites such as the Piñon Ridge Uranium Mill in western Colorado.",
+        "Primary Story Content": "The world’s population is expected to exceed 9 billion by 2050. With this growth will come heightened demand for clean water, healthy food, manufactured goods, and abundant energy — all requiring accelerated natural resource development and extraction. Stephanie Malin, environmental sociology professor and founding member of the Center for Environmental Justice at CSU, researches the impacts and outcomes of energy production and globalization on the health and sustainability of Earth’s finite ecosystems, resources, and communities. In her book, The Price of Nuclear Power: Uranium Communities and Environmental Justice, Malin asks whether nuclear power provides a socially sustainable solution in the age of climate change mitigation, exploring the intersection of legacy uranium mining and current efforts to renew uranium production at sites such as the Piñon Ridge Uranium Mill in western Colorado.",
         "Spatial Angle": "Map of Oil and Gas infastrucutre in Colorado that brings together population growth and water somehow. ",
         "LAT": "40.28608",
         "LONG": "-108.35898",
@@ -3718,12 +3665,9 @@
         "Story Tags": [
           "Environmental Justice"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Sociologist"
         ],
@@ -3757,6 +3701,7 @@
             }
           }
         ],
+        "Email": "stephanie.malin@colostate.edu",
         "es-StoryTitle": "El precio de la energía nuclear",
         "QR Code": [
           {
@@ -3788,7 +3733,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/ulTAl",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3807,7 +3752,7 @@
         ],
         "Research Focus": "Food, water, energy - Uganda",
         "en-StoryTitle": "Owning Their Power",
-        "Research Blurb": "Approximately 16% of the world’s population (1.2 billion people) lives without electricity, imposing a major barrier to participating in today’s economy. Dale Manning and the Smart Village Microgrid Laboratory seek to test and install energy microgrids in rural Rwandan communities to provide local and sustainable sources of electricity for years to come. To achieve village-level electrification, the CSU Energy Institute is working with the University of Rwanda to build mirrored microgrid labs at both locations to facilitate continued collaboration between the two institutions.",
+        "Primary Story Content": "Approximately 16% of the world’s population (1.2 billion people) lives without electricity, imposing a major barrier to participating in today’s economy. Dale Manning and the Smart Village Microgrid Laboratory seek to test and install energy microgrids in rural Rwandan communities to provide local and sustainable sources of electricity for years to come. To achieve village-level electrification, the CSU Energy Institute is working with the University of Rwanda to build mirrored microgrid labs at both locations to facilitate continued collaboration between the two institutions.",
         "Spatial Angle": "World at night map with Rwandan boundary overlayed...or how can we play with light in the map? How can we look at access to power around the world, and in Rwanda specifically, by \"lighting up the map\"?",
         "LAT": "-1.96296",
         "LONG": "30.0720806",
@@ -3818,12 +3763,9 @@
         "International/Institutional Partners": [
           "rec7iBHneazdiZVxC"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Economist"
         ],
@@ -3857,6 +3799,7 @@
             }
           }
         ],
+        "Email": "dale.manning@colostate.edu",
         "es-StoryTitle": "Ser dueño de su poder",
         "QR Code": [
           {
@@ -3888,7 +3831,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/u4F3h",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -3906,13 +3849,12 @@
           "Microbiology, Immunology, and Pathology"
         ],
         "en-StoryTitle": "Into the \"Fold\"",
-        "Research Blurb": "Sometimes referred to coloquially as \"zombie deer disease,\" chronic wasting disease (CWD) is a prion disease affecting deer, elk, reindeer, and moose. While the exact mechanisms aren't fully understood, prions -- misfolded proteins -- cause neurons to degenerate by forming plaques in the central nervous system. As neurons die, holes are formed in the brain and other neural tissue, leading to dramatic weight loss, listlessness, trouble walking, and eventually death. While there has never been a reported case of CWD in humans, a jump to humans is not outside of the realm of possibility. And humans already experience other protein-misfolding diseases such as Alzheimer's, Parkinson's, and diabetes. CSU's Candace Mathiason is a leading researcher in the area of prions -- while working on her Ph.D., she demonstrated for the first time that prions are carried in bodily fluids and can be transmitted without direct bodily contact -- and hopes that her research into mechanisms of transmission can shed light on not just CWD, but a wide range of neurodegenerative diseases. ",
+        "Primary Story Content": "Sometimes referred to coloquially as \"zombie deer disease,\" chronic wasting disease (CWD) is a prion disease affecting deer, elk, reindeer, and moose. While the exact mechanisms aren't fully understood, prions -- misfolded proteins -- cause neurons to degenerate by forming plaques in the central nervous system. As neurons die, holes are formed in the brain and other neural tissue, leading to dramatic weight loss, listlessness, trouble walking, and eventually death. While there has never been a reported case of CWD in humans, a jump to humans is not outside of the realm of possibility. And humans already experience other protein-misfolding diseases such as Alzheimer's, Parkinson's, and diabetes. CSU's Candace Mathiason is a leading researcher in the area of prions -- while working on her Ph.D., she demonstrated for the first time that prions are carried in bodily fluids and can be transmitted without direct bodily contact -- and hopes that her research into mechanisms of transmission can shed light on not just CWD, but a wide range of neurodegenerative diseases. ",
         "Spatial Angle": "Distribution of Chronic Wasting Disease in North America, updated April 01, 2022.\n\nhttps://www.usgs.gov/media/images/distribution-chronic-wasting-disease-north-america-0",
         "Story Theme": "Health",
         "ID Tags": [
           "Alumnus"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Infectious Disease",
           "COVID 19"
@@ -3986,7 +3928,7 @@
         "Shortened CSU Branded URL": "https://col.st/ZIN1P",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a deer herd in a grove of birch trees",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4005,7 +3947,7 @@
         ],
         "Research Focus": "Nutrition and Diet - Ecuador",
         "en-StoryTitle": "Precarious Dietary Patterns",
-        "Research Blurb": "In developing countries like Ecuador, as populations shift from rural to urban areas, diets often shift from traditional, grain- and vegetable-based fare to a more Western diet, high in sugar and fat. Professor Chris Melby with the Colorado School of Public Health at CSU studies how nutrition — and lack of access to diverse, healthy, nutritious foods — contributes to the chances of having a life-changing illness like stroke, heart disease, or diabetes. Melby is working with colleagues and graduate students in Ecuador to study how to help communities navigate this \"nutrition transition,\" maximizing dietary diversity and minimizing risks for malnutrition and obesity.",
+        "Primary Story Content": "In developing countries like Ecuador, as populations shift from rural to urban areas, diets often shift from traditional, grain- and vegetable-based fare to a more Western diet, high in sugar and fat. Professor Chris Melby with the Colorado School of Public Health at CSU studies how nutrition — and lack of access to diverse, healthy, nutritious foods — contributes to the chances of having a life-changing illness like stroke, heart disease, or diabetes. Melby is working with colleagues and graduate students in Ecuador to study how to help communities navigate this \"nutrition transition,\" maximizing dietary diversity and minimizing risks for malnutrition and obesity.",
         "Spatial Angle": "human migration; increase in health outcomes; rural diets and urban diets",
         "LAT": "1.8312",
         "LONG": "78.1834",
@@ -4026,13 +3968,10 @@
           "Human Health",
           "Ag Production"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1973",
         "Degree": [
           "BS"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Nutritionist"
         ],
@@ -4099,7 +4038,7 @@
         "Shortened CSU Branded URL": "https://col.st/7DFI9",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Close up image of a bunch carrots",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4128,7 +4067,6 @@
         "Institutional/Program Stories": [
           "recmfw9UFACO660S8"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1997, 2000",
         "Degree": [
           "MS",
@@ -4199,7 +4137,7 @@
         "Shortened CSU Branded URL": "https://col.st/vtWmJ",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Illustration of a boat over a milky sky ocean",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4223,7 +4161,6 @@
         "Story Tags": [
           "Agricultural Sustainability"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -4292,7 +4229,7 @@
         "Shortened CSU Branded URL": "https://col.st/c4XJe",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Aerial view of a field of crops",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4316,7 +4253,6 @@
         "ID Tags": [
           "Alumnus"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "1989",
         "Degree": [
           "PHD"
@@ -4386,7 +4322,7 @@
         "Shortened CSU Branded URL": "https://col.st/QaIlg",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Close up view of a dog looking at the camera",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4405,12 +4341,11 @@
         ],
         "Research Focus": "RELAMPAGO field study: Study of severe convective storms in the lee of the Andes Mountains in central Argentina, which can have devastating impacts in this wine growing region",
         "en-StoryTitle": "Lightening Flash",
-        "Research Blurb": "Cloud Climate interactions\n\nKristen Rasmussen’s research interests include investigating the global population of convective storms from the TRMM and GPM spaceborne precipitation radars, extreme deep convection in South America, flooding in Pakistan and India, cloud and mesoscale processes, high-impact weather, hydrometeorology, cloud-climate interactions, and convection-permitting regional climate modeling.",
+        "Primary Story Content": "Cloud Climate interactions\n\nKristen Rasmussen’s research interests include investigating the global population of convective storms from the TRMM and GPM spaceborne precipitation radars, extreme deep convection in South America, flooding in Pakistan and India, cloud and mesoscale processes, high-impact weather, hydrometeorology, cloud-climate interactions, and convection-permitting regional climate modeling.",
         "Spatial Angle": "Andes Mountains, Aregentina",
         "LAT": "-32.338200",
         "LONG": "-70.051575",
         "Story Theme": "Water",
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -4479,7 +4414,7 @@
         "Shortened CSU Branded URL": "https://col.st/Inq3w",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a thunderstorm sky",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4505,7 +4440,6 @@
         "Institutional/Program Stories": [
           "rec3zF74vfCuxVxlE"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Computer Scientist"
         ],
@@ -4571,7 +4505,7 @@
         "Shortened CSU Branded URL": "https://col.st/rrVzg",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of illuminated electronic hardware",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4590,7 +4524,7 @@
         ],
         "Research Focus": "Social Ecological Systems in Africa",
         "en-StoryTitle": "Collaborative Conservation",
-        "Research Blurb": "CSU Professor Robin Reid works with people in Kenya, Mongolia, and Colorado, applying science to help them address issues that matter most to their communities. A professor in the Department of Ecosystem Science and Sustainability, Reid heads CSU's Center for Collaborative Conservation. She spent 20 years in East Africa, where she developed a process of continuous engagement among landowners, communities, nongovernmental organizations, government, and scientists to address issues ranging from elephant poaching in Africa to wildfire mitigation in the American West.",
+        "Primary Story Content": "CSU Professor Robin Reid works with people in Kenya, Mongolia, and Colorado, applying science to help them address issues that matter most to their communities. A professor in the Department of Ecosystem Science and Sustainability, Reid heads CSU's Center for Collaborative Conservation. She spent 20 years in East Africa, where she developed a process of continuous engagement among landowners, communities, nongovernmental organizations, government, and scientists to address issues ranging from elephant poaching in Africa to wildfire mitigation in the American West.",
         "Spatial Angle": "Wildfire prevalence in the US. Areas where elephant poaching is the most severe.",
         "LAT": "47.921230",
         "LONG": "106.918556",
@@ -4602,13 +4536,10 @@
           "recbj1fkqfcfxCAHK",
           "recVXI3qT2R2M3umJ"
         ],
-        "Production Round": "Round 1",
         "Graduation Year": "1992",
         "Degree": [
           "PHD"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Ecologist"
         ],
@@ -4642,6 +4573,7 @@
             }
           }
         ],
+        "Email": "robin.reid@colostate.edu",
         "es-StoryTitle": "Conservación colaborativa",
         "QR Code": [
           {
@@ -4673,7 +4605,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/vdtEn",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4692,11 +4624,10 @@
         ],
         "Research Focus": "chemical pathways for diseases -- research in Thailand on malaria, HIV, etc.",
         "en-StoryTitle": "Optimal Dosing",
-        "Research Blurb": "It is not enough to develop a drug to combat disease; scientists must also discover the proper dose. While some of this testing is done on animals, Dr. Brad Reisfeld, professor in the CSU Department of Chemical and Biological Engineering, saw a different way — a mathematical approach, modeling biological systems and chemical pathways to better understand the effects of drugs on humans and animals. Dr. Reisfeld's research has been used to optimize dosing for pulmonary tuberculosis, as well as several diseases important in Thailand such as malaria, HIV, and Steven-Johnson Syndrome.",
+        "Primary Story Content": "It is not enough to develop a drug to combat disease; scientists must also discover the proper dose. While some of this testing is done on animals, Dr. Brad Reisfeld, professor in the CSU Department of Chemical and Biological Engineering, saw a different way — a mathematical approach, modeling biological systems and chemical pathways to better understand the effects of drugs on humans and animals. Dr. Reisfeld's research has been used to optimize dosing for pulmonary tuberculosis, as well as several diseases important in Thailand such as malaria, HIV, and Steven-Johnson Syndrome.",
         "LAT": "13.668217",
         "LONG": "100.614021",
         "Story Theme": "Health",
-        "Production Round": "Round 1",
         "Career Pathway ": [
           "Biomedical Scientist"
         ],
@@ -4729,6 +4660,7 @@
             }
           }
         ],
+        "Email": "brad.reisfeld@colostate.edu",
         "es-StoryTitle": "Dosificación óptima",
         "QR Code": [
           {
@@ -4760,7 +4692,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/QpSqI",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4779,14 +4711,11 @@
         ],
         "Research Focus": "Nutrition - Mali ",
         "en-StoryTitle": "One Bran of Rice",
-        "Research Blurb": "The human gut contains tens of trillions of microorganisms, and these bacteria interact intimately with the immune system. The food that we eat impacts which bacteria are present and can ultimately reduce the risk of developing cancer and infectious disease. Dr. Elizabeth Ryan studies one of the world’s most abundant foods — rice — and its potential role in both modulating gut health to reduce disease, and increasing food security in lower- and middle-income countries. Ryan works in many countries but is starting a new project with the International Rice Research Institute in the Philippines, characterizing the way rice byproducts like rice bran can be used to improve global health and food security.",
+        "Primary Story Content": "The human gut contains tens of trillions of microorganisms, and these bacteria interact intimately with the immune system. The food that we eat impacts which bacteria are present and can ultimately reduce the risk of developing cancer and infectious disease. Dr. Elizabeth Ryan studies one of the world’s most abundant foods — rice — and its potential role in both modulating gut health to reduce disease, and increasing food security in lower- and middle-income countries. Ryan works in many countries but is starting a new project with the International Rice Research Institute in the Philippines, characterizing the way rice byproducts like rice bran can be used to improve global health and food security.",
         "Spatial Angle": "Map of major rice crops in the US ",
         "LAT": "14.676208",
         "LONG": "121.043861",
         "Story Theme": "Health",
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Biologist",
           "Toxicologist "
@@ -4821,6 +4750,7 @@
             }
           }
         ],
+        "Email": "e.p.ryan@colostate.edu",
         "es-StoryTitle": "Un salvado de arroz",
         "QR Code": [
           {
@@ -4852,7 +4782,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/dlmnZ",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4871,7 +4801,7 @@
         ],
         "Research Focus": "Climate Change, Food Security, Human-Elephant Conflict - Uganda",
         "en-StoryTitle": "Adapting to Nature",
-        "Research Blurb": "Jonathan Salerno, new to CSU, is an ecologist in the Department of Human Dimensions of Natural Resources studying how and why humans make decisions, particularly in response to environmental changes. Salerno’s work tries to better understand human behavior in the context of biodiversity conservation and natural resource management. One of his current research projects focuses on human-elephant interactions, mostly through crop depredation, in southern Africa, and people adapt to negative impacts to support food security.",
+        "Primary Story Content": "Jonathan Salerno, new to CSU, is an ecologist in the Department of Human Dimensions of Natural Resources studying how and why humans make decisions, particularly in response to environmental changes. Salerno’s work tries to better understand human behavior in the context of biodiversity conservation and natural resource management. One of his current research projects focuses on human-elephant interactions, mostly through crop depredation, in southern Africa, and people adapt to negative impacts to support food security.",
         "Spatial Angle": "How the heck can we map human-elephant interactions and food security?? Let's do it. \n\nContact about sharing .shp of boundary that was mentioned in email response to Lauren (see sharepoint)\n\nTungamalenga, Iringa Region, Tanzania (-7.834614, 35.096288).",
         "LAT": " -18",
         "LONG": "25",
@@ -4882,12 +4812,9 @@
         "Institutional/Program Stories": [
           "recJjoAIjMYL6JlUO"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Ecologist"
         ],
@@ -4921,6 +4848,7 @@
             }
           }
         ],
+        "Email": "jonathan.salerno@colostate.edu",
         "es-StoryTitle": "Adaptarse a la naturaleza",
         "QR Code": [
           {
@@ -4952,7 +4880,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/rb3t4",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -4971,7 +4899,7 @@
         ],
         "Research Focus": "CSU- Animal Population Animal Health Institute (APHI) is a reference center for FAO in animal disease surveillance and epidemiology.",
         "en-StoryTitle": "Veterinary Epidemiology",
-        "Research Blurb": "infectious diseases\n\nDr. Salman has created an enduring legacy through landmark changes in global veterinary preventive medicine, including emerging animal diseases, epidemiology and food safety.\nMany of his activities stabilize and rebuild national animal health programs in countries such as Bosnia, Afghanistan, Iraq, Middle East, East Africa, Georgia and Armenia. Last year, Dr. Salman facilitated the International Memorandum of Understanding between the China Animal Health and Epidemiology Center (CAHEC) and CSU, which opened doors to technical collaborations.\nhttps://www.avma.org/news/press-releases/dr-mo-salman-honored-2020-avma-public-service-award",
+        "Primary Story Content": "infectious diseases\n\nDr. Salman has created an enduring legacy through landmark changes in global veterinary preventive medicine, including emerging animal diseases, epidemiology and food safety.\nMany of his activities stabilize and rebuild national animal health programs in countries such as Bosnia, Afghanistan, Iraq, Middle East, East Africa, Georgia and Armenia. Last year, Dr. Salman facilitated the International Memorandum of Understanding between the China Animal Health and Epidemiology Center (CAHEC) and CSU, which opened doors to technical collaborations.\nhttps://www.avma.org/news/press-releases/dr-mo-salman-honored-2020-avma-public-service-award",
         "Spatial Angle": "African Swine Fever in China and Southeast Asia, as well as evaluating the medication strategy of livestock afflicted by ticks on the border of Texas and Mexico.",
         "Story Theme": "Food",
         "ID Tags": [
@@ -4980,7 +4908,6 @@
         "Story Tags": [
           "Community Health"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change",
           "Infectious Disease"
@@ -5050,7 +4977,7 @@
         "Shortened CSU Branded URL": "https://col.st/W8PgC",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Up close view of a pig looking at the camera",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5079,7 +5006,6 @@
           "Environmental Justice",
           "Community Health"
         ],
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Indigenous Feminist Scholar"
         ],
@@ -5145,7 +5071,7 @@
         "Shortened CSU Branded URL": "https://col.st/62WNj",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Panoramic view of the front range and a herd of elk",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5167,7 +5093,6 @@
         "LAT": "51.0000002",
         "LONG": "-109",
         "Story Theme": "Health",
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Infectious Disease",
           "COVID 19"
@@ -5238,7 +5163,7 @@
         "Shortened CSU Branded URL": "https://col.st/TeUwV",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a bat flying at dusk",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5257,7 +5182,7 @@
         ],
         "Research Focus": "RELAMPAGO field study: Study of severe convective storms in the lee of the Andes Mountains in central Argentina, which can have devastating impacts in this wine growing region",
         "en-StoryTitle": "Risk of Rain",
-        "Research Blurb": "What conditions are most conducive to extreme local rainfall? What processes determine whether a storm will produce a large amount of rain in a small area vs. a small amount spread among a large area? How can we improve our forecasting of heavy rain events? Knowing where it is going to rain, for how long, and how hard is the key to understanding everything from agriculture to flooding. And these questions are at the forefront of Dr. Russ Schumacher's work as the Colorado State Climatologist and leader of the CSU-based Colorado Climate Center.",
+        "Primary Story Content": "What conditions are most conducive to extreme local rainfall? What processes determine whether a storm will produce a large amount of rain in a small area vs. a small amount spread among a large area? How can we improve our forecasting of heavy rain events? Knowing where it is going to rain, for how long, and how hard is the key to understanding everything from agriculture to flooding. And these questions are at the forefront of Dr. Russ Schumacher's work as the Colorado State Climatologist and leader of the CSU-based Colorado Climate Center.",
         "Spatial Angle": "Mesoscale meteorology - severe weather?\n\nColorado Climate Center",
         "LAT": "40.589093",
         "LONG": "-105.098566",
@@ -5268,7 +5193,6 @@
         "Institutional/Program Stories": [
           "rec2q8OAEdPhdiV93"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -5342,7 +5266,7 @@
         "Shortened CSU Branded URL": "https://col.st/4NJM9",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a pink umbrella in a rainstorm",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5361,13 +5285,10 @@
         ],
         "Research Focus": "Gray Water - Global Focus ",
         "en-StoryTitle": "Something in the Urban Water",
-        "Research Blurb": "Without water, there is no life — and every drop counts. Sybil Sharvelle, Ph.D., associate professor of civil and environmental engineering at CSU, is researching water conservation systems such as graywater and stormwater reuse in urban and arid environments. In 2018, Sharvelle and her team secured a $3 million NSF grant to develop a national traineeship program to train the next generation of scientific leaders “to tackle complex societal programs.” The program — InTERFEWS (Interdisciplinary Training, Education and Research in Food-Energy-Water Systems in Semi-Arid Regions) — taps the skills and interests of Ph.D. students from disparate disciplines to research innovations that foster a more sustainable, waste-free future for all.",
+        "Primary Story Content": "Without water, there is no life — and every drop counts. Sybil Sharvelle, Ph.D., associate professor of civil and environmental engineering at CSU, is researching water conservation systems such as graywater and stormwater reuse in urban and arid environments. In 2018, Sharvelle and her team secured a $3 million NSF grant to develop a national traineeship program to train the next generation of scientific leaders “to tackle complex societal programs.” The program — InTERFEWS (Interdisciplinary Training, Education and Research in Food-Energy-Water Systems in Semi-Arid Regions) — taps the skills and interests of Ph.D. students from disparate disciplines to research innovations that foster a more sustainable, waste-free future for all.",
         "LAT": " 40",
         "LONG": "-105",
         "Story Theme": "Water",
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Environmental Engineer"
         ],
@@ -5401,6 +5322,7 @@
             }
           }
         ],
+        "Email": "sybil.sharvelle@colostate.edu",
         "es-StoryTitle": "Algo en el agua urbana",
         "QR Code": [
           {
@@ -5432,7 +5354,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/Aw5pD",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5451,10 +5373,9 @@
         ],
         "Research Focus": "International supply chains and illicit trade",
         "en-StoryTitle": "Agile Thinking",
-        "Research Blurb": "Underground networks traffic in everything from illegal weapons and drugs to looted antiquities to exotic animal products or even human beings. These networks are often highly technologically sophisticated and operate with impunity across borders, funneling profits to criminal and terrorist organizations, undermining governments, and victimizing marginalized people. CSU engineering professor Steve Simske wants to help put an end to all that. Between 2008-2012, Dr. Simske pioneering a counterfeit image-detection technology at HP. Through added customization and analytic capabilities, Simske hopes this technology can monitor various supply chains and scan for statistically relevant deviations in order to differentiate legitimate and illicit supply chains. ",
+        "Primary Story Content": "Underground networks traffic in everything from illegal weapons and drugs to looted antiquities to exotic animal products or even human beings. These networks are often highly technologically sophisticated and operate with impunity across borders, funneling profits to criminal and terrorist organizations, undermining governments, and victimizing marginalized people. CSU engineering professor Steve Simske wants to help put an end to all that. Between 2008-2012, Dr. Simske pioneering a counterfeit image-detection technology at HP. Through added customization and analytic capabilities, Simske hopes this technology can monitor various supply chains and scan for statistically relevant deviations in order to differentiate legitimate and illicit supply chains. ",
         "Spatial Angle": "Illicit Trade Map",
         "Story Theme": "Community",
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Human Trafficking",
           "Animal Trafficking"
@@ -5524,7 +5445,7 @@
         "Shortened CSU Branded URL": "https://col.st/Ks53U",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of multi-colored Post-It notes on a wall",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5547,7 +5468,6 @@
         "LAT": "16.8259793",
         "LONG": "-88.7600927",
         "Story Theme": "Community",
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Ecologist"
         ],
@@ -5613,7 +5533,7 @@
         "Shortened CSU Branded URL": "https://col.st/ekpWX",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of a lionfish in dark water",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5645,7 +5565,6 @@
         "Story Tags": [
           "Conservation"
         ],
-        "Production Round": "Round 2",
         "Graduation Year": "2004",
         "Degree": [
           "PHD"
@@ -5715,7 +5634,7 @@
         "Shortened CSU Branded URL": "https://col.st/u9ELG",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Panoramic view of the front range and a herd of elk in winter",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5735,7 +5654,6 @@
         "en-StoryTitle": "Framing Food",
         "Spatial Angle": "https://localfoodeconomics.com/toolkit/case-studies/us-cluster-mapping-website/\n\nFood cluster/ economic impact map?",
         "Story Theme": "Food",
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Food Economist"
         ],
@@ -5801,7 +5719,7 @@
         "Shortened CSU Branded URL": "https://col.st/PcpJm",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of assorted vegetables at a market",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5824,7 +5742,6 @@
         "LAT": "32.3140354",
         "LONG": "-106.7798078",
         "Story Theme": "Food",
-        "Production Round": "Round 2",
         "Career Pathway ": [
           "Meat Scientist"
         ],
@@ -5890,7 +5807,7 @@
         "Shortened CSU Branded URL": "https://col.st/keQGI",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Up close image of a cow looking at that camera",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -5919,7 +5836,6 @@
         "Institutional/Program Stories": [
           "recQCiv7n0YhrDl65"
         ],
-        "Production Round": "Round 2",
         "Grand Challenge": [
           "Climate Change"
         ],
@@ -5988,7 +5904,7 @@
         "Shortened CSU Branded URL": "https://col.st/kmlyC",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Image of oranges ripening on a tree",
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -6007,7 +5923,7 @@
         ],
         "Research Focus": "Disease ecology/widlife disease in Australia/Tasmania",
         "en-StoryTitle": "Feline Infections",
-        "Research Blurb": "All cats — domestic and wild — can become infected with feline immunodeficiency virus (FIV), resulting in a disease process comparable to HIV in humans. CSU veterinarian Dr. Sue VandeWoude’s laboratory studies factors that contribute to FIV transmission and the development and progression of the disease in cats. The ultimate goal of this research is to translate these findings to better understand viruses in humans. Dr. VandeWoude is currently on a Fulbright sabbatical studying wildlife disease ecology in Tasmania.",
+        "Primary Story Content": "All cats — domestic and wild — can become infected with feline immunodeficiency virus (FIV), resulting in a disease process comparable to HIV in humans. CSU veterinarian Dr. Sue VandeWoude’s laboratory studies factors that contribute to FIV transmission and the development and progression of the disease in cats. The ultimate goal of this research is to translate these findings to better understand viruses in humans. Dr. VandeWoude is currently on a Fulbright sabbatical studying wildlife disease ecology in Tasmania.",
         "LAT": " 27",
         "LONG": "-81",
         "Story Theme": "Health",
@@ -6016,12 +5932,9 @@
           "rec0scLExpYcBzVhl",
           "recVXI3qT2R2M3umJ"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Infectious Disease"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Veterinarian",
           "Virologist "
@@ -6056,6 +5969,7 @@
             }
           }
         ],
+        "Email": "sue.vandewoude@colostate.edu",
         "es-StoryTitle": "Infecciones felinas",
         "QR Code": [
           {
@@ -6087,7 +6001,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/hWlil",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -6106,7 +6020,7 @@
         ],
         "Research Focus": "Radar observation - Space",
         "en-StoryTitle": "Sensing Storms With Radar",
-        "Research Blurb": "V. \"Chandra\" Chandrasekaran, professor of Electrical and Computer Engineering at CSU, is one of the world's leading experts in geoscience and remote sensing — a field that uses data from satellites to advance understanding of the land, oceans, atmosphere, and space. His work with meteorological radar systems has led to technologies that protect lives and improve weather forecasting all over the world — including Finland, where he was knighted by the government for his international work.",
+        "Primary Story Content": "V. \"Chandra\" Chandrasekaran, professor of Electrical and Computer Engineering at CSU, is one of the world's leading experts in geoscience and remote sensing — a field that uses data from satellites to advance understanding of the land, oceans, atmosphere, and space. His work with meteorological radar systems has led to technologies that protect lives and improve weather forecasting all over the world — including Finland, where he was knighted by the government for his international work.",
         "Spatial Angle": "Locations with severe hurricanes and tornados: If this exists, let's not recreate it.",
         "LAT": "40",
         "LONG": "-105",
@@ -6118,14 +6032,11 @@
           "rec4ydfnP0CQNy7EY",
           "rec0scLExpYcBzVhl"
         ],
-        "Production Round": "Round 1",
         "Graduation Year": "1983, 1987",
         "Degree": [
           "MS",
           "PHD"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Electrical Engineer"
         ],
@@ -6159,6 +6070,7 @@
             }
           }
         ],
+        "Email": "chandrasekaran.venkatachalam@colostate.edu",
         "es-StoryTitle": "Detección de tormentas con radar",
         "QR Code": [
           {
@@ -6190,7 +6102,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/lOKDe",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -6209,19 +6121,16 @@
         ],
         "Research Focus": "Soil Nematode Diversity - Antarctica",
         "en-StoryTitle": "The Secret Life of Soil",
-        "Research Blurb": "In Antarctica, the frozen ground looks barren – but dig into it, and put it under a microscope, and you’ll see tiny rugged worms, nematodes, that could help unlock our understanding of Earth’s changing climate. CSU professor Diana Wall has been making the voyage to the bottom of the globe every year since 1989 — more than 30 years of studying the life hidden in the Antarctic soil. Exploring the soil, studying the diversity of microbes and invertebrates, can shed light on how human activities around the world affect the health, productivity, and fertility of soils worldwide.",
+        "Primary Story Content": "In Antarctica, the frozen ground looks barren – but dig into it, and put it under a microscope, and you’ll see tiny rugged worms, nematodes, that could help unlock our understanding of Earth’s changing climate. CSU professor Diana Wall has been making the voyage to the bottom of the globe every year since 1989 — more than 30 years of studying the life hidden in the Antarctic soil. Exploring the soil, studying the diversity of microbes and invertebrates, can shed light on how human activities around the world affect the health, productivity, and fertility of soils worldwide.",
         "LAT": "-69",
         "LONG": "45",
         "Story Theme": "Environment",
         "Institutional/Program Stories": [
           "rec0scLExpYcBzVhl"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Climate Change"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Ecologist",
           "Environmental Scientist"
@@ -6256,6 +6165,7 @@
             }
           }
         ],
+        "Email": "diana.wall@colostate.edu",
         "es-StoryTitle": "La vida secreta del suelo",
         "QR Code": [
           {
@@ -6287,7 +6197,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/MLlmt",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -6306,16 +6216,13 @@
         ],
         "Research Focus": "Energy - Rwanda",
         "en-StoryTitle": "Electric Villages",
-        "Research Blurb": "Electric power is scarce in Rwanda, where 1-in-4 people has an electric hookup, a hookup rate that drops to 1-in-10 in rural areas. CSU professor Bryan Willson’s work harnessing the University’s energy expertise to bring clean, affordable energy to Rwanda is just one example of Willson’s 25 years of work in more than 40 countries. The teams in Willson’s research lab, the Engines and Energy Conversion Lab are innovators in world needs like energy production and engine technology, advanced electrical grids, and biofuels. In Rwanda, AC/DC microgrids are powering people’s daily lives and boosting the entire country’s economic wellbeing.",
+        "Primary Story Content": "Electric power is scarce in Rwanda, where 1-in-4 people has an electric hookup, a hookup rate that drops to 1-in-10 in rural areas. CSU professor Bryan Willson’s work harnessing the University’s energy expertise to bring clean, affordable energy to Rwanda is just one example of Willson’s 25 years of work in more than 40 countries. The teams in Willson’s research lab, the Engines and Energy Conversion Lab are innovators in world needs like energy production and engine technology, advanced electrical grids, and biofuels. In Rwanda, AC/DC microgrids are powering people’s daily lives and boosting the entire country’s economic wellbeing.",
         "LAT": " 27",
         "LONG": "1",
         "Story Theme": "Energy",
         "Institutional/Program Stories": [
           "recz5lIQrJxWz00es"
         ],
-        "Production Round": "Round 1",
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Mechanical Engineer"
         ],
@@ -6349,6 +6256,7 @@
             }
           }
         ],
+        "Email": "bryan.willson@colostate.edu",
         "es-StoryTitle": "Pueblos eléctricos",
         "QR Code": [
           {
@@ -6380,7 +6288,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/GYifd",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     },
     {
@@ -6399,7 +6307,7 @@
         ],
         "Research Focus": "Elephant Conservation - Kenya",
         "en-StoryTitle": "More than Tusks and Teeth",
-        "Research Blurb": "An estimated 100,000 elephants were killed in Africa for the ivory in their tusks and teeth from 2010 to 2012 alone. Elephants are among the slowest-producing mammals in the world; and it could take almost a century for forest elephants to recover from these intense levels of poaching. Despite this pressure, the structure of their social networks has remained remarkably stable. World-renowned elephant expert and CSU associate professor George Wittemeyer has spent his career of more than 20 years tracking elephants. He has tracked more than 1,000 individuals and 70 families to date — studying not only the effects of poaching on elephant populations and their social bonds, but the effects of habitat destruction from railroad, highway, and oil pipeline construction, and the resiliency of elephant communities.",
+        "Primary Story Content": "An estimated 100,000 elephants were killed in Africa for the ivory in their tusks and teeth from 2010 to 2012 alone. Elephants are among the slowest-producing mammals in the world; and it could take almost a century for forest elephants to recover from these intense levels of poaching. Despite this pressure, the structure of their social networks has remained remarkably stable. World-renowned elephant expert and CSU associate professor George Wittemeyer has spent his career of more than 20 years tracking elephants. He has tracked more than 1,000 individuals and 70 families to date — studying not only the effects of poaching on elephant populations and their social bonds, but the effects of habitat destruction from railroad, highway, and oil pipeline construction, and the resiliency of elephant communities.",
         "Spatial Angle": "Map of Samburu, Kenya: 0.567 N 37.518 E (place of research): incorporate elephant tracking in some way to make this map interactive",
         "LAT": "0.567",
         "LONG": "37.518",
@@ -6407,12 +6315,9 @@
         "Institutional/Program Stories": [
           "recJjoAIjMYL6JlUO"
         ],
-        "Production Round": "Round 1",
         "Grand Challenge": [
           "Animal Trafficking"
         ],
-        "Start date": "2021-07-01",
-        "End date": "2021-10-01",
         "Career Pathway ": [
           "Conservation Biologist"
         ],
@@ -6446,6 +6351,7 @@
             }
           }
         ],
+        "Email": "g.wittemyer@colostate.edu",
         "es-StoryTitle": "Más que colmillos y dientes",
         "QR Code": [
           {
@@ -6477,7 +6383,7 @@
         ],
         "Shortened CSU Branded URL": "https://col.st/n5XqQ",
         "Bilingual Translation": true,
-        "Select": "Currently at CSU"
+        "Status": "Currently at CSU"
       }
     }
   ]

@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex h-100 px-5 flex-column">
+  <div class="d-flex h-100 px-3 flex-column control-group">
     <div class="h-25">
       <!--<ThemeColumn></ThemeColumn>-->
     </div>
@@ -9,9 +9,9 @@
       <Language class="d-block"></Language>
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
-      <div class="d-flex justify-content-around mb-4">
-        <QRSite v-if="this.$route.name === 'Kiosk'" class="w-25"></QRSite>
-        <Geo class="w-25"></Geo>
+      <div class="row justify-content-around mb-5">
+        <QRSite v-if="this.$route.name === 'Kiosk'" class="col-4"></QRSite>
+        <Geo class="col-5"></Geo>
       </div>
     </div>
   </div>
@@ -37,5 +37,7 @@ export default {
   },
 };
 </script>
-
+.control-group {
+  font-size: 1.1rem
+}
 <style></style>
