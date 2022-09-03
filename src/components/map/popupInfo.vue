@@ -11,7 +11,7 @@
     >
     </IDIcon>
     <button
-      class="btn btn-dark mr-0 ml-auto"
+      class="btn btn-charcoal mr-0 ml-auto"
       v-on:click="removeActiveStory(story)"
       :aria-label="$t(`Close`)"
     >

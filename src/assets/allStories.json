@@ -1,7 +1,7 @@
 {
-  "dateString": "Fri Sep 02 2022 14:27:43 GMT-0600 (Mountain Daylight Time)",
-  "date": "2022-09-02T20:27:43.378Z",
-  "recordsCount": 67,
+  "dateString": "Fri Sep 02 2022 23:35:20 GMT-0600 (Mountain Daylight Time)",
+  "date": "2022-09-03T05:35:20.788Z",
+  "recordsCount": 69,
   "url": "https://api.airtable.com/v0/appyTc8xRR9nR9sSB/All%20Stories?view=publicWebsite",
   "response": [
     {
@@ -289,6 +289,181 @@
         "Shortened CSU Branded URL": "https://col.st/4lpb8",
         "Bilingual Translation": true,
         "Story Card Image Alt Text": "Up close image of cacti",
+        "Status": "Currently at CSU"
+      }
+    },
+    {
+      "id": "recc2PCQWsxtSXsjw",
+      "createdTime": "2022-07-23T18:56:14.000Z",
+      "fields": {
+        "Last Name": "Andales",
+        "First Name": "Allan",
+        "Production Phase": "Live",
+        "Institution": "Fort Collins",
+        "College/Division": [
+          "College of Agricultural Sciences"
+        ],
+        "Unit/Program": [
+          "Soil and Crop Sciences"
+        ],
+        "Research Focus": "https://watercenter.colostate.edu/view/water-experts/entry/3048/?letter=a",
+        "en-StoryTitle": "Alternative Irrigation",
+        "Spatial Angle": "Israel Institute of Technology\nhttps://engr.source.colostate.edu/csu-israeli-experts-address-sustainable-agricultural-water-issues-in-workshop/",
+        "LAT": "32.776309967041016",
+        "LONG": "35.02436447143555",
+        "Story Theme": "Water",
+        "ID Tags": [
+          "International"
+        ],
+        "Career Pathway ": [
+          "Extension Specialist"
+        ],
+        "en-StoryMapLink": "https://storymaps.arcgis.com/stories/d52a68b0e5c7488e96f86a40fbfe802a",
+        "Story Card Image": [
+          {
+            "id": "attApOlUZX9KIBW5F",
+            "width": 2304,
+            "height": 1296,
+            "url": "https://dl.airtable.com/.attachments/aa02c29dc1afbca19ada48e4aecdbba5/22c21329/vidar-nordli-mathisen-6R3cUUeQkE4-unsplash1.jpg",
+            "filename": "vidar-nordli-mathisen-6R3cUUeQkE4-unsplash (1).jpg",
+            "size": 656789,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/7b6f8c33ce583213dafb85366940acbe/c9452289",
+                "width": 64,
+                "height": 36
+              },
+              "large": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/66d6406595a2f51bb993c3d921533872/728bea5c",
+                "width": 910,
+                "height": 512
+              },
+              "full": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/9fc4458271184b99b592797105ab218d/b94e387c",
+                "width": 3000,
+                "height": 3000
+              }
+            }
+          }
+        ],
+        "Email": "Allan.Andales@ColoState.edu",
+        "es-StoryTitle": "Irrigación Alternativa",
+        "QR Code": [
+          {
+            "id": "attWzAlDoH4hzrZEU",
+            "width": 660,
+            "height": 660,
+            "url": "https://dl.airtable.com/.attachments/f43b2be0f3820b59a13ad9b39ba1c3d7/940df890/QRCode67.png",
+            "filename": "QRCode (67).png",
+            "size": 43952,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/95fb3a0726f6af2925b4d877433894b6/a118a5ab",
+                "width": 36,
+                "height": 36
+              },
+              "large": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/4fae3a45276c9286f1f8b22c691eec83/72f6e2e9",
+                "width": 512,
+                "height": 512
+              },
+              "full": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/3b3c0f41aba429777238323eddc826cb/e119bad7",
+                "width": 3000,
+                "height": 3000
+              }
+            }
+          }
+        ],
+        "Shortened CSU Branded URL": "https://col.st/A8WDY",
+        "Story Card Image Alt Text": "Image of center pivot with crops and a mountain in the background",
+        "Status": "Currently at CSU"
+      }
+    },
+    {
+      "id": "recMaJMCuj7E40vu9",
+      "createdTime": "2022-07-23T18:59:52.000Z",
+      "fields": {
+        "Last Name": "Anderson",
+        "First Name": "Ashley",
+        "Production Phase": "Live",
+        "Institution": "Fort Collins",
+        "College/Division": [
+          "College of Liberal Arts"
+        ],
+        "Unit/Program": [
+          "Journalism & Media Communication"
+        ],
+        "Research Focus": "https://watercenter.colostate.edu/view/water-experts/entry/2851/?letter=a",
+        "en-StoryTitle": "Communicating Science",
+        "Primary Story Content": "\nAreas of Interest\nExtreme weather event communication, Communication in the development and distribution of science and technology, Public engagement with science",
+        "Story Theme": "Water",
+        "Grand Challenge": [
+          "Climate Change"
+        ],
+        "en-StoryMapLink": "https://storymaps.arcgis.com/stories/5a3ee10a364d47e9b6c2c1341081a13e",
+        "Story Card Image": [
+          {
+            "id": "attKizP1a6Ausa1bC",
+            "width": 2063,
+            "height": 1161,
+            "url": "https://dl.airtable.com/.attachments/b8a10431ee5652a211a39eeb0107e51f/652aaf51/mika-baumeister-UHVndV0rsqw-unsplash1.jpg",
+            "filename": "mika-baumeister-UHVndV0rsqw-unsplash (1).jpg",
+            "size": 561915,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/c84f4ccb07177c182032999f30db5f20/80f6c719",
+                "width": 64,
+                "height": 36
+              },
+              "large": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/18607e594a43f3ae88ccd983058566b3/99ee5cfa",
+                "width": 910,
+                "height": 512
+              },
+              "full": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/93dde30677c1d465725ab428d6be2851/d03b3631",
+                "width": 3000,
+                "height": 3000
+              }
+            }
+          }
+        ],
+        "Email": "ashley.a.anderson@colostate.edu",
+        "es-StoryTitle": "Comunicando la ciencia",
+        "QR Code": [
+          {
+            "id": "att8p44t3YIN6VoTy",
+            "width": 660,
+            "height": 660,
+            "url": "https://dl.airtable.com/.attachments/65766c5442ce815a191dc70fd975e91d/b82af08c/QRCode69.png",
+            "filename": "QRCode (69).png",
+            "size": 43880,
+            "type": "image/png",
+            "thumbnails": {
+              "small": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/0c205e397df9cf5e76ac943e421e14d4/a6cbca49",
+                "width": 36,
+                "height": 36
+              },
+              "large": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/ec87011b2b47886d87a81484bbcb07ac/001917da",
+                "width": 512,
+                "height": 512
+              },
+              "full": {
+                "url": "https://dl.airtable.com/.attachmentThumbnails/cb7a809cdd076298a0e81d895215a832/446f72b7",
+                "width": 3000,
+                "height": 3000
+              }
+            }
+          }
+        ],
+        "Shortened CSU Branded URL": "https://col.st/9WPH7",
+        "Story Card Image Alt Text": "Image of a cardboard sign pinned to a backpack that reads \"Listen to the Science!\"",
         "Status": "Currently at CSU"
       }
     },

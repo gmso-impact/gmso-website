@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex flex-column h-100">
+  <div class="d-flex flex-column h-100 bg-carbon">
     <KioskOverlay v-if="false"></KioskOverlay>
     <div
       id="header"
       v-if="$route.name === 'Web'"
-      class="d-none d-lg-block carbon text-center border-bottom py-3"
+      class="d-none d-lg-block text-center border-bottom border-slate py-3"
     >
       <!--<h2 class="mb-0">Header</h2>-->
       <img
@@ -19,13 +19,11 @@
         <StoryListMap></StoryListMap>
       </div>
       <div
-        class="d-none d-lg-block d-xxl-none h-100 col-2 col-xl-1 col-xl-1 border-left border-right carbon"
+        class="d-none d-lg-block d-xxl-none h-100 col-2 col-xl-1 col-xl-1 border-right border-slate"
       >
         <ControlGroup></ControlGroup>
       </div>
-      <div
-        class="d-none d-xxl-block h-100 col-1 border-left border-right carbon"
-      >
+      <div class="d-none d-xxl-block h-100 col-1 border-right border-slate">
         <ControlGroupXXL></ControlGroupXXL>
       </div>
       <div class="right col-12 col-lg-8 col-xl-8 col-xxl-9">
@@ -35,7 +33,7 @@
     <div
       id="footer"
       v-if="false"
-      class="footer bg-dark text-center text-secondary px-3"
+      class="footer bg-charcoal text-center text-secondary px-3"
     >
       <ThemeBottom></ThemeBottom>
     </div>

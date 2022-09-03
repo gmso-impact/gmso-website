@@ -6,8 +6,7 @@
           class="btn btn-block font-weight-bold mb-2 mb-xxl-4"
           v-bind:class="{
             'btn-white': storyThemesActive.length === storyThemes.length,
-            'btn-outline-white':
-              storyThemesActive.length !== storyThemes.length,
+            'btn-charcoal': storyThemesActive.length !== storyThemes.length,
           }"
           v-on:click="resetTagsClicked"
           :aria-label="$t(`AllStories`)"

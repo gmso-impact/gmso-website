@@ -1,7 +1,7 @@
 <template lang="">
   <div class="col-xxl-12">
     <div
-      class="themeButton btn p-0 btn-dark btn-fade text-white d-flex mb-2 mb-xxl-4 rounded align-items-stretch"
+      class="themeButton btn p-0 btn-charcoal btn-fade text-white d-flex mb-2 mb-xxl-4 rounded align-items-stretch"
       :class="themeButtonClasses"
       :key="control.name"
       v-on:click="setTagClicked"
@@ -10,9 +10,15 @@
         class="themeIconContainer p-1 m-1 rounded d-flex align-items-center"
         :class="[`bg-${control.name}`]"
       >
-        <img :src="themeIconSRC" class="themeIcon" :alt='`Logo for ${control.name}`'/>
+        <img
+          :src="themeIconSRC"
+          class="themeIcon"
+          :alt="`Logo for ${control.name}`"
+        />
       </div>
-      <div class="themeText flex-fill d-flex align-items-center text-center p-1 p-xl-2 pl-xxl-4">
+      <div
+        class="themeText flex-fill d-flex align-items-center text-center p-1 p-xl-2 pl-xxl-4"
+      >
         <transition name="slide-right" mode="out-in">
           <div :key="$t(`storyThemes.${control.name}`)">
             {{ $t(`storyThemes.${control.name}`) }}

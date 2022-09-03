@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
 const sharp = require("sharp");
-const imageSizes = require("../helper/imagesSizes")
+const imageSizes = require("../helper/imagesSizes");
 
 const rootPath = "./public/stories";
 

@@ -7,13 +7,13 @@
     <router-link
       :to="{ name: 'Web' }"
       class="btn-sm btn-secondary"
-      exact-active-class="bg-white text-dark"
+      exact-active-class="bg-white text-charcoal"
       >Web</router-link
     >
     <router-link
       :to="{ name: 'Kiosk' }"
       class="btn-sm btn-secondary"
-      exact-active-class="bg-white text-dark"
+      exact-active-class="bg-white text-charcoal"
       >Kiosk</router-link
     >
   </div>

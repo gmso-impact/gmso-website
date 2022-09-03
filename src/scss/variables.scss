@@ -57,11 +57,13 @@ $theme-colors: (
   "Institutional": #323e48, /* pass on white 10.9 contrast */
   "Stories": #323e48,       /* pass on white 10.9 contrast */
   "slate": #505b65,         /* pass on white 6.94 contrast */
+  "secondary": #323e48,         /* pass on white 6.94 contrast */
   "Unkown": #505b65,        /* pass on white 6.94 contrast */ 
   "white": #ffffff,         /* fail on white 00.0 contrast */
   "black": #000000,         /* pass on white 21.0 contrast */
   "map-dark": #232227,      /* pass on white 15.8 contrast */
   "map-light": #3f3f41,     /* pass on white 10.5 contrast */
+  "carbon": #232227,
 );
 
 // If you change this
@@ -74,6 +76,8 @@ $grid-breakpoints: (
   xl: 1700px,
   xxl: 3600px,
 );
+
+$overflows: auto, hidden, scroll;
 
 // https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api
 
@@ -99,3 +103,4 @@ $grid-breakpoints: (
     #{unquote($name)}: $hex;
   }
 }
+

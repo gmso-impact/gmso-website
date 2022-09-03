@@ -4,7 +4,7 @@
     v-if="story.fields['en-StoryTitle']"
   >
     <div
-      class="story-card w-100 h-100 p-1 btn d-flex flex-column"
+      class="story-card w-100 h-100 p-1 btn d-flex flex-column rounded-0"
       :class="[
         `btn-${story.fields['Story Theme']}`,
         isStoryActive(story.id) ? 'active' : '',
@@ -43,7 +43,7 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import imageSizes from "@/helper/imagesSizes.js"
+import imageSizes from "@/helper/imagesSizes.js";
 
 export default {
   props: {
@@ -53,7 +53,7 @@ export default {
     },
   },
   data() {
-    return {imageSizes: imageSizes,}
+    return { imageSizes: imageSizes };
   },
   methods: {
     ...mapMutations({ addActiveStory: "addActiveStory" }),
@@ -71,12 +71,11 @@ export default {
         return this.story.fields["en-StoryTitle"];
       }
     },
-    height: function(){
-      return this.imageSizes[this.getBreakpoints[0]].height
+    height: function () {
+      return this.imageSizes[this.getBreakpoints[0]].height;
     },
-    width: function(){
-      return this.imageSizes[this.getBreakpoints[0]].width
-
+    width: function () {
+      return this.imageSizes[this.getBreakpoints[0]].width;
     },
     storyImagePath: function () {
       if (
@@ -87,7 +86,9 @@ export default {
       }
       const rootpath = "stories";
 
-      return `${rootpath}/${this.story.fields["Story Card Image"][0].id}-${this.getBreakpoints[0]}.${getExt(this.story.fields["Story Card Image"][0].type)}`;
+      return `${rootpath}/${this.story.fields["Story Card Image"][0].id}-${
+        this.getBreakpoints[0]
+      }.${getExt(this.story.fields["Story Card Image"][0].type)}`;
     },
   },
 };
@@ -107,6 +108,5 @@ function getExt(type) {
 <style scoped lang="scss">
 .story-card {
   min-height: 10vh;
-  border-radius: 0px;
 }
 </style>

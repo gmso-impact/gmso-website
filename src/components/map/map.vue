@@ -191,8 +191,10 @@ export default {
       getBreakpoints: "getBreakpoints",
     }),
     minZoom: function () {
-      return 0;
-      /*const minZoomList = {
+      // 0 = globe
+      // 12 = townwn
+      // 18 = building
+      const minZoomList = {
         xs: 2.1,
         sm: 2.4,
         md: 2.4,
@@ -200,7 +202,7 @@ export default {
         xl: 2.8,
         xxl: 3.7, // 4.3 for no world copy
       };
-      return minZoomList[this.getBreakpoints[0]];*/
+      return minZoomList[this.getBreakpoints[0]];
     },
   },
   methods: {

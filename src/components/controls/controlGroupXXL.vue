@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex h-100 px-3 flex-column control-group">
+  <div class="d-flex h-100 px-3 flex-column">
     <div class="h-25">
       <!--<ThemeColumn></ThemeColumn>-->
     </div>
@@ -37,7 +37,4 @@ export default {
   },
 };
 </script>
-.control-group {
-  font-size: 1.1rem
-}
 <style></style>

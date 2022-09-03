@@ -1,6 +1,6 @@
 <template lang="">
   <div class="videoFrame overlay childPoint" v-if="isVideoFrameOpen">
-    <div class="controlFrame px-1 py-1 rounded carbon border border-light">
+    <div class="controlFrame px-1 py-1 rounded bg-carbon">
       <video
         class="innerFrame"
         title="Stories at CSU"
