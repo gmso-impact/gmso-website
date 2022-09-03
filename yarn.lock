@@ -4167,10 +4167,10 @@ esrecurse@^4.1.0, esrecurse@^4.3.0:
   dependencies:
     estraverse "^5.2.0"
 
-esri-leaflet-vector@^3.1.2:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/esri-leaflet-vector/-/esri-leaflet-vector-3.1.3.tgz#926ae3db0cc5c2255e3464b2f81e9d069e3c0d77"
-  integrity sha512-2jQ56lBQ7gcOzgNaidam1qKAratVBuMGwkd5GqZGcgiqzepep1KI6c1KOA0sTc9fJg750vJhW/bXMGxqYf9JtQ==
+esri-leaflet-vector@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/esri-leaflet-vector/-/esri-leaflet-vector-3.1.5.tgz#b8d241910e9574ccd6fdcd237a1e183b81ef6d49"
+  integrity sha512-XNRkrqfB4xKGQfRtjiMJsxwF4oiPnSNngQJrLBbMQMadLqcy+mZRAbDHDx/KEK6S0w0QoM4/A+A2rcNHHBQKlA==
   dependencies:
     mapbox-gl "1.13.1"
 
