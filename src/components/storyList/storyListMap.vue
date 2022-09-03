@@ -1,7 +1,7 @@
 <template lang="">
   <div class="d-flex flex-column h-100 bg-carbon">
     <h3
-      class="text-center py-1 py-xxl-5 bg-secondary d-none d-lg-block d-xl-none"
+      class="text-center py-1 py-xxl-5 bg-light d-none d-lg-block d-xl-none"
     >
       {{ $t(`tagline`) }}
     </h3>
@@ -19,18 +19,21 @@
           v-bind:story="story"
         >
         </StoryItem>
+        <MoreStories key="moreStories"></MoreStories>
       </transition-group>
     </div>
   </div>
 </template>
 <script>
 import StoryItem from "./storyItem.vue";
+import MoreStories from "./moreStories.vue"
 
 import { mapGetters } from "vuex";
 
 export default {
   components: {
     StoryItem,
+    MoreStories,
   },
   data() {
     return {};
