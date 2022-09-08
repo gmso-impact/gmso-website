@@ -4,7 +4,7 @@
     <ThemeColumn class="mx-1 mx-xl-2"></ThemeColumn>
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <Geo class="align-self-center mb-3"></Geo>
-    <QRSite v-if="this.$route.name === 'Kiosk'" class="px-3 pb-3"></QRSite>
+    <QRSite v-if="this.$route.name === 'Kiosk'" class="px-2 pb-2"></QRSite>
   </div>
 </template>
 <script>
