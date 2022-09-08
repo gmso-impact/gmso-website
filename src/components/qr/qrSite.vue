@@ -33,7 +33,7 @@ const qrConfig = {
   },
   colorDark: "#212529",
   colorLight: "#ffffff",
-  margin: 0,
+  margin: 50,
   size: 1200,
   timing: {
     scale: 1,

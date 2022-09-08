@@ -15,7 +15,7 @@ const qrConfig = {
   data: {
     scale: 1,
   },
-  margin: 0,
+  margin: 50,
   size: 1200,
   timing: {
     scale: 1,
@@ -37,10 +37,10 @@ export default {
   data() {
     return {
       qrConfig: {
-        colorLight: cssColors[this.story.fields["Story Theme"]],
+        colorDark: cssColors[this.story.fields["Story Theme"]],
         // autoColor: false,*/
         // unusued when autoColor true
-        colorDark: "#ffffff",
+        colorLight: "#ffffff",
         text: this.story.fields["en-StoryMapLink"],
         ...qrConfig,
       },
