@@ -12,7 +12,8 @@
         key="img"
         v-if="
           getBreakpoints[0] === 'xxl' &&
-          (mapGetZoom > 6 && storyInMap.length <= 9) &&
+          mapGetZoom > 6 &&
+          storyInMap.length <= 9 &&
           !isStoryActive(story.id)
         "
         :aria-label="storyTitle"

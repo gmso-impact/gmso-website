@@ -4,7 +4,6 @@
       class="btn btn-secondary story-card w-100 h-100 p-2 d-flex flex-column rounded-0 justify-content-between"
       v-if="storyThemesActive.length !== storyThemes.length"
       v-on:click="resetTagsClicked"
-
     >
       <div class="h-100 d-flex flex-column justify-content-center">
         <font-awesome-icon :icon="['fas', 'globe']" class="mr-2 fa-4x" />
@@ -15,7 +14,6 @@
       class="btn btn-secondary story-card w-100 h-100 p-2 d-flex flex-column rounded-0 justify-content-between"
       v-else-if="zoom > 4 || storyInMap.length <= 12"
       v-on:click="resetMap"
-
     >
       <div class="h-100 d-flex flex-column justify-content-center">
         <font-awesome-icon :icon="['fas', 'globe']" class="mr-2 fa-4x" />
@@ -46,7 +44,6 @@ export default {
       storyThemesActive: "storyThemesActive",
       zoom: "mapGetZoom",
       storyInMap: "storyInMap",
-
     }),
   },
 };

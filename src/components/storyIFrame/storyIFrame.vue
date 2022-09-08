@@ -55,12 +55,12 @@ export default {
       }
     },
     allow: function () {
-      const fullscreen = (
-        this.$route.name === 'Kiosk' 
-        && this.getBreakpoints.includes('xxl')
-      ) ? "'none'" : ""
-      return `fullscreen ${fullscreen}; geolocation;"`
-    }
+      const fullscreen =
+        this.$route.name === "Kiosk" && this.getBreakpoints.includes("xxl")
+          ? "'none'"
+          : "";
+      return `fullscreen ${fullscreen}; geolocation;"`;
+    },
   },
   methods: {
     setIframeLoaded() {
