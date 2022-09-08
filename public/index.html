@@ -21,5 +21,13 @@
     if(isIE11){
       document.body.innerHTML = "Internet Explorer is not supported. Please use Microsoft Edge, Chrome, or Firefox"
     }
+    window.addEventListener('fullscreenchange', (event) => {
+      console.log("Entered fullscreen")
+      // don't use the code here, but this is a demo of the event that can be used to detect the change
+      // https://developer.mozilla.org/en-US/docs/Web/API/Element/fullscreenchange_event
+      // document.fullscreenElement contains the new full screen <html>
+      // Can this be modified to havea wrapper so we can overlay our own controls?
+     });
+
   </script>
 </html>

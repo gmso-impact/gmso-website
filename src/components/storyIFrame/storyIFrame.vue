@@ -4,7 +4,7 @@
       @load="setIframeLoaded()"
       class="iframe-scale iframe-border-none btn-fade"
       frameborder="0"
-      allow="fullscreen; geolocation;"
+      :allow="allow"
       :class="{
         'd-none': !loaded,
       }"
@@ -43,6 +43,9 @@ export default {
   },
   watch: {},
   computed: {
+    ...mapGetters({
+      getBreakpoints: "getBreakpoints",
+    }),
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
         return this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`];
@@ -51,6 +54,13 @@ export default {
         return this.story.fields["en-StoryTitle"];
       }
     },
+    allow: function () {
+      const fullscreen = (
+        this.$route.name === 'Kiosk' 
+        && this.getBreakpoints.includes('xxl')
+      ) ? "'none'" : ""
+      return `fullscreen ${fullscreen}; geolocation;"`
+    }
   },
   methods: {
     setIframeLoaded() {
