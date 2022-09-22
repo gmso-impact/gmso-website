@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex flex-column h-100 bg-carbon">
+  <div class="d-flex flex-column h-100 bg-carbon position-relative">
     <h3 class="text-center py-1 py-xxl-5 bg-light d-none d-lg-block d-xl-none">
       {{ $t(`tagline`) }}
     </h3>
@@ -20,11 +20,13 @@
         <MoreStories key="moreStories"></MoreStories>
       </transition-group>
     </div>
+    <ScrollDown></ScrollDown>
   </div>
 </template>
 <script>
 import StoryItem from "./storyItem.vue";
 import MoreStories from "./moreStories.vue";
+import ScrollDown from "./scrollDown.vue";
 
 import { mapGetters } from "vuex";
 
@@ -32,6 +34,7 @@ export default {
   components: {
     StoryItem,
     MoreStories,
+    ScrollDown,
   },
   data() {
     return {};

@@ -56,6 +56,7 @@ import {
   faUserGraduate,
   faFilter,
   faSpinner,
+  faHandPointer,
 } from "@fortawesome/free-solid-svg-icons";
 Iconlibrary.add(
   faTimes,
@@ -65,7 +66,8 @@ Iconlibrary.add(
   faGlobe,
   faUserGraduate,
   faFilter,
-  faSpinner
+  faSpinner,
+  faHandPointer
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
