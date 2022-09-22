@@ -4,7 +4,7 @@
     v-if="story.fields['en-StoryTitle']"
   >
     <div
-      class="story-card w-100 h-100 p-1 btn d-flex flex-column rounded-0"
+      class="story-card w-100 h-100 p-1 btn d-flex flex-column rounded-0 position-relative"
       :class="[
         `btn-${story.fields['Story Theme']}`,
         isStoryActive(story.id) ? 'active' : '',
@@ -29,6 +29,9 @@
         class="w-100"
         alt="Card image cap"
       /> -->
+      <div class="featuredStory pr-2 pt-1" v-if="story.fields['featured']">
+        <font-awesome-icon class="id-icon fa-1.5" :icon="['fas', 'star']" />
+      </div>
       <div
         class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white font-weight-bolds"
       >
@@ -108,5 +111,35 @@ function getExt(type) {
 <style scoped lang="scss">
 .story-card {
   min-height: 10vh;
+}
+
+.featuredStory {
+  position: absolute;
+  top: 0;
+  right: 0;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.979));
+  filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 1));
+
+  animation-name: flash;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 </style>

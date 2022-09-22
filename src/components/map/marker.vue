@@ -39,7 +39,16 @@
         v-else
         :aria-label="storyTitle"
       >
-        <span class="marker-pin btn-fade" :class="smallMarkerClass"></span>
+        <div
+          class="marker-pin btn-fade d-flex justify-content-center align-items-center"
+          :class="smallMarkerClass"
+        >
+          <font-awesome-icon
+            class="featuredStoryMarker"
+            :icon="['fas', 'star']"
+            v-if="story.fields['featured']"
+          />
+        </div>
       </l-icon>
     </Transition-group>
   </l-marker>
@@ -105,6 +114,25 @@ export default {
 };
 </script>
 <style lang="scss">
+.featuredStoryMarker {
+  margin-top: -1px;
+  transform: rotate(-45deg);
+  color: #ffffff;
+  animation-name: featuredStoryMarker;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes featuredStoryMarker {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 .leaflet-marker-icon,
 .leaflet-marker-shadow {
   -webkit-animation: fadein 0.8s; /* Safari, Chrome and Opera > 12.1 */
