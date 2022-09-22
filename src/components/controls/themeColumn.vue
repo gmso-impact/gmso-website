@@ -9,11 +9,11 @@
             'btn-charcoal': storyThemesActive.length !== storyThemes.length,
           }"
           v-on:click="resetTagsClicked"
-          :aria-label="$t(`AllStories`)"
+          :aria-label="$t(`AllThemes`)"
         >
           <transition name="fade" mode="out-in">
-            <div :key="$t(`AllStories`)">
-              {{ $t(`AllStories`) }}
+            <div :key="$t(`AllThemes`)">
+              {{ $t(`AllThemes`) }}
             </div>
           </transition>
         </button>

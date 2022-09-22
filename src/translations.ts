@@ -18,8 +18,11 @@ const translations = {
       "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     Close: "Close",
     AllStories: "All Stories",
+    AllThemes: "All Themes",
     Stories: "Stories",
     Filter: "Filter",
+    ResetFilter: "Reset filter to see more stories",
+    ResetMap: "Reset map to see more stories",
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
 
@@ -72,8 +75,12 @@ const translations = {
       "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     Close: "Salida",
     AllStories: "Todos Cuentos",
+    AllThemes: "Todos Temas",
     Stories: "Cuentos",
     Filter: "Filtrar",
+    ResetFilter: "Restablecer filtro para ver más cuentos",
+    ResetMap: "Restablecer mapa para ver más cuentos",
+
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
 
