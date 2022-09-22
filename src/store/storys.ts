@@ -12,7 +12,7 @@ const stories = storiesFile.response
   })
   .sort((a, b) => {
     // sort alphabetically
-    return a.fields["en-StoryTitle"].localeCompare(b.fields["en-StoryTitle"])
+    return a.fields["en-StoryTitle"].localeCompare(b.fields["en-StoryTitle"]);
   })
   .map((story) => {
     // Replace missing data with default data
