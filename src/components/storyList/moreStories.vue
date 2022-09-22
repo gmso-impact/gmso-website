@@ -12,7 +12,7 @@
     </div>
     <div
       class="btn btn-secondary story-card w-100 h-100 p-2 d-flex flex-column rounded-0 justify-content-between"
-      v-else-if="zoom > 4 || storyInMap.length <= 12"
+      v-else-if="storyInMap.length <= 30"
       v-on:click="resetMap"
     >
       <div class="h-100 d-flex flex-column justify-content-center">
