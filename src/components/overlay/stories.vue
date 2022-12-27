@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="videoFrame overlay childPoint" v-if="isStoriesFrameOpen">
+  <div class="overlay childPoint" v-if="isStoriesFrameOpen">
     <div class="controlFrame px-1 py-1 rounded bg-carbon border border-slate">
       <StoryListAll></StoryListAll>
       <div class="topClose">

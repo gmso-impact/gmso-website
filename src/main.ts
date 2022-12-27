@@ -78,6 +78,10 @@ import VueRouter from "vue-router";
 import router from "./router";
 Vue.use(VueRouter);
 
+import vueVimeoPlayer from 'vue-vimeo-player'
+Vue.use(vueVimeoPlayer)
+
+
 new Vue({
   store,
   i18n,

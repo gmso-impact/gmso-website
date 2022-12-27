@@ -1,0 +1,14 @@
+.videoFrame {
+  position: absolute;
+  top: 50%;
+  left: 25%; //67.5
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+@include media-breakpoint-only(xxl) {
+  .videoFrame {
+    top: 50%;
+    left: 50%;
+  }
+}

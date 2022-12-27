@@ -33,6 +33,7 @@
     "vue-property-decorator": "^9.1.2",
     "vue-qr": "^4.0.9",
     "vue-router": "3",
+    "vue-vimeo-player": "^0.2.2",
     "vue2-leaflet": "^2.7.1",
     "vuex": "^3.6.0"
   },
