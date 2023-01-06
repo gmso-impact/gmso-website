@@ -10,12 +10,7 @@
       <l-icon
         :icon-anchor="iconAnchor"
         key="img"
-        v-if="
-          getBreakpoints[0] === 'xxl' &&
-          mapGetZoom > 6 &&
-          storyInMap.length <= 9 &&
-          !isStoryActive(story.id)
-        "
+        v-if="false"
         :aria-label="storyTitle"
       >
         <div class="marker-img">
