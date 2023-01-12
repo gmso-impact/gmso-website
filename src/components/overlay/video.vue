@@ -1,6 +1,6 @@
 <template lang="">
   <div class="videoFrame childPoint">
-    <div class="controlFrame pt-3 px-3 pb-2 bg-black rounded">
+    <div class="controlFrame pt-2 px-2 pb-1 bg-black rounded">
       <video
         class="innerFrame rounded"
         title="Stories at CSU"
@@ -9,10 +9,7 @@
         :loop="willLoop"
         ref="video"
       >
-        <source
-          src="intro2.mp4"
-          type="video/mp4"
-        />
+        <source src="intro2.mp4" type="video/mp4" />
       </video>
       <!-- <vimeo-player
         class="innerFrame rounded"
@@ -22,24 +19,48 @@
         @ready="onReady"
       />-->
       <div class="topClose">
-        <button
-          class="btn btn-lg btn-black"
-          v-on:click="closeVideoFrame()"
-          :aria-label="$t(`Close`)"
-        >
-          <font-awesome-icon :icon="['fas', 'times']" class="mr-2" />
-          {{ $t(`Close`) }}
-        </button>
+        <div class="btn-group" role="group" aria-label="Video Controls">
+          <button
+            class="btn btn-lg btn-black"
+            v-if="this.$route.name === 'Kiosk'"
+            v-on:click="toggleMute()"
+          >
+            <span v-if="isMuted">
+              <font-awesome-icon :icon="['fas', 'fa-volume-xmark']" />
+            </span>
+            <span v-else>
+              <font-awesome-icon :icon="['fas', 'fa-volume-high']" />
+            </span>
+          </button>
+          <button
+            class="btn btn-lg btn-black"
+            v-on:click="closeVideoFrame()"
+            :aria-label="$t(`Close`)"
+          >
+            {{ $t(`Close`) }}
+            <font-awesome-icon :icon="['fas', 'times']" class="ml-2" />
+          </button>
+        </div>
       </div>
-      <div class="bottomClose">
-        <button
-          class="btn btn-lg btn-black"
-          v-on:click="closeVideoFrame()"
-          :aria-label="$t(`Close`)"
-        >
-          <font-awesome-icon :icon="['fas', 'times']" />
-          {{ $t(`Close`) }}
-        </button>
+      <div class="bottomClose" v-if="this.getBreakpoints.includes('xxl')">
+        <div class="btn-group" role="group" aria-label="Video Controls">
+          <button
+            class="btn btn-lg btn-black"
+            v-on:click="closeVideoFrame()"
+            :aria-label="$t(`Close`)"
+          >
+            {{ $t(`Close`) }}
+            <font-awesome-icon :icon="['fas', 'times']" class="ml-2" />
+          </button>
+          <button class="btn btn-lg btn-black" v-on:click="toggleMute()">
+            <span v-if="isMuted">
+              <font-awesome-icon :icon="['fas', 'fa-volume-xmark']" />
+            </span>
+            <span v-else>
+              <font-awesome-icon :icon="['fas', 'fa-volume-high']" />
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -60,6 +81,7 @@ export default {
 
       playerReady: false,
       isMuted: false,
+      muter: null,
       willLoop: true,
     };
   },
@@ -68,8 +90,8 @@ export default {
       isVideoFrameOpen: "isVideoFrameOpen",
       getBreakpoints: "getBreakpoints",
     }),
-    hasControls: function() {
-      return (this.$route.name !== "Kiosk")
+    hasControls: function () {
+      return this.$route.name !== "Kiosk";
     },
     vimeoOptions: function () {
       // https://github.com/vimeo/player.js/#embed-options
@@ -127,6 +149,16 @@ export default {
     ...mapMutations({
       closeVideoFrame: "closeVideoFrame",
     }),
+    toggleMute() {
+      clearTimeout(this.muter);
+      this.isMuted = !this.isMuted;
+      if (!this.isMuted) {
+        this.muter = setTimeout(() => {
+          console.log("mute video");
+          this.isMuted = true;
+        }, 3 * 60 * 1000);
+      }
+    },
     onReady() {
       this.playerReady = true;
       this.$refs.player.play();
@@ -139,15 +171,15 @@ export default {
     },
   },
   mounted() {
-    let muteAudio = setTimeout(() => {
-        console.log("mute video")
-        this.isMuted = true;
+    this.muter = setTimeout(() => {
+      console.log("mute video");
+      this.isMuted = true;
     }, 3 * 60 * 1000);
 
     this.$nextTick(() => {
-        this.$refs.video.play();
-      });
-  }
+      this.$refs.video.play();
+    });
+  },
 };
 </script>
 
