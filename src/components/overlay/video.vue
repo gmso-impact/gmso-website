@@ -1,25 +1,26 @@
 <template lang="">
-  <div class="videoFrame childPoint" v-if="isVideoFrameOpen">
+  <div class="videoFrame childPoint">
     <div class="controlFrame pt-3 px-3 pb-2 bg-black rounded">
-      <!-- <video
-        class="innerFrame"
+      <video
+        class="innerFrame rounded"
         title="Stories at CSU"
-        controls
-        loop
+        :controls="hasControls"
+        :muted="isMuted"
+        :loop="willLoop"
         ref="video"
       >
         <source
-          src="https://ibis-test1.nrel.colostate.edu/GMSO/videos/CSUS.mp4"
+          src="intro2.mp4"
           type="video/mp4"
         />
-      </video> -->
-      <vimeo-player
+      </video>
+      <!-- <vimeo-player
         class="innerFrame rounded"
         ref="player"
         :options="vimeoOptions"
         :videoId="videoID"
         @ready="onReady"
-      />
+      />-->
       <div class="topClose">
         <button
           class="btn btn-lg btn-black"
@@ -58,6 +59,8 @@ export default {
       // small no audio 783038959
 
       playerReady: false,
+      isMuted: false,
+      willLoop: true,
     };
   },
   computed: {
@@ -65,6 +68,9 @@ export default {
       isVideoFrameOpen: "isVideoFrameOpen",
       getBreakpoints: "getBreakpoints",
     }),
+    hasControls: function() {
+      return (this.$route.name !== "Kiosk")
+    },
     vimeoOptions: function () {
       // https://github.com/vimeo/player.js/#embed-options
       // https://github.com/dobromir-hristov/vue-vimeo-player
@@ -132,22 +138,16 @@ export default {
       this.$refs.player.pause();
     },
   },
-  watch: {
-    isVideoFrameOpen: function (isOpen) {
-      if (!isOpen) {
-        return;
-      }
-
-      let muteAudio = setTimeout(() => {
+  mounted() {
+    let muteAudio = setTimeout(() => {
         console.log("mute video")
-        this.$refs.player.mute();
-      }, 3 * 60 * 1000);
+        this.isMuted = true;
+    }, 3 * 60 * 1000);
 
-      this.$nextTick(() => {
-        //this.$refs.video.play();
+    this.$nextTick(() => {
+        this.$refs.video.play();
       });
-    },
-  },
+  }
 };
 </script>
 
