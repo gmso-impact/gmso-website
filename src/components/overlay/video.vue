@@ -9,7 +9,7 @@
         :loop="willLoop"
         ref="video"
       >
-        <source src="intro2.mp4" type="video/mp4" />
+        <source src="https://ibis-test1.nrel.colostate.edu/GMSO/videos/2023_Impacto_Sound.mp4" type="video/mp4" />
       </video>
       <!-- <vimeo-player
         class="innerFrame rounded"
