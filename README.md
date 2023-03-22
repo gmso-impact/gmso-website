@@ -6,17 +6,21 @@ GMSO Impact is a website showcasing the stories of research and advancement of t
 This website is hosted on GitHub pages. Every day at 5 am MTN new data is downloaded from Airtable and then copied to the github pages content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
 
 1. The kiosk has been inactive for more than 1 hour
-1. The kiosk has the `reset` button pressed
+1. The kiosk has the `reset` button pressed in the lower right hand corner of the screen
 1. The kiosk is power cycled or otherwise re-started
 
 # Local Development of Website
 
 If you are new to this code, please first complete the 'required software' section and then 'Developer Setup'
 ## Start Development Server
-This runs the a local copy of the website
+This runs the a local copy of the website.
 ```
 yarn serve
 ```
+
+By default it will serve the **website** from [http://localhost:8080/](http://localhost:8080/) to view **kiosk mode* visit [http://localhost:8080/#/kiosk](http://localhost:8080/#/kiosk). It will take 1-3 minutes to start. Changes you make within the `src` folders will automaticly be displayed. Other changes will require you to stop the server `ctrl + D` within powershell and then start it again using `yarn serve`.
+
+If you have not run the code in a while or ff you see an error from `yarn serve` try a `yarn install` to ensure you have the NPM latest packages. If you have missing images or stories try `yarn fetch` to get the latest data from Airtable.
 
 ## Retrieve Story data & images
 ***Requires AIRTABLE_AUTHORIZATION= API Key in ENV file*** 
@@ -25,6 +29,15 @@ yarn serve
 yarn fetch
 ```
 First this command downloads the data from airtable. Then it looks through that for image links. The data is stored in `src/assets/allStories.json`. The images are downloaded, and then re-sized for optimal page delivery in the folder `public/stories`
+
+## Simulating as kiosk
+There are 3 kiosks located at Spur. Each can be interacted with via touch inputs. You can use the Micrsoft Edge OR Google Chrome developer tools to simulate these screen sizes and touch input through [add a custom mobile device](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#add-a-custom-mobile-device).
+
+- Wall - Screen resolution 7680x2160 16ft wide
+- Short Podium - Screen resolution 1920x1080 24in diagonal
+- Tall Podium - Screen resolution 1920x1080 24in diagonal
+
+
 
 ## Making Code Changes
 
@@ -58,6 +71,7 @@ Changes to the main branch will automaticly be deployed to production and should
     - `src\mixins` [vue2 js mixins](https://v2.vuejs.org/v2/guide/mixins.html) for re-useable code across components.
     - `src\router` [vue2 router](https://github.com/vuejs/vue-router) handles page navigation
     - `src\scss`  [SCSS handles](https://sass-lang.com/documentation/) styling. Use [bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) styles whenever possible to avoid alot of custom css
+        - `src\scss\variables.scss` defines theme colors, responsive breakpoints, and global font size
     - `src\store` [vuex](https://vuex.vuejs.org/guide/) store handles page state
     - `src\views` Used for high level pages by the router
     - `src\translations.ts` [vue-i18n](https://kazupon.github.io/vue-i18n/guide/formatting.html) manages translation of text from diffrent languages
