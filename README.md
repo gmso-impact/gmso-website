@@ -1,5 +1,5 @@
 # GMSO Impact(o)
-GMSO Impact is a website showcasing the stories of research and advancement of the public good at Colorado State University hosted at [impact.csusystem.edu](https://impact.csusystem.edu/). At the [Spur campus](https://csuspur.org/) in Denver, Colorado there is an exhibit on the 2nd floor of the Tera building displaying this website on a 16ft wide touch screen and accesibility friendly podiums for the public to experience. This GitHub repository contains the code for the website.
+GMSO Impact is a website showcasing the stories of research and advancement of the public good at Colorado State University hosted at [impact.csusystem.edu](https://impact.csusystem.edu/). At the [Spur campus](https://csuspur.org/) in Denver, Colorado there is an exhibit on the 2nd floor of the Tera building displaying this website on a 16ft wide touch screen and accessibility friendly podiums for the public to experience. This GitHub repository contains the code for the website.
 
 # Production Server
 
@@ -115,7 +115,7 @@ Changes to the main branch will automaticly be deployed to production and should
     ```
 1. Create Airtable Personal Access token
     This will be used by your local machine to access the Airtable data. You need this for the list of stories and the image files.
-    >**Do not sotre personal access tokens or API keys in Gihub including the `.example.env` file**
+    >**Do not store personal access tokens or API keys in Gihub including the `.example.env` file**
 
     1. Copy '.env.example' to a file named '.env'
     1. Visit [airtable.com/create/tokens](https://airtable.com/create/tokens)
