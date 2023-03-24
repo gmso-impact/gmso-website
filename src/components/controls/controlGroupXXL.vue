@@ -3,15 +3,17 @@
     <div class="h-25">
       <!--<ThemeColumn></ThemeColumn>-->
     </div>
-    <div class="h-75 d-flex flex-column justify-content-between py-5">
+    <div class="h-75 d-flex flex-column justify-content-center py-5 mx-auto w-50">
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
       <ThemeColumn></ThemeColumn>
       <Language class="d-block"></Language>
+      <TitleNameSwitch class="d-block mt-4"></TitleNameSwitch>
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
-      <div class="row justify-content-around mb-5">
-        <QRSite v-if="this.$route.name === 'Kiosk'" class="col-4"></QRSite>
-        <Geo class="col-5"></Geo>
+      <div class="row mb-5">
+        <QRSite v-if="this.$route.name === 'Kiosk'" class="col-4 text-center"></QRSite>
+        <Geo class="col-4 text-center"></Geo>
+        <Geo class="col-4 text-center"></Geo>
       </div>
     </div>
   </div>
@@ -20,6 +22,7 @@
 import { mapGetters, mapMutations } from "vuex";
 import KioskSwitch from "./kioskSwitch.vue";
 import Language from "./language.vue";
+import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
 import Geo from "./geo.vue";
 import QRSite from "@/components/qr/qrSite.vue";
@@ -28,6 +31,7 @@ export default {
   components: {
     KioskSwitch,
     Language,
+    TitleNameSwitch,
     ThemeColumn,
     QRSite,
     Geo,

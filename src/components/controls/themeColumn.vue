@@ -1,7 +1,8 @@
 <template lang="">
-  <div class="d-flex flex-column justify-content-center h-100">
+  <div class="d-flex flex-column justify-content-left h-100">
     <div class="row mb-2">
       <div class="col-12">
+        <h2 class="text-white text-center pb-5">Find Stories by Theme</h2>
         <button
           class="btn btn-block font-weight-bold mb-2 mb-xxl-4"
           v-bind:class="{

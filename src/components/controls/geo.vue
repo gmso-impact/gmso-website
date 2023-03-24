@@ -1,10 +1,14 @@
 <template lang="">
-  <img
-    src="Geo_Impact.svg"
-    class="geo-img"
-    v-on:click="toggleVideoFrame"
-    alt="Click to watch the intro video"
-  />
+  <div class="d-flex justify-content-end">
+    <div class="w-100 ml-auto">
+      <img
+        src="Geo_Impact.svg"
+        class="geo-img ml-auto"
+        v-on:click="toggleVideoFrame"
+        alt="Click to watch the intro video"
+      />
+    </div>
+  </div>
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";

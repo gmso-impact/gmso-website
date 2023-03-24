@@ -15,7 +15,7 @@
       />
     </div>
     <div class="flex-grow-1 d-flex flex-row overflow-y-hidden no-gutters h-100">
-      <div class="left d-none d-lg-block col-lg-2 col-xl-3 col-xxl-2">
+      <div class="left d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3">
         <StoryListMap></StoryListMap>
       </div>
       <div
@@ -23,10 +23,10 @@
       >
         <ControlGroup></ControlGroup>
       </div>
-      <div class="d-none d-xxl-block h-100 col-1 border-right border-slate">
+      <div class="d-none d-xxl-block h-100 col-2 border-right border-slate">
         <ControlGroupXXL></ControlGroupXXL>
       </div>
-      <div class="right col-12 col-lg-8 col-xl-8 col-xxl-9">
+      <div class="right col-12 col-lg-8 col-xl-8 col-xxl-7">
         <Map></Map>
       </div>
     </div>
