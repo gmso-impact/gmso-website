@@ -66,6 +66,7 @@ const storys = {
     isHelpFrameOpen: false,
     isStoriesFrameOpen: false,
     isFilterFrameOpen: false,
+    sortStoriesBy: "People",
   },
   getters: {
     isVideoFrameOpen: (state) => {
@@ -79,6 +80,9 @@ const storys = {
     },
     isFilterFrameOpen: (state) => {
       return state.isFilterFrameOpen;
+    },
+    sortStoriesBy: (state) => {
+      return state.sortStoriesBy;
     },
     storyAll: (state) => {
       return state.all.map((story) => {
@@ -265,6 +269,15 @@ const storys = {
         state.isFilterFrameOpen = true;
       } else {
         state.isFilterFrameOpen = false;
+      }
+    },
+
+    setSortStoriesBy: (state, sortBy) => {
+      if (sortBy === "People") {
+        state.sortStoriesBy = "People";
+      }
+      else if (sortBy === "Title") {
+        state.sortStoriesBy = "Title";
       }
     },
 

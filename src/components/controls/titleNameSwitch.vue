@@ -6,21 +6,31 @@
       'btn-group-vertical': false,
     }"
     role="group"
-    aria-label="Language Toggle Buttons"
+    aria-label="Stories By Title and Name Toggle Buttons"
   >
     <button
-      v-for="language in languages"
-      :key="language.locale"
       type="button"
       class="btn btn-fade px-0"
-      :aria-label="language.language"
+      :aria-label="$t(`SortByStories`)"
       :class="{
-        'btn-white': $root.$i18n.locale === language.locale,
-        'btn-secondary': $root.$i18n.locale !== language.locale,
+        'btn-white': true,
+        'btn-secondary': false,
       }"
-      v-on:click="setLanguage(language.locale)"
+      v-on:click="setStoriesBy('Title')"
     >
-      {{ language.language }}
+      {{ $t(`SortByStories`) }}
+    </button>
+    <button
+      type="button"
+      class="btn btn-fade px-0"
+      :aria-label="$t(`SortByStories`)"
+      :class="{
+        'btn-white': false,
+        'btn-secondary': true,
+      }"
+      v-on:click="setStoriesBy('People')"
+    >
+      {{ $t(`SortByPeople`) }}
     </button>
   </div>
 </template>
@@ -35,22 +45,13 @@ export default {
   },
   computed: {
     ...mapGetters({
-      storyThemes: "storyThemes",
+      sortStoriesBy: "sortStoriesBy",
     }),
   },
   methods: {
     ...mapMutations({
-      resetTags: "resetTags",
-    }),
-    setLanguage: function (locale) {
-      this.$root.$i18n.locale = locale;
-      event(`language`, {
-        event_category: "control",
-        event_label: locale,
-        value: 1,
-        method: "Google",
-      });
-    },
+      setSortStoriesBy: "setSortStoriesBy",
+    })
   },
 };
 </script>

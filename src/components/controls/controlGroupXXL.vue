@@ -7,12 +7,12 @@
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
       <ThemeColumn></ThemeColumn>
       <Language class="d-block"></Language>
-      <TitleNameSwitch class="d-block mt-4"></TitleNameSwitch>
+      <TitleNameSwitch v-if="false" class="d-block mt-4"></TitleNameSwitch>
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
       <div class="row mb-5">
         <QRSite v-if="this.$route.name === 'Kiosk'" class="col-4 text-center"></QRSite>
-        <Geo class="col-4 text-center"></Geo>
+        <IntroVideo class="col-4 text-center"></IntroVideo>
         <Geo class="col-4 text-center"></Geo>
       </div>
     </div>
@@ -26,6 +26,7 @@ import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
 import Geo from "./geo.vue";
 import QRSite from "@/components/qr/qrSite.vue";
+import IntroVideo from "./introVideo.vue";
 
 export default {
   components: {
@@ -35,6 +36,7 @@ export default {
     ThemeColumn,
     QRSite,
     Geo,
+    IntroVideo,
   },
   data() {
     return {};
