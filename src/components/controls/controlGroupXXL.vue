@@ -7,7 +7,7 @@
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
       <ThemeColumn></ThemeColumn>
       <Language class="d-block"></Language>
-      <TitleNameSwitch v-if="false" class="d-block mt-4"></TitleNameSwitch>
+      <TitleNameSwitch class="d-block mt-4"></TitleNameSwitch>
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
       <div class="row mb-5">

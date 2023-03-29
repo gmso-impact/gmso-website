@@ -10,10 +10,6 @@ const stories = storiesFile.response
       return true;
     }
   })
-  .sort((a, b) => {
-    // sort alphabetically
-    return a.fields["en-StoryTitle"].localeCompare(b.fields["en-StoryTitle"]);
-  })
   .map((story) => {
     // Replace missing data with default data
     return {
@@ -66,7 +62,7 @@ const storys = {
     isHelpFrameOpen: false,
     isStoriesFrameOpen: false,
     isFilterFrameOpen: false,
-    sortStoriesBy: "People",
+    sortStoriesBy: "en-StoryTitle",
   },
   getters: {
     isVideoFrameOpen: (state) => {
@@ -99,6 +95,9 @@ const storys = {
             LONG: (Math.random() - 0.5) * 5 - 105.086407087,
           },
         };
+      }).sort((a, b) => {
+        // sort alphabetically
+        return a.fields[state.sortStoriesBy].localeCompare(b.fields[state.sortStoriesBy]);
       });
     },
     storyFiltered: (state, getters) => {
@@ -273,11 +272,11 @@ const storys = {
     },
 
     setSortStoriesBy: (state, sortBy) => {
-      if (sortBy === "People") {
-        state.sortStoriesBy = "People";
+      if (sortBy === "Last Name") {
+        state.sortStoriesBy = "Last Name";
       }
-      else if (sortBy === "Title") {
-        state.sortStoriesBy = "Title";
+      else if (sortBy === "en-StoryTitle") {
+        state.sortStoriesBy = "en-StoryTitle";
       }
     },
 

@@ -25,8 +25,8 @@ const translations = {
     ResetMap: "Reset map to see more stories",
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
-    SortByStories: "Title",
-    SortByPeople: "Name",
+    SortByTitle: "Title",
+    SortByPerson: "Person",
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
@@ -86,8 +86,8 @@ const translations = {
     QRpopover: "Ver está pieza en su móbil",
     Explore: "Prepárate para una aventura",
 
-    SortByStories: "Title",
-    SortByPeople: "Name",
+    SortByTitle: "Título",
+    SortByPerson: "Persona",
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",

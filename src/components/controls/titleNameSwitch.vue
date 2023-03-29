@@ -13,24 +13,24 @@
       class="btn btn-fade px-0"
       :aria-label="$t(`SortByStories`)"
       :class="{
-        'btn-white': true,
-        'btn-secondary': false,
+        'btn-white': sortStoriesBy === 'en-StoryTitle',
+        'btn-secondary': sortStoriesBy !== 'en-StoryTitle',
       }"
-      v-on:click="setStoriesBy('Title')"
+      v-on:click="setSortStoriesBy('en-StoryTitle')"
     >
-      {{ $t(`SortByStories`) }}
+      {{ $t(`SortByTitle`) }}
     </button>
     <button
       type="button"
       class="btn btn-fade px-0"
       :aria-label="$t(`SortByStories`)"
       :class="{
-        'btn-white': false,
-        'btn-secondary': true,
+        'btn-white': sortStoriesBy === 'Last Name',
+        'btn-secondary': sortStoriesBy !== 'Last Name',
       }"
-      v-on:click="setStoriesBy('People')"
+      v-on:click="setSortStoriesBy('Last Name')"
     >
-      {{ $t(`SortByPeople`) }}
+      {{ $t(`SortByPerson`) }}
     </button>
   </div>
 </template>

@@ -1,10 +1,12 @@
 <template lang="">
-  <div class="d-flex justify-content-end">
-    <div class="w-100 ml-auto">
-      <p class="text-white text-left">Watch Intro Vvideo</p>
-      <div v-on:click="toggleVideoFrame" style="line-height:200px; color: white; font-size: 200px;"> 
+  <div class="d-flex align-items-center">
+    <div class="w-100">
+      <button class='btn btn-dark'>
+        <div class="">Watch Intro Video</div>
+      <div v-on:click="toggleVideoFrame" class='intro-icon'> 
         <font-awesome-icon class="id-icon fa-1.5" :icon="['fas', 'video']" />
-      </div>
+      </div>      
+      </button>
     </div>
   </div>
 </template>
