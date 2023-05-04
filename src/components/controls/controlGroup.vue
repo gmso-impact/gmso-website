@@ -5,7 +5,7 @@
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
     <Geo class="align-self-center mb-3"></Geo>
-    <IntroVideo class="text-center mb-3"></IntroVideo>
+    <IntroVideo class="text-center mb-3" v-if="this.$route.name !== 'Kiosk'"></IntroVideo>
     <QRSite v-if="this.$route.name === 'Kiosk'" class="px-2 pb-2 text-center"></QRSite>
   </div>
 </template>
