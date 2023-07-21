@@ -4,7 +4,7 @@
   left: 25%; //67.5
   transform: translate(-50%, -50%);
   z-index: 2000;
-  width:90vw
+  width:90vw;
 }
 
 @include media-breakpoint-only(xl) {
@@ -17,5 +17,6 @@
     top: 50%;
     left: 50%;
     width: 2800px;
+    height:75vh;
   }
 }

@@ -60,6 +60,7 @@ import {
   faVolumeHigh,
   faVolumeXmark,
   faVideo,
+  faHandPointer,
 } from "@fortawesome/free-solid-svg-icons";
 Iconlibrary.add(
   faTimes,
@@ -74,6 +75,7 @@ Iconlibrary.add(
   faVolumeHigh,
   faVolumeXmark,
   faVideo,
+  faHandPointer,
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

@@ -68,6 +68,7 @@
   height: 60vh;
   width: 60vw;
   z-index: 99999 !important;
+  position:relative;
 }
 
 @include media-breakpoint-up(xl){
@@ -75,6 +76,7 @@
     height: 40vh ;
     width: 40vw;
     z-index: 99999 !important;
+    position:relative;
   }
 }
 
@@ -87,6 +89,7 @@
     height: 100vh / 2 * $panels-tall;
     width: 100vw / 4 * $panels-wide ;
     z-index: 99999 !important;
+    position:relative;
   }
   .iframe-scale {
     width: 100% / $storyScale;

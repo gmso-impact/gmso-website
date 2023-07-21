@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="videoFrame childPoint">
+  <div class="videoFrame childPoint 50vh">
     <div class="controlFrame pt-2 px-2 pb-1 bg-black rounded">
       <video
         class="innerFrame rounded"
@@ -9,15 +9,11 @@
         :loop="willLoop"
         ref="video"
       >
-        <source src="intro2.mp4" type="video/mp4" />
+        <source src="open-stories.mp4" type="video/mp4" />
       </video>
-      <!-- <vimeo-player
-        class="innerFrame rounded"
-        ref="player"
-        :options="vimeoOptions"
-        :videoId="videoID"
-        @ready="onReady"
-      />-->
+      
+      <!--<iframe width="100%" height="75%" scrollable="yes" src="https://storymaps.arcgis.com/stories/43822a2ec7704ad1a9fba805d6973bf6"></iframe>-->
+
       <div class="topClose">
         <div class="btn-group" role="group" aria-label="Video Controls">
           <button
@@ -80,7 +76,7 @@ export default {
       // small no audio 783038959
 
       playerReady: false,
-      isMuted: false,
+      isMuted: true,
       muter: null,
       willLoop: true,
     };
