@@ -81,7 +81,7 @@
     </div>
     <OverlayHelp></OverlayHelp>
 
-    <OverlayVideo v-if="isVideoFrameOpen"></OverlayVideo>
+    <OverlayVideo v-if="isVideoFrameOpen && (this.$route.name !== 'Kiosk' || getBreakpoints.includes('xxl'))"></OverlayVideo>
     <OverlayFilter></OverlayFilter>
     <OverlayStories></OverlayStories>
     <OverlayStory
