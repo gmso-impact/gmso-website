@@ -118,8 +118,6 @@ const getBasemapStyle = function (defaultStyle) {
   return basemapStyle;
 };
 
-import mapboxgl from "mapbox-gl";
-window.mapboxgl = mapboxgl; // mapbox-gl-leaflet expects this to be global, used for esri-leaflet-vector
 
 import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
@@ -279,6 +277,7 @@ export default {
         this.storyLayerId = null;
       }
       if (newStory) {
+        // eslint-disable-next-line 
         let layer = featureLayer({
           url: newStory.fields["Impact Map Layer URL"],
           apikey: this.apikey,
@@ -288,6 +287,7 @@ export default {
           minZoom: 0, // zoom level to show layer at, 0 = world
           style: (feature) => {
             console.log(feature);
+            // eslint-disable-next-line 
             let color = cssColors[newStory.fields["Story Theme"]];
             return {
               color: color, //"#BA55D3",

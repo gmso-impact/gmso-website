@@ -16,17 +16,18 @@
     "@fortawesome/fontawesome-svg-core": "^6.1",
     "@fortawesome/free-solid-svg-icons": "^6.1",
     "@fortawesome/vue-fontawesome": "^2.0.6",
-    "airtable": "^0.11.1",
+    "airtable": "^0.12.2",
     "bootstrap": "^4.x",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "dotenv": "^10.0.0",
-    "esri-leaflet": "^3.0.8",
-    "esri-leaflet-vector": "^3.1.5",
-    "leaflet": "^1.7.1",
+    "esri-leaflet": "^3.0.11",
+    "esri-leaflet-vector": "^4.1",
+    "leaflet": "^1.9.4",
+    "maplibre-gl": "^3.3.0",
     "node-fetch": "2",
     "sharp": "^0.30.7",
-    "vue": "^2.6.14",
+    "vue": "^2.7",
     "vue-class-component": "^7.2.3",
     "vue-gtag": "^1.16.1",
     "vue-i18n": "8",
@@ -37,24 +38,24 @@
     "vuex": "^3.6.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.15",
-    "@vue/cli-plugin-typescript": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^4.12.0",
-    "prettier": "^2.2.1",
-    "sass-loader": "^8.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.4",
+    "@typescript-eslint/parser": "^6.4",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-plugin-typescript": "~5.0.8",
+    "@vue/cli-plugin-vuex": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^11.0",
+    "eslint": "^8.48",
+    "eslint-plugin-prettier": "^5.0",
+    "eslint-plugin-vue": "^9.17",
+    "node-sass": "^8.0",
+    "prettier": "^3.0",
+    "sass-loader": "^13.3",
     "typescript": "~4.1.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.7.14"
   },
   "eslintConfig": {
     "root": true,
@@ -66,12 +67,15 @@
       "eslint:recommended",
       "@vue/typescript/recommended",
       "@vue/prettier",
-      "@vue/prettier/@typescript-eslint"
+      "@vue/eslint-config-typescript"
     ],
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "vue/no-reserved-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
