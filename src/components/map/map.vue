@@ -118,8 +118,6 @@ const getBasemapStyle = function (defaultStyle) {
   return basemapStyle;
 };
 
-import mapboxgl from "mapbox-gl";
-window.mapboxgl = mapboxgl; // mapbox-gl-leaflet expects this to be global, used for esri-leaflet-vector
 
 import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
