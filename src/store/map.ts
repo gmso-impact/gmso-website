@@ -1,5 +1,34 @@
+
+export const mapBases = {
+  default: {
+    layer: "ArcGIS:DarkGray:Base",
+    name_en: "",
+    name_es: "",
+    photo: ""
+  },
+  darkGray: {
+    layer: "ArcGIS:DarkGray:Base",
+    name_en: "",
+    name_es: "",
+    photo: ""
+  },
+  topographic: {
+    layer: "ArcGIS:DarkGray:Base",
+    name_en: "",
+    name_es: "",
+    photo: ""
+  },
+  human: {
+    layer: "ArcGIS:DarkGray:Base",
+    name_en: "",
+    name_es: "",
+    photo: ""
+  }
+}
+
 import { latLng, latLngBounds } from "leaflet";
-export const maps = {
+
+export const mapBounds = {
   globe: {
     bounds: latLngBounds(latLng(80, 70), latLng(-60, -130)),
 
@@ -54,7 +83,7 @@ const stateTemplate = {
 const map = {
   state: {
     current: { ...stateTemplate },
-    new: { ...stateTemplate, bounds: maps.globe },
+    new: { ...stateTemplate, bounds: mapBounds.globe },
     initial: {
       ...stateTemplate,
     },

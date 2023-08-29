@@ -131,7 +131,7 @@ import OverlayStories from "../overlay/stories.vue";
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
-import { maps } from "@/store/map";
+import { mapBounds, mapBases } from "@/store/map";
 import cssColors from "@/scss/variables.scss";
 
 const apikey =
@@ -161,7 +161,7 @@ export default {
       //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
       // custom basemap can be modified here: https://developers.arcgis.com/vector-tile-style-editor/fe3c8d5151de424bb25ad0655ca6c080/json
       //customBasemap: vectorBasemapLayer("fe3c8d5151de424bb25ad0655ca6c080", { apikey: apikey }),
-      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
+      basemap: vectorBasemapLayer(mapBases.default.layer, { apikey: apikey }),
       //basemapDefault: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
       //basemapOld: basemapLayer("DarkGray", { apikey }),
       apikey: apikey,
@@ -177,8 +177,8 @@ export default {
         zoomControl: false,
         closePopupOnClick: false,
       },
-      center: maps.colorado.center, // initial map center before load
-      zoom: maps.colorado.zoom,
+      center: mapBounds.colorado.center, // initial map center before load
+      zoom: mapBounds.colorado.zoom,
     };
   },
   computed: {
