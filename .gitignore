@@ -2,6 +2,9 @@
 node_modules
 /dist
 /public/stories
+# Local GMSO files not published to server
+/local
+
 # story files
 #/src/assets/*.json
 

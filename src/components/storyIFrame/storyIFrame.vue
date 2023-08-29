@@ -1,8 +1,9 @@
 <template lang="">
   <div class="h-100 w-100">
+    <ScrollDown></ScrollDown><!--style="z-index:99997 !important;"-->
     <iframe
       @load="setIframeLoaded()"
-      class="iframe-scale iframe-border-none btn-fade"
+      class="iframe-scale iframe-border-none btn-fade justify-content-end"
       frameborder="0"
       :allow="allow"
       :class="{
@@ -10,6 +11,7 @@
       }"
       :src="story.fields['en-StoryMapLink']"
       title="Story Map"
+      scrolling="yes"
     ></iframe>
     <div
       class="flex-column h-100 text-center text-white justify-content-center"
@@ -26,10 +28,15 @@
   </div>
 </template>
 <script>
+
+import ScrollDown from "./scrollDown.vue";
+
 import { mapGetters, mapMutations } from "vuex";
 
 export default {
-  components: {},
+  components: {
+    ScrollDown,
+  },
   data() {
     return {
       loaded: true,
@@ -72,4 +79,9 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.Greg {
+  position: relative;
+  border: solid 1px red;
+}
+</style>

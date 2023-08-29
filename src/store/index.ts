@@ -15,7 +15,7 @@ export default new Vuex.Store({
     timeSinceInteraction: 0,
     resetTagsTime: 60 * seconds, //remove the filters(same as clicking all stories button)
     resetStoryTime: 15 * minutes, // close any opened story(s)
-    resetVideoTime: 20 * minutes, // Open the intro video if it isn't already
+    resetVideoTime: 30 * minutes, // Open the intro video if it isn't already
     refreshPageTime: 2 * hours, // Hard refresh the page if there is some other bug
     timerLoopLength: 1 * seconds, // frequency to check if one of the above conditions has been met
   },

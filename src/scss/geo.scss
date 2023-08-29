@@ -13,9 +13,12 @@
 .qr-site {
  // max-width: 120px;
 }
-
 .font-qr-site {
   font-size: .7rem;
+}
+.intro-icon{
+  line-height:56px; font-size: 56px;
+  
 }
 @include media-breakpoint-only(xxl) {
   .geo-img {
@@ -26,5 +29,8 @@
   }
   .font-qr-site {
     font-size: 1.7rem;
+  }
+  .intro-icon {
+    line-height:200px; font-size: 200px;
   }
 }

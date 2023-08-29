@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="videoFrame overlay childPoint" v-if="isHelpFrameOpen">
+  <div class="overlay childPoint" v-if="isHelpFrameOpen">
     <div class="controlFrame px-1 py-1 rounded bg-carbon border border-slate">
       <div
         class="h-100 d-flex flex-column text-white text-center justify-content-center p-3"

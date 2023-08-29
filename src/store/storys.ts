@@ -10,10 +10,6 @@ const stories = storiesFile.response
       return true;
     }
   })
-  .sort((a, b) => {
-    // sort alphabetically
-    return a.fields["en-StoryTitle"].localeCompare(b.fields["en-StoryTitle"]);
-  })
   .map((story) => {
     // Replace missing data with default data
     return {
@@ -66,6 +62,7 @@ const storys = {
     isHelpFrameOpen: false,
     isStoriesFrameOpen: false,
     isFilterFrameOpen: false,
+    sortStoriesBy: "en-StoryTitle",
   },
   getters: {
     isVideoFrameOpen: (state) => {
@@ -79,6 +76,9 @@ const storys = {
     },
     isFilterFrameOpen: (state) => {
       return state.isFilterFrameOpen;
+    },
+    sortStoriesBy: (state) => {
+      return state.sortStoriesBy;
     },
     storyAll: (state) => {
       return state.all.map((story) => {
@@ -95,6 +95,9 @@ const storys = {
             LONG: (Math.random() - 0.5) * 5 - 105.086407087,
           },
         };
+      }).sort((a, b) => {
+        // sort alphabetically
+        return a.fields[state.sortStoriesBy].localeCompare(b.fields[state.sortStoriesBy]);
       });
     },
     storyFiltered: (state, getters) => {
@@ -265,6 +268,15 @@ const storys = {
         state.isFilterFrameOpen = true;
       } else {
         state.isFilterFrameOpen = false;
+      }
+    },
+
+    setSortStoriesBy: (state, sortBy) => {
+      if (sortBy === "Last Name") {
+        state.sortStoriesBy = "Last Name";
+      }
+      else if (sortBy === "en-StoryTitle") {
+        state.sortStoriesBy = "en-StoryTitle";
       }
     },
 

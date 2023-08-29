@@ -25,6 +25,8 @@ const translations = {
     ResetMap: "Reset map to see more stories",
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
+    SortByTitle: "Title",
+    SortByPerson: "Person",
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
@@ -78,18 +80,21 @@ const translations = {
     AllThemes: "Todos Temas",
     Stories: "Cuentos",
     Filter: "Filtrar",
-    ResetFilter: "Restablecer filtro para ver más cuentos",
-    ResetMap: "Restablecer mapa para ver más cuentos",
+    ResetFilter: "Restablecer el filtro para ver más cuentos",
+    ResetMap: "Restablecer el mapa para ver más cuentos",
 
-    QRpopover: "View this exhibit on your phone!",
-    Explore: "Get ready to explore!",
+    QRpopover: "Ver está pieza en su móbil",
+    Explore: "Prepárate para una aventura",
+
+    SortByTitle: "Título",
+    SortByPerson: "Persona",
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
 
     storyThemes: {
-      Health: "Vida",
-      Environment: "Entorno",
+      Health: "Salud",
+      Environment: "Ambiente",
       Water: "Agua",
       Food: "Alimento",
       Energy: "Energía",

@@ -40,6 +40,7 @@ $marker-size-lg: 6;
     border-radius: $marker-size-lg * $font-size-base $marker-size-lg * $font-size-base 0;
     transform: rotate(45deg);
     border: 6 * $font-size-base/16 solid #ffffff;
+    font-size: $font-size-xxl;
   }
   .marker-pin.active {
     width: 1.1 * $marker-size-lg * $font-size-base;

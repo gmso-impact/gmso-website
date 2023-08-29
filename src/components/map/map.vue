@@ -81,7 +81,7 @@
     </div>
     <OverlayHelp></OverlayHelp>
 
-    <OverlayVideo></OverlayVideo>
+    <OverlayVideo v-if="isVideoFrameOpen && (this.$route.name !== 'Kiosk' || getBreakpoints.includes('xxl'))"></OverlayVideo>
     <OverlayFilter></OverlayFilter>
     <OverlayStories></OverlayStories>
     <OverlayStory
@@ -189,6 +189,7 @@ export default {
       mapGetBoundsCurrent: "mapGetBoundsCurrent",
       storyLayer: "storyLayer",
       getBreakpoints: "getBreakpoints",
+      isVideoFrameOpen: "isVideoFrameOpen",
     }),
     minZoom: function () {
       // 0 = globe
