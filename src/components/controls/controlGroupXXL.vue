@@ -3,10 +3,11 @@
     <div class="h-25">
       <!--<ThemeColumn></ThemeColumn>-->
     </div>
-    <div class="h-75 d-flex flex-column justify-content-center py-5 mx-auto w-50">
+    <div class="h-75 d-flex flex-column justify-content-center py-5">
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
-      <ThemeColumn></ThemeColumn>
-      <Language class="d-block"></Language>
+      <ThemeColumn class='w-50 mx-auto'></ThemeColumn>
+      <Campus class=''></Campus>
+      <Language class="d-block mt-4"></Language>
       <TitleNameSwitch class="d-block mt-4"></TitleNameSwitch>
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
@@ -21,6 +22,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import KioskSwitch from "./kioskSwitch.vue";
+import Campus from "./campus.vue";
 import Language from "./language.vue";
 import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
@@ -31,6 +33,7 @@ import IntroVideo from "./introVideo.vue";
 export default {
   components: {
     KioskSwitch,
+    Campus,
     Language,
     TitleNameSwitch,
     ThemeColumn,

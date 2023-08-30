@@ -2,6 +2,7 @@
   <div class="d-flex h-100 flex-column pt-1 pt-xl-3">
     <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
     <ThemeColumn class="mx-1 mx-xl-2"></ThemeColumn>
+    <Campus class='mx-1 mx-xl-2'></Campus>
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
     <Geo class="align-self-center mb-3"></Geo>
@@ -12,6 +13,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import KioskSwitch from "./kioskSwitch.vue";
+import Campus from "./campus.vue";
 import Language from "./language.vue";
 import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
@@ -22,6 +24,7 @@ import QRSite from "@/components/qr/qrSite.vue";
 export default {
   components: {
     KioskSwitch,
+    Campus,
     Language,
     TitleNameSwitch,
     ThemeColumn,
