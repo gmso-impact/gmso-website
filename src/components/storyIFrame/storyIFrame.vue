@@ -80,8 +80,4 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.Greg {
-  position: relative;
-  border: solid 1px red;
-}
 </style>
