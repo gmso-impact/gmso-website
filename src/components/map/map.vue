@@ -302,7 +302,9 @@ export default {
             return;
           }
           const style = metadata.drawingInfo.renderer.symbol;
-
+          if(!style){
+            return;   
+          }
           if (style.type === "esriPMS") {
             // they are points
             console.log({ stylePoints: { style } });

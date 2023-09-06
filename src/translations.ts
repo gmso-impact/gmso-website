@@ -14,8 +14,8 @@ const translations = {
     greeting: "Welcome to the CSU Impact Map",
     tagline: "Find your story @ CSU!",
     "Read More": "Read More",
-    help1:
-      "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
+    help1: "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
+    helpReadStory: `Swipe up to read <br/> more of the story`,
     Close: "Close",
     AllStories: "All Stories",
     AllThemes: "All Themes",
@@ -75,6 +75,7 @@ const translations = {
     "Read More": "Leer Más",
     help1:
       "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
+    helpReadStory: `Desliza hacia arriba <br/> para leer más de la historia.`,
     Close: "Salida",
     AllStories: "Todos Cuentos",
     AllThemes: "Todos Temas",
