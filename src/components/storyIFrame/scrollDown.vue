@@ -32,7 +32,6 @@ export default {
   mounted: function () {
     // eslint-disable-next-line
     let stopVisible = setTimeout(() => {
-          console.log("Don't show help");
           this.isVisible = false;
     }, 45 * seconds); // must be a multiple of the animation time for fadeIn in the CSS below. otherwise it will abruptly disapear
 
