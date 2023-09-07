@@ -11,7 +11,7 @@
     <button
       type="button"
       class="btn btn-fade px-0"
-      :aria-label="$t(`SortByStories`)"
+      :aria-label="$t(`SortByTitle`)"
       :class="{
         'btn-white': sortStoriesBy === 'en-StoryTitle',
         'btn-secondary': sortStoriesBy !== 'en-StoryTitle',
@@ -23,7 +23,7 @@
     <button
       type="button"
       class="btn btn-fade px-0"
-      :aria-label="$t(`SortByStories`)"
+      :aria-label="$t(`SortByPerson`)"
       :class="{
         'btn-white': sortStoriesBy === 'Last Name',
         'btn-secondary': sortStoriesBy !== 'Last Name',

@@ -100,8 +100,8 @@ const storys = {
         return a.fields[state.sortStoriesBy].localeCompare(b.fields[state.sortStoriesBy]);
       });
     },
-    storyFiltered: (state, getters) => {
-      return getters.storyAll.filter((story) => {
+    storyFiltered: (state, getters, rootState) => {
+      const storiesThemed = getters.storyAll.filter((story) => {
         const hasActiveTheme = !!state.storyThemes.filter((storyTheme) => {
           return story.fields["Story Theme"] === storyTheme.name
             ? storyTheme.isActive
@@ -109,6 +109,20 @@ const storys = {
         }).length;
         return hasActiveTheme;
       });
+      // skip filter of campus if it is undefined
+      // need to add check to see if it is malformed (using set theory of intersection). Consider lodash.
+      if(!rootState.route.query.campus ){
+        return storiesThemed;
+      }
+      const storiesCampus = storiesThemed.filter((story) => {
+        return story.fields["Campus"].includes(rootState.route.query.campus);
+      });
+
+
+      // ensure there are some stories at that campus, also accounts for malformed campus name
+      if(storiesCampus.length > 0){return storiesCampus;}
+      return storiesThemed;
+      
     },
     storyInMap: (state, getters) => {
       if (!getters.mapGetBounds) {
