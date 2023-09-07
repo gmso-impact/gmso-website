@@ -118,7 +118,6 @@ const storys = {
         return story.fields["Campus"].includes(rootState.route.query.campus);
       });
 
-
       // ensure there are some stories at that campus, also accounts for malformed campus name
       if(storiesCampus.length > 0){return storiesCampus;}
       return storiesThemed;
