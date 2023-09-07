@@ -7,7 +7,6 @@
       >
         <PopupIFrame
           :story="story"
-          v-if="story.fields['en-StoryMapLink']"
         ></PopupIFrame>
         <PopupInfo :story="story"></PopupInfo>
       </div>

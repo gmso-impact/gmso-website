@@ -9,7 +9,7 @@
       :class="{
         'd-none': !loaded,
       }"
-      :src="story.fields['en-StoryMapLink']"
+      :src="storyLink"
       title="Story Map"
       scrolling="yes"
     ></iframe>
@@ -53,6 +53,14 @@ export default {
     ...mapGetters({
       getBreakpoints: "getBreakpoints",
     }),
+    storyLink: function(){
+      // Return story in other language
+      if(this.story.fields[`${this.$root.$i18n.locale}2-StoryMapLink`]){
+        return this.story.fields[`${this.$root.$i18n.locale}2-StoryMapLink`]
+      }
+      // default to english
+      return this.story.fields['en-StoryMapLink']
+    },
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
         return this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`];
