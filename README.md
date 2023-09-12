@@ -14,7 +14,16 @@ If content changes are made in Airtable, they will be reflected at 5am the next 
 Structural **changes in AirTable to the column names, datatypes or the [PublicWebsite view](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwsWb12QV9KFBNa3?blocks=hide) may cause issues**, if used by the website. That view is an indicator of the fields used by the website. Adding fields in Airtable is generally OK, but ask Lauren W or Greg N. If you are unsure if a column is directly used by the exhbit or how it is used, contact budnicki@colostate.edu to double check.
 
 # Spur Exhibit
-There are 3 kiosks at Spur that make up the Impact(o) exhbit. The wall and 2 podiums. They are all windows 11 machines running the Microsoft Edge browser to display the kiosk version of the website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk). These exhbits use a slightly diffrent URL to the public websit [https://impact.csusystem.edu/](https://impact.csusystem.edu/) , which is used to hide / display elements specific to the exhibit (such as the QR codes). If you want to accuretly simulate the exhbit: use a windows 11 touch device, running edge, and using the kiosk link. If that is unavailable, try it on your phone.
+There are 3 kiosks at Spur that make up the Impact(o) exhbit. The wall and 2 podiums. They are all windows 11 machines running the Microsoft Edge browser to display the kiosk version of the website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk). These exhbits use a slightly diffrent URL to the public website [https://impact.csusystem.edu/](https://impact.csusystem.edu/). the reason for diffrent URLs are to display / hide elements specific to the exhibit. For example, QR codes are only displayed in the exhibit. 
+
+## Simulating as kiosk
+There are 3 kiosks located at Spur. Each can be interacted with via touch inputs. You can use the Micrsoft Edge OR Google Chrome developer tools to simulate these screen sizes and touch input through [add a custom mobile device](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#add-a-custom-mobile-device).
+
+- Wall - Screen resolution 7680x2160 16ft wide 5ft tall
+- Short Podium - Screen resolution 1920x1080 24in diagonal
+- Tall Podium - Screen resolution 1920x1080 24in diagonal
+
+If you don't have a touch screen windows device, try the touch interaction on your phone.
 
 # Local Development of Website
 
@@ -37,12 +46,7 @@ yarn fetch
 ```
 First this command downloads the data from airtable. Then it looks through that for image links. The data is stored in `src/assets/allStories.json`. The images are downloaded, and then re-sized for optimal page delivery in the folder `public/stories`
 
-## Simulating as kiosk
-There are 3 kiosks located at Spur. Each can be interacted with via touch inputs. You can use the Micrsoft Edge OR Google Chrome developer tools to simulate these screen sizes and touch input through [add a custom mobile device](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#add-a-custom-mobile-device).
 
-- Wall - Screen resolution 7680x2160 16ft wide
-- Short Podium - Screen resolution 1920x1080 24in diagonal
-- Tall Podium - Screen resolution 1920x1080 24in diagonal
 
 
 
