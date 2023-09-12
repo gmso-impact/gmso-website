@@ -3,11 +3,18 @@ GMSO Impact is a website showcasing the stories of research and advancement of t
 
 # Production Server
 
-This website is hosted on GitHub pages. Every day at 5 am MTN new data is downloaded from Airtable and then copied to the github pages content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
+This website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk) is hosted on GitHub pages. Every day at [5 am MTN](https://github.com/gmso-impact/gmso-website/blob/main/.github/workflows/deploy.yml) new data is downloaded from [Airtable](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwejFXIvDwE3ZCMT?blocks=hide) and then copied to the [github pages](https://docs.github.com/en/pages) content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
 
 1. The kiosk has been inactive for more than 1 hour
 1. The kiosk has the `reset` button pressed in the lower right hand corner of the screen
 1. The kiosk is power cycled or otherwise re-started
+
+If content changes are made in Airtable, they will be reflected at 5am the next day. If you need them sooner, contact Brandon B to have the GitHub deploy action re-run (a 5 minute task). **Best practice** is to check if those changes made it into the website the next day.
+
+Structural **changes in AirTable to the column names, datatypes or the [PublicWebsite view](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwsWb12QV9KFBNa3?blocks=hide) may cause issues**, if used by the website. That view is an indicator of the fields used by the website. Adding fields in Airtable is generally OK, but ask Lauren W or Greg N. If you are unsure if a column is directly used by the exhbit or how it is used, contact budnicki@colostate.edu to double check.
+
+# Spur Exhibit
+There are 3 kiosks at Spur that make up the Impact(o) exhbit. The wall and 2 podiums. They are all windows 11 machines running the Microsoft Edge browser to display the kiosk version of the website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk). These exhbits use a slightly diffrent URL to the public websit [https://impact.csusystem.edu/](https://impact.csusystem.edu/) , which is used to hide / display elements specific to the exhibit (such as the QR codes). If you want to accuretly simulate the exhbit: use a windows 11 touch device, running edge, and using the kiosk link. If that is unavailable, try it on your phone.
 
 # Local Development of Website
 
