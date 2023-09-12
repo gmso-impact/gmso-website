@@ -3,7 +3,7 @@ GMSO Impact is a website showcasing the stories of research and advancement of t
 
 # Production Server
 
-This website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk) is hosted on GitHub pages. Every day at [5 am MTN](https://github.com/gmso-impact/gmso-website/blob/main/.github/workflows/deploy.yml) new data is downloaded from [Airtable](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwejFXIvDwE3ZCMT?blocks=hide) and then copied to the [github pages](https://docs.github.com/en/pages) content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
+This website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk) is hosted on GitHub pages. Every day at [5 am MTN](https://github.com/gmso-impact/gmso-website/blob/main/.github/workflows/deploy.yml) new data is downloaded from [Airtable](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwejFXIvDwE3ZCMT?blocks=hide) and then copied to the [GitHub pages](https://docs.github.com/en/pages) content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
 
 1. The kiosk has been inactive for more than 1 hour
 1. The kiosk has the `reset` button pressed in the lower right hand corner of the screen
@@ -140,7 +140,7 @@ Changes to the main branch will automaticly be deployed to production and should
     ```
 1. Create Airtable Personal Access token
     This will be used by your local machine to access the Airtable data. You need this for the list of stories and the image files.
-    >**Do not store personal access tokens or API keys in Gihub including the `.example.env` file**
+    >**Do not store personal access tokens or API keys in Github including the `.example.env` file**
 
     1. Copy '.env.example' to a file named '.env'
     1. Visit [airtable.com/create/tokens](https://airtable.com/create/tokens)
