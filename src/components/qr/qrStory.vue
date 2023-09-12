@@ -48,11 +48,11 @@ export default {
   computed: {
     storyLink: function(){
       // Return story in other language
-      if(this.story.fields[`${this.$root.$i18n.locale}2-StoryMapLink`]){
-        return this.story.fields[`${this.$root.$i18n.locale}2-StoryMapLink`]
+      if(this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]){
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]
       }
       // default to english
-      return this.story.fields['en-StoryMapLink']
+      return this.story.fields['bi-StoryMapLink']
     },
     qrConfig: function(){
       return({
@@ -68,7 +68,7 @@ export default {
   methods: {
     printURL: function () {
       console.log("QR URL is");
-      console.log(this.story.fields["en-StoryMapLink"]);
+      console.log(this.storyLink);
     },
   },
 };
