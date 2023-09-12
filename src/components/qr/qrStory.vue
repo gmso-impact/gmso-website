@@ -48,11 +48,11 @@ export default {
   computed: {
     storyLink: function(){
       // Return story in other language
-      if(this.story.fields[`${this.$root.$i18n.locale}2-StoryMapLink`]){
-        return this.story.fields[`${this.$root.$i18n.locale}2-StoryMapLink`]
+      if(this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]){
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]
       }
       // default to english
-      return this.story.fields['en-StoryMapLink']
+      return this.story.fields['bi-StoryMapLink']
     },
     qrConfig: function(){
       return({
