@@ -96,10 +96,10 @@ Changes to the main branch will automaticly be deployed to production and should
     git config --global user.email gmso_mailbox@mail.colostate.edu
     ```
 
-1. Install [Node.js 14.x](https://nodejs.org/dist/latest-v14.x/)  **add choclatey when prompted**
-    node-v14.20.0-x64.msi is an installer package. Version number will change based on bugfixes.
+1. Install [Node.js 18.x](https://nodejs.org/en/download)  **add choclatey when prompted**
+    Version number will change based on bugfixes.
     If this fails, run the installer a second time and select 'repair' if it recognizes an existing install
-    Node 14 is required because of Vue2. Vue2 is required because of vue-leaflet
+    Node 18 is required because of Vue2. Vue2 is required because of vue-leaflet
 
 
 1. Set ExecutionPolicy to run Powershell scripts
