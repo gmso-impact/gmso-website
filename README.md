@@ -36,7 +36,7 @@ yarn serve
 
 By default it will serve the **website** from [http://localhost:8080/](http://localhost:8080/) to view **kiosk mode* visit [http://localhost:8080/#/kiosk](http://localhost:8080/#/kiosk). It will take 1-3 minutes to start. Changes you make within the `src` folders will automaticly be displayed. Other changes will require you to stop the server `ctrl + D` within powershell and then start it again using `yarn serve`.
 
-If you have not run the code in a while or ff you see an error from `yarn serve` try a `yarn install` to ensure you have the NPM latest packages. If you have missing images or stories try `yarn fetch` to get the latest data from Airtable.
+If you have not run the code in a while or if you see an error from `yarn serve` try a `yarn install` to ensure you have the NPM latest packages. If you have missing images or stories try `yarn fetch` to get the latest data from Airtable.
 
 ## Retrieve Story data & images
 ***Requires AIRTABLE_AUTHORIZATION= API Key in ENV file*** 

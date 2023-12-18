@@ -1,8 +1,9 @@
 import { latLng, latLngBounds } from "leaflet";
+import { vectorBasemapLayer } from "esri-leaflet-vector";
+
 export const maps = {
   globe: {
     bounds: latLngBounds(latLng(80, 70), latLng(-60, -130)),
-
     center: latLng(82, 180),
     zoom: 5,
   },
@@ -21,7 +22,7 @@ export const maps = {
     center: latLng(82, 180),
     zoom: 5,
   },
-  africe: {
+  africa: {
     bounds: latLngBounds(latLng(45, 72), latLng(-40, -26)),
     center: latLng(82, 180),
     zoom: 5,
@@ -43,7 +44,51 @@ export const maps = {
   },
 };
 
+const apikey =
+  "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
+
+// list of basemaps
+// https://developers.arcgis.com/documentation/mapping-apis-and-services/maps/services/basemap-layer-service/#default-basemap-styles
+// custom styles
+// https://developers.arcgis.com/documentation/mapping-apis-and-services/visualization/basemap-styles/
+// custom basemap can be modified here: https://developers.arcgis.com/vector-tile-style-editor/fe3c8d5151de424bb25ad0655ca6c080/json
+//customBasemap: vectorBasemapLayer("fe3c8d5151de424bb25ad0655ca6c080", { apikey: apikey }),
+//basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
+//basemapDefault: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
+//basemapOld: basemapLayer("DarkGray", { apikey }),
+
+const baseMapDefault = "political";
+export const baseMaps = {
+  // For now ID must be the key name, later on we will use translation
+  // to customize the text
+  // background: light or dark, determines the color of text overlaid
+  political: {
+    id: "political",
+    layer: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
+    background: "dark",
+  },
+  terrain: {
+    id: "terrain",
+    layer: vectorBasemapLayer("ArcGIS:Terrain", { apikey: apikey }),
+    background: "light",
+  },
+  satellite: {
+    id: "satellite",
+    layer: vectorBasemapLayer("ArcGIS:Imagery", { apikey: apikey }),
+    background: "dark",
+  },
+  street: {
+    id: "street",
+    layer: vectorBasemapLayer("ArcGIS:StreetsNight", {
+      apikey: apikey,
+      version: 1,
+    }),
+    background: "dark",
+  },
+};
+
 const stateTemplate = {
+  baseMap: baseMaps.political,
   bounds: null,
   zoom: null,
   center: null,
@@ -58,6 +103,7 @@ const map = {
     initial: {
       ...stateTemplate,
     },
+    baseMaps: baseMaps,
   },
   getters: {
     mapGetZoom: (state) => {
@@ -75,6 +121,12 @@ const map = {
     mapGetBoundsCurrent: (state) => {
       return state.current;
     },
+    mapGetBaseMap: (state) => {
+      return state.current.baseMap;
+    },
+    mapGetBaseMaps: (state) => {
+      return state.baseMaps;
+    },
   },
   mutations: {
     resetMap: (state) => {
@@ -83,6 +135,7 @@ const map = {
         bounds: state.initial.bounds,
         date: new Date(),
       };
+      state.current.baseMap = baseMaps.political;
     },
     mapSetZoom: (state, zoom) => {
       state.new.zoom = zoom;
@@ -118,6 +171,9 @@ const map = {
         state.initial.bounds = bounds;
       }
       state.current.bounds = bounds;
+    },
+    mapSetBaseMap: (state, id) => {
+      state.current.baseMap = state.baseMaps[id];
     },
   },
   actions: {},

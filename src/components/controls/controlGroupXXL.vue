@@ -3,7 +3,9 @@
     <div class="h-25">
       <!--<ThemeColumn></ThemeColumn>-->
     </div>
-    <div class="h-75 d-flex flex-column justify-content-center py-5 mx-auto w-50">
+    <div
+      class="h-75 d-flex flex-column justify-content-center py-5 mx-auto w-50"
+    >
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
       <ThemeColumn></ThemeColumn>
       <Language class="d-block"></Language>
@@ -11,7 +13,10 @@
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
       <div class="row mb-5">
-        <QRSite v-if="this.$route.name === 'Kiosk'" class="col-4 text-center"></QRSite>
+        <QRSite
+          v-if="this.$route.name === 'Kiosk'"
+          class="col-4 text-center"
+        ></QRSite>
         <IntroVideo class="col-4 text-center"></IntroVideo>
         <Geo class="col-4 text-center"></Geo>
       </div>

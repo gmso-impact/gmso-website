@@ -51,7 +51,7 @@ export default {
   methods: {
     ...mapMutations({
       setSortStoriesBy: "setSortStoriesBy",
-    })
+    }),
   },
 };
 </script>

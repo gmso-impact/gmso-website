@@ -38,7 +38,7 @@ function getFilename(imageMetadata) {
   const name = imageMetadata.filename.replace(/[^a-z0-9]/gi, "");
   if (name === "") {
     console.log(
-      `Bad file name ${imageMetadata.filename} for image id ${imageMetadata.id}`
+      `Bad file name ${imageMetadata.filename} for image id ${imageMetadata.id}`,
     );
   }
   return name;
@@ -52,8 +52,8 @@ function getExt(imageMetadata) {
   } else {
     console.log(
       `Bad file extension ${imageMetadata.type} in ${getFilename(
-        imageMetadata
-      )}`
+        imageMetadata,
+      )}`,
     );
   }
 }

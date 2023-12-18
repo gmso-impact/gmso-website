@@ -35,9 +35,7 @@ export default {
     VueQr,
   },
   data() {
-    return {
-
-    };
+    return {};
   },
   props: {
     story: {
@@ -46,24 +44,24 @@ export default {
     },
   },
   computed: {
-    storyLink: function(){
+    storyLink: function () {
       // Return story in other language
-      if(this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]){
-        return this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]
+      if (this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]) {
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`];
       }
       // default to english
-      return this.story.fields['bi-StoryMapLink']
+      return this.story.fields["bi-StoryMapLink"];
     },
-    qrConfig: function(){
-      return({
+    qrConfig: function () {
+      return {
         colorDark: cssColors[this.story.fields["Story Theme"]],
         // autoColor: false,*/
         // unusued when autoColor true
         colorLight: "#ffffff",
         text: this.storyLink,
         ...qrConfig,
-      });
-    }
+      };
+    },
   },
   methods: {
     printURL: function () {

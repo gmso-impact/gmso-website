@@ -3,11 +3,17 @@
 @import "variables.scss";
 
 @include media-breakpoint-only(xxl) {
-  .leaflet-left.leaflet-bottom {
-    transform: scale(2) translateX(50%) translateY(-50%);
-  }
-  .leaflet-right.leaflet-top {
-    transform: scale(2) translateX(-50%) translateY(50%);
+  // .leaflet-left.leaflet-bottom {
+  //   transform: scale(2) translateX(50%) translateY(-50%);
+  // }
+  // .leaflet-right.leaflet-top {
+  //   transform: scale(2) translateX(-50%) translateY(50%);
+  // }
+  .leaflet-control-zoom-in, .leaflet-control-zoom-out{
+    font-size: 3rem !important;
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
   }
 }
 

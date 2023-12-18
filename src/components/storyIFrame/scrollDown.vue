@@ -1,8 +1,7 @@
 <template lang="">
   <div class="scrollDown" v-if="this.$route.name === 'Kiosk'">
     <div class="fadeIn" v-show="isVisible">
-      <div class="callToAction blackGlow" v-html="$t('helpReadStory')">
-      </div>
+      <div class="callToAction blackGlow" v-html="$t('helpReadStory')"></div>
       <div class="swipeFinger blackGlow">
         <font-awesome-icon class="fa-4x" icon="fa-solid fa-hand-pointer" />
       </div>
@@ -32,10 +31,9 @@ export default {
   mounted: function () {
     // eslint-disable-next-line
     let stopVisible = setTimeout(() => {
-          this.isVisible = false;
+      this.isVisible = false;
     }, 45 * seconds); // must be a multiple of the animation time for fadeIn in the CSS below. otherwise it will abruptly disapear
-
-  }
+  },
   /*watch: {
           timeSinceInteraction: {
               immediate: true,
@@ -70,7 +68,7 @@ export default {
   color: white;
   text-align: center;
   animation: fadeIn 1s;
-  z-index:999999;
+  z-index: 999999;
 }
 
 @keyframes fadeIn {
@@ -91,7 +89,7 @@ export default {
 
 .callToAction {
   font-weight: 600;
-  animation: fadeInOut ease 15s; // 
+  animation: fadeInOut ease 15s; //
   animation-iteration-count: infinite;
 }
 

@@ -102,5 +102,5 @@ Vue.use(
   {
     config: { id: "G-9Y7C77KWYD" },
   },
-  router
+  router,
 );

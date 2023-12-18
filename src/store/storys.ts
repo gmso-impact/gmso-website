@@ -81,24 +81,28 @@ const storys = {
       return state.sortStoriesBy;
     },
     storyAll: (state) => {
-      return state.all.map((story) => {
-        if (story.fields["LAT"] && story.fields["LONG"]) {
-          return story;
-        }
-        // If location does not have lat long
-        // randomly locate around Fort Collins
-        return {
-          ...story,
-          fields: {
-            ...story.fields,
-            LAT: (Math.random() - 0.5) * 5 + 40.5730232,
-            LONG: (Math.random() - 0.5) * 5 - 105.086407087,
-          },
-        };
-      }).sort((a, b) => {
-        // sort alphabetically
-        return a.fields[state.sortStoriesBy].localeCompare(b.fields[state.sortStoriesBy]);
-      });
+      return state.all
+        .map((story) => {
+          if (story.fields["LAT"] && story.fields["LONG"]) {
+            return story;
+          }
+          // If location does not have lat long
+          // randomly locate around Fort Collins
+          return {
+            ...story,
+            fields: {
+              ...story.fields,
+              LAT: (Math.random() - 0.5) * 5 + 40.5730232,
+              LONG: (Math.random() - 0.5) * 5 - 105.086407087,
+            },
+          };
+        })
+        .sort((a, b) => {
+          // sort alphabetically
+          return a.fields[state.sortStoriesBy].localeCompare(
+            b.fields[state.sortStoriesBy],
+          );
+        });
     },
     storyFiltered: (state, getters) => {
       return getters.storyAll.filter((story) => {
@@ -274,8 +278,7 @@ const storys = {
     setSortStoriesBy: (state, sortBy) => {
       if (sortBy === "Last Name") {
         state.sortStoriesBy = "Last Name";
-      }
-      else if (sortBy === "en-StoryTitle") {
+      } else if (sortBy === "en-StoryTitle") {
         state.sortStoriesBy = "en-StoryTitle";
       }
     },
@@ -284,7 +287,7 @@ const storys = {
       // add story to active list
       if (!story) {
         console.log(
-          "addActiveStory requires a story object. To remove all storys use removeActiveStories"
+          "addActiveStory requires a story object. To remove all storys use removeActiveStories",
         );
         return;
       }
@@ -310,7 +313,7 @@ const storys = {
     toggleActiveStory: (state, story) => {
       if (!story) {
         console.log(
-          "toggleActiveStory requires a story object. To remove all storys use removeActiveStories"
+          "toggleActiveStory requires a story object. To remove all storys use removeActiveStories",
         );
         return;
       }
@@ -323,7 +326,7 @@ const storys = {
       if (filtered.length === state.storysActive.length) {
         state.storysActive = [story, ...state.storysActive].slice(
           0,
-          state.storysActiveMax
+          state.storysActiveMax,
         );
         state.isVideoFrameOpen = false;
         state.isHelpFrameOpen = false;
@@ -344,7 +347,7 @@ const storys = {
     removeActiveStory: (state, story) => {
       if (!story) {
         console.log(
-          "removeActiveStory requires a story object. To remove all storys use removeActiveStories"
+          "removeActiveStory requires a story object. To remove all storys use removeActiveStories",
         );
         return;
       }

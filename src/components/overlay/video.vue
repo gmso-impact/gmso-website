@@ -11,7 +11,7 @@
       >
         <source src="open-stories.mp4" type="video/mp4" />
       </video>
-      
+
       <!--<iframe width="100%" height="75%" scrollable="yes" src="https://storymaps.arcgis.com/stories/43822a2ec7704ad1a9fba805d6973bf6"></iframe>-->
 
       <div class="topClose">
@@ -149,10 +149,13 @@ export default {
       clearTimeout(this.muter);
       this.isMuted = !this.isMuted;
       if (!this.isMuted) {
-        this.muter = setTimeout(() => {
-          console.log("mute video");
-          this.isMuted = true;
-        }, 3 * 60 * 1000);
+        this.muter = setTimeout(
+          () => {
+            console.log("mute video");
+            this.isMuted = true;
+          },
+          3 * 60 * 1000,
+        );
       }
     },
     onReady() {
@@ -167,10 +170,13 @@ export default {
     },
   },
   mounted() {
-    this.muter = setTimeout(() => {
-      console.log("mute video");
-      this.isMuted = true;
-    }, 3 * 60 * 1000);
+    this.muter = setTimeout(
+      () => {
+        console.log("mute video");
+        this.isMuted = true;
+      },
+      3 * 60 * 1000,
+    );
 
     this.$nextTick(() => {
       this.$refs.video.play();

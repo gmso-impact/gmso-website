@@ -5,9 +5,7 @@
         class="card shadow p-1 p-xxl-4"
         :class="`bg-${story.fields['Story Theme']}`"
       >
-        <PopupIFrame
-          :story="story"
-        ></PopupIFrame>
+        <PopupIFrame :story="story"></PopupIFrame>
         <PopupInfo :story="story"></PopupInfo>
       </div>
     </l-popup>
@@ -62,7 +60,7 @@ export default {
   mounted: function () {
     this.$nextTick(function () {
       this.$refs[`pop-layer-${this.story.id}`].mapObject.openPopup(
-        this.latLngObj
+        this.latLngObj,
       );
     });
   },
