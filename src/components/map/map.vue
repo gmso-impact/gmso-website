@@ -36,6 +36,7 @@
         position="bottomleft"
         :imperial="true"
         :metric="true"
+        :maxWidth="getBreakpoints.includes('xxl') ? 1000 : 200"
         v-if="true"
       ></l-control-scale>
 
@@ -249,10 +250,9 @@ export default {
       },
     };
     console.log();
-    this.baseMapLayer = vectorBasemapLayer(
-      this.baseMap.layer,
-      {apikey: this.apikey}
-    )
+    this.baseMapLayer = vectorBasemapLayer(this.baseMap.layer, {
+      apikey: this.apikey,
+    });
     this.$refs.map.mapObject.addLayer(this.baseMapLayer);
     // there is an issue with the map if it has not ever zoomed
     this.$refs.map.mapObject.setView(
@@ -273,14 +273,13 @@ export default {
         });
       });
     },
-    baseMap: function (newBaseMap, oldBaseMap) {      
-      const newBaseMapLayer = vectorBasemapLayer(
-        newBaseMap.layer,
-        {apikey: this.apikey}
-      )
+    baseMap: function (newBaseMap, oldBaseMap) {
+      const newBaseMapLayer = vectorBasemapLayer(newBaseMap.layer, {
+        apikey: this.apikey,
+      });
       this.$refs.map.mapObject.addLayer(newBaseMapLayer);
       //this.$refs.map.mapObject.removeLayer(this.baseMapLayer);
-      this.baseMapLayer.remove()
+      this.baseMapLayer.remove();
       this.baseMapLayer = newBaseMapLayer;
     },
     storyLayer: function (newStory, oldStory) {

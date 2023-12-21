@@ -7,7 +7,7 @@
         'text-light': 'dark' === currentMap.background,
       }"
     >
-    {{ $t(`baseMaps.mapType`) }}
+      {{ $t(`baseMaps.mapType`) }}
     </h3>
     <div class="btn-group">
       <button
@@ -20,7 +20,7 @@
           'btn-secondary': map.id !== currentMap.id,
         }"
       >
-        {{ $t(`baseMaps.${map.id}`)}}
+        {{ $t(`baseMaps.${map.id}`) }}
       </button>
     </div>
   </div>
