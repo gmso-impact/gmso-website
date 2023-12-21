@@ -1,7 +1,7 @@
 <template lang="">
   <div class="qr-site d-flex align-items-center">
     <div class="w-100">
-      <div class="text-white">Scan Me</div>
+      <div class="text-white">{{$t(`QRscan`)}}</div>
       <vue-qr
         id="popover-target-1"
         v-bind="qrConfig"

@@ -24,6 +24,8 @@ const translations = {
     Filter: "Filter",
     ResetFilter: "Reset filter to see more stories",
     ResetMap: "Reset map to see more stories",
+
+    QRscan: "Scan Me",
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
     SortByTitle: "Title",
@@ -31,6 +33,12 @@ const translations = {
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
+    baseMaps: {
+      mapType: "Map Type",
+      political: "Default",
+      terrain: "Terrain",
+      satellite: "Satellite",
+    },
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
@@ -85,6 +93,7 @@ const translations = {
     ResetFilter: "Restablecer el filtro para ver más cuentos",
     ResetMap: "Restablecer el mapa para ver más cuentos",
 
+    QRscan: "Escanéame",
     QRpopover: "Ver está pieza en su móbil",
     Explore: "Prepárate para una aventura",
 
@@ -93,7 +102,12 @@ const translations = {
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
-
+    baseMaps: {
+      mapType: "Tipo de Mapa",
+      political: "Predeterminado",
+      terrain: "Relieve",
+      satellite: "Satélite",
+    },
     storyThemes: {
       Health: "Salud",
       Environment: "Ambiente",

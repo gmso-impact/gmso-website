@@ -77,14 +77,6 @@ export const baseMaps = {
     layer: vectorBasemapLayer("ArcGIS:Imagery", { apikey: apikey }),
     background: "dark",
   },
-  street: {
-    id: "street",
-    layer: vectorBasemapLayer("ArcGIS:StreetsNight", {
-      apikey: apikey,
-      version: 1,
-    }),
-    background: "dark",
-  },
 };
 
 const stateTemplate = {
