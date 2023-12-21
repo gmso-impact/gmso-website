@@ -64,17 +64,17 @@ export const baseMaps = {
   // background: light or dark, determines the color of text overlaid
   political: {
     id: "political",
-    layer: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
+    layer: "ArcGIS:DarkGray:Base",
     background: "dark",
   },
   terrain: {
     id: "terrain",
-    layer: vectorBasemapLayer("ArcGIS:Terrain", { apikey: apikey }),
+    layer: "ArcGIS:Terrain",
     background: "light",
   },
   satellite: {
     id: "satellite",
-    layer: vectorBasemapLayer("ArcGIS:Imagery", { apikey: apikey }),
+    layer: "ArcGIS:Imagery",
     background: "dark",
   },
 };

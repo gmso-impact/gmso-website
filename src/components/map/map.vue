@@ -171,7 +171,7 @@ export default {
       apikey: apikey,
       storyLayerEsriObject: null,
       storyLayerId: null,
-
+      baseMapLayer: null,
       mapOptions: {
         preferCanvas: true,
         zoomSnap: 0.1,
@@ -249,7 +249,11 @@ export default {
       },
     };
     console.log();
-    this.$refs.map.mapObject.addLayer(this.baseMap.layer);
+    this.baseMapLayer = vectorBasemapLayer(
+      this.baseMap.layer,
+      {apikey: this.apikey}
+    )
+    this.$refs.map.mapObject.addLayer(this.baseMapLayer);
     // there is an issue with the map if it has not ever zoomed
     this.$refs.map.mapObject.setView(
       initialView[this.getBreakpoints[0]].latLng,
@@ -269,9 +273,15 @@ export default {
         });
       });
     },
-    baseMap: function (newBaseMap, oldBaseMap) {
-      this.$refs.map.mapObject.removeLayer(oldBaseMap.layer);
-      this.$refs.map.mapObject.addLayer(newBaseMap.layer);
+    baseMap: function (newBaseMap, oldBaseMap) {      
+      const newBaseMapLayer = vectorBasemapLayer(
+        newBaseMap.layer,
+        {apikey: this.apikey}
+      )
+      this.$refs.map.mapObject.addLayer(newBaseMapLayer);
+      //this.$refs.map.mapObject.removeLayer(this.baseMapLayer);
+      this.baseMapLayer.remove()
+      this.baseMapLayer = newBaseMapLayer;
     },
     storyLayer: function (newStory, oldStory) {
       // remove old layer whenever a new story is selected
