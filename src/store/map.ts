@@ -62,6 +62,7 @@ export const baseMaps = {
   // For now ID must be the key name, later on we will use translation
   // to customize the text
   // background: light or dark, determines the color of text overlaid
+  // Cities: https://csurams.maps.arcgis.com/apps/mapviewer/index.html?webmap=4f2e99ba65e34bb8af49733d9778fb8e
   political: {
     id: "political",
     layer: "ArcGIS:DarkGray:Base",
