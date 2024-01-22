@@ -32,6 +32,8 @@ export default {
   methods: {
     ...mapMutations({
       resetTags: "resetTags",
+    }),
+    ...mapActions({
       resetMap: "resetMap",
     }),
     resetTagsClicked: function (event) {

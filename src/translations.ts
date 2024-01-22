@@ -35,7 +35,7 @@ const translations = {
     ContinueES: "Continuar",
     baseMaps: {
       mapType: "Map Type",
-      political: "Default",
+      political: "Political",
       terrain: "Terrain",
       satellite: "Satellite",
     },
@@ -104,7 +104,7 @@ const translations = {
     ContinueES: "Continuar",
     baseMaps: {
       mapType: "Tipo de Mapa",
-      political: "Predeterminado",
+      political: "Política",
       terrain: "Relieve",
       satellite: "Satélite",
     },

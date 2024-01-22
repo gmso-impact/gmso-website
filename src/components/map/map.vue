@@ -143,7 +143,7 @@ import MapLayers from "./mapLayers.vue";
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
-import { maps } from "@/store/map";
+import { viewPorts } from "@/store/map";
 import cssColors from "@/scss/variables.scss";
 
 const apikey =
@@ -182,8 +182,8 @@ export default {
         zoomControl: false,
         closePopupOnClick: false,
       },
-      center: maps.colorado.center, // initial map center before load
-      zoom: maps.colorado.zoom,
+      center: viewPorts.colorado.center, // initial map center before load
+      zoom: viewPorts.colorado.zoom,
     };
   },
   computed: {
@@ -191,11 +191,11 @@ export default {
       baseMap: "mapGetBaseMap",
       stories: "storyFiltered",
       storysActive: "storysActive",
-      mapGetBoundsNew: "mapGetBoundsNew",
-      mapGetBoundsCurrent: "mapGetBoundsCurrent",
+      mapNewView: "mapNewView",
       storyLayer: "storyLayer",
       getBreakpoints: "getBreakpoints",
       isVideoFrameOpen: "isVideoFrameOpen",
+      isInactive: "isInactive",
     }),
     minZoom: function () {
       // 0 = globe
@@ -265,10 +265,16 @@ export default {
     );
   },
   watch: {
-    mapGetBoundsNew: function (newObject) {
+    isInactive: function (isInactiveValue) {
+      console.log("stop");
+      if (isInactiveValue == false) {
+        this.$refs.map.mapObject.stop();
+      }
+    },
+    mapNewView: function (newObject) {
       this.$nextTick(() => {
-        console.log("mapGetBoundsNew watcher");
-        this.$refs.map.mapObject.flyToBounds(newObject.bounds, {
+        console.log("mapNewView watcher");
+        this.$refs.map.mapObject.flyTo(newObject.center, newObject.zoom, {
           duration: newObject.duration,
         });
       });
