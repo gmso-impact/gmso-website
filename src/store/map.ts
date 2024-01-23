@@ -184,7 +184,7 @@ const map = {
       state.baseMap = baseMaps.satellite;
     },
     panMap: ({ state, commit, rootState, rootGetters }) => {
-      console.log("panMap");
+      //console.log("panMap");
       if (state.mapFrameId + 1 >= Object.keys(viewPorts).length) {
         state.mapFrameId = 0;
       } else state.mapFrameId += 1;

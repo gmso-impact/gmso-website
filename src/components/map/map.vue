@@ -87,8 +87,8 @@
         </button>
       </div>
     </div>
+    <HelpMap v-if="isInactive"></HelpMap>
     <OverlayHelp></OverlayHelp>
-
     <OverlayVideo
       v-if="
         isVideoFrameOpen &&
@@ -138,6 +138,7 @@ import OverlayVideo from "../overlay/video.vue";
 import OverlayHelp from "../overlay/help.vue";
 import OverlayFilter from "../overlay/filter.vue";
 import OverlayStories from "../overlay/stories.vue";
+import HelpMap from "./help/index.vue";
 
 import MapLayers from "./mapLayers.vue";
 import MapMarker from "./marker.vue";
@@ -161,6 +162,7 @@ export default {
     OverlayHelp,
     OverlayStories,
     OverlayFilter,
+    HelpMap,
     LControl,
     LControlZoom,
     LControlScale,
@@ -245,8 +247,8 @@ export default {
         zoom: 2.8,
       },
       xxl: {
-        latLng: latLng(-1.6, 21.5),
-        zoom: 4.3,
+        latLng: latLng(-0.8135, 5.175),
+        zoom: 4.2,
       },
     };
     console.log();
@@ -266,14 +268,14 @@ export default {
   },
   watch: {
     isInactive: function (isInactiveValue) {
-      console.log("stop");
       if (isInactiveValue == false) {
+        console.log("stop");
         this.$refs.map.mapObject.stop();
       }
     },
     mapNewView: function (newObject) {
       this.$nextTick(() => {
-        console.log("mapNewView watcher");
+        //console.log("mapNewView watcher");
         this.$refs.map.mapObject.flyTo(newObject.center, newObject.zoom, {
           duration: newObject.duration,
         });

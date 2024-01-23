@@ -54,7 +54,7 @@ export default new Vuex.Store({
               setInterval(() => {
                 console.log("Panning Map");
                 dispatch("panMap");
-              }, 120 * seconds),
+              }, 60 * seconds),
             );
           },
         },
