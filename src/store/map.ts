@@ -15,7 +15,7 @@ export const viewPorts = {
   northAmerica: {
     xl: {
       center: latLng(50.0418, -96.2063),
-      zoom: 4.4,
+      zoom: 4.3,
     },
     xxl: {
       center: latLng(48.6328, -84.9564),
