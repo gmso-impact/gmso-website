@@ -46,7 +46,7 @@ export default new Vuex.Store({
         //   }
         // },
         panMap: {
-          time: 18 * minutes,
+          time: 18 * seconds,
           action: () => {
             state.isInactive = true;
             dispatch("panMap");
