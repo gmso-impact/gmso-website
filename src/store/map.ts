@@ -39,7 +39,7 @@ export const viewPorts = {
     },
     xxl: {
       center: latLng(-22.1141, -61.7305),
-      zoom: 5.3,
+      zoom: 5.2,
     },
   },
   europeAfrica: {
