@@ -19,7 +19,7 @@ jobs:
         node-version: '18'
         cache: 'yarn'
     - run: yarn install
-    - run: yarn deploy 
+    - run: yarn deploydev # deploy or deploydev
       env:
         AIRTABLE_AUTHORIZATION: ${{ secrets.AIRTABLE_AUTHORIZATION }}
     - name: Deploy
