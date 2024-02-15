@@ -58,6 +58,8 @@ const storys = {
     idTags: toFilterTags("ID Tags"),
     collegeTags: toFilterTags("College/Division"),
 
+    activeIdTag: null,
+
     isVideoFrameOpen: false,
     isHelpFrameOpen: false,
     isStoriesFrameOpen: false,
@@ -111,7 +113,23 @@ const storys = {
             ? storyTheme.isActive
             : false;
         }).length;
-        return hasActiveTheme;
+
+        let hasActiveIdTag = false;
+        if (!state.activeIdTag) {
+          // If there is no active ID tag, show all stories
+          hasActiveIdTag = true;
+        } else if (
+          story.fields["ID Tags"] === undefined ||
+          story.fields["ID Tags"].length === 0
+        ) {
+          // if the story has no ID tags, it cannot be active
+          hasActiveIdTag = false;
+        } else {
+          // see if the story ID tags match the active one
+          hasActiveIdTag = story.fields["ID Tags"].includes(state.activeIdTag);
+        }
+
+        return hasActiveTheme && hasActiveIdTag;
       });
     },
     storyInMap: (state, getters) => {
@@ -157,6 +175,9 @@ const storys = {
     },
     idTags: (state) => {
       return state.idTags;
+    },
+    activeIdTag: (state) => {
+      return state.activeIdTag;
     },
     collegeTags: (state) => {
       return state.collegeTags;
@@ -391,6 +412,9 @@ const storys = {
           isActive: true,
         };
       });
+    },
+    setIdTag: (state, tagName) => {
+      state.activeIdTag = tagName;
     },
   },
   actions: {},

@@ -8,7 +8,8 @@
     >
       <KioskSwitch class="" v-if="false"> </KioskSwitch>
       <ThemeColumn></ThemeColumn>
-      <Language class="d-block"></Language>
+      <IdTags class="d-block"></IdTags>
+      <Language class="d-block mt-4"></Language>
       <TitleNameSwitch class="d-block mt-4"></TitleNameSwitch>
     </div>
     <div class="h-25 d-flex flex-column justify-content-end">
@@ -29,6 +30,7 @@ import KioskSwitch from "./kioskSwitch.vue";
 import Language from "./language.vue";
 import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
+import IdTags from "./idTags.vue";
 import Geo from "./geo.vue";
 import QRSite from "@/components/qr/qrSite.vue";
 import IntroVideo from "./introVideo.vue";
@@ -39,6 +41,7 @@ export default {
     Language,
     TitleNameSwitch,
     ThemeColumn,
+    IdTags,
     QRSite,
     Geo,
     IntroVideo,

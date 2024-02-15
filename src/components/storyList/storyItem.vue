@@ -40,7 +40,7 @@
             {{ storyTitle }}
           </div>
           <div :key="storyPerson" v-if="sortStoriesBy === 'Last Name'">
-            <span>{{ this.story.fields["First Name"] }}</span>
+            <span>{{ this.story.fields["First Name"] }} </span>
             <span class="font-weight-bold">{{
               this.story.fields["Last Name"]
             }}</span>
