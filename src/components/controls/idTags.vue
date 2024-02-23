@@ -8,7 +8,7 @@
       }"
       v-on:click="setTagClicked"
     >
-      Women Lead Story
+      Women in Leadership
     </button>
   </div>
 </template>
