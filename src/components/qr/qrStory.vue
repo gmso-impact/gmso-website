@@ -1,7 +1,7 @@
 <template lang="">
   <div
     class="qr-story d-flex align-items-end"
-    v-if="story.fields['en-StoryMapLink'] && this.$route.name === 'Kiosk'"
+    v-if="this.$route.name === 'Kiosk'"
     v-on:click="printURL"
   >
     <vue-qr v-bind="qrConfig" class="w-100"></vue-qr>
@@ -35,16 +35,7 @@ export default {
     VueQr,
   },
   data() {
-    return {
-      qrConfig: {
-        colorDark: cssColors[this.story.fields["Story Theme"]],
-        // autoColor: false,*/
-        // unusued when autoColor true
-        colorLight: "#ffffff",
-        text: this.story.fields["en-StoryMapLink"],
-        ...qrConfig,
-      },
-    };
+    return {};
   },
   props: {
     story: {
@@ -52,11 +43,30 @@ export default {
       required: true,
     },
   },
-  computed: {},
+  computed: {
+    storyLink: function () {
+      // Return story in other language
+      if (this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]) {
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`];
+      }
+      // default to english
+      return this.story.fields["bi-StoryMapLink"];
+    },
+    qrConfig: function () {
+      return {
+        colorDark: cssColors[this.story.fields["Story Theme"]],
+        // autoColor: false,*/
+        // unusued when autoColor true
+        colorLight: "#ffffff",
+        text: this.storyLink,
+        ...qrConfig,
+      };
+    },
+  },
   methods: {
     printURL: function () {
       console.log("QR URL is");
-      console.log(this.story.fields["en-StoryMapLink"]);
+      console.log(this.storyLink);
     },
   },
 };

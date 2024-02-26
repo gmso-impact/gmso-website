@@ -27,14 +27,22 @@
         >>
       </template>
 
+      <l-control position="topright">
+        <MapLayers></MapLayers>
+      </l-control>
       <l-control-zoom position="topright"></l-control-zoom>
 
       <l-control-scale
         position="bottomleft"
         :imperial="true"
         :metric="true"
+        :maxWidth="getBreakpoints.includes('xxl') ? 1000 : 200"
         v-if="true"
       ></l-control-scale>
+
+      <l-control position="bottomleft" v-if="getBreakpoints.includes('xxl')">
+        <MapLayers></MapLayers>
+      </l-control>
 
       <l-control-zoom
         position="bottomleft"
@@ -79,9 +87,14 @@
         </button>
       </div>
     </div>
+    <HelpMap v-if="isInactive"></HelpMap>
     <OverlayHelp></OverlayHelp>
-
-    <OverlayVideo v-if="isVideoFrameOpen && (this.$route.name !== 'Kiosk' || getBreakpoints.includes('xxl'))"></OverlayVideo>
+    <OverlayVideo
+      v-if="
+        isVideoFrameOpen &&
+        (this.$route.name !== 'Kiosk' || getBreakpoints.includes('xxl'))
+      "
+    ></OverlayVideo>
     <OverlayFilter></OverlayFilter>
     <OverlayStories></OverlayStories>
     <OverlayStory
@@ -96,6 +109,7 @@ import {
   LMap,
   // LTileLayer,
   LIcon,
+  LControl,
   LControlZoom,
   LControlScale,
 } from "vue2-leaflet";
@@ -118,18 +132,19 @@ const getBasemapStyle = function (defaultStyle) {
   return basemapStyle;
 };
 
-
 import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
 import OverlayVideo from "../overlay/video.vue";
 import OverlayHelp from "../overlay/help.vue";
 import OverlayFilter from "../overlay/filter.vue";
 import OverlayStories from "../overlay/stories.vue";
+import HelpMap from "./help/index.vue";
 
+import MapLayers from "./mapLayers.vue";
 import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
-import { maps } from "@/store/map";
+import { viewPorts } from "@/store/map";
 import cssColors from "@/scss/variables.scss";
 
 const apikey =
@@ -147,25 +162,19 @@ export default {
     OverlayHelp,
     OverlayStories,
     OverlayFilter,
+    HelpMap,
+    LControl,
     LControlZoom,
     LControlScale,
+    MapLayers,
   },
-  // list of basemaps
-  // https://developers.arcgis.com/documentation/mapping-apis-and-services/maps/services/basemap-layer-service/#default-basemap-styles
-  // custom styles
-  // https://developers.arcgis.com/documentation/mapping-apis-and-services/visualization/basemap-styles/
+
   data() {
     return {
-      //url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      // custom basemap can be modified here: https://developers.arcgis.com/vector-tile-style-editor/fe3c8d5151de424bb25ad0655ca6c080/json
-      //customBasemap: vectorBasemapLayer("fe3c8d5151de424bb25ad0655ca6c080", { apikey: apikey }),
-      basemap: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey }),
-      //basemapDefault: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
-      //basemapOld: basemapLayer("DarkGray", { apikey }),
       apikey: apikey,
       storyLayerEsriObject: null,
       storyLayerId: null,
-
+      baseMapLayer: null,
       mapOptions: {
         preferCanvas: true,
         zoomSnap: 0.1,
@@ -175,19 +184,20 @@ export default {
         zoomControl: false,
         closePopupOnClick: false,
       },
-      center: maps.colorado.center, // initial map center before load
-      zoom: maps.colorado.zoom,
+      center: viewPorts.colorado.center, // initial map center before load
+      zoom: viewPorts.colorado.zoom,
     };
   },
   computed: {
     ...mapGetters({
+      baseMap: "mapGetBaseMap",
       stories: "storyFiltered",
       storysActive: "storysActive",
-      mapGetBoundsNew: "mapGetBoundsNew",
-      mapGetBoundsCurrent: "mapGetBoundsCurrent",
+      mapNewView: "mapNewView",
       storyLayer: "storyLayer",
       getBreakpoints: "getBreakpoints",
       isVideoFrameOpen: "isVideoFrameOpen",
+      isInactive: "isInactive",
     }),
     minZoom: function () {
       // 0 = globe
@@ -237,11 +247,15 @@ export default {
         zoom: 2.8,
       },
       xxl: {
-        latLng: latLng(-1.6, 21.5),
-        zoom: 4.3,
+        latLng: latLng(-0.8135, 5.175),
+        zoom: 4.2,
       },
     };
-    this.$refs.map.mapObject.addLayer(this.basemap);
+    console.log();
+    this.baseMapLayer = vectorBasemapLayer(this.baseMap.layer, {
+      apikey: this.apikey,
+    });
+    this.$refs.map.mapObject.addLayer(this.baseMapLayer);
     // there is an issue with the map if it has not ever zoomed
     this.$refs.map.mapObject.setView(
       initialView[this.getBreakpoints[0]].latLng,
@@ -249,21 +263,32 @@ export default {
       {
         duration: 0,
         animate: false,
-      }
+      },
     );
   },
   watch: {
-    mapGetBoundsNew: function (newObject) {
+    isInactive: function (isInactiveValue) {
+      if (isInactiveValue == false) {
+        console.log("stop");
+        this.$refs.map.mapObject.stop();
+      }
+    },
+    mapNewView: function (newObject) {
       this.$nextTick(() => {
-        console.log("mapGetBoundsNew watcher");
-        this.$refs.map.mapObject.flyToBounds(newObject.bounds, {
+        //console.log("mapNewView watcher");
+        this.$refs.map.mapObject.flyTo(newObject.center, newObject.zoom, {
           duration: newObject.duration,
         });
       });
     },
-    basemap: function (newBaseMap, oldBaseMap) {
-      this.$refs.map.mapObject.removeLayer(oldBaseMap);
-      this.$refs.map.mapObject.addLayer(newBaseMap);
+    baseMap: function (newBaseMap, oldBaseMap) {
+      const newBaseMapLayer = vectorBasemapLayer(newBaseMap.layer, {
+        apikey: this.apikey,
+      });
+      this.$refs.map.mapObject.addLayer(newBaseMapLayer);
+      //this.$refs.map.mapObject.removeLayer(this.baseMapLayer);
+      this.baseMapLayer.remove();
+      this.baseMapLayer = newBaseMapLayer;
     },
     storyLayer: function (newStory, oldStory) {
       // remove old layer whenever a new story is selected
@@ -277,7 +302,7 @@ export default {
         this.storyLayerId = null;
       }
       if (newStory) {
-        // eslint-disable-next-line 
+        // eslint-disable-next-line
         let layer = featureLayer({
           url: newStory.fields["Impact Map Layer URL"],
           apikey: this.apikey,
@@ -287,7 +312,7 @@ export default {
           minZoom: 0, // zoom level to show layer at, 0 = world
           style: (feature) => {
             console.log(feature);
-            // eslint-disable-next-line 
+            // eslint-disable-next-line
             let color = cssColors[newStory.fields["Story Theme"]];
             return {
               color: color, //"#BA55D3",
@@ -302,8 +327,8 @@ export default {
             return;
           }
           const style = metadata.drawingInfo.renderer.symbol;
-          if(!style){
-            return;   
+          if (!style) {
+            return;
           }
           if (style.type === "esriPMS") {
             // they are points

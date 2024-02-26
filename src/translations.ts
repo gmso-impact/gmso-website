@@ -14,8 +14,14 @@ const translations = {
     greeting: "Welcome to the CSU Impact Map",
     tagline: "Find your story @ CSU!",
     "Read More": "Read More",
-    help1: "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
+    help1:
+      "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     helpReadStory: `Swipe up to read <br/> more of the story`,
+
+    helpMapSwipe: `Drag one finger <br/> to pan the map`,
+    helpMapZoom: `Drag 2 fingers <br/> to zoom in and out`,
+    helpMapOpen: `Poke a map marker <br/> to read that story`,
+
     Close: "Close",
     AllStories: "All Stories",
     AllThemes: "All Themes",
@@ -23,6 +29,8 @@ const translations = {
     Filter: "Filter",
     ResetFilter: "Reset filter to see more stories",
     ResetMap: "Reset map to see more stories",
+
+    QRscan: "Scan Me",
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
     SortByTitle: "Title",
@@ -30,6 +38,12 @@ const translations = {
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
+    baseMaps: {
+      mapType: "Map Type",
+      political: "Political",
+      terrain: "Terrain",
+      satellite: "Satellite",
+    },
     storyThemes: {
       Health: "Health",
       Environment: "Environment",
@@ -76,6 +90,11 @@ const translations = {
     help1:
       "Through stories of our people, the places we travel and the work we do, be inspired to help us tackle challenges in food, water, health, energy, community and the environment. Tap on a map marker (mobile) or click either a story card or map marker (web).",
     helpReadStory: `Desliza hacia arriba <br/> para leer más de la historia.`,
+
+    helpMapSwipe: `Arrastre un dedo <br/> para desplazarse por el mapa`,
+    helpMapZoom: `Arrastre 2 dedos <br/> para acercar y alejar`,
+    helpMapOpen: `Toca un marcador de mapa <br/> para leer esa historia`,
+
     Close: "Salida",
     AllStories: "Todos Cuentos",
     AllThemes: "Todos Temas",
@@ -84,6 +103,7 @@ const translations = {
     ResetFilter: "Restablecer el filtro para ver más cuentos",
     ResetMap: "Restablecer el mapa para ver más cuentos",
 
+    QRscan: "Escanéame",
     QRpopover: "Ver está pieza en su móbil",
     Explore: "Prepárate para una aventura",
 
@@ -92,7 +112,12 @@ const translations = {
 
     ContinueEN: "Continue",
     ContinueES: "Continuar",
-
+    baseMaps: {
+      mapType: "Tipo de Mapa",
+      political: "Política",
+      terrain: "Relieve",
+      satellite: "Satélite",
+    },
     storyThemes: {
       Health: "Salud",
       Environment: "Ambiente",

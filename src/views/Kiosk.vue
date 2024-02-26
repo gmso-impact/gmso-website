@@ -1,5 +1,5 @@
 <template>
-  <Main v-on:click.native="setLastInteraction"></Main>
+  <Main v-on:click.native="resetTimeouts"></Main>
 </template>
 
 <script lang="ts">
@@ -13,17 +13,20 @@ export default {
     Main,
   },
   mounted() {
-    this.startTimer();
+    this.startTimeouts();
   },
   beforeDestroy() {
-    this.stopTimer();
+    this.stopTimeouts();
   },
   computed: {
     ...mapGetters({ getBreakpoints: "getBreakpoints" }),
   },
   methods: {
-    ...mapActions({ startTimer: "startTimer", stopTimer: "stopTimer" }),
-    ...mapMutations({ setLastInteraction: "setLastInteraction" }),
+    ...mapActions({
+      stopTimeouts: "stopTimeouts",
+      startTimeouts: "startTimeouts",
+      resetTimeouts: "resetTimeouts",
+    }),
   },
 };
 </script>

@@ -36,11 +36,14 @@
         class="card-body d-flex justify-content-center align-items-center p-1 text-center text-white"
       >
         <transition name="fade" mode="out-in">
-          <div :key="storyTitle" v-if='sortStoriesBy === "en-StoryTitle"'>
+          <div :key="storyTitle" v-if="sortStoriesBy === 'en-StoryTitle'">
             {{ storyTitle }}
           </div>
-          <div :key="storyPerson" v-if='sortStoriesBy === "Last Name"'>
-            <span>{{this.story.fields["First Name"]}}</span> <span class='font-weight-bold'>{{this.story.fields["Last Name"]}}</span>
+          <div :key="storyPerson" v-if="sortStoriesBy === 'Last Name'">
+            <span>{{ this.story.fields["First Name"] }} </span>
+            <span class="font-weight-bold">{{
+              this.story.fields["Last Name"]
+            }}</span>
           </div>
         </transition>
       </div>
@@ -80,8 +83,7 @@ export default {
     },
     storyPerson: function () {
       // This is only used as a KEY for fading in and out. To modify the text displayed see the <span> tags above.
-      return `${this.story.fields["First Name"]} ${this.story.fields["Last Name"]}`
-
+      return `${this.story.fields["First Name"]} ${this.story.fields["Last Name"]}`;
     },
     height: function () {
       return this.imageSizes[this.getBreakpoints[0]].height;

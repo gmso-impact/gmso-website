@@ -163,9 +163,12 @@ export default {
   transform: rotateX(330deg) rotateY(0deg) rotateZ(0deg);
   //border: 1px solid white;
 
-  box-shadow: rgba(255, 255, 255, 0.15) -3px 3px 200px 40px,
-    rgba(0, 0, 0, 0.3) 0px 54px 55px, rgba(0, 0, 0, 0.2) 0px -12px 30px,
-    rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.2) 0px 12px 13px,
+  box-shadow:
+    rgba(255, 255, 255, 0.15) -3px 3px 200px 40px,
+    rgba(0, 0, 0, 0.3) 0px 54px 55px,
+    rgba(0, 0, 0, 0.2) 0px -12px 30px,
+    rgba(0, 0, 0, 0.2) 0px 4px 6px,
+    rgba(0, 0, 0, 0.2) 0px 12px 13px,
     rgba(0, 0, 0, 0.2) 0px -3px 5px;
 }
 .marker-img-body:after {

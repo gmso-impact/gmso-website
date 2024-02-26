@@ -1,6 +1,7 @@
 <template lang="">
   <div class="h-100 w-100">
-    <ScrollDown></ScrollDown><!--style="z-index:99997 !important;"-->
+    <ScrollDown></ScrollDown
+    ><!--style="z-index:99997 !important;"-->
     <iframe
       @load="setIframeLoaded()"
       class="iframe-scale iframe-border-none btn-fade justify-content-end"
@@ -9,7 +10,7 @@
       :class="{
         'd-none': !loaded,
       }"
-      :src="story.fields['en-StoryMapLink']"
+      :src="storyLink"
       title="Story Map"
       scrolling="yes"
     ></iframe>
@@ -28,7 +29,6 @@
   </div>
 </template>
 <script>
-
 import ScrollDown from "./scrollDown.vue";
 
 import { mapGetters, mapMutations } from "vuex";
@@ -53,6 +53,14 @@ export default {
     ...mapGetters({
       getBreakpoints: "getBreakpoints",
     }),
+    storyLink: function () {
+      // Return story in other language
+      if (this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`]) {
+        return this.story.fields[`${this.$root.$i18n.locale}-StoryMapLink`];
+      }
+      // default to english
+      return this.story.fields["bi-StoryMapLink"];
+    },
     storyTitle: function () {
       if (this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`]) {
         return this.story.fields[`${this.$root.$i18n.locale}-StoryTitle`];
@@ -79,5 +87,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

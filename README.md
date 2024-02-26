@@ -3,11 +3,27 @@ GMSO Impact is a website showcasing the stories of research and advancement of t
 
 # Production Server
 
-This website is hosted on GitHub pages. Every day at 5 am MTN new data is downloaded from Airtable and then copied to the github pages content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
+This website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk) is hosted on GitHub pages. Every day at [5 am MTN](https://github.com/gmso-impact/gmso-website/blob/main/.github/workflows/deploy.yml) new data is downloaded from [Airtable](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwejFXIvDwE3ZCMT?blocks=hide) and then copied to the [GitHub pages](https://docs.github.com/en/pages) content delivery network. Changes to stories will apear at that time on the website. Changes will then apear on the Impacto Kiosks when one of these criteria are met:
 
 1. The kiosk has been inactive for more than 1 hour
 1. The kiosk has the `reset` button pressed in the lower right hand corner of the screen
 1. The kiosk is power cycled or otherwise re-started
+
+If content changes are made in Airtable, they will be reflected at 5am the next day. If you need them sooner, contact Brandon B to have the GitHub deploy action re-run (a 5 minute task). **Best practice** is to check if those changes made it into the website the next day.
+
+Structural **changes in AirTable to the column names, datatypes or the [PublicWebsite view](https://airtable.com/appyTc8xRR9nR9sSB/tblK3OK25QMtimezC/viwsWb12QV9KFBNa3?blocks=hide) may cause issues**, if used by the website. That view is an indicator of the fields used by the website. Adding fields in Airtable is generally OK, but ask Lauren W or Greg N. If you are unsure if a column is directly used by the exhbit or how it is used, contact Brandon B to double check.
+
+# Spur Exhibit
+There are 3 kiosks at Spur that make up the Impact(o) exhbit. The wall and 2 podiums. They are all windows 11 machines running the Microsoft Edge browser to display the kiosk version of the website [https://impact.csusystem.edu/#/kiosk](https://impact.csusystem.edu/#/kiosk). These exhbits use a slightly diffrent URL to the public website [https://impact.csusystem.edu/](https://impact.csusystem.edu/). the reason for diffrent URLs are to display / hide elements specific to the exhibit. For example, QR codes are only displayed in the exhibit. 
+
+## Simulating as kiosk
+There are 3 kiosks located at Spur. Each can be interacted with via touch inputs. You can use the Micrsoft Edge OR Google Chrome developer tools to simulate these screen sizes and touch input through [add a custom mobile device](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#add-a-custom-mobile-device).
+
+- Wall - Screen resolution 7680x2160 16ft wide 5ft tall
+- Short Podium - Screen resolution 1920x1080 24in diagonal
+- Tall Podium - Screen resolution 1920x1080 24in diagonal
+
+If you don't have a touch screen windows device, try the touch interaction on your phone.
 
 # Local Development of Website
 
@@ -20,7 +36,7 @@ yarn serve
 
 By default it will serve the **website** from [http://localhost:8080/](http://localhost:8080/) to view **kiosk mode* visit [http://localhost:8080/#/kiosk](http://localhost:8080/#/kiosk). It will take 1-3 minutes to start. Changes you make within the `src` folders will automaticly be displayed. Other changes will require you to stop the server `ctrl + D` within powershell and then start it again using `yarn serve`.
 
-If you have not run the code in a while or ff you see an error from `yarn serve` try a `yarn install` to ensure you have the NPM latest packages. If you have missing images or stories try `yarn fetch` to get the latest data from Airtable.
+If you have not run the code in a while or if you see an error from `yarn serve` try a `yarn install` to ensure you have the NPM latest packages. If you have missing images or stories try `yarn fetch` to get the latest data from Airtable.
 
 ## Retrieve Story data & images
 ***Requires AIRTABLE_AUTHORIZATION= API Key in ENV file*** 
@@ -30,12 +46,7 @@ yarn fetch
 ```
 First this command downloads the data from airtable. Then it looks through that for image links. The data is stored in `src/assets/allStories.json`. The images are downloaded, and then re-sized for optimal page delivery in the folder `public/stories`
 
-## Simulating as kiosk
-There are 3 kiosks located at Spur. Each can be interacted with via touch inputs. You can use the Micrsoft Edge OR Google Chrome developer tools to simulate these screen sizes and touch input through [add a custom mobile device](https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#add-a-custom-mobile-device).
 
-- Wall - Screen resolution 7680x2160 16ft wide
-- Short Podium - Screen resolution 1920x1080 24in diagonal
-- Tall Podium - Screen resolution 1920x1080 24in diagonal
 
 
 
@@ -85,10 +96,10 @@ Changes to the main branch will automaticly be deployed to production and should
     git config --global user.email gmso_mailbox@mail.colostate.edu
     ```
 
-1. Install [Node.js 14.x](https://nodejs.org/dist/latest-v14.x/)  **add choclatey when prompted**
-    node-v14.20.0-x64.msi is an installer package. Version number will change based on bugfixes.
+1. Install [Node.js 18.x](https://nodejs.org/en/download)  **add choclatey when prompted**
+    Version number will change based on bugfixes.
     If this fails, run the installer a second time and select 'repair' if it recognizes an existing install
-    Node 14 is required because of Vue2. Vue2 is required because of vue-leaflet
+    Node 18 is required because of Vue2. Vue2 is required because of vue-leaflet
 
 
 1. Set ExecutionPolicy to run Powershell scripts
@@ -129,7 +140,7 @@ Changes to the main branch will automaticly be deployed to production and should
     ```
 1. Create Airtable Personal Access token
     This will be used by your local machine to access the Airtable data. You need this for the list of stories and the image files.
-    >**Do not store personal access tokens or API keys in Gihub including the `.example.env` file**
+    >**Do not store personal access tokens or API keys in Github including the `.example.env` file**
 
     1. Copy '.env.example' to a file named '.env'
     1. Visit [airtable.com/create/tokens](https://airtable.com/create/tokens)

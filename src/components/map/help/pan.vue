@@ -1,7 +1,7 @@
 <template lang="">
   <div class="scrollDown" v-if="this.$route.name === 'Kiosk'">
     <div class="fadeIn" v-show="isVisible">
-      <div class="callToAction blackGlow" v-html="$t('helpReadStory')"></div>
+      <div class="callToAction blackGlow" v-html="$t('helpMapSwipe')"></div>
       <div class="swipeFinger blackGlow">
         <font-awesome-icon class="fa-4x" icon="fa-solid fa-hand-pointer" />
       </div>
@@ -16,46 +16,15 @@ const seconds = 1000;
 const minutes = 60 * seconds;
 const hours = 60 * minutes;
 export default {
-  name: "scrollDown",
+  name: "helpMap",
   data() {
     return {
       isVisible: true,
     };
   },
   computed: {
-    ...mapGetters({
-      //timeSinceInteraction: "timeSinceInteraction",
-      //storyInMap: "storyInMap",
-    }),
+    ...mapGetters({}),
   },
-  mounted: function () {
-    // eslint-disable-next-line
-    let stopVisible = setTimeout(() => {
-      this.isVisible = false;
-    }, 45 * seconds); // must be a multiple of the animation time for fadeIn in the CSS below. otherwise it will abruptly disapear
-  },
-  /*watch: {
-          timeSinceInteraction: {
-              immediate: true,
-              handler: function (timeSinceInteraction, oldVal) {
-                  if(timeSinceInteraction > 0.1 * seconds && this.storyInMap.length > 24){
-                      this.isVisible = true 
-                  } else {
-                      this.isVisible = false
-                  }
-              }
-          },
-          storyInMap: {
-              immediate: true,
-              handler: function (storyInMap, oldVal) {
-                  if(storyInMap.length > 24){
-                      this.isVisible = true
-                  } else {
-                      this.isVisible = false
-                  }
-              }
-          },
-      },*/
 };
 </script>
 
@@ -64,7 +33,7 @@ export default {
   pointer-events: none;
   position: absolute;
   top: 60%;
-  right: 10%;
+  right: 25%;
   color: white;
   text-align: center;
   animation: fadeIn 1s;
@@ -122,38 +91,34 @@ export default {
 
 @keyframes swipe {
   0% {
-    transform: translate(0, 16px);
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0;
-  }
-
-  49% {
     transform: translate(0, 10vh);
     opacity: 0;
   }
 
-  51% {
-    transform: translate(0, -16px);
+  50% {
+    transform: translate(0, 0);
     opacity: 0;
   }
 
   60% {
+    transform: translate(0, -5vh);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-5vh, 0);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(5vh, 0);
     opacity: 1;
   }
 
   90% {
+    transform: translate(0, 5vh);
     opacity: 1;
   }
 
   100% {
-    transform: translate(0, -20vh);
     opacity: 0;
   }
 }
