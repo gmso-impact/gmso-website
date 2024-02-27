@@ -1,9 +1,13 @@
 <template lang="">
   <div class="d-flex h-100 flex-column justify-content-between pt-1 pt-xl-2">
+    <h1 class="text-white text-center pb-xxl-4">
+      Find <br />
+      Stories by
+    </h1>
+    <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
     <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
     <ThemeColumn class="mb-3 mx-1 mx-xl-2"></ThemeColumn>
     <IdTags class="mb-3 mx-1 mx-xl-2"></IdTags>
-    <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
     <Geo class="align-self-center mb-3 mx-1 mx-xl-2"></Geo>

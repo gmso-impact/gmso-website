@@ -54,7 +54,6 @@ function toFilterTags(tagName) {
   });
 }
 function getNames(fieldName) {
-  console.log("getNames");
   const tagListDuplicated = stories.reduce(function (tags, story) {
     if (
       story.fields &&
@@ -112,12 +111,7 @@ const storys = {
       return state.sortStoriesBy;
     },
     storyAll: (state) => {
-      return state.all.sort((a, b) => {
-        // sort alphabetically
-        return a.fields[state.sortStoriesBy].localeCompare(
-          b.fields[state.sortStoriesBy],
-        );
-      });
+      return state.all;
     },
     storyFiltered: (state, getters, rootState) => {
       const filteredStories = state.all.filter((story) => {
@@ -134,13 +128,12 @@ const storys = {
             return true;
           } else if (story.fields[fieldName] === undefined) {
             // if the story does not have this field it must not be active
-            console.log("No Field");
             return false;
           } else if (Array.isArray(story.fields[fieldName])) {
             // if the field is a array, check it
-            return story.fields[fieldName].includes(
-              rootState.route.query[queryName].toLowerCase(),
-            );
+            return story.fields[fieldName]
+              .map((n) => n.toLowerCase())
+              .includes(rootState.route.query[queryName].toLowerCase());
           } else {
             // the field must be a string, check it
             return (

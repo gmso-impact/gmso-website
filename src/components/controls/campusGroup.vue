@@ -1,6 +1,6 @@
 <template lang="">
   <div class="text-center">
-    <h2 class="text-white mb-xxl-4">Campus</h2>
+    <h2 class="text-white mb-xxl-3">Campus</h2>
     <div class="row pb-3 p-2">
       <div class="col-6 col-xxl-3 p-1">
         <button
@@ -11,7 +11,10 @@
           }"
           v-on:click="resetCampus()"
         >
-          <div class="font-weight-bold">All Campuses</div>
+          <div class="font-weight-bold">
+            All <br />
+            Campuses
+          </div>
         </button>
       </div>
       <CampusButton
@@ -42,6 +45,7 @@ export default {
         .map((n) => n.toLowerCase())
         .includes(this.$route.query.campus.toLowerCase())
     ) {
+      // campus does not exist
       this.resetCampus();
     }
   },

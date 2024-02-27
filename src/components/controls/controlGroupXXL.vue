@@ -1,18 +1,23 @@
 <template lang="">
-  <div class="d-flex flex-column justify-content-end h-100 px-3 py-5">
-    <KioskSwitch class="pb-xxl-4" v-if="false"> </KioskSwitch>
-    <ThemeColumn class="pb-xxl-4"></ThemeColumn>
-    <IdTags class="pb-xxl-4"></IdTags>
-    <CampusGroup class="pb-xxl-4"></CampusGroup>
-    <Language class="pb-xxl-4"></Language>
-    <TitleNameSwitch class="pb-xxl-4"></TitleNameSwitch>
-    <div class="row pb-xxl-4">
-      <QRSite
-        v-if="this.$route.name === 'Kiosk'"
-        class="col-4 text-center"
-      ></QRSite>
-      <IntroVideo class="col-4 text-center"></IntroVideo>
-      <Geo class="col-4 text-center"></Geo>
+  <div class="d-flex flex-column justify-content-end h-100">
+    <div class="h-50 d-flex flex-column justify-content-end py-5 px-5">
+      <h1 class="text-white text-center pb-xxl-4">Find Stories by</h1>
+      <CampusGroup class="pb-xxl-4"></CampusGroup>
+      <KioskSwitch class="pb-xxl-4" v-if="false"> </KioskSwitch>
+      <ThemeColumn class=""></ThemeColumn>
+    </div>
+    <div class="h-50 d-flex flex-column justify-content-between py-5 px-5">
+      <IdTags class="pb-xxl-5"></IdTags>
+      <Language class="pb-xxl-5"></Language>
+      <TitleNameSwitch class="pb-xxl-5"></TitleNameSwitch>
+      <div class="row">
+        <QRSite
+          v-if="this.$route.name === 'Kiosk'"
+          class="col-4 text-center"
+        ></QRSite>
+        <IntroVideo class="col-4 text-center"></IntroVideo>
+        <Geo class="col-4 text-center"></Geo>
+      </div>
     </div>
   </div>
 </template>
