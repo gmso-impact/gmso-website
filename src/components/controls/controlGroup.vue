@@ -1,26 +1,26 @@
 <template lang="">
-  <div class="d-flex h-100 flex-column pt-1 pt-xl-3">
+  <div class="d-flex h-100 flex-column justify-content-between pt-1 pt-xl-2">
     <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
-    <ThemeColumn class="mx-1 mx-xl-2"></ThemeColumn>
-    <Campus class='mx-1 mx-xl-2'></Campus>
-    <IdTags class="mx-1 mx-xl-2 mb-3"></IdTags>
+    <ThemeColumn class="mb-3 mx-1 mx-xl-2"></ThemeColumn>
+    <IdTags class="mb-3 mx-1 mx-xl-2"></IdTags>
+    <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
-    <Geo class="align-self-center mb-3"></Geo>
+    <Geo class="align-self-center mb-3 mx-1 mx-xl-2"></Geo>
     <IntroVideo
-      class="text-center mb-3"
+      class="text-centermb-3 mx-1 mx-xl-2"
       v-if="this.$route.name !== 'Kiosk'"
     ></IntroVideo>
     <QRSite
       v-if="this.$route.name === 'Kiosk'"
-      class="px-2 pb-2 text-center"
+      class="mb-3 mx-1 mx-xl-2 text-center"
     ></QRSite>
   </div>
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import KioskSwitch from "./kioskSwitch.vue";
-import Campus from "./campus.vue";
+import CampusGroup from "./campusGroup.vue";
 import Language from "./language.vue";
 import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
@@ -32,7 +32,7 @@ import QRSite from "@/components/qr/qrSite.vue";
 export default {
   components: {
     KioskSwitch,
-    Campus,
+    CampusGroup,
     Language,
     TitleNameSwitch,
     ThemeColumn,

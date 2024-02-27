@@ -83,10 +83,10 @@ Vue.component("font-awesome-layers", FontAwesomeLayers);
 Vue.component("font-awesome-layers-text", FontAwesomeLayersText);
 
 import VueRouter from "vue-router";
-import { sync } from 'vuex-router-sync'
+import { sync } from "vuex-router-sync";
 
 import router from "./router";
-const unsync = sync(store, router)
+const unsync = sync(store, router);
 Vue.use(VueRouter);
 
 new Vue({

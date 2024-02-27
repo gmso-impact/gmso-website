@@ -17,8 +17,14 @@ const stories = storiesFile.response
       fields: {
         ...story.fields,
         "Story Theme": story.fields["Story Theme"] || "Unknown",
+        LAT: story.fields["LAT"] || (Math.random() - 0.5) * +40.5730232,
+        LONG: story.fields["LONG"] || (Math.random() - 0.5) * -105.086407087,
       },
     };
+  })
+  .sort((a, b) => {
+    // initial sort by en-StoryTitle
+    return a.fields["en-StoryTitle"].localeCompare(b.fields["en-StoryTitle"]);
   });
 
 function toFilterTags(tagName) {
@@ -47,6 +53,28 @@ function toFilterTags(tagName) {
     };
   });
 }
+function getNames(fieldName) {
+  console.log("getNames");
+  const tagListDuplicated = stories.reduce(function (tags, story) {
+    if (
+      story.fields &&
+      story.fields[fieldName] &&
+      Array.isArray(story.fields[fieldName]) &&
+      story.fields[fieldName].length >= 1
+    ) {
+      // if the field is an array
+      return [...tags, ...story.fields[fieldName]];
+    } else if (story.fields && story.fields[fieldName]) {
+      // if the field is a string
+      return [...tags, story.fields[fieldName]];
+    } else {
+      // if field does not exist on story
+      return tags;
+    }
+  }, []);
+  const tagList = [...new Set(tagListDuplicated)];
+  return tagList;
+}
 
 const storys = {
   state: {
@@ -54,6 +82,7 @@ const storys = {
     storysActive: [],
     storysActiveMax: 1,
     storyThemes: toFilterTags("Story Theme"),
+    themeNames: getNames("Story Theme"),
     storyTags: toFilterTags("Story Tags"),
     idTags: toFilterTags("ID Tags"),
     collegeTags: toFilterTags("College/Division"),
@@ -83,30 +112,61 @@ const storys = {
       return state.sortStoriesBy;
     },
     storyAll: (state) => {
-      return state.all
-        .map((story) => {
-          if (story.fields["LAT"] && story.fields["LONG"]) {
-            return story;
-          }
-          // If location does not have lat long
-          // randomly locate around Fort Collins
-          return {
-            ...story,
-            fields: {
-              ...story.fields,
-              LAT: (Math.random() - 0.5) * 5 + 40.5730232,
-              LONG: (Math.random() - 0.5) * 5 - 105.086407087,
-            },
-          };
-        })
-        .sort((a, b) => {
-          // sort alphabetically
-          return a.fields[state.sortStoriesBy].localeCompare(
-            b.fields[state.sortStoriesBy],
-          );
-        });
+      return state.all.sort((a, b) => {
+        // sort alphabetically
+        return a.fields[state.sortStoriesBy].localeCompare(
+          b.fields[state.sortStoriesBy],
+        );
+      });
     },
     storyFiltered: (state, getters, rootState) => {
+      const filteredStories = state.all.filter((story) => {
+        const filterByField = function (queryName, fieldName) {
+          // handle arbitrary field query filters
+          // console.log({
+          //   queryName: queryName,
+          //   queryValue: rootState.route.query[queryName],
+          //   fieldName: fieldName,
+          //   story: story
+          // })
+          if (rootState.route.query[queryName] === undefined) {
+            // if the query is undefined, this filter must not be active
+            return true;
+          } else if (story.fields[fieldName] === undefined) {
+            // if the story does not have this field it must not be active
+            console.log("No Field");
+            return false;
+          } else if (Array.isArray(story.fields[fieldName])) {
+            // if the field is a array, check it
+            return story.fields[fieldName].includes(
+              rootState.route.query[queryName].toLowerCase(),
+            );
+          } else {
+            // the field must be a string, check it
+            return (
+              story.fields[fieldName].toLowerCase() ===
+              rootState.route.query[queryName].toLowerCase()
+            );
+          }
+        };
+        const hasActiveTheme = filterByField("theme", "Story Theme");
+        const hasActiveTag = filterByField("tag", "ID Tags");
+        const hasActiveCampus = filterByField("campus", "Campus");
+        // console.log({
+        //   hasActiveTheme: hasActiveTheme,
+        //   hasActiveTag: hasActiveTag,
+        //   hasActiveCampus: hasActiveCampus,
+        // })
+
+        return hasActiveTheme && hasActiveTag && hasActiveCampus;
+      });
+      const sortedStories = filteredStories.sort((a, b) => {
+        return a.fields[state.sortStoriesBy].localeCompare(
+          b.fields[state.sortStoriesBy],
+        );
+      });
+      return sortedStories;
+
       const storiesThemed = getters.storyAll.filter((story) => {
         const hasActiveTheme = !!state.storyThemes.filter((storyTheme) => {
           return story.fields["Story Theme"] === storyTheme.name
@@ -133,7 +193,7 @@ const storys = {
       });
       // skip filter of campus if it is undefined
       // need to add check to see if it is malformed (using set theory of intersection). Consider lodash.
-      if(!rootState.route.query.campus ){
+      if (!rootState.route.query.campus) {
         return storiesThemed;
       }
       const storiesCampus = storiesThemed.filter((story) => {
@@ -141,9 +201,10 @@ const storys = {
       });
 
       // ensure there are some stories at that campus, also accounts for malformed campus name
-      if(storiesCampus.length > 0){return storiesCampus;}
+      if (storiesCampus.length > 0) {
+        return storiesCampus;
+      }
       return storiesThemed;
-      
     },
     storyInMap: (state, getters) => {
       if (!getters.mapGetBounds) {
@@ -185,6 +246,9 @@ const storys = {
         return storyTheme.isActive;
       });
       return activeThemes;
+    },
+    themeNames: (state) => {
+      return state.themeNames;
     },
     idTags: (state) => {
       return state.idTags;

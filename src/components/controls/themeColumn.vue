@@ -1,15 +1,15 @@
 <template lang="">
-  <div class="d-flex flex-column justify-content-left h-100">
-    <div class="row mb-2">
-      <div class="col-12">
-        <h2 class="text-white text-center mb-xxl-4">Find Stories by Theme</h2>
+  <div class="d-flex flex-column">
+    <h2 class="text-white text-center mb-xxl-4">Find Stories by Theme</h2>
+    <div class="row">
+      <div class="col-12 col-xxl-12 mb-2 mb-xxl-4">
         <button
-          class="btn btn-block font-weight-bold mb-2 mb-xxl-4"
+          class="btn btn-block font-weight-bold"
           v-bind:class="{
-            'btn-white': storyThemesActive.length === storyThemes.length,
-            'btn-charcoal': storyThemesActive.length !== storyThemes.length,
+            'btn-white': $route.query.theme === undefined,
+            'btn-charcoal': $route.query.theme !== undefined,
           }"
-          v-on:click="resetTagsClicked"
+          v-on:click="resetTheme"
           :aria-label="$t(`AllThemes`)"
         >
           <transition name="fade" mode="out-in">
@@ -19,12 +19,17 @@
           </transition>
         </button>
       </div>
-      <ThemeButton
-        v-for="storyTheme in storyThemes"
-        :key="storyTheme.name"
-        v-bind:control="storyTheme"
+      <div
+        class="col-12 col-xxl-6 mb-2 mb-xxl-4"
+        v-for="theme in themeNames"
+        :key="theme"
       >
-      </ThemeButton>
+        <ThemeButton
+          v-bind:theme="theme"
+          v-bind:selectedTheme="$route.query.theme"
+        >
+        </ThemeButton>
+      </div>
     </div>
   </div>
 </template>
@@ -39,19 +44,36 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    // route guard to ensure the theme exists
+    // if someone provides a bad theme, it will re-route to no filter
+    if (
+      this.$route.query.theme &&
+      !this.themeNames
+        .map((n) => n.toLowerCase())
+        .includes(this.$route.query.theme.toLowerCase())
+    ) {
+      this.resetTheme();
+    }
+  },
   computed: {
     ...mapGetters({
-      storyThemes: "storyThemes",
-      storyThemesActive: "storyThemesActive",
+      themeNames: "themeNames",
     }),
   },
   methods: {
     ...mapMutations({
       resetTags: "resetTags",
     }),
-    resetTagsClicked: function (event) {
-      this.resetTags("storyThemes");
+    resetTheme: function (theme) {
+      if (this.$route.query.theme === undefined) {
+        return;
+      } // prevent redudant nav
+      this.$router.push({ query: { ...this.$route.query, theme: undefined } }); // leave other query paramaters alone
     },
+    // resetTagsClicked: function (event) {
+    //   this.resetTags("themeNames");
+    // },
   },
 };
 </script>
