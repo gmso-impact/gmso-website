@@ -2,7 +2,7 @@
   <div
     class="d-flex h-100 position-absolute kioskOverlay flex-wrap"
     v-if="
-      true && this.$route.name === 'Kiosk' && getBreakpoints.includes('xxl')
+      false && this.$route.name === 'Kiosk' && getBreakpoints.includes('xxl')
     "
   >
     <div

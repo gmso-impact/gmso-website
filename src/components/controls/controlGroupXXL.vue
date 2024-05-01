@@ -6,8 +6,8 @@
       <KioskSwitch class="pb-xxl-4" v-if="false"> </KioskSwitch>
       <ThemeColumn class=""></ThemeColumn>
     </div>
-    <div class="h-50 d-flex flex-column justify-content-between py-5 px-5">
-      <IdTags class="pb-xxl-5"></IdTags>
+    <div class="h-50 d-flex flex-column justify-content-end py-5 px-5">
+      <IdTags class="pb-xxl-5 flex-grow-1"></IdTags>
       <Language class="pb-xxl-5"></Language>
       <TitleNameSwitch class="pb-xxl-5"></TitleNameSwitch>
       <div class="row">
