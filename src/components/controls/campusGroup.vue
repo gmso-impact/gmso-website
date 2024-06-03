@@ -1,6 +1,6 @@
 <template lang="">
   <div class="text-center">
-    <h2 class="text-white mb-xxl-3">Campus</h2>
+    <h2 class="text-white mb-xxl-3">{{$t(`Campus`)}}</h2>
     <div class="row pb-3 p-2">
       <div class="col-6 col-xxl-3 p-1">
         <button
@@ -12,8 +12,7 @@
           v-on:click="resetCampus()"
         >
           <div class="font-weight-bold">
-            All <br />
-            Campuses
+            {{$t(`AllCampuses`)}}
           </div>
         </button>
       </div>

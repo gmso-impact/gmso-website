@@ -8,7 +8,7 @@
       }"
       v-on:click="setTagClicked"
     >
-      Women in Leadership
+    {{ $t(`Women`) }}
     </button>
   </div>
 </template>

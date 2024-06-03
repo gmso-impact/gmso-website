@@ -1,8 +1,7 @@
 <template lang="">
   <div class="d-flex h-100 flex-column justify-content-between pt-1 pt-xl-2">
     <h1 class="text-white text-center pb-xxl-4">
-      Find <br />
-      Stories by
+      {{$t(`FindStories`)}}
     </h1>
     <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
     <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
