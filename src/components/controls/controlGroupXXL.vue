@@ -1,7 +1,7 @@
 <template lang="">
   <div class="d-flex flex-column justify-content-end h-100">
     <div class="h-50 d-flex flex-column justify-content-end py-5 px-5">
-      <h1 class="text-white text-center pb-xxl-4">$t(`FindStories`)</h1>
+      <h1 class="text-white text-center pb-xxl-4">{{$t(`FindStories`)}}</h1>
       <CampusGroup class="pb-xxl-4"></CampusGroup>
       <KioskSwitch class="pb-xxl-4" v-if="false"> </KioskSwitch>
       <ThemeColumn class=""></ThemeColumn>
