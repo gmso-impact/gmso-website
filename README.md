@@ -96,10 +96,21 @@ Changes to the main branch will automaticly be deployed to production and should
     git config --global user.email gmso_mailbox@mail.colostate.edu
     ```
 
-1. Install [Node.js 18.x](https://nodejs.org/en/download)  **add choclatey when prompted**
-    Version number will change based on bugfixes.
-    If this fails, run the installer a second time and select 'repair' if it recognizes an existing install
-    Node 18 is required because of Vue2. Vue2 is required because of vue-leaflet
+1. Install [Node.js 20.14.0](https://nodejs.org/en/download)  
+    [Minor Version number](https://nodejs.org/en/about/previous-releases) will change based on bugfixes. Use the latest minor version
+
+    There are 3 ways to handle this:
+    1. [Install directly](https://nodejs.org/en/download/prebuilt-installer) (windows)
+        **add choclatey when prompted**
+        If this fails, run the installer a second time and select 'repair' if it recognizes an existing install
+        Node 20 or 18 is required because of Vue2. Vue2 is required because of vue-leaflet. Node 22 does not support vue2
+
+    2. OR Use NVM (Reccomended, requires windows WSL, Linux, or Mac)
+        [Windows Instructions](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
+        [NVM Instructions](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+
+    3. OR [Use windows NVM](https://github.com/coreybutler/nvm-windows) (windowss, has not been tested)
+
 
 
 1. Set ExecutionPolicy to run Powershell scripts
