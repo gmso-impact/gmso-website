@@ -1,9 +1,9 @@
 const imageSizes = {
-  xs: { width: 128, height: height(128) },
-  sm: { width: 128, height: height(128) },
-  md: { width: 128, height: height(128) },
+  xs: { width: 320, height: height(320) },
+  sm: { width: 320, height: height(320) },
+  md: { width: 320, height: height(320) },
   lg: { width: 640, height: height(640) },
-  xl: { width: 160, height: height(160) },
+  xl: { width: 320, height: height(320) },
   xxl: { width: 960, height: height(960) },
   oi: { width: null, height: null },
 };

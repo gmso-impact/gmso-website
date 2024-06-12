@@ -1,6 +1,6 @@
 <template lang="">
   <div
-    class="btn-group d-flex flex-column flex-xxl-row"
+    class="btn-group d-flex flex-column"
     role="group"
     aria-label="Kiosk Toggle Buttons"
   >
