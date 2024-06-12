@@ -1,6 +1,6 @@
 <template lang="">
   <div class="d-flex h-100 flex-column justify-content-between pt-1 pt-xl-2">
-    <h1 class="text-white text-center pb-xxl-4">
+    <h1 class="text-white text-center mx-1 mx-xl-2 pb-xxl-4">
       {{$t(`FindStories`)}}
     </h1>
     <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
@@ -11,7 +11,7 @@
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
     <Geo class="align-self-center mb-3 mx-1 mx-xl-2"></Geo>
     <IntroVideo
-      class="text-centermb-3 mx-1 mx-xl-2"
+      class="text-center mb-3 mx-1 mx-xl-2"
       v-if="this.$route.name !== 'Kiosk'"
     ></IntroVideo>
     <QRSite

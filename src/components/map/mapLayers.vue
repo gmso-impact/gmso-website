@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class="px-xxl-3">
     <h3
       class="text-center pb-1 pb-xxl-3"
       :class="{

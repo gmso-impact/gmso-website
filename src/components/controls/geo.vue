@@ -1,13 +1,11 @@
 <template lang="">
-  <div class="d-flex align-items-center">
-    <div class="w-100 ml-auto">
+  <div class="d-flex justify-content-end">
       <img
         src="Geo_Impact.svg"
-        class="geo-img ml-auto"
+        class="geo-img"
         v-on:click="toggleVideoFrame"
         alt="Click to watch the intro video"
       />
-    </div>
   </div>
 </template>
 <script>

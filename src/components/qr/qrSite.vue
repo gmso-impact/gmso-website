@@ -1,11 +1,11 @@
 <template lang="">
-  <div class="qr-site d-flex align-items-center">
+  <div class="qr-site d-flex align-items-end">
     <div class="w-100">
       <div class="text-white">{{ $t(`QRscan`) }}</div>
       <vue-qr
         id="popover-target-1"
         v-bind="qrConfig"
-        class="w-50 pt-2"
+        class="w-100 pt-2"
         text="https://impact.csusystem.edu"
         qid="testid"
       ></vue-qr>
