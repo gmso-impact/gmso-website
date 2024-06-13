@@ -1,6 +1,6 @@
 <template lang="">
   <div class="d-flex flex-column">
-    <h2 class="text-white text-center mb-xxl-3">{{$t(`Theme`)}}</h2>
+    <h2 class="text-white text-center mb-xxl-3">{{ $t(`Theme`) }}</h2>
     <div class="row">
       <div class="col-12 col-xxl-12 mb-2 mb-xxl-4">
         <button

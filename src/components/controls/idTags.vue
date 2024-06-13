@@ -1,14 +1,14 @@
 <template lang="">
   <div>
     <button
-      class="btn btn-block py-3 font-weight-bold"
+      class="btn btn-block font-weight-bold"
       :class="{
         'btn-white': isActiveTag,
         'btn-secondary': !isActiveTag,
       }"
       v-on:click="setTagClicked"
     >
-    {{ $t(`Women`) }}
+      {{ $t(`Women`) }}
     </button>
   </div>
 </template>

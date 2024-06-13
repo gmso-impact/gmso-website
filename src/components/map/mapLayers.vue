@@ -1,6 +1,6 @@
 <template lang="">
   <div class="px-xxl-3">
-    <h3
+    <h2
       class="text-center pb-1 pb-xxl-3"
       :class="{
         'text-dark': 'light' === currentMap.background,
@@ -8,7 +8,7 @@
       }"
     >
       {{ $t(`baseMaps.mapType`) }}
-    </h3>
+    </h2>
     <div class="btn-group">
       <button
         class="btn btn-fade"

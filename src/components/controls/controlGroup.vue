@@ -1,22 +1,24 @@
 <template lang="">
-  <div class="d-flex h-100 flex-column justify-content-between pt-1 pt-xl-2">
+  <div
+    class="d-flex h-100 flex-column overflow-y-auto overflow-x-hidden justify-content-between pt-1 pt-xl-2"
+  >
     <h1 class="text-white text-center mx-1 mx-xl-2 pb-xxl-4">
-      {{$t(`FindStories`)}}
+      {{ $t(`FindStories`) }}
     </h1>
-    <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
+    <CampusGroup class="mb-3 mx-xl-2"></CampusGroup>
     <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
     <ThemeColumn class="mb-3 mx-1 mx-xl-2"></ThemeColumn>
     <IdTags class="mb-3 mx-1 mx-xl-2"></IdTags>
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
-    <Geo class="align-self-center mb-3 mx-1 mx-xl-2"></Geo>
+    <Geo class="mb-3 mx-1 mx-xl-2" v-if="this.$route.name === 'Kiosk'"></Geo>
     <IntroVideo
-      class="text-center mb-3 mx-1 mx-xl-2"
+      class="mb-3 mx-1 mx-xl-2"
       v-if="this.$route.name !== 'Kiosk'"
     ></IntroVideo>
     <QRSite
       v-if="this.$route.name === 'Kiosk'"
-      class="mb-3 mx-1 mx-xl-2 text-center"
+      class="mb-3 mx-1 mx-xl-2"
     ></QRSite>
   </div>
 </template>

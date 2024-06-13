@@ -20,6 +20,13 @@
   line-height:56px; font-size: 56px;
   
 }
+.campus-icon{
+  width: 75%;
+  max-width: 8vh;
+  min-height: 35px;
+  min-width: 35px;
+}
+
 @include media-breakpoint-only(xxl) {
   .geo-img {
     max-width: 200px;

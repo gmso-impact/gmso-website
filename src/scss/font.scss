@@ -2,9 +2,6 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
-.h1 {
-  @include font-size($h1-font-size * 0.75);
-}
 
 @include media-breakpoint-only(xxl) {
     body {

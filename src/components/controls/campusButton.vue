@@ -1,20 +1,22 @@
 <template lang="">
-  <div class="col-6 col-xxl-3 p-1">
-    <button
-      class="btn btn-fade btn-block h-100 p-0 p-xxl-4"
-      :class="{
-        'btn-light': isActiveCampus,
-        'btn-dark': !isActiveCampus,
-      }"
-      v-on:click="setCampus"
-    >
-      <div class="">{{ campus }}</div>
-      <img
-        :class="{ invertColor: isActiveCampus }"
-        class="w-75"
-        :src="campusIconSRC"
-      />
-    </button>
+  <div class="col-6 col-xxl-3">
+    <div class="pt-2 mx-1 h-100">
+      <button
+        class="btn btn-fade btn-block h-100 p-0"
+        :class="{
+          'btn-light': isActiveCampus,
+          'btn-dark': !isActiveCampus,
+        }"
+        v-on:click="setCampus"
+      >
+        <div class="">{{ campus }}</div>
+        <img
+          :class="{ invertColor: isActiveCampus }"
+          class="campus-icon"
+          :src="campusIconSRC"
+        />
+      </button>
+    </div>
   </div>
 </template>
 <script>
