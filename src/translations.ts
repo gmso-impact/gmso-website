@@ -36,10 +36,12 @@ const translations = {
     ResetFilter: "Reset filter to see more stories",
     ResetMap: "Reset map to see more stories",
 
+    Featured: "Featured",
     IntroVideo: "Watch Intro Video",
     QRscan: "Scan Me",
     QRpopover: "View this exhibit on your phone!",
     Explore: "Get ready to explore!",
+    SortBy: "Sort by",
     SortByTitle: "Title",
     SortByPerson: "Person",
 
@@ -116,6 +118,7 @@ const translations = {
     ResetFilter: "Restablecer el filtro para ver más  historias",
     ResetMap: "Restablecer el mapa para ver más  historias",
 
+    Featured: "Presentada",
     IntroVideo: "Mirar video",
     QRscan: "Escanéame",
     QRpopover: "Ver está pieza en tu móbil",

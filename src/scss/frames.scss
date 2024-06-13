@@ -14,7 +14,7 @@
     padding: 0;
   }
 }
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
   .overlay {
     padding: $font-size-xxl;
   }
@@ -26,7 +26,7 @@
   max-height: 1920*2px;
   max-width: 1080*2px;
 }
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
 
 .overlay.storyFrame {
   max-height: 100vh / 4 * 2;
@@ -82,7 +82,7 @@
 }
 
 
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxxl) {
   $storyScale: 2;
   $panels-tall: 1;
   $panels-wide: 1;

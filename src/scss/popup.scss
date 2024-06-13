@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
     .leaflet-popup-content {
       width: 100%;
     }

@@ -5,17 +5,12 @@
     <h1 class="text-white text-center mx-1 mx-xl-2 pb-xxl-4">
       {{ $t(`FindStories`) }}
     </h1>
-    <CampusGroup class="mb-3 mx-xl-2"></CampusGroup>
+    <CampusGroup class="mb-3 mx-1 mx-xl-2"></CampusGroup>
     <KioskSwitch class="mb-3 mx-1 mx-xl-2" v-if="false"> </KioskSwitch>
     <ThemeColumn class="mb-3 mx-1 mx-xl-2"></ThemeColumn>
     <IdTags class="mb-3 mx-1 mx-xl-2"></IdTags>
     <Language class="mb-3 mx-1 mx-xl-2"></Language>
     <TitleNameSwitch class="mb-3 mx-1 mx-xl-2"></TitleNameSwitch>
-    <Geo class="mb-3 mx-1 mx-xl-2" v-if="this.$route.name === 'Kiosk'"></Geo>
-    <IntroVideo
-      class="mb-3 mx-1 mx-xl-2"
-      v-if="this.$route.name !== 'Kiosk'"
-    ></IntroVideo>
     <QRSite
       v-if="this.$route.name === 'Kiosk'"
       class="mb-3 mx-1 mx-xl-2"
@@ -30,8 +25,8 @@ import Language from "./language.vue";
 import TitleNameSwitch from "./titleNameSwitch.vue";
 import ThemeColumn from "./themeColumn.vue";
 import IdTags from "./idTags.vue";
-import Geo from "./geo.vue";
-import IntroVideo from "./introVideo.vue";
+// import Geo from "./geo.vue";
+//import IntroVideo from "./introVideo.vue";
 import QRSite from "@/components/qr/qrSite.vue";
 
 export default {
@@ -42,9 +37,9 @@ export default {
     TitleNameSwitch,
     ThemeColumn,
     IdTags,
-    IntroVideo,
+    //IntroVideo,
     QRSite,
-    Geo,
+    // Geo,
   },
   data() {
     return {};

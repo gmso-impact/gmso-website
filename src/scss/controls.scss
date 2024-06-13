@@ -1,0 +1,71 @@
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+.campus-icon {
+  width: 75%;
+  max-width: 8vh;
+  min-height: 35px;
+  min-width: 35px;
+}
+@include media-breakpoint-only(xxl) {
+  .campus-icon {
+    width: 30%;
+  }
+}
+@include media-breakpoint-only(xxxl) {
+  .campus-icon {
+    width: 50%;
+  }
+}
+
+.qr-site-img {
+  width: 75%
+}
+.font-qr-site {
+  font-size: 0.7rem;
+}
+@include media-breakpoint-up(xxl) {
+  .qr-site {
+    max-width: 300px;
+  }
+  .font-qr-site {
+    font-size: 1.7rem;
+  }
+}
+
+.intro-icon {
+  line-height: 50px;
+  font-size: 50px;
+}
+
+@include media-breakpoint-only(xxl) {
+  .intro-icon {
+    line-height: 120px;
+    font-size: 120px;
+  }
+}
+@include media-breakpoint-only(xxxl) {
+  .intro-icon {
+    line-height: 150px;
+    font-size: 150px;
+  }
+}
+
+.geo-img {
+  cursor: help;
+  width: 75%
+}
+.geo-img:hover {
+  filter: drop-shadow(0px 0px 2px #ffffff);
+}
+
+@include media-breakpoint-up(xxl) {
+  .geo-img {
+  }
+}
+@include media-breakpoint-up(xxxl) {
+  .geo-img {
+    width: 60%
+  }
+}

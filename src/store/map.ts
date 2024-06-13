@@ -11,6 +11,10 @@ export const viewPorts = {
       center: latLng(-0.8135, 5.175),
       zoom: 4.2,
     },
+    xxxl: {
+      center: latLng(-0.8135, 5.175),
+      zoom: 4.2,
+    },
   },
   northAmerica: {
     xl: {
@@ -21,6 +25,10 @@ export const viewPorts = {
       center: latLng(48.6328, -84.9564),
       zoom: 5.1,
     },
+    xxxl: {
+      center: latLng(48.6328, -84.9564),
+      zoom: 5.1,
+    },
   },
   colorado: {
     xl: {
@@ -28,6 +36,10 @@ export const viewPorts = {
       zoom: 7,
     },
     xxl: {
+      center: latLng(39.7231, -104.4584),
+      zoom: 8,
+    },
+    xxxl: {
       center: latLng(39.7231, -104.4584),
       zoom: 8.7,
     },
@@ -41,6 +53,10 @@ export const viewPorts = {
       center: latLng(-22.1141, -61.7305),
       zoom: 5.2,
     },
+    xxxl: {
+      center: latLng(-22.1141, -61.7305),
+      zoom: 5.2,
+    },
   },
   europeAfrica: {
     xl: {
@@ -51,6 +67,10 @@ export const viewPorts = {
       center: latLng(15.0011, 26.932),
       zoom: 4.9,
     },
+    xxxl: {
+      center: latLng(15.0011, 26.932),
+      zoom: 4.9,
+    },
   },
   asiaAustralia: {
     xl: {
@@ -58,6 +78,10 @@ export const viewPorts = {
       zoom: 3.8,
     },
     xxl: {
+      center: latLng(8.8601, 86.199),
+      zoom: 4.9,
+    },
+    xxxl: {
       center: latLng(8.8601, 86.199),
       zoom: 4.9,
     },
@@ -176,6 +200,9 @@ const map = {
       if (rootGetters.getBreakpoints.includes("xxl")) {
         newViewport = viewPorts.globe.xxl;
       }
+      if (rootGetters.getBreakpoints.includes("xxxl")) {
+        newViewport = viewPorts.globe.xxxl;
+      }
       state.new = {
         ...stateTemplate,
         ...newViewport,
@@ -194,6 +221,9 @@ const map = {
       let newViewport = newViewportBreakpoints.xl;
       if (rootGetters.getBreakpoints.includes("xxl")) {
         newViewport = newViewportBreakpoints.xxl;
+      }
+      if (rootGetters.getBreakpoints.includes("xxxl")) {
+        newViewport = newViewportBreakpoints.xxxl;
       }
       state.new = {
         ...stateTemplate,

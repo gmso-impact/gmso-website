@@ -31,7 +31,7 @@
   transform: translate(-50%, 0);
 }
 
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
     .boxy-left {
         left: $font-size-xxl;
       }

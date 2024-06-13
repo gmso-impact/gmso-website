@@ -17,7 +17,7 @@
       <div class="topClose">
         <div class="btn-group" role="group" aria-label="Video Controls">
           <button
-            class="btn btn-lg btn-black"
+            class="btn btn-lg btn-black d-none"
             v-if="this.$route.name === 'Kiosk'"
             v-on:click="toggleMute()"
           >
@@ -38,7 +38,7 @@
           </button>
         </div>
       </div>
-      <div class="bottomClose" v-if="this.getBreakpoints.includes('xxl')">
+      <div class="bottomClose" v-if="this.getBreakpoints.includes('xxxl')">
         <div class="btn-group" role="group" aria-label="Video Controls">
           <button
             class="btn btn-lg btn-black"
@@ -48,7 +48,7 @@
             {{ $t(`Close`) }}
             <font-awesome-icon :icon="['fas', 'times']" class="ml-2" />
           </button>
-          <button class="btn btn-lg btn-black" v-on:click="toggleMute()">
+          <button class="btn btn-lg btn-black d-none" v-on:click="toggleMute()">
             <span v-if="isMuted">
               <font-awesome-icon :icon="['fas', 'fa-volume-xmark']" />
             </span>

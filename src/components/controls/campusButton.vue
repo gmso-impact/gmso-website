@@ -1,15 +1,15 @@
 <template lang="">
-  <div class="col-6 col-xxl-3">
-    <div class="pt-2 mx-1 h-100">
+  <div class="col-6 col-xxxl-3 mb-xxl-3 px-1 px-xxl-3">
+    <div class="pt-2 h-100">
       <button
-        class="btn btn-fade btn-block h-100 p-0"
+        class="btn btn-fade btn-block h-100 p-0 p-xxl-1 p-xxxl-2"
         :class="{
           'btn-light': isActiveCampus,
           'btn-dark': !isActiveCampus,
         }"
         v-on:click="setCampus"
       >
-        <div class="">{{ campus }}</div>
+        <div class="small">{{ campus }}</div>
         <img
           :class="{ invertColor: isActiveCampus }"
           class="campus-icon"

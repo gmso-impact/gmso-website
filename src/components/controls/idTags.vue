@@ -1,5 +1,8 @@
 <template lang="">
   <div>
+    <div class="h2 text-white text-center mb-xxl-3 d-none d-xxl-block">
+      {{ $t(`Featured`) }}
+    </div>
     <button
       class="btn btn-block font-weight-bold"
       :class="{

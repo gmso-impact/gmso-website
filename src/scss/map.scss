@@ -2,7 +2,7 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
   // .leaflet-left.leaflet-bottom {
   //   transform: scale(2) translateX(50%) translateY(-50%);
   // }

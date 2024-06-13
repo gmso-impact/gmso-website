@@ -8,7 +8,8 @@ const bpl = {
   md: 768,
   lg: 992,
   xl: 1700,
-  xxl: 4000,
+  xxl: 3800,
+  xxxl: 7000,
 };
 
 // can be used in inital state like the getter getBreakpoints()

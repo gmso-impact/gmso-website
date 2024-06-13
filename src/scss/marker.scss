@@ -2,9 +2,10 @@
 @import "bootstrap/scss/_functions.scss";
 @import "variables.scss";
 
-$marker-size: 2.5;
+$marker-size: 2.7;
 
-$marker-size-lg: 6;
+$marker-size-xxl: 4;
+$marker-size-xxxl: 4.75;
 
 .marker-pin {
   background: white;
@@ -28,26 +29,51 @@ $marker-size-lg: 6;
   z-index: 10;
 }
 
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
   .marker-pin {
     background: white;
-    width: $marker-size-lg * $font-size-base;
-    height: $marker-size-lg * $font-size-base;
+    width: $marker-size-xxl * $font-size-base;
+    height: $marker-size-xxl * $font-size-base;
     display: block;
     left: -2 * $font-size-base;
     top: -2 * $font-size-base;
     position: relative;
-    border-radius: $marker-size-lg * $font-size-base $marker-size-lg * $font-size-base 0;
+    border-radius: $marker-size-xxl * $font-size-base $marker-size-xxl * $font-size-base 0;
     transform: rotate(45deg);
     border: 6 * $font-size-base/16 solid #ffffff;
     font-size: $font-size-xxl;
   }
   .marker-pin.active {
-    width: 1.1 * $marker-size-lg * $font-size-base;
-    height: 1.1 * $marker-size-lg * $font-size-base;
+    width: 1.1 * $marker-size-xxl * $font-size-base;
+    height: 1.1 * $marker-size-xxl * $font-size-base;
     left: -2.05 * $font-size-base;
     top: -2.055 * $font-size-base;
-    border-radius: 1.1 * $marker-size-lg * $font-size-base 1.1 * $marker-size-lg * $font-size-base 0;
+    border-radius: 1.1 * $marker-size-xxl * $font-size-base 1.1 * $marker-size-xxl * $font-size-base 0;
+    border: 10 * $font-size-base/16 solid #ffffff;
+    z-index: 10;
+  }
+}
+
+@include media-breakpoint-up(xxxl) {
+  .marker-pin {
+    background: white;
+    width: $marker-size-xxxl * $font-size-base;
+    height: $marker-size-xxxl * $font-size-base;
+    display: block;
+    left: -2 * $font-size-base;
+    top: -2 * $font-size-base;
+    position: relative;
+    border-radius: $marker-size-xxxl * $font-size-base $marker-size-xxxl * $font-size-base 0;
+    transform: rotate(45deg);
+    border: 6 * $font-size-base/16 solid #ffffff;
+    font-size: $font-size-xxxl;
+  }
+  .marker-pin.active {
+    width: 1.1 * $marker-size-xxxl * $font-size-base;
+    height: 1.1 * $marker-size-xxxl * $font-size-base;
+    left: -2.05 * $font-size-base;
+    top: -2.055 * $font-size-base;
+    border-radius: 1.1 * $marker-size-xxxl * $font-size-base 1.1 * $marker-size-xxxl * $font-size-base 0;
     border: 10 * $font-size-base/16 solid #ffffff;
     z-index: 10;
   }
@@ -62,7 +88,7 @@ $marker-size-lg: 6;
   transform: translateX(-50%) translateY(0%);
 }
 
-@include media-breakpoint-only(xxl) {
+@include media-breakpoint-up(xxl) {
   .marker-img {
     width: 300px !important;
     //border: 8 * $font-size-base/16 solid #ffffff;

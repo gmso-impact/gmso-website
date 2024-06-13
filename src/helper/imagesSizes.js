@@ -5,6 +5,7 @@ const imageSizes = {
   lg: { width: 640, height: height(640) },
   xl: { width: 320, height: height(320) },
   xxl: { width: 960, height: height(960) },
+  xxxl: { width: 960, height: height(960) },
   oi: { width: null, height: null },
 };
 

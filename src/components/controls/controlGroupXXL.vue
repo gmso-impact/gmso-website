@@ -6,18 +6,18 @@
       <KioskSwitch class="pb-xxl-4" v-if="false"> </KioskSwitch>
       <ThemeColumn class=""></ThemeColumn>
     </div>
-    <div class="h-25 d-flex flex-column justify-content-end py-4 px-4">
-      <IdTags class="pb-xxl-5 flex-grow-1"></IdTags>
-      <Language class="pb-xxl-5"></Language>
-      <TitleNameSwitch class="pb-xxl-5"></TitleNameSwitch>
-    </div>
-    <div class="h-25 d-flex flex-column justify-content-end py-4 px-4">
+    <div class="h-50 d-flex flex-column justify-content-between py-4 px-4">
+      <div>
+        <IdTags class="pb-xxl-5 flex-grow-1"></IdTags>
+        <Language class="pb-xxl-5"></Language>
+        <TitleNameSwitch class="pb-xxl-5"></TitleNameSwitch>
+      </div>
       <div class="row d-flex justify-content-around align-items-stretch">
         <QRSite
           v-if="this.$route.name === 'Kiosk'"
-          class="col-4 px-3 text-center"
+          class="col-4 col-xxxl-3 px-3 text-center"
         ></QRSite>
-        <IntroVideo class="col-5 px-3 text-center"></IntroVideo>
+        <IntroVideo class="col-5 col-xxxl-3 px-3 text-center"></IntroVideo>
         <Geo class="col-3 px-3"></Geo>
       </div>
     </div>

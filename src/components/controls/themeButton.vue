@@ -13,7 +13,7 @@
         <img :src="themeIconSRC" class="themeIcon" :alt="`Logo for ${theme}`" />
       </div>
       <div
-        class="themeText flex-fill d-flex align-items-center text-center p-1 p-xl-2 pl-xxl-4"
+        class="themeText flex-fill d-flex align-items-center text-center p-1 p-xl-2 pl-xxl-4 small"
       >
         <transition name="slide-right" mode="out-in">
           <div :key="$t(`storyThemes.${theme}`)">

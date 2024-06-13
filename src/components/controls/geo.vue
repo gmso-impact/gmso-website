@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="d-flex justify-content-end">
+  <div class="d-flex align-items-end justify-content-center">
     <img
       src="Geo_Impact.svg"
       class="geo-img"

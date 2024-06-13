@@ -25,5 +25,15 @@
     width: $font-size-xxl * 2;
   }
 }
-
+@include media-breakpoint-only(xxxl) {
+  .btn {
+    @include font-size($font-size-xxxl);
+    //box-shadow: white 5px 5px 7px;
+    border-radius: $font-size-xxxl / 4;
+    padding: 0.25 * $font-size-xxxl 0.75 * $font-size-xxxl;
+  }
+  .themeIconContainer {
+    width: $font-size-xxxl * 2;
+  }
+}
 

@@ -63,7 +63,8 @@
         <div class="text-center d-none d-md-block d-lg-none">md</div>
         <div class="text-center d-none d-lg-block d-xl-none">lg</div>
         <div class="text-center d-none d-xl-block d-xxl-none">xl</div>
-        <div class="text-center d-none d-xxl-block">xxl</div>
+        <div class="text-center d-none d-xxl-block d-xxxl-none">xxl</div>
+        <div class="text-center d-none d-xxxl-block">xxxl</div>
       </div>
     </div>
     <div class="boxy boxy-left childPoint"></div>
@@ -209,7 +210,8 @@ export default {
         md: 2.4,
         lg: 2.2,
         xl: 2.8,
-        xxl: 3.7, // 4.3 for no world copy
+        xxl: 3.7,
+        xxxl: 3.7, // 4.3 for no world copy
       };
       return minZoomList[this.getBreakpoints[0]];
     },
@@ -247,6 +249,10 @@ export default {
         zoom: 2.8,
       },
       xxl: {
+        latLng: latLng(-0.8135, -42),
+        zoom: 4.2,
+      },
+      xxxl: {
         latLng: latLng(-0.8135, 5.175),
         zoom: 4.2,
       },
