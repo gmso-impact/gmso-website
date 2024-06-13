@@ -1,11 +1,11 @@
 const imageSizes = {
-  xs: { width: 320, height: height(320) },
-  sm: { width: 320, height: height(320) },
-  md: { width: 320, height: height(320) },
-  lg: { width: 640, height: height(640) },
-  xl: { width: 320, height: height(320) },
-  xxl: { width: 960, height: height(960) },
-  xxxl: { width: 960, height: height(960) },
+  xs: { width: 256, height: height(256) },
+  sm: { width: 352, height: height(352) },
+  md: { width: 464, height: height(464) },
+  lg: { width: 256, height: height(256) },
+  xl: { width: 160, height: height(160) },
+  xxl: { width: 288, height: height(288) },
+  xxxl: { width: 608, height: height(608) },
   oi: { width: null, height: null },
 };
 
