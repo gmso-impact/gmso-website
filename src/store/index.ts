@@ -70,10 +70,11 @@ export default new Vuex.Store({
             commit("removeActiveStories");
           },
         },
-        resetTags: {
+        resetFilterSort: {
           time: 120 * seconds,
           action: () => {
-            commit("resetTags", "storyThemes");
+            commit("resetSortStoriesBy");
+            dispatch("resetFilters");
           },
         },
       };

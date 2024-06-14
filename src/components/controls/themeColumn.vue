@@ -9,7 +9,7 @@
             'btn-white': $route.query.theme === undefined,
             'btn-charcoal': $route.query.theme !== undefined,
           }"
-          v-on:click="resetTheme"
+          v-on:click="resetThemes"
           :aria-label="$t(`AllThemes`)"
         >
           <transition name="fade" mode="out-in">
@@ -34,7 +34,7 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters, mapMutations, mapActions } from "vuex";
 import ThemeButton from "./themeButton.vue";
 
 export default {
@@ -62,18 +62,9 @@ export default {
     }),
   },
   methods: {
-    ...mapMutations({
-      resetTags: "resetTags",
+    ...mapActions({
+      resetThemes: "resetThemes",
     }),
-    resetTheme: function (theme) {
-      if (this.$route.query.theme === undefined) {
-        return;
-      } // prevent redudant nav
-      this.$router.push({ query: { ...this.$route.query, theme: undefined } }); // leave other query paramaters alone
-    },
-    // resetTagsClicked: function (event) {
-    //   this.resetTags("themeNames");
-    // },
   },
 };
 </script>

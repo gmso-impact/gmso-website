@@ -24,9 +24,6 @@ export default {
     };
   },
   computed: {
-    // ...mapGetters({
-    //   activeIdTag: "activeIdTag",
-    // }),
     isActiveTag: function () {
       if (this.$route.query.tag === undefined) {
         // if query is not active, show it inactive
@@ -41,9 +38,6 @@ export default {
     },
   },
   methods: {
-    // ...mapMutations({
-    //   setIdTag: "setIdTag",
-    // }),
     setTagClicked: function () {
       if (this.$route.query.tag === undefined) {
         this.$router.push({

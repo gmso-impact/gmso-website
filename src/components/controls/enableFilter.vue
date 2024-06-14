@@ -33,15 +33,8 @@ export default {
   data() {
     return { languages: languages };
   },
-  computed: {
-    ...mapGetters({
-      storyThemes: "storyThemes",
-    }),
-  },
+  computed: {},
   methods: {
-    ...mapMutations({
-      resetTags: "resetTags",
-    }),
     setLanguage: function (locale) {
       this.$root.$i18n.locale = locale;
       event(`language`, {
