@@ -36,8 +36,7 @@ Vue.component("b-popover", BPopover);
 
 import VueI18n from "vue-i18n";
 Vue.use(VueI18n);
-import { I18nSetup } from "./translations";
-const i18n = new VueI18n(I18nSetup);
+import i18n from "./translations";
 
 Vue.config.productionTip = false;
 

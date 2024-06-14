@@ -3,6 +3,7 @@ import Vuex from "vuex";
 import map from "./map";
 import storys from "./storys";
 import breakpoint from "./breakpoint";
+import i18n from "../translations";
 
 Vue.use(Vuex);
 const seconds = 1000;
@@ -33,18 +34,14 @@ export default new Vuex.Store({
       // starts all the timeouts
       console.log("startTimeouts");
       const timeoutFunctions = {
+        // these named objects are arbitrarty, and do not affect the timeout. You can create new / split existing ones at will
+        // they can be in any order, but are in reverse chronological
         reloadPage: {
           time: 2 * hours,
           action: () => {
             location.reload();
           },
         },
-        // openVideo: {
-        //   time: 40 * seconds,
-        //   action: ()=>{
-        //     commit("openVideoFrame", { root: true });
-        //   }
-        // },
         panMap: {
           time: 18 * minutes,
           action: () => {
@@ -62,6 +59,7 @@ export default new Vuex.Store({
           time: 16 * minutes,
           action: () => {
             dispatch("resetMap");
+            dispatch("resetLanguage");
           },
         },
         closeStorys: {
@@ -74,6 +72,7 @@ export default new Vuex.Store({
           time: 120 * seconds,
           action: () => {
             commit("resetSortStoriesBy");
+            commit("closeVideoFrame", { root: true });
             dispatch("resetFilters");
           },
         },
@@ -116,6 +115,10 @@ export default new Vuex.Store({
       state.map.mapFrameId = -1;
       state.isInactive = false;
       dispatch("startTimeouts");
+    },
+    resetLanguage() {
+      console.log("resetLanguage");
+      i18n.locale = "en";
     },
   },
   modules: {

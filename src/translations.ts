@@ -1,3 +1,8 @@
+import Vue from "vue";
+import VueI18n from "vue-i18n";
+
+Vue.use(VueI18n);
+
 export const languages = [
   {
     locale: "en",
@@ -183,3 +188,6 @@ export const I18nSetup = {
   fallbackLocale: "en", // fall back if no translation exists
   messages: translations, // set locale messages
 };
+
+const i18n = new VueI18n(I18nSetup);
+export default i18n;
