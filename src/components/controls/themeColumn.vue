@@ -53,7 +53,7 @@ export default {
         .map((n) => n.toLowerCase())
         .includes(this.$route.query.theme.toLowerCase())
     ) {
-      this.resetTheme();
+      this.resetThemes();
     }
   },
   computed: {

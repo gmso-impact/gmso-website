@@ -16,7 +16,7 @@
   </div>
 </template>
 <script>
-import { mapActions } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   data() {
@@ -24,7 +24,22 @@ export default {
       tag: "Women Leader",
     };
   },
+  mounted() {
+    // route guard to ensure the theme exists
+    // if someone provides a bad theme, it will re-route to no filter
+    if (
+      this.$route.query.tag &&
+      !this.tagNames
+        .map((n) => n.toLowerCase())
+        .includes(this.$route.query.tag.toLowerCase())
+    ) {
+      this.resetTags();
+    }
+  },
   computed: {
+    ...mapGetters({
+      tagNames: "tagNames",
+    }),
     isActiveTag: function () {
       if (this.$route.query.tag === undefined) {
         // if query is not active, show it inactive
@@ -41,6 +56,7 @@ export default {
   methods: {
     ...mapActions({
       setTag: "setTag",
+      resetTags: "resetTags"
     }),
   },
 };

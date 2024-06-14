@@ -55,6 +55,7 @@ const storys = {
     storysActive: [],
     storysActiveMax: 1,
     themeNames: getNames("Story Theme"),
+    tagNames: getNames("ID Tags"),
     isVideoFrameOpen: false,
     isHelpFrameOpen: false,
     isStoriesFrameOpen: false,
@@ -158,6 +159,9 @@ const storys = {
       } else {
         return null;
       }
+    },
+    tagNames: (state) => {
+      return state.tagNames
     },
     themeNames: (state) => {
       return state.themeNames;
