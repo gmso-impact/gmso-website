@@ -161,7 +161,7 @@ const storys = {
       }
     },
     tagNames: (state) => {
-      return state.tagNames
+      return state.tagNames;
     },
     themeNames: (state) => {
       return state.themeNames;
@@ -375,7 +375,7 @@ const storys = {
   actions: {
     setTheme: ({ state, rootState }, theme) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
       if (
         rootState.route.query.theme &&
         rootState.route.query.theme.toLowerCase() === theme.toLowerCase()
@@ -386,7 +386,7 @@ const storys = {
     },
     resetThemes: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
       if (rootState.route.query.theme === undefined) {
         return;
       } // prevent redudant nav
@@ -394,7 +394,7 @@ const storys = {
     },
     setCampus: ({ state, rootState }, campus) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
       if (
         rootState.route.query.campus &&
         rootState.route.query.campus.toLowerCase() === campus.toLowerCase()
@@ -405,7 +405,7 @@ const storys = {
     },
     resetCampus: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
       if (rootState.route.query.campus === undefined) {
         return;
       } // prevent redudant nav
@@ -413,7 +413,7 @@ const storys = {
     },
     setTag: ({ state, rootState }, tag) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
       // tags toggle, because there is no all tag button
       if (rootState.route.query.tag === undefined) {
         router.push({
@@ -427,7 +427,7 @@ const storys = {
     },
     resetTags: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
       if (rootState.route.query.tag === undefined) {
         return;
       } // prevent redudant nav
@@ -435,7 +435,7 @@ const storys = {
     },
     resetFilters: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
-      state.isHelpFrameOpen= false;
+      state.isHelpFrameOpen = false;
 
       if (
         rootState.route.query.theme === undefined &&

@@ -56,7 +56,7 @@ export default {
   methods: {
     ...mapActions({
       setTag: "setTag",
-      resetTags: "resetTags"
+      resetTags: "resetTags",
     }),
   },
 };
