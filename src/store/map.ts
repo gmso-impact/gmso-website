@@ -1,5 +1,5 @@
-import { latLng, latLngBounds } from "leaflet";
-import { vectorBasemapLayer } from "esri-leaflet-vector";
+import { latLng } from "leaflet";
+// import { vectorBasemapLayer } from "esri-leaflet-vector";
 
 export const viewPorts = {
   globe: {
@@ -88,9 +88,6 @@ export const viewPorts = {
   },
 };
 
-const apikey =
-  "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
-
 // list of basemaps
 // https://developers.arcgis.com/documentation/mapping-apis-and-services/maps/services/basemap-layer-service/#default-basemap-styles
 // custom styles
@@ -101,7 +98,7 @@ const apikey =
 //basemapDefault: vectorBasemapLayer("ArcGIS:DarkGray:Base", { apikey: apikey, }),
 //basemapOld: basemapLayer("DarkGray", { apikey }),
 
-const baseMapDefault = "political";
+// const baseMapDefault = "political";
 export const baseMaps = {
   // For now ID must be the key name, later on we will use translation
   // to customize the text
@@ -194,8 +191,8 @@ const map = {
     },
   },
   actions: {
-    resetMap: ({ state, commit, rootState, rootGetters }) => {
-      console.log("reset map");
+    resetMap: ({ state, rootGetters }) => {
+      //console.log("reset map");
       let newViewport = viewPorts.globe.xl;
       if (rootGetters.getBreakpoints.includes("xxl")) {
         newViewport = viewPorts.globe.xxl;
@@ -210,7 +207,7 @@ const map = {
       };
       state.baseMap = baseMaps.satellite;
     },
-    panMap: ({ state, commit, rootState, rootGetters }) => {
+    panMap: ({ state, rootGetters }) => {
       //console.log("panMap");
       if (state.mapFrameId + 1 >= Object.keys(viewPorts).length) {
         state.mapFrameId = 0;

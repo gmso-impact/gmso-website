@@ -13,5 +13,4 @@ function height(width) {
   return (width * 9) / 16;
 }
 
-//export default imageSizes
 module.exports = imageSizes;

@@ -29,7 +29,7 @@
 </template>
 <script>
 import CampusButton from "./campusButton.vue";
-import { mapGetters, mapMutations, mapActions } from "vuex";
+import { mapActions } from "vuex";
 
 export default {
   components: {

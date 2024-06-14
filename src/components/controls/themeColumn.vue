@@ -34,7 +34,7 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations, mapActions } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 import ThemeButton from "./themeButton.vue";
 
 export default {

@@ -26,11 +26,6 @@ Icon.Default.mergeOptions({
 import "./scss/app.scss";
 import "leaflet/dist/leaflet.css";
 
-// Make BootstrapVue available throughout your project
-// Vue.use(BootstrapVue)
-// // Optionally install the BootstrapVue icon components plugin
-// Vue.use(IconsPlugin)
-
 import { BPopover } from "bootstrap-vue";
 Vue.component("b-popover", BPopover);
 

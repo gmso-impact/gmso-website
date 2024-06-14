@@ -50,7 +50,7 @@
 </template>
 <script>
 import { LMarker, LIcon } from "vue2-leaflet";
-import { latLng, divIcon, point } from "leaflet";
+import { latLng } from "leaflet";
 import { mapGetters, mapMutations } from "vuex";
 
 export default {

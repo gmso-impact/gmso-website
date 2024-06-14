@@ -17,7 +17,7 @@
 
 <script lang="ts">
 // @ is an alias to /src
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "kioskOverlay",

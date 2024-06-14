@@ -30,7 +30,6 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations } from "vuex";
 import { languages } from "../../translations.ts";
 import { event } from "vue-gtag";
 

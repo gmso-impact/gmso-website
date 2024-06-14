@@ -31,7 +31,7 @@
 <script>
 import ScrollDown from "./scrollDown.vue";
 
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   components: {

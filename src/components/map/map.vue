@@ -109,29 +109,21 @@
 import {
   LMap,
   // LTileLayer,
-  LIcon,
   LControl,
   LControlZoom,
   LControlScale,
 } from "vue2-leaflet";
-import {
-  latLng,
-  latLngBounds,
-  divIcon,
-  circleMarker,
-  icon,
-  marker,
-} from "leaflet";
-import { basemapLayer, featureLayer } from "esri-leaflet";
+import { latLng, circleMarker } from "leaflet";
+import { featureLayer } from "esri-leaflet";
 
 import { vectorBasemapLayer } from "esri-leaflet-vector";
 
-import * as basemapStyle from "./basemapStyle/DarkGrayBaseTinted.json";
+// import * as basemapStyle from "./basemapStyle/DarkGrayBaseTinted.json";
 
-const getBasemapStyle = function (defaultStyle) {
-  console.log("getBasemapStyle");
-  return basemapStyle;
-};
+// const getBasemapStyle = function (defaultStyle) {
+//   console.log("getBasemapStyle");
+//   return basemapStyle;
+// };
 
 import { mapGetters, mapMutations } from "vuex";
 import OverlayStory from "../overlay/story.vue";
@@ -287,7 +279,7 @@ export default {
         });
       });
     },
-    baseMap: function (newBaseMap, oldBaseMap) {
+    baseMap: function (newBaseMap) {
       const newBaseMapLayer = vectorBasemapLayer(newBaseMap.layer, {
         apikey: this.apikey,
       });
@@ -296,7 +288,7 @@ export default {
       this.baseMapLayer.remove();
       this.baseMapLayer = newBaseMapLayer;
     },
-    storyLayer: function (newStory, oldStory) {
+    storyLayer: function (newStory) {
       // remove old layer whenever a new story is selected
       console.log("setting new story layer");
       if (newStory && newStory.id === this.storyLayerId) {

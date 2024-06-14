@@ -1,5 +1,5 @@
 import debounce from "lodash/debounce";
-import { mapGetters, mapActions, mapMutations } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 const breakpoint = {
   mounted() {

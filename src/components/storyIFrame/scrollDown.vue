@@ -10,11 +10,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from "vuex";
-
 const seconds = 1000;
-const minutes = 60 * seconds;
-const hours = 60 * minutes;
 export default {
   name: "scrollDown",
   data() {
@@ -22,40 +18,13 @@ export default {
       isVisible: true,
     };
   },
-  computed: {
-    ...mapGetters({
-      //timeSinceInteraction: "timeSinceInteraction",
-      //storyInMap: "storyInMap",
-    }),
-  },
+  computed: {},
   mounted: function () {
     // eslint-disable-next-line
     let stopVisible = setTimeout(() => {
       this.isVisible = false;
     }, 45 * seconds); // must be a multiple of the animation time for fadeIn in the CSS below. otherwise it will abruptly disapear
   },
-  /*watch: {
-          timeSinceInteraction: {
-              immediate: true,
-              handler: function (timeSinceInteraction, oldVal) {
-                  if(timeSinceInteraction > 0.1 * seconds && this.storyInMap.length > 24){
-                      this.isVisible = true 
-                  } else {
-                      this.isVisible = false
-                  }
-              }
-          },
-          storyInMap: {
-              immediate: true,
-              handler: function (storyInMap, oldVal) {
-                  if(storyInMap.length > 24){
-                      this.isVisible = true
-                  } else {
-                      this.isVisible = false
-                  }
-              }
-          },
-      },*/
 };
 </script>
 

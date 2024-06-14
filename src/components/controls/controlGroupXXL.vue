@@ -24,7 +24,6 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations } from "vuex";
 import KioskSwitch from "./kioskSwitch.vue";
 import CampusGroup from "./campusGroup.vue";
 import Language from "./language.vue";

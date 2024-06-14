@@ -35,13 +35,6 @@ function getImagesMetadata(imagesMetadata, story) {
 }
 function getFilename(imageMetadata) {
   return imageMetadata.id;
-  const name = imageMetadata.filename.replace(/[^a-z0-9]/gi, "");
-  if (name === "") {
-    console.log(
-      `Bad file name ${imageMetadata.filename} for image id ${imageMetadata.id}`,
-    );
-  }
-  return name;
 }
 function getExt(imageMetadata) {
   if (imageMetadata.type === "image/jpeg") {

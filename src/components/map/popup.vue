@@ -13,8 +13,8 @@
 </template>
 <script>
 import { LPopup, LLayerGroup } from "vue2-leaflet";
-import { latLng, divIcon, point } from "leaflet";
-import { mapGetters, mapMutations } from "vuex";
+import { latLng } from "leaflet";
+import { mapMutations } from "vuex";
 import PopupIFrame from "./popupIFrame.vue";
 import PopupInfo from "./popupInfo.vue";
 

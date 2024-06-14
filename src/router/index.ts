@@ -18,7 +18,7 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/:pathMatch(.*)*",
-    redirect: (to) => {
+    redirect: () => {
       return { name: "Web" };
     },
   },

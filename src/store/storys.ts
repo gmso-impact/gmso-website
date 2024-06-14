@@ -1,5 +1,5 @@
 import * as storiesFile from "../assets/allStories.json";
-import { latLng, bounds } from "leaflet";
+import { latLng } from "leaflet";
 import { event } from "vue-gtag";
 import router from "../router";
 
@@ -286,7 +286,7 @@ const storys = {
         state.sortStoriesBy = "en-StoryTitle";
       }
     },
-    resetSortStoriesBy: (state, sortBy) => {
+    resetSortStoriesBy: (state) => {
       state.sortStoriesBy = "en-StoryTitle";
     },
 
@@ -369,7 +369,7 @@ const storys = {
     },
   },
   actions: {
-    setTheme: ({ state, commit, rootState }, theme) => {
+    setTheme: ({ state, rootState }, theme) => {
       state.isFilterFrameOpen = false;
       if (
         rootState.route.query.theme &&
@@ -379,14 +379,14 @@ const storys = {
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, theme: theme } }); // leave other query paramaters alone
     },
-    resetThemes: ({ state, commit, rootState }) => {
+    resetThemes: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
       if (rootState.route.query.theme === undefined) {
         return;
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, theme: undefined } }); // leave other query paramaters alone
     },
-    setCampus: ({ state, commit, rootState }, campus) => {
+    setCampus: ({ state, rootState }, campus) => {
       state.isFilterFrameOpen = false;
       if (
         rootState.route.query.campus &&
@@ -396,14 +396,14 @@ const storys = {
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, campus: campus } }); // leave other query paramaters alone
     },
-    resetCampus: ({ state, commit, rootState }) => {
+    resetCampus: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
       if (rootState.route.query.campus === undefined) {
         return;
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, campus: undefined } }); // leave other query paramaters alone
     },
-    setTag: ({ state, commit, rootState }, tag) => {
+    setTag: ({ state, rootState }, tag) => {
       state.isFilterFrameOpen = false;
       // tags toggle, because there is no all tag button
       if (rootState.route.query.tag === undefined) {
@@ -416,14 +416,14 @@ const storys = {
         });
       }
     },
-    resetTags: ({ state, commit, rootState }) => {
+    resetTags: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
       if (rootState.route.query.tag === undefined) {
         return;
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, tag: undefined } }); // leave other query paramaters alone
     },
-    resetFilters: ({ state, commit, rootState }) => {
+    resetFilters: ({ state, rootState }) => {
       state.isFilterFrameOpen = false;
       if (
         rootState.route.query.theme === undefined &&

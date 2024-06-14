@@ -5,7 +5,7 @@
 <script lang="ts">
 // @ is an alias to /src
 import Main from "@/components/main/Main.vue";
-import { mapGetters, mapActions, mapMutations } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Kiosk",

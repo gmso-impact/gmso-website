@@ -48,7 +48,7 @@ import ControlGroup from "@/components/controls/controlGroup.vue";
 import ControlGroupXXL from "@/components/controls/controlGroupXXL.vue";
 
 import KioskOverlay from "@/components/kioskOverlay/index.vue";
-import { mapGetters, mapMutations } from "vuex";
+import { mapMutations } from "vuex";
 
 export default {
   name: "Main",

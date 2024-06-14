@@ -87,7 +87,7 @@ export default new Vuex.Store({
       }
       state.timeouts = timeouts;
     },
-    stopTimeouts({ commit, dispatch, state }) {
+    stopTimeouts({ state }) {
       // cancels all timeouts, like when leaving kiosk mode
       console.log("stopTimeouts");
       state.timeouts.forEach((timeout) => {
@@ -100,7 +100,7 @@ export default new Vuex.Store({
       state.map.mapFrameId = -1;
       state.isInactive = false;
     },
-    resetTimeouts({ commit, dispatch, state }) {
+    resetTimeouts({ dispatch, state }) {
       // stop all the timers, then start them again
       console.log("resetTimeouts");
 

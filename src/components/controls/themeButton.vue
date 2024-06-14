@@ -25,7 +25,7 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations, mapActions } from "vuex";
+import { mapActions } from "vuex";
 
 export default {
   components: {},

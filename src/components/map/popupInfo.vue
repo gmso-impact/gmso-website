@@ -21,7 +21,7 @@
   </div>
 </template>
 <script>
-import { mapGetters, mapMutations } from "vuex";
+import { mapMutations } from "vuex";
 import QRStory from "@/components/qr/qrStory.vue";
 import IDIcon from "@/components/idicons/IDIcon.vue";
 
