@@ -1,6 +1,6 @@
 <template lang="">
   <div>
-    <div class="h2 text-white text-center mb-xxl-3 d-md d-xxl-block">
+    <div class="h2 text-white text-center mb-xxl-3 d-lg-none d-xxl-block">
       {{ $t(`Featured`) }}
     </div>
     <button
