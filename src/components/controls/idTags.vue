@@ -1,6 +1,6 @@
 <template lang="">
   <div>
-    <div class="h2 text-white text-center mb-xxl-3 d-none d-xxl-block">
+    <div class="h2 text-white text-center mb-xxl-3 d-md d-xxl-block">
       {{ $t(`Featured`) }}
     </div>
     <button
@@ -9,14 +9,15 @@
         'btn-white': isActiveTag,
         'btn-secondary': !isActiveTag,
       }"
-      v-on:click="setTagClicked"
+      v-on:click="setTag(tag)"
     >
       {{ $t(`Women`) }}
     </button>
   </div>
 </template>
 <script>
-//import { mapGetters, mapMutations } from "vuex";
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   data() {
     return {
@@ -38,17 +39,9 @@ export default {
     },
   },
   methods: {
-    setTagClicked: function () {
-      if (this.$route.query.tag === undefined) {
-        this.$router.push({
-          query: { ...this.$route.query, tag: this.tag },
-        }); // leave other query paramaters alone
-      } else {
-        this.$router.push({
-          query: { ...this.$route.query, tag: undefined },
-        });
-      }
-    },
+    ...mapActions({
+      setTag: "setTag",
+    }),
   },
 };
 </script>

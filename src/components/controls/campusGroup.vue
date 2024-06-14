@@ -29,6 +29,7 @@
 </template>
 <script>
 import CampusButton from "./campusButton.vue";
+import { mapGetters, mapMutations, mapActions } from "vuex";
 
 export default {
   components: {
@@ -51,12 +52,9 @@ export default {
     }
   },
   methods: {
-    resetCampus: function () {
-      if (this.$route.query.campus === undefined) {
-        return;
-      } // prevent redudant nav
-      this.$router.push({ query: { ...this.$route.query, campus: undefined } }); // leave other query paramaters alone
-    },
+    ...mapActions({
+      resetCampus: "resetCampus",
+    }),
   },
 };
 </script>

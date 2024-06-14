@@ -369,6 +369,16 @@ const storys = {
     },
   },
   actions: {
+    setTheme: ({ state, commit, rootState }, theme) => {
+      state.isFilterFrameOpen = false;
+      if (
+        rootState.route.query.theme &&
+        rootState.route.query.theme.toLowerCase() === theme.toLowerCase()
+      ) {
+        return;
+      } // prevent redudant nav
+      router.push({ query: { ...rootState.route.query, theme: theme } }); // leave other query paramaters alone
+    },
     resetThemes: ({ state, commit, rootState }) => {
       state.isFilterFrameOpen = false;
       if (rootState.route.query.theme === undefined) {
@@ -376,12 +386,35 @@ const storys = {
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, theme: undefined } }); // leave other query paramaters alone
     },
+    setCampus: ({ state, commit, rootState }, campus) => {
+      state.isFilterFrameOpen = false;
+      if (
+        rootState.route.query.campus &&
+        rootState.route.query.campus.toLowerCase() === campus.toLowerCase()
+      ) {
+        return;
+      } // prevent redudant nav
+      router.push({ query: { ...rootState.route.query, campus: campus } }); // leave other query paramaters alone
+    },
     resetCampus: ({ state, commit, rootState }) => {
       state.isFilterFrameOpen = false;
       if (rootState.route.query.campus === undefined) {
         return;
       } // prevent redudant nav
       router.push({ query: { ...rootState.route.query, campus: undefined } }); // leave other query paramaters alone
+    },
+    setTag: ({ state, commit, rootState }, tag) => {
+      state.isFilterFrameOpen = false;
+      // tags toggle, because there is no all tag button
+      if (rootState.route.query.tag === undefined) {
+        router.push({
+          query: { ...rootState.route.query, tag: tag },
+        }); // leave other query paramaters alone
+      } else {
+        router.push({
+          query: { ...rootState.route.query, tag: undefined },
+        });
+      }
     },
     resetTags: ({ state, commit, rootState }) => {
       state.isFilterFrameOpen = false;

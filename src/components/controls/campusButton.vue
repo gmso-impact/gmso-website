@@ -7,7 +7,7 @@
           'btn-light': isActiveCampus,
           'btn-dark': !isActiveCampus,
         }"
-        v-on:click="setCampus"
+        v-on:click="setCampus(campus)"
       >
         <div class="small">{{ campus }}</div>
         <img
@@ -20,6 +20,8 @@
   </div>
 </template>
 <script>
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   data() {
     return {};
@@ -48,17 +50,9 @@ export default {
     },
   },
   methods: {
-    setCampus: function () {
-      if (
-        this.$route.query.campus &&
-        this.$route.query.campus.toLowerCase() === this.campus.toLowerCase()
-      ) {
-        return;
-      } // prevent redudant nav
-      this.$router.push({
-        query: { ...this.$route.query, campus: this.campus },
-      }); // leave other query paramaters alone
-    },
+    ...mapActions({
+      setCampus: "setCampus",
+    }),
   },
 };
 </script>

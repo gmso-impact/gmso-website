@@ -1,7 +1,14 @@
 <template lang="">
   <div class="overlay childPoint" v-if="isFilterFrameOpen">
     <div class="controlFrame px-1 py-1 rounded bg-carbon border border-slate">
-      <ThemeColumn></ThemeColumn>
+      <div class="overflow-y-auto overflow-x-hidden pb-5 h-100 w-100">
+        <h1 class="text-white text-center mx-1 pt-5">
+          {{ $t(`FindStories`) }}
+        </h1>
+        <CampusGroup class="mb-3 mx-1"></CampusGroup>
+        <ThemeColumn class="mb-3 mx-1"></ThemeColumn>
+        <IdTags class="mb-3 mx-1"></IdTags>
+      </div>
       <div class="topClose">
         <button
           class="btn btn-black"
@@ -27,10 +34,15 @@
 </template>
 <script>
 import { mapGetters, mapMutations } from "vuex";
+import CampusGroup from "@/components/controls/campusGroup.vue";
 import ThemeColumn from "@/components/controls/themeColumn.vue";
+import IdTags from "@/components/controls/idTags.vue";
+
 export default {
   components: {
+    CampusGroup,
     ThemeColumn,
+    IdTags,
   },
   data() {
     return {};
