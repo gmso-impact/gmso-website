@@ -22,12 +22,14 @@ There are 3 kiosks located at Spur. Each can be interacted with via touch inputs
 - Wall - Screen resolution 7680x2160 16ft wide 5ft tall
 - Short Podium - Screen resolution 1920x1080 24in diagonal
 - Tall Podium - Screen resolution 1920x1080 24in diagonal
+- WCNR - Screen resolution 3840x2160 65in diagonal
 
 If you don't have a touch screen windows device, try the touch interaction on your phone.
 
 # Local Development of Website
 
 If you are new to this code, please first complete the 'required software' section and then 'Developer Setup'
+
 ## Start Development Server
 This runs the a local copy of the website.
 ```
@@ -46,10 +48,6 @@ yarn fetch
 ```
 First this command downloads the data from airtable. Then it looks through that for image links. The data is stored in `src/assets/allStories.json`. The images are downloaded, and then re-sized for optimal page delivery in the folder `public/stories`
 
-
-
-
-
 ## Making Code Changes
 
 Before committing changes to github, run `yarn lint`. This will give nice an consistent formatting of the code. This should be re-run before every git commit.
@@ -60,6 +58,7 @@ Changes to the main branch will automaticly be deployed to production and should
 
 `package.json` contains the core yarn commands. It defines **scripts**:
  - `yarn serve` Build the code locally and then starts a development server
+ - `yarn serveprod` Build the code locally like it is in production and then starts a development server. This version minimizes and compacts code, but it also prevents using the vue dev tools.
  - `yarn build` Complies the code from typescript to javascript and puts it in the `public` folder
  - `yarn lint` Beautifies the code, this should be run before pushing changes to github
  - `yarn fetch` Downloads data and images from airtable
