@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div v-if="icon">
     <div class="text-center d-flex flex-column h-100 justify-content-between">
       <font-awesome-icon class="id-icon" :icon="['fas', icon]" />
       <div class="id-text">{{ $t(`idTags.${id}`) }}</div>
@@ -26,8 +26,10 @@ export default {
         International: "globe",
         "First Generation": "user-graduate",
       };
-
-      return iconSymbols[this.id];
+      if (iconSymbols[this.id]) {
+        return iconSymbols[this.id];
+      }
+      return false;
     },
   },
 };

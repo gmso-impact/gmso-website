@@ -50,6 +50,9 @@ $enable-shadows: true;
 // WCAG Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
 // https://webaim.org/resources/contrastchecker/
 
+// Also edit the colors located in:
+// src\helper\colors.ts
+
 $theme-colors: (
   "orange": #dd5e4d,        /* fail on white 3.63 contrast */ /* old #f15647 */
   "Health": #dd5e4d,        /* fail on white 3.63 contrast */ /* old #f15647 */

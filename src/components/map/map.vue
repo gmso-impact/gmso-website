@@ -138,7 +138,7 @@ import MapMarker from "./marker.vue";
 import StoryPopup from "./popup.vue";
 
 import { viewPorts } from "@/store/map";
-import cssColors from "@/scss/variables.scss";
+import cssColors from "@/helper/colors.ts";
 
 const apikey =
   "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
@@ -309,9 +309,11 @@ export default {
           cacheLayers: true,
           minZoom: 0, // zoom level to show layer at, 0 = world
           style: (feature) => {
-            console.log(feature);
-            // eslint-disable-next-line
-            let color = cssColors[newStory.fields["Story Theme"]];
+            // console.log(feature);
+            let color = "#ffffff";
+            if (cssColors[newStory.fields["Story Theme"]]) {
+              color = cssColors[newStory.fields["Story Theme"]];
+            }
             return {
               color: color, //"#BA55D3",
               weight: 8,
