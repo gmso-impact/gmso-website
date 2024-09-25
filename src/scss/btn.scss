@@ -10,9 +10,9 @@
 .themeIconContainer {
   width: $font-size-base * 2.2;
 }
-@include media-breakpoint-only(md) {
-  width: $font-size-base * 1.8;
-}
+// @include media-breakpoint-only(md) {
+//   width: $font-size-base * 1.8;
+// }
 
 @include media-breakpoint-only(xxl) {
   .btn {
