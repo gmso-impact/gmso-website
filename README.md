@@ -33,12 +33,12 @@ If you are new to this code, please first complete the 'required software' secti
 ## Start Development Server
 This runs the a local copy of the website.
 ```
-yarn serve
+docker-compose up dev
 ```
 
-By default it will serve the **website** from [http://localhost:8080/](http://localhost:8080/) to view **kiosk mode* visit [http://localhost:8080/#/kiosk](http://localhost:8080/#/kiosk). It will take 1-3 minutes to start. Changes you make within the `src` folders will automaticly be displayed. Other changes will require you to stop the server `ctrl + D` within powershell and then start it again using `yarn serve`.
+By default it will serve the **website** from [http://localhost:8080/](http://localhost:8080/) to view **kiosk mode* visit [http://localhost:8080/#/kiosk](http://localhost:8080/#/kiosk). It will take 1-3 minutes to start. Changes you make within the `src` folders will automaticly be displayed. Other changes will require you to stop the server `ctrl + D` within the command line and re-start.
 
-If you have not run the code in a while or if you see an error from `yarn serve` try a `yarn install` to ensure you have the NPM latest packages. If you have missing images or stories try `yarn fetch` to get the latest data from Airtable.
+If you have missing images or stories try ` docker-compose exec dev yarn fetch` to get the latest data from Airtable.
 
 ## Retrieve Story data & images
 ***Requires AIRTABLE_AUTHORIZATION= API Key in ENV file*** 
@@ -54,9 +54,22 @@ Before committing changes to github, run `yarn lint`. This will give nice an con
 
 Changes to the main branch will automaticly be deployed to production and should appear in 5-7 minutes. Changes to other branches will not be (feel free to create new branches). The file that controls the deployment flow is `.github\workflows\deploy.yml`.
 
-## Code Structure
+## Script Structure
 
-`package.json` contains the core yarn commands. It defines **scripts**:
+A number of yarn commands are defined within the `package.json` and also [default scripts](https://classic.yarnpkg.com/lang/en/docs/cli/) defined by the yarn program. When running this script locally
+1) ensure you are running the docker container already `docker-compose up dev` 
+2) remote into the running container `docker-compose exec dev sh` 
+3) then you can run the commands. 
+4) certain commands like `yarn add` require a restart
+
+`yarn commands` that are part of the yarn application. [Full list here](https://classic.yarnpkg.com/lang/en/docs/cli/)
+- `yarn install` install all packages defined within package.json. This is run during docker-build so is unlikely to be needed unless the install process needs to be troubleshooted interactively.
+- `yarn add [package-name@version]` install a specific version of a new package. Requires restart of docker container to take affect.
+- `yarn upgrade [package-name@version]` update an already installed package to a specific version. Requires restart of docker container to take affect.
+- `yarn remove [package-name]` remove an already installed package. Requires restart of docker container to take affect.
+
+
+`package.json` contains the custom yarn commands used by this project. These **scripts** are:
  - `yarn serve` Build the code locally and then starts a development server
  - `yarn serveprod` Build the code locally like it is in production and then starts a development server. This version minimizes and compacts code, but it also prevents using the vue dev tools.
  - `yarn build` Complies the code from typescript to javascript and puts it in the `public` folder
@@ -66,9 +79,12 @@ Changes to the main branch will automaticly be deployed to production and should
  - `yarn predeploy` runs `yarn fetch` before deploying
  - `yarn deploydev` runs the deployment with developer flags set to true. Used to troubleshoot issues in GitHub
 
-`package.json` also defines the NPM javascript packages used by this code. Use `yarn install`, `yarn update`, and other commands defined by yarn [yarnpkg.com](https://yarnpkg.com/getting-started/usage).
 
 ### Folder structure
+
+- `package.json`  defines the NPM javascript packages used by this code and custom yarn commands
+- `.env.example` template env for local development
+- `.env` actuall env file used for local development, this file is created as part of the setup process.
 - `.github\workflows` scripts run to deploy to [GitHub pages](https://docs.github.com/en/pages/quickstart)
 - `public` static images like geo and the imapcto logo
     - `public\icons` icons used by themes
@@ -95,35 +111,9 @@ Changes to the main branch will automaticly be deployed to production and should
     git config --global user.email gmso_mailbox@mail.colostate.edu
     ```
 
-1. Install [Node.js 20.14.0](https://nodejs.org/en/download)  
-    [Minor Version number](https://nodejs.org/en/about/previous-releases) will change based on bugfixes. Use the latest minor version
+1. Install Docker Compose
 
-    There are 3 ways to handle this:
-    1. [Install directly](https://nodejs.org/en/download/prebuilt-installer) (windows)
-        **add choclatey when prompted**
-        If this fails, run the installer a second time and select 'repair' if it recognizes an existing install
-        Node 20 or 18 is required because of Vue2. Vue2 is required because of vue-leaflet. Node 22 does not support vue2
-
-    2. OR Use NVM (Reccomended, requires windows WSL, Linux, or Mac)
-        [Windows Instructions](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
-        [NVM Instructions](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
-
-    3. OR [Use windows NVM](https://github.com/coreybutler/nvm-windows) (windowss, has not been tested)
-
-
-
-1. Set ExecutionPolicy to run Powershell scripts
-    This requires running the following command in powershell
-    ```
-    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-    ```
-
-
-1. Install Yarn (via NPM as global in terminal)
-    ```
-    npm install --global yarn 
-    ```
-
+    Follow the current [docker-compose installation steps](https://docs.docker.com/compose/install/). This works for Windows, Linux, and MacOS. Windows will require Windows Subsystem for Linux (WSL). When you clone this repository, put it in the linux directory for optimal perforamcne.
 
 1. Add Extensions to Visual Studio Code (publisher)
     This step is purely for convience
@@ -132,22 +122,14 @@ Changes to the main branch will automaticly be deployed to production and should
     - SVG (Jock)
 
 
+## Developer setup (first run)
+
 1. Clone Repository to local machine
-    Keep files anywhere on the filesystem. Documents or desktop reccomended for easy development. Ensure the folder is **not** backed up (onedrive or dropbox) as it will cause slow performance.
+    Keep files anywhere on the filesystem. Windows users should clone this to a linux subsystem folder for optimal performance (\\wsl.localhost\Ubuntu\home\${wsl_username}). Ensure the folder is **not** backed up by the OS (onedrive, dropbox, iCloud, etc) as it will cause extremely slow performance. 
     ```
     git clone https://github.com/gmso-impact/gmso-website.git
     ```
 
-## Developer setup (first run)
-1. Install build tools. Requires admin powershell command line
-    ```
-    npm install --global windows-build-tools
-    npm config set python "C:\Python310\python.exe" 
-    ```
-1. Install Yarn packages
-    ```
-    yarn install
-    ```
 1. Create Airtable Personal Access token
     This will be used by your local machine to access the Airtable data. You need this for the list of stories and the image files.
     >**Do not store personal access tokens or API keys in Github including the `.example.env` file**
@@ -164,6 +146,15 @@ Changes to the main branch will automaticly be deployed to production and should
         ```
         yarn fetch
         ```
+
+## Production server setup
+
+The production server is a static website. This website is buildt using github actions `.github\workflows\deploy.yml` to create a new branch `gh-pages` with the fully compiled code. It requires the GitHub secrets.AIRTABLE_AUTHORIZATION be [set within the repository](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets) which is a unique key generated in [airtable.com/create/tokens](https://airtable.com/create/tokens). [GitHub pages](https://docs.github.com/en/pages) should be configured:
+
+- Source: "deploy from a branch"
+- Branch: "gh-pages" "/root"
+- Custom Domain: "impact.csusystem.edu" which must have a [DNS record setup](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
+
 
 # End of documentation.
 

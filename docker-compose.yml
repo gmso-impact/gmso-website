@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  # Development server with hot reload
+  dev:
+    build:
+      context: .
+      target: development
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./package.json:/app/package.json
+      - ./yarn.lock:/app/yarn.lock
+      # Prevent node_modules from being overwritten
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: sh -c "/app/node_modules/.bin/vue-cli-service serve --host 0.0.0.0"
+
+  # Production build
+  prod:
+    build:
+      context: .
+      target: production
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
