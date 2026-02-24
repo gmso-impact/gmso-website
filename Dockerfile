@@ -81,5 +81,8 @@ exec "$@"' > /entrypoint.sh && chmod +x /entrypoint.sh
 
 EXPOSE 8080
 
+ENV CHOKIDAR_USEPOLLING=true
+ENV WATCHPACK_POLLING=true
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["sh", "-c", "/app/node_modules/.bin/vue-cli-service serve --host 0.0.0.0"]

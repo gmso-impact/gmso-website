@@ -17,6 +17,8 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
     command: sh -c "/app/node_modules/.bin/vue-cli-service serve --host 0.0.0.0"
 
   # Production build
