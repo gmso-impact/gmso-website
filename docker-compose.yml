@@ -13,8 +13,11 @@ services:
       - ./public:/app/public
       - ./package.json:/app/package.json
       - ./yarn.lock:/app/yarn.lock
+      - ./.env:/app/.env
       # Prevent node_modules from being overwritten
       - /app/node_modules
+    env_file:
+      - .env
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
