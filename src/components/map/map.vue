@@ -141,7 +141,7 @@ import { viewPorts } from "@/store/map";
 import cssColors from "@/helper/colors.ts";
 
 const apikey =
-  "AAPKe8703a4175054ac3889b842bf857718c409C8-fzy-AeUOEUBrtaVp58HPUQNYkY-7wdxs2A12BPW5ibofrUSrddntQsjnyp";
+  "AAPTawSAq5cdask4ps2XJbaW5pQ..TkfoxLuP7Ia4JdSrSs_oCURhUmoKEKbbH6K3TVur_oIx2bAbLH9s17TYBm--VJNk_E4IjmV4nhglhxAybnqlzoSULzotjBi-_WhwRY1e2bvPt-kqOz_w-5pz1qJVLozxav9ZN9AHBSlt4PDk0Py_LweOQsxgLLtvv0OlplBejeq0ZeeTgeJFzGG62KV8TtE05vBXrjOKeEt2iwLO6NoRtjjwlJHhBalSVj8oO0hk__TWv2cwGtxI9cc.AT1_uHswUfIo";
 
 export default {
   name: "Map",
