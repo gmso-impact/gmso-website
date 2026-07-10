@@ -141,7 +141,14 @@ import { viewPorts } from "@/store/map";
 import cssColors from "@/helper/colors.ts";
 
 const apikey =
+  process.env.VUE_APP_ESRI_API_KEY ||
   "AAPTawSAq5cdask4ps2XJbaW5pQ..TkfoxLuP7Ia4JdSrSs_oCURhUmoKEKbbH6K3TVur_oIx2bAbLH9s17TYBm--VJNk_E4IjmV4nhglhxAybnqlzoSULzotjBi-_WhwRY1e2bvPt-kqOz_w-5pz1qJVLozxav9ZN9AHBSlt4PDk0Py_LweOQsxgLLtvv0OlplBejeq0ZeeTgeJFzGG62KV8TtE05vBXrjOKeEt2iwLO6NoRtjjwlJHhBalSVj8oO0hk__TWv2cwGtxI9cc.AT1_uHswUfIo";
+
+if (process.env.VUE_APP_ESRI_API_KEY) {
+  console.log("Using ESRI_API_KEY from .env file");
+} else {
+  console.log("Using production ESRI API key (restricted to listed domains)");
+}
 
 export default {
   name: "Map",
